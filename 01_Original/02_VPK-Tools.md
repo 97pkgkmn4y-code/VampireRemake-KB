@@ -43,8 +43,8 @@
 
 ### Через SDKContent\VpkContent
 - Все извлечённые ресурсы доступны для чтения
-- data\system\ — системные данные (правила, характеристики, NPC, квесты)
-- data\quotes.txt — диалоги
+- vdata\system\ — системные данные (правила, характеристики, NPC, квесты)
+- vdata\quotes.txt — диалоги
 - materials\, models\, sound\ — игровые ресурсы
 
 ### Через VPKTool

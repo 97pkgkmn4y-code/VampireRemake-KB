@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document collects dialogue records from rthur.dlg where Arthur discusses Santa Monica locations, operations, and related topics. These are dialogue records, not a separate quest.
+This document collects dialogue records from arthur.dlg where Arthur discusses Santa Monica locations, operations, and related topics. These are dialogue records, not a separate quest.
 
 ## VERIFIED Findings
 
@@ -88,15 +88,15 @@ This document collects dialogue records from rthur.dlg where Arthur discusses S
 - Response 1: Great! I suppose the first place you should look is his apartment at the Santa Monica Suites - apartment one, I think it is. Maybe you'll find something there to let you know where he's got himself to. Here's a key card that'll let you in.
 - Condition: #
 - Variable: npc.SetDisposition("Neutral",1)
-- Field 7: G.Arthur_Knox = 2; pc.SetQuest("Arthur Knox", 1); pc.GiveItem("item_k_carson_apartment_key"); G.Arthur_BJ = 1
+- Field 7: G.Arthur_Knox = 2; pc.SetQuest("Arthur Knox", 1); pc.GiveItem("item_k_carson_apartment_key")
 
 ## INFERRED Findings
 
 ### Quest Variables
-- G.Arthur_Knox = 2: Knox relationship modified (quest started)
+- G.Arthur_Knox = 2: dialogue global written at ID 691; its exact runtime meaning is UNVERIFIED.
 - pc.SetQuest("Arthur Knox", 1): Quest "Arthur Knox" set to state 1 (in progress)
 - pc.GiveItem("item_k_carson_apartment_key"): Key card for apartment
-- G.Arthur_BJ = 1: Bail Jumper quest started
+- G.Arthur_BJ is written in arthur.dlg IDs 41 and 741. The separate journal Bail Jumper starts at ID 331 with pc.SetQuest("Bail Jumper", 1).
 
 ### Quest Structure
 1. Arthur mentions Santa Monica multiple times

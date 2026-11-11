@@ -3,14 +3,22 @@ id: SM-13-TOURETTE-DLG
 map: sm_asylum_1
 source: provided Unofficial Patch Plus reference files
 status: DLG + VMF + Python + Therese/Jeanette DLG inspected; runtime untested
-sha256_tourette_dlg: 9c49561f8cf51c160260c56d9a5cec06669912bf487c6055183db1037708b5fb
-sha256_therese_dlg: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
-sha256_jeanette_dlg: bcb49659dd700880fa6087317da755b5229c9c280f9abab043d4651e6ca22494
-sha256_script: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
+historical_sha256_tourette_dlg: 9c49561f8cf51c160260c56d9a5cec06669912bf487c6055183db1037708b5fb
+historical_sha256_therese_dlg: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
+historical_sha256_jeanette_dlg: bcb49659dd700880fa6087317da755b5229c9c280f9abab043d4651e6ca22494
+historical_sha256_script: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
 sha256_map: 6b637179bf6997e5441eaaf9d211e3ae3a52b3d9d3ebdd5d52f2a8b665c198e0
 tags: [vtmb, original, santa-monica, asylum, dialogue, research, reverse-engineering]
+current_script_reference: Unofficial_Patch/python/santamonica/santamonica.py
+current_script_reference_sha256: 634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff
+current_dialogue: Unofficial_Patch/dlg/santa monica/Tourette.dlg
+current_dialogue_sha256: f1f5aa6bd4a708a777cb0a07c8d46194cb7da82ecf63cbc0e0fa765de7ab13d4
+current_reference: Unofficial Patch Plus 12.0
+runtime: UNVERIFIED
 ---
 # SM-13.09 — Tourette: кульминация конфликта сестёр и глобальные состояния
+
+> Актуальные SHA-256 в метаданных относятся к файлам UP+ 12.0. Исторические значения сохранены для сопоставления редакций. Строки Python, указанные ниже, сверены с установленным скриптом. Игровое выполнение UNVERIFIED.
 
 > [!important] Предмет исследования
 > Разбирается **исключительно оригинальная** `sm_asylum_1` с предоставленным `Tourette.dlg` из эталонной установки Unofficial Patch Plus. Никаких выводов об архитектуре ремейка.
@@ -103,7 +111,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, research, reverse-enginee
 
 ![[../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Tourette_04_VMF_Python_Staging.png]]
 
-**[F:P L268–362]** `populateOffice()` при подходящем позднем состоянии `Therese_Quest==4`, отсутствии `Tourette_Wins` и флагов смерти вызывает `Tourette.ScriptUnhide()`, включает `tourette_trigger` и запускает `tourette_sequence_relay`. **[предостережение]** выше расположены ветки `if/elif` для Jeanette/Therese; если одна из них истинна, поздняя ветка не выполняется.
+**[F:P L276–370]** `populateOffice()` при подходящем позднем состоянии `Therese_Quest==4`, отсутствии `Tourette_Wins` и флагов смерти вызывает `Tourette.ScriptUnhide()`, включает `tourette_trigger` и запускает `tourette_sequence_relay`. **[предостережение]** выше расположены ветки `if/elif` для Jeanette/Therese; если одна из них истинна, поздняя ветка не выполняется.
 
 **[F:M L39923]** `tourette_trigger` — `trigger_once` с `StartDisabled=1`, координаты центра около `(-929.94, 693.37, 36.55)`. На `OnStartTouch` запускает:
 
@@ -119,7 +127,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, research, reverse-enginee
 
 ### После завершения диалога
 
-**[F:M L40080]** `Tourette.OnDialogEnd` вызывает `touretteDialogueResults()`; **[F:P L365–375]** функция имеет только две явные ветки:
+**[F:M L40080]** `Tourette.OnDialogEnd` вызывает `touretteDialogueResults()`; **[F:P L373–383]** функция имеет только две явные ветки:
 
 - `if G.Jeanette_Dead==1`: `asylum_fade.Fade()` и через **3 сек** `Tourette.SetModel(".../Therese.mdl")`;
 - `elif G.Tourette_Wins==1`: `ChangeMap(2.5, "asylum1", "AsylumTeleport1")` — **перезагрузка той же карты** при условии, что нет первого флага.
