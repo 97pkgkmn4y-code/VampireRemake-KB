@@ -1,0 +1,315 @@
+source_id,target_id,type,predicate,action,confidence
+1,2,inferred_adjacency,,,I:unverified-response-block
+2,21,explicit_numeric,,,F:direct
+5,6,inferred_adjacency,,,I:unverified-response-block
+6,7,explicit_numeric,,,F:direct
+7,8,inferred_adjacency,,,I:unverified-response-block
+8,15,explicit_numeric,,,F:direct
+11,12,inferred_adjacency,,,I:unverified-response-block
+12,31,explicit_numeric,,,F:direct
+15,16,inferred_adjacency,,,I:unverified-response-block
+16,17,explicit_numeric,,,F:direct
+17,18,inferred_adjacency,,,I:unverified-response-block
+18,25,explicit_numeric,,,F:direct
+21,22,inferred_adjacency,,,I:unverified-response-block
+22,41,explicit_numeric,,,F:direct
+25,26,inferred_adjacency,,,I:unverified-response-block
+26,27,explicit_numeric,,,F:direct
+27,28,inferred_adjacency,,,I:unverified-response-block
+28,35,explicit_numeric,,,F:direct
+31,32,inferred_adjacency,,,I:unverified-response-block
+32,41,explicit_numeric,,,F:direct
+35,36,inferred_adjacency,,,I:unverified-response-block
+36,37,explicit_numeric,,,F:direct
+37,38,inferred_adjacency,,,I:unverified-response-block
+38,51,explicit_numeric,,,F:direct
+41,42,inferred_adjacency,G.Patch_Plus == 0,,I:unverified-response-block
+41,43,inferred_adjacency,G.Patch_Plus == 1,,I:unverified-response-block
+42,51,explicit_numeric,G.Patch_Plus == 0,,F:direct
+43,5,explicit_numeric,G.Patch_Plus == 1,,F:direct
+51,52,inferred_adjacency,,,I:unverified-response-block
+51,53,inferred_adjacency,G.Therese_Seduce >= 5,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+51,54,inferred_adjacency,G.Jeanette_Seduce >= 8 and G.Patch_Plus == 0,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+51,55,inferred_adjacency,G.Jeanette_Seduce >= 5 and G.Patch_Plus == 1,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+51,56,inferred_adjacency,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+52,61,explicit_numeric,,,F:direct
+53,281,explicit_numeric,G.Therese_Seduce >= 5,G.Therese_Side = G.Therese_Side + 1,F:direct
+54,291,explicit_numeric,G.Jeanette_Seduce >= 8 and G.Patch_Plus == 0,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+55,291,explicit_numeric,G.Jeanette_Seduce >= 5 and G.Patch_Plus == 1,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+56,61,explicit_numeric,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,F:direct
+61,62,inferred_adjacency,,,I:unverified-response-block
+62,71,explicit_numeric,,,F:direct
+71,72,inferred_adjacency,,,I:unverified-response-block
+72,81,explicit_numeric,,,F:direct
+81,82,inferred_adjacency,,,I:unverified-response-block
+82,91,explicit_numeric,,,F:direct
+91,92,inferred_adjacency,,,I:unverified-response-block
+92,101,explicit_numeric,,,F:direct
+101,102,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+101,103,inferred_adjacency,,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+101,104,inferred_adjacency,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+102,111,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+103,301,explicit_numeric,,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+104,111,explicit_numeric,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,F:direct
+111,112,inferred_adjacency,,,I:unverified-response-block
+112,121,explicit_numeric,,,F:direct
+121,122,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+121,123,inferred_adjacency,,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+121,124,inferred_adjacency,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+122,131,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+123,311,explicit_numeric,,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+124,331,explicit_numeric,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,F:direct
+131,132,inferred_adjacency,,,I:unverified-response-block
+132,141,explicit_numeric,,,F:direct
+141,142,inferred_adjacency,,,I:unverified-response-block
+142,151,explicit_numeric,,,F:direct
+151,152,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+151,153,inferred_adjacency,,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+151,154,inferred_adjacency,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+152,161,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+153,161,explicit_numeric,,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+154,161,explicit_numeric,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,F:direct
+161,162,inferred_adjacency,,,I:unverified-response-block
+162,171,explicit_numeric,,,F:direct
+171,172,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+171,173,inferred_adjacency,G.Jeanette_Refuse == 0,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+171,174,inferred_adjacency,Persuasion 4 & G.Tourette_Side == 4,G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+172,181,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+173,191,explicit_numeric,G.Jeanette_Refuse == 0,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+174,351,explicit_numeric,Persuasion 4 & G.Tourette_Side == 4,G.Tourette_Side = G.Tourette_Side + 1,F:direct
+181,182,inferred_adjacency,,,I:unverified-response-block
+182,191,explicit_numeric,,,F:direct
+191,192,inferred_adjacency,,,I:unverified-response-block
+192,201,explicit_numeric,,,F:direct
+201,202,inferred_adjacency,,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+201,203,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+201,204,inferred_adjacency,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+202,211,explicit_numeric,,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+203,371,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+204,211,explicit_numeric,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,F:direct
+211,212,inferred_adjacency,,,I:unverified-response-block
+212,221,explicit_numeric,,,F:direct
+221,222,inferred_adjacency,,,I:unverified-response-block
+222,231,explicit_numeric,,,F:direct
+231,232,inferred_adjacency,,,I:unverified-response-block
+232,241,explicit_numeric,,,F:direct
+241,242,inferred_adjacency,,,I:unverified-response-block
+242,251,explicit_numeric,,,F:direct
+251,252,inferred_adjacency,,G.Therese_Side = G.Therese_Side + 1,I:unverified-response-block
+251,253,inferred_adjacency,,G.Jeanette_Side = G.Jeanette_Side + 1,I:unverified-response-block
+251,254,inferred_adjacency,G.Tourette_Side >= 5,G.Tourette_Side = G.Tourette_Side + 1,I:unverified-response-block
+252,261,explicit_numeric,,G.Therese_Side = G.Therese_Side + 1,F:direct
+253,401,explicit_numeric,,G.Jeanette_Side = G.Jeanette_Side + 1,F:direct
+254,421,explicit_numeric,G.Tourette_Side >= 5,G.Tourette_Side = G.Tourette_Side + 1,F:direct
+261,262,inferred_adjacency,,,I:unverified-response-block
+262,271,explicit_numeric,,,F:direct
+271,272,inferred_adjacency,G.Therese_Side >= 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 1,I:unverified-response-block
+271,273,inferred_adjacency,G.Jeanette_Side >= 4,G.Therese_Dead = 1; G.Tourette_Ending = 2,I:unverified-response-block
+271,274,inferred_adjacency,G.Therese_Side < 4,G.Therese_Dead = 1; G.Tourette_Ending = 3,I:unverified-response-block
+271,275,inferred_adjacency,G.Jeanette_Side < 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,I:unverified-response-block
+271,276,inferred_adjacency,G.Tourette_Side >= 5,,I:unverified-response-block
+271,277,inferred_adjacency,G.Tourette_Side < 5,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,I:unverified-response-block
+272,921,explicit_numeric,G.Therese_Side >= 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 1,F:direct
+273,921,explicit_numeric,G.Jeanette_Side >= 4,G.Therese_Dead = 1; G.Tourette_Ending = 2,F:direct
+274,921,explicit_numeric,G.Therese_Side < 4,G.Therese_Dead = 1; G.Tourette_Ending = 3,F:direct
+275,921,explicit_numeric,G.Jeanette_Side < 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,F:direct
+276,421,explicit_numeric,G.Tourette_Side >= 5,,F:direct
+277,921,explicit_numeric,G.Tourette_Side < 5,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,F:direct
+281,282,inferred_adjacency,,,I:unverified-response-block
+281,283,inferred_adjacency,,,I:unverified-response-block
+282,61,explicit_numeric,,,F:direct
+283,61,explicit_numeric,,,F:direct
+291,292,inferred_adjacency,,,I:unverified-response-block
+292,61,explicit_numeric,,,F:direct
+301,302,inferred_adjacency,,,I:unverified-response-block
+302,121,explicit_numeric,,,F:direct
+311,312,inferred_adjacency,,,I:unverified-response-block
+312,321,explicit_numeric,,,F:direct
+321,322,inferred_adjacency,,,I:unverified-response-block
+322,141,explicit_numeric,,,F:direct
+331,332,inferred_adjacency,,,I:unverified-response-block
+332,341,explicit_numeric,,,F:direct
+341,342,inferred_adjacency,,,I:unverified-response-block
+342,321,explicit_numeric,,,F:direct
+351,352,inferred_adjacency,,,I:unverified-response-block
+352,361,explicit_numeric,,,F:direct
+361,362,inferred_adjacency,,,I:unverified-response-block
+362,201,explicit_numeric,,,F:direct
+371,372,inferred_adjacency,,,I:unverified-response-block
+372,381,explicit_numeric,,,F:direct
+381,382,inferred_adjacency,,,I:unverified-response-block
+382,391,explicit_numeric,,,F:direct
+391,392,inferred_adjacency,,,I:unverified-response-block
+392,251,explicit_numeric,,,F:direct
+401,402,inferred_adjacency,,,I:unverified-response-block
+402,411,explicit_numeric,,,F:direct
+411,412,inferred_adjacency,,,I:unverified-response-block
+412,271,explicit_numeric,,,F:direct
+421,422,inferred_adjacency,G.Tourette_Live == 0,G.Tourette_Live = 1,I:unverified-response-block
+421,423,inferred_adjacency,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,I:unverified-response-block
+421,424,inferred_adjacency,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,I:unverified-response-block
+421,425,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+422,451,explicit_numeric,G.Tourette_Live == 0,G.Tourette_Live = 1,F:direct
+423,431,explicit_numeric,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,F:direct
+424,471,explicit_numeric,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,F:direct
+425,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+431,432,inferred_adjacency,,,I:unverified-response-block
+432,441,explicit_numeric,,,F:direct
+441,442,inferred_adjacency,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,I:unverified-response-block
+441,443,inferred_adjacency,G.Tourette_Live == 0,G.Tourette_Live = 1,I:unverified-response-block
+441,444,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+442,471,explicit_numeric,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,F:direct
+443,451,explicit_numeric,G.Tourette_Live == 0,G.Tourette_Live = 1,F:direct
+444,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+451,452,inferred_adjacency,,,I:unverified-response-block
+452,461,explicit_numeric,,,F:direct
+461,462,inferred_adjacency,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,I:unverified-response-block
+461,463,inferred_adjacency,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,I:unverified-response-block
+461,464,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+462,431,explicit_numeric,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,F:direct
+463,471,explicit_numeric,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,F:direct
+464,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+471,472,inferred_adjacency,,,I:unverified-response-block
+472,481,explicit_numeric,,,F:direct
+481,482,inferred_adjacency,,,I:unverified-response-block
+482,491,explicit_numeric,,,F:direct
+491,492,inferred_adjacency,,,I:unverified-response-block
+491,493,inferred_adjacency,,,I:unverified-response-block
+491,494,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+492,501,explicit_numeric,,,F:direct
+493,521,explicit_numeric,,,F:direct
+494,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+501,502,inferred_adjacency,,,I:unverified-response-block
+502,511,explicit_numeric,,,F:direct
+511,512,inferred_adjacency,G.Tourette_Sabotage == 0,,I:unverified-response-block
+511,513,inferred_adjacency,G.Tourette_Sabotage == 1,,I:unverified-response-block
+511,515,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+512,521,explicit_numeric,G.Tourette_Sabotage == 0,,F:direct
+513,551,explicit_numeric,G.Tourette_Sabotage == 1,,F:direct
+515,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+521,522,inferred_adjacency,,,I:unverified-response-block
+522,531,explicit_numeric,,,F:direct
+531,532,inferred_adjacency,,,I:unverified-response-block
+532,541,explicit_numeric,,,F:direct
+541,542,inferred_adjacency,G.Tourette_Power == 0,,I:unverified-response-block
+541,543,inferred_adjacency,G.Tourette_Power == 1,,I:unverified-response-block
+541,544,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+542,501,explicit_numeric,G.Tourette_Power == 0,,F:direct
+543,551,explicit_numeric,G.Tourette_Power == 1,,F:direct
+544,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+551,552,inferred_adjacency,,,I:unverified-response-block
+552,561,explicit_numeric,,,F:direct
+561,562,inferred_adjacency,,,I:unverified-response-block
+561,563,inferred_adjacency,,G.Tourette_Side = G.Tourette_Side - 1,I:unverified-response-block
+562,571,explicit_numeric,,,F:direct
+563,271,explicit_numeric,,G.Tourette_Side = G.Tourette_Side - 1,F:direct
+571,572,inferred_adjacency,,,I:unverified-response-block
+572,581,explicit_numeric,,,F:direct
+581,582,inferred_adjacency,,,I:unverified-response-block
+582,591,explicit_numeric,,,F:direct
+591,592,inferred_adjacency,,,I:unverified-response-block
+592,601,explicit_numeric,,,F:direct
+601,602,inferred_adjacency,,,I:unverified-response-block
+602,611,explicit_numeric,,,F:direct
+611,612,inferred_adjacency,,,I:unverified-response-block
+612,621,explicit_numeric,,,F:direct
+621,622,inferred_adjacency,,,I:unverified-response-block
+622,631,explicit_numeric,,,F:direct
+631,632,inferred_adjacency,,,I:unverified-response-block
+632,641,explicit_numeric,,,F:direct
+641,642,inferred_adjacency,,,I:unverified-response-block
+642,651,explicit_numeric,,,F:direct
+651,652,inferred_adjacency,"not pc.HasItem(""item_w_thirtyeight"")","pc.GiveItem(""item_w_thirtyeight"")",I:unverified-response-block
+651,653,inferred_adjacency,"pc.HasItem(""item_w_thirtyeight"")","pc.GiveAmmo(""item_w_thirtyeight"", 6)",I:unverified-response-block
+652,661,explicit_numeric,"not pc.HasItem(""item_w_thirtyeight"")","pc.GiveItem(""item_w_thirtyeight"")",F:direct
+653,661,explicit_numeric,"pc.HasItem(""item_w_thirtyeight"")","pc.GiveAmmo(""item_w_thirtyeight"", 6)",F:direct
+661,662,inferred_adjacency,G.Patch_Plus == 0,,I:unverified-response-block
+661,663,inferred_adjacency,G.Patch_Plus == 1,FindPlayer().HumanityAdd( 1 ),I:unverified-response-block
+662,671,explicit_numeric,G.Patch_Plus == 0,,F:direct
+663,671,explicit_numeric,G.Patch_Plus == 1,FindPlayer().HumanityAdd( 1 ),F:direct
+671,672,inferred_adjacency,,,I:unverified-response-block
+671,674,inferred_adjacency,,,I:unverified-response-block
+672,681,explicit_numeric,,,F:direct
+674,681,explicit_numeric,,,F:direct
+681,682,inferred_adjacency,,,I:unverified-response-block
+682,691,explicit_numeric,,,F:direct
+691,692,inferred_adjacency,,,I:unverified-response-block
+692,701,explicit_numeric,,,F:direct
+701,702,inferred_adjacency,,,I:unverified-response-block
+711,712,inferred_adjacency,"not pc.HasItem(""item_g_ghost_pendant"")",,I:unverified-response-block
+711,713,inferred_adjacency,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant"")",I:unverified-response-block
+711,714,inferred_adjacency,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary"")",I:unverified-response-block
+721,722,inferred_adjacency,G.Therese_Side >= 4,G.Tourette_Change = 2,I:unverified-response-block
+721,723,inferred_adjacency,G.Jeanette_Side >= 4,G.Tourette_Change = 2,I:unverified-response-block
+721,724,inferred_adjacency,G.Therese_Side < 4,G.Tourette_Change = 2,I:unverified-response-block
+721,725,inferred_adjacency,G.Therese_Side >= 4,G.Tourette_Change = 2,I:unverified-response-block
+721,726,inferred_adjacency,G.Jeanette_Side >= 4,G.Tourette_Change = 2,I:unverified-response-block
+722,731,explicit_numeric,G.Therese_Side >= 4,G.Tourette_Change = 2,F:direct
+725,731,explicit_numeric,G.Therese_Side >= 4,G.Tourette_Change = 2,F:direct
+731,732,inferred_adjacency,,,I:unverified-response-block
+741,742,inferred_adjacency,"not pc.HasItem(""item_g_ghost_pendant"")",,I:unverified-response-block
+741,743,inferred_adjacency,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant"")",I:unverified-response-block
+741,744,inferred_adjacency,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary"")",I:unverified-response-block
+751,752,inferred_adjacency,,,I:unverified-response-block
+752,761,explicit_numeric,,,F:direct
+761,762,inferred_adjacency,G.Jeanette_Side >= 4,,I:unverified-response-block
+761,763,inferred_adjacency,G.Therese_Side >= 4,,I:unverified-response-block
+761,764,inferred_adjacency,G.Jeanette_Side < 4,,I:unverified-response-block
+762,771,explicit_numeric,G.Jeanette_Side >= 4,,F:direct
+771,772,inferred_adjacency,,,I:unverified-response-block
+771,773,inferred_adjacency,,,I:unverified-response-block
+781,782,inferred_adjacency,,,I:unverified-response-block
+782,761,explicit_numeric,,,F:direct
+791,792,inferred_adjacency,,,I:unverified-response-block
+792,801,explicit_numeric,,,F:direct
+801,802,inferred_adjacency,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,I:unverified-response-block
+801,803,inferred_adjacency,G.Story_State >= 20 and G.Tourette_2 == 0,G.Tourette_2 = 1,I:unverified-response-block
+801,804,inferred_adjacency,,,I:unverified-response-block
+801,805,inferred_adjacency,,,I:unverified-response-block
+802,811,explicit_numeric,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,F:direct
+803,841,explicit_numeric,G.Story_State >= 20 and G.Tourette_2 == 0,G.Tourette_2 = 1,F:direct
+811,812,inferred_adjacency,,,I:unverified-response-block
+812,821,explicit_numeric,,,F:direct
+821,822,inferred_adjacency,,,I:unverified-response-block
+822,831,explicit_numeric,,,F:direct
+831,832,inferred_adjacency,G.Story_State >= 20 and G.Tourette_2 == 0 and G.Credits_Running == 0,G.Tourette_2 = 1,I:unverified-response-block
+831,833,inferred_adjacency,,,I:unverified-response-block
+831,834,inferred_adjacency,,,I:unverified-response-block
+832,841,explicit_numeric,G.Story_State >= 20 and G.Tourette_2 == 0 and G.Credits_Running == 0,G.Tourette_2 = 1,F:direct
+841,842,inferred_adjacency,,,I:unverified-response-block
+842,851,explicit_numeric,,,F:direct
+851,852,inferred_adjacency,,,I:unverified-response-block
+852,861,explicit_numeric,,,F:direct
+861,862,inferred_adjacency,"pc.GetQuestState(""Release the Spirit"") < 3",,I:unverified-response-block
+861,863,inferred_adjacency,"pc.GetQuestState(""Release the Spirit"") == 3",,I:unverified-response-block
+862,871,explicit_numeric,"pc.GetQuestState(""Release the Spirit"") < 3",,F:direct
+863,931,explicit_numeric,"pc.GetQuestState(""Release the Spirit"") == 3",,F:direct
+871,872,inferred_adjacency,,"pc.SetQuest(""Release the Spirit"",4); pc.SetQuest(""Hotel"",7)",I:unverified-response-block
+872,881,explicit_numeric,,"pc.SetQuest(""Release the Spirit"",4); pc.SetQuest(""Hotel"",7)",F:direct
+881,882,inferred_adjacency,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,I:unverified-response-block
+881,883,inferred_adjacency,,,I:unverified-response-block
+881,884,inferred_adjacency,,,I:unverified-response-block
+882,811,explicit_numeric,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,F:direct
+891,892,inferred_adjacency,,,I:unverified-response-block
+892,21,explicit_numeric,,,F:direct
+901,902,inferred_adjacency,,,I:unverified-response-block
+911,912,inferred_adjacency,,,I:unverified-response-block
+921,922,inferred_adjacency,G.Tourette_Ending == 1,,I:unverified-response-block
+921,923,inferred_adjacency,G.Tourette_Ending == 2,,I:unverified-response-block
+921,924,inferred_adjacency,G.Tourette_Ending == 3,,I:unverified-response-block
+921,925,inferred_adjacency,G.Tourette_Ending == 4,,I:unverified-response-block
+922,711,explicit_numeric,G.Tourette_Ending == 1,,F:direct
+923,751,explicit_numeric,G.Tourette_Ending == 2,,F:direct
+924,781,explicit_numeric,G.Tourette_Ending == 3,,F:direct
+925,741,explicit_numeric,G.Tourette_Ending == 4,,F:direct
+931,932,inferred_adjacency,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,I:unverified-response-block
+931,933,inferred_adjacency,,,I:unverified-response-block
+931,934,inferred_adjacency,,,I:unverified-response-block
+932,811,explicit_numeric,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,F:direct
+943,721,explicit_numeric,G.Tourette_Change == 1,,F:direct
+944,911,explicit_numeric,G.Therese_Dead == 1,,F:direct
+945,901,explicit_numeric,G.Jeanette_Dead == 1,,F:direct
+946,791,explicit_numeric,G.Tourette_Wins == 1,,F:direct
+947,891,explicit_numeric,G.Jeanette_Refuse >=1,,F:direct
+948,1,explicit_numeric,G.Therese_Seduce >= 4,,F:direct
+949,11,explicit_numeric,G.Therese_Seduce < 4,,F:direct

@@ -1,0 +1,8 @@
+digraph G {
+ graph [fontname="DejaVu Sans", bgcolor="#0F1725",rankdir=TB, nodesep="0.47",ranksep="0.68",pad="0.30",splines=spline,label="SM-13.11 · Два профиля — две разные системы наведения",labelloc=t,fontsize=23,fontcolor="#F4F6FB"];
+ node [shape=box,style="rounded,filled",fillcolor="#18263A",color="#566F88",penwidth=1.5,fontname="DejaVu Sans",fontcolor="#F4F6FB",fontsize=13,margin="0.22,0.13"];
+ edge [color="#BAC9D8",fontname="DejaVu Sans",fontcolor="#BAC9D8",fontsize=11,arrowsize=.75];
+ subgraph cluster_intro {label="ДО ДИАЛОГА · camera_cinematic";fontname="DejaVu Sans";fontcolor="#8AC7F0";color="#8AC7F0";style="rounded";intro [label="LookAtTarget_Snap.txt\nNamed → Origin / Follow\nNamed → Origin / Follow\nFOV 75 · Speed 250",color="#8AC7F0"];snap [label="SnapOnShotChange = 1\n(эффект в движке не проверен)",color="#F5D18E"]; intro -> snap;}
+ subgraph cluster_dlg {label="ВО ВРЕМЯ ДИАЛОГА · npc_VVampire";fontname="DejaVu Sans";fontcolor="#BBA7EC";color="#BBA7EC";style="rounded";npc [label="Tourette.txt\nDialogTarget + [48,0,53]\nцель: Bone Bip01 Head\nFOV 40 · Speed 500",color="#BBA7EC"];cue [label="Tourette.dlg\nSetCamera: Tourette / tTherese / tJeanette\nОпределения tTherese и tJeanette неизвестны",color="#EE9CB4"];npc -> cue [label="отдельные диалоговые узлы",style=dashed];}
+ intro -> npc [style=dashed,color="#F5D18E",minlen=2];
+}

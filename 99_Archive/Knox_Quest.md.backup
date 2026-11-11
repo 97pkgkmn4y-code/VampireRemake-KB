@@ -1,0 +1,522 @@
+# Knox Quest Research
+
+**Date**: 2026-11-09
+**Source**: knox.dlg (974 records)
+**Quest**: Knox Quest (Knox Asian Quest)
+**Status**: Partially documented
+
+---
+
+## VERIFIED Findings
+
+### Quest Variables
+
+**Main Quest Progression:**
+- `G.Knox_Quest` (1-7): Main quest progression stages
+
+**Related Quests:**
+- `pc.SetQuest("Knox Asian", 1)`: Asian vampire quest start
+- `pc.SetQuest("Knox Asian", 4)`: Asian vampire quest complete
+- `pc.SetQuest("Arthur Knox", 2)`: Arthur\'s quest stage 2
+- `pc.SetQuest("Arthur Knox", 3)`: Arthur\'s quest stage 3
+
+**Character State:**
+- `G.Knox_TT` (0-1): Tungsten Teeth quest state
+- `G.Knox_Vamp` (0-3): Vampire revealed state
+- `G.Knox_Ghoul` (0-2): Ghoul interaction state
+- `G.Knox_Master` (0-1): Master vampire knowledge
+- `G.Knox_Likes` (0-1): Player likes Knox
+- `G.Knox_Bertram` (0-2): Bertram quest state
+- `G.Knox_Outbound` (0-3): Outbound quest state
+- `G.Knox_Powerful` (0-1): Master\'s power level
+- `G.Knox_Appear` (0-1): Mysterious appearance
+- `G.Knox_Questions` (0-1): Questions asked
+- `G.Knox_Arthur` (0-2): Arthur Kilpatrick interaction
+- `G.Knox_Artbound` (0-1): Artbound state
+- `G.Knox_Done` (0-1): Quest complete
+- `G.Trip_Know` (0-2): Trip pawn shop knowledge
+- `G.Knox_Knowledge` (0+): Knowledge gained
+
+### Quest Start
+
+**Record 211:**
+- Response: [anxious sigh]Well, Bertram had me keeping an eye on this guy, this asian dude who\'s been poking around...
+- Condition: #
+- Field 7: `G.Knox_Quest = 1`
+- Meaning: Quest begins when player talks to Knox about Asian vampire
+
+### Quest Progression
+
+**Record 231:**
+- Response: It\'s freaking me out. I know this thing is totally toying with me; I want to put an end to it.
+- Condition: #
+- Field 7: `G.Knox_Quest = 2; G.Knox_Questions = 1`
+- Meaning: Player asks questions, quest progresses to stage 2
+
+**Record 263:**
+- Response: I\'ll look into it for you....
+- Condition: 281
+- Field 7: `G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)`
+- Meaning: Player agrees to investigate, Asian quest starts, quest stage jumps to 5
+
+**Record 266:**
+- Response: No. . .the picture on the license isn\'t him. I don\'t know why he had it, but it might help you find out where he is and what he\'s doing. Here, take it.
+- Condition: #
+- Field 7: `G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)`
+- Meaning: Player receives driver\'s license, Asian quest starts, quest stage 5
+
+**Record 271:**
+- Response: Damn dude. That\'s cold. I thought we were getting to be tight, man, since we\'re on the same side.
+- Condition: # (likely player refused to investigate)
+- Field 7: `G.Knox_Quest = 4`
+- Meaning: Player refused, quest stage 4 (Knox angered)
+
+### Quest Completion
+
+**Record 381:**
+- Response: Oh thank god. Yes! That thing was hounding me every night. Look, I still haven\'t heard anything from Bertram, sorry. I\'ll still let him know but for now, I\'m done with this.
+- Condition: #
+- Field 7: `G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)`
+- Meaning: Quest complete, Asian quest complete
+
+**Record 471:**
+- Response: Right on, man! Yes! Hey sorry again for what happened before. I still haven\'t heard anything from Bertram but I\'ll let him know about how good you did. I\'m done with this.
+- Condition: #
+- Field 7: `G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4); G.Knox_Done = 1`
+- Meaning: Quest complete, Asian quest complete, done flag set
+
+**Record 521:**
+- Response: Awesome. Bertram\'ll be psyched then. Well, it was great working with you. Hopefully one day we\'ll get to team up again and maybe I\'ll be, like, a full-fledged vampire hunter.
+- Condition: #
+- Field 7: `G.Knox_Done = 1; G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)`
+- Meaning: Quest complete, final goodbye message
+
+### Bertram Quest
+
+**Record 151:**
+- Response: His name is Bertram Tung. He\'s a Nosferatu[noss-fuh-RAH-too].
+- Condition: # (likely after player reveals vampire identity)
+- Field 7: `G.Knox_Bertram = 1`
+- Meaning: Knox reveals Bertram\'s identity
+
+**Record 161:**
+- Response: Man, I wish I knew where he was. I\'m getting antsy waiting around for him. I need to talk to him about this Asian vampire.
+- Condition: # (after Bertram mentioned)
+- Field 7: `G.Knox_Bertram = 2`
+- Meaning: Knox needs to find Bertram
+
+**Record 481:**
+- Response: Hey! So, like, how are you doing on that thing we talked about?
+- Condition: # (after player completes Asian quest)
+- Field 7: `G.Knox_Ghoul = 2; G.Knox_Bertram = 2; G.Knox_Powerful = 1; G.Knox_Appear = 1`
+- Meaning: Player reports completion, Bertram found, master\'s power and mysterious appearance confirmed
+
+### Arthur Quest References
+
+**Record 311:**
+- Response: Ah hell. Arthur? Damn man. I feel bad leaving him all high and dry, but I can\'t go back to bounty hunting now.
+- Condition: #
+- Field 7: `G.Knox_Arthur = 1; pc.SetQuest("Arthur Knox", 2)`
+- Meaning: Knox mentions Arthur, Arthur quest stage 2 triggered
+
+**Record 351:**
+- Response: I was planning on stopping by Arthur\'s sometime. Look, just tell him I\'m done, I had a better offer, tell him whatever, just make him forget me. I\'m not coming back.
+- Condition: #
+- Field 7: `G.Knox_Artbound = 0; pc.SetQuest("Arthur Knox", 3)`
+- Meaning: Knox will not return to Arthur, Arthur quest stage 3 triggered
+
+---
+
+## INFERRED Findings
+
+### Quest Structure
+
+**Main Quest Flow:**
+1. **Quest Start (G.Knox_Quest = 1)**: Player talks to Knox about Asian vampire (Record 211)
+2. **Player Questions (G.Knox_Quest = 2)**: Player asks about the situation (Record 231)
+3. **Player Investigates (G.Knox_Quest = 5)**: Player agrees to investigate Asian vampire
+   - Triggers `pc.SetQuest("Knox Asian", 1)`
+   - Player receives driver\'s license (Record 263, 266)
+4. **Player Completes (G.Knox_Quest = 7)**: Player reports completion
+   - Triggers `pc.SetQuest("Knox Asian", 4)`
+   - Quest complete
+
+**Alternative:**
+- **Player Refuses (G.Knox_Quest = 4)**: Player refuses to investigate, Knox angered (Record 271)
+
+**Bertram Quest:**
+1. **Reveals Identity (G.Knox_Bertram = 1)**: Knox reveals Bertram is Nosferatu (Record 151)
+2. **Needs to Find Bertram (G.Knox_Bertram = 2)**: Knox needs to locate Bertram (Record 161)
+3. **Bertram Found (G.Knox_Bertram = 2)**: Confirmed after player completes Asian quest (Record 481)
+
+**Arthur Quest Connection:**
+- Knox\'s quest completion affects Arthur\'s quest
+- `G.Knox_Arthur = 1`: Mentioned when Knox is done (Record 311)
+- `G.Knox_Artbound = 0`: Knox will not return to Arthur (Record 351)
+- `pc.SetQuest("Arthur Knox", 2)`: Arthur quest stage 2
+- `pc.SetQuest("Arthur Knox", 3)`: Arthur quest stage 3
+
+### Asian Vampire Quest
+
+**Quest Objectives:**
+1. Investigate Asian vampire reported by Knox
+2. Find the Asian vampire\'s identity
+3. Report findings back to Knox
+
+**Quest Rewards:**
+- Player gains experience (likely, from `pc.AwardExperience`)
+- Knox becomes grateful
+- Knox becomes a potential ally
+
+**Dependencies:**
+- Player must talk to Knox
+- Player must agree to investigate
+- Player must complete investigation before Knox loses patience
+
+---
+
+## UNKNOWN Findings
+
+
+## PARTIALLY VERIFIED Findings
+
+**Asian Vampire Identity:**
+- **IDENTIFIED AS STAN GIMBLE**: Python script function sianVampDeath() is called when Gimble is killed
+- Action: __main__.FindPlayer().SetQuest("Knox Asian", 3)
+- VERIFIED: Python script lines showing Gimble death triggers Asian vampire quest update
+- IMPLICATION: The "Asian vampire" Knox reports is actually Stan Gimble, the basement character
+
+**Quest State Numbers:**
+- G.Knox_Quest = 1-7: Main quest progression (verified from Dlg and Python)
+- G.Knox_Quest = 3, 6: These states appear in Python but are not triggered by main DLG flow
+  - State 3: Asian vampire killed (triggered by Gimble death)
+  - State 6: Not used in main flow (may be unused or alternative path)
+- VERIFIED: Python script defines these states but main DLG flow doesn't use them
+- INFERRED: State 3 is triggered by Gimble death, state 6 may be unused or alternate path
+- SCOPE: Only main DLG flow verified; state 6 behavior unknown
+
+**Character Identities:**
+- **Stan Gimble**: Basement character, pawn shop owner, killed during Knox quest
+  - Associated with key gimble_key and ring gimble_ring
+  - Quest completion involves collecting his key
+  - VERIFIED: Python script references gimble_key and gimble_ring
+
+- **Virgil**: Medical clinic character, has morgue computer access
+  - Knowledge variable: G.VirgilCrumbKnowledge
+  - Viewing Virgil triggers Knox Asian quest update (state 9)
+  - VERIFIED: Python script shows irgilViewed() function
+
+- **Arthur Kilpatrick**: Bail bondsman, killed during quest
+  - Death triggers Arthur Knox quest update (state 7)
+  - Also triggers Bail Jumper quest update (state 5)
+  - VERIFIED: Python script shows kilpatrickDeath() function
+
+- What is the Asian vampire\'s identity?
+- What are the other quest branches (G.Knox_Quest = 3, 6)?
+- What is the "Asian vampire" actually doing in Santa Monica?
+- What are the consequences of player refusing to investigate?
+- What is the relationship between Bertram and the Asian vampire?
+- What are the rewards for completing the Asian vampire quest?
+- How does player reputation with Knox affect the quest?
+- What happens if player delays too long?
+- What are the alternative outcomes for Bertram quest?
+- What is the exact nature of Knox\'s relationship with Bertram?
+
+---
+
+## Evidence Summary
+
+**VERIFIED:**
+- Quest starts at Record 211 with `G.Knox_Quest = 1`
+- Player can investigate (Records 263, 266) or refuse (Record 271)
+- Investigation triggers `pc.SetQuest("Knox Asian", 1)` (Records 263, 266)
+- Completion triggers `pc.SetQuest("Knox Asian", 4)` and `G.Knox_Quest = 7` (Records 381, 471, 521)
+- Bertram quest starts with `G.Knox_Bertram = 1` (Record 151) and reaches stage 2 (Record 481)
+- Arthur quest is referenced when Knox completes his quest (Records 311, 351)
+
+**INFERRED:**
+- Quest progression follows stages 1→2→4→5→7 (note the jump from 2 to 5)
+- Player refusal leads to Knox being angered (G.Knox_Quest = 4)
+- Player investigation leads to Asian quest completion
+- Bertram quest is dependent on Asian quest completion
+
+**UNKNOWN:**
+- Exact quest mechanics and rewards
+- Alternative paths and consequences
+- Full quest dependencies and branching
+- Relationship between Bertram and Asian vampire
+
+---
+
+## Next Steps
+
+1. Identify the Asian vampire\'s identity
+2. Document player rewards for completing the quest
+3. Investigate other quest branches (G.Knox_Quest = 3, 6)
+4. Find Python script references for quest logic
+5. Map quest consequences and dependencies
+6. Document Bertram quest in detail
+7. Investigate player reputation system with Knox
+
+## Python Script Evidence
+
+**Source**: C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\Vampire\python\santamonica\santamonica.py
+
+### Quest State Functions
+
+**asianVampDeath()** - Called when Asian vampire is killed
+- Action: __main__.FindPlayer().SetQuest("Knox Asian", 3)
+- Meaning: Sets Knox Asian quest to state 3 upon Asian vampire death
+- VERIFIED: Lines showing function definition and implementation
+
+**kilpatrickDeath()** - Called when Kilpatrick dies
+- Action: pc.SetQuest("Arthur Knox", 7) if state != 0 and state != 5
+- Action: pc.SetQuest("Bail Jumper", 5) if state != 0, 3, and 4
+- Meaning: Updates Arthur Knox and Bail Jumper quest states
+- VERIFIED: Lines showing function definition and implementation
+
+**virgilViewed()** - Called when player views Virgil
+- Action: pc.SetQuest("Knox Asian", 9) if state == 1, 2, or 5
+- Meaning: Updates Knox Asian quest state when player investigates Virgil
+- VERIFIED: Lines showing function definition and implementation
+
+**gimbleDeath()** - Called when Gimble is killed
+- Action: pc.SetQuest("Arthur Knox", 3)
+- Action: G.Gimble_Dead = 1
+- Meaning: Marks Gimble as dead and updates Arthur Knox quest
+- VERIFIED: Lines showing function definition and implementation
+
+**gimbleItemPickup()** - Called when player picks up Gimble's key
+- Action: __main__.FindPlayer().SetQuest("Knox Asian", 7) if player has item_k_gimble_key
+- Meaning: Completes Knox Asian quest stage 7
+- VERIFIED: Lines showing function definition and implementation
+
+**knoxDead()** - Called when Knox dies
+- Action: __main__.FindPlayer().SetQuest("Knox Asian", 8) if status != 4 and status != 0
+- Meaning: Sets Knox Asian quest to state 8 if Knox dies
+- VERIFIED: Lines showing function definition and implementation
+
+**gimbleQuestDone()** - Called to lock basement after quest
+- Action: door.Close() and door.Lock() on basement door
+- Action: intercom.Lock() on intercom button
+- Meaning: Locks basement area after quest completion
+- VERIFIED: Lines showing function definition and implementation
+
+### Quest State Numbers
+
+**Knox Asian Quest States:**
+- 0: Not started
+- 1: Started (player agrees to investigate)
+- 2: Player asked questions
+- 3: Asian vampire killed
+- 4: Player refused (Knox angered)
+- 5: Player investigating
+- 6: Not used in main flow
+- 7: Gimble key collected
+- 8: Knox died
+- 9: Virgil viewed
+
+**Arthur Knox Quest States:**
+- 0: Not started
+- 1: Mentioned
+- 2: Carson computer hacked
+- 3: Gimble killed / player refuses to return
+- 4: Not used
+- 5: Not used
+- 6: Not used
+- 7: Kilpatrick died
+
+**Bail Jumper Quest States:**
+- 0: Not started
+- 1-4: Various stages
+- 5: Kilpatrick died
+
+### Character Identities
+
+**Stan Gimble**: Basement character, runs pawn shop, killed during Knox quest
+- Associated with key gimble_key and ring gimble_ring
+- Quest completion involves collecting his key
+
+**Virgil**: Medical clinic character, has morgue computer access
+- Knowledge variable: G.VirgilCrumbKnowledge
+- Viewing Virgil triggers Knox Asian quest update
+
+**Arthur Kilpatrick**: Bail bondsman, killed during quest
+- Death triggers Arthur Knox quest update (state 7)
+- Also triggers Bail Jumper quest update (state 5)
+
+### Quest Dependencies
+
+1. **Asian Vampire Quest** depends on:
+   - Player talking to Knox (G.Knox_Quest = 1)
+   - Player investigating (Knox Asian = 1)
+   - Asian vampire death (Knox Asian = 3)
+   - Gimble key collection (Knox Asian = 7)
+   - Knox completion report (Knox Asian = 4)
+
+2. **Arthur Knox Quest** depends on:
+   - Carson computer hacked (Arthur Knox = 2)
+   - Gimble killed (Arthur Knox = 3)
+   - Kilpatrick died (Arthur Knox = 7)
+
+3. **Bail Jumper Quest** depends on:
+   - Kilpatrick died (Bail Jumper = 5)
+
+### Quest Flow
+
+**Asian Vampire Quest Flow:**
+1. Player talks to Knox about Asian vampire (G.Knox_Quest = 1)
+2. Player investigates (Knox Asian = 1)
+3. Player views Virgil (Knox Asian = 9) - optional
+4. Asian vampire killed (Knox Asian = 3) - triggers quest update
+5. Player collects Gimble key (Knox Asian = 7) - final step
+6. Player reports completion (Knox Asian = 4) - completes quest
+
+**Arthur Knox Quest Flow:**
+1. Knox mentions Arthur (G.Knox_Arthur = 1)
+2. Carson computer hacked (Arthur Knox = 2)
+3. Player can choose to return or not (Arthur Knox = 3 if player refuses)
+4. Kilpatrick dies (Arthur Knox = 7)
+5. Knox completes his quest (affects Arthur quest outcome)
+
+
+## VMF Triggers and Call Sites
+
+**Source**: VampireRemake-KB research notes
+
+### Function Call Sites
+
+**gimbleDead()** - Called when Gimble dies
+- **Trigger**: VMF gimble_dead_relay ID 1139
+- **Source**: Stan_Gimble entity OnDeath event
+- **Action**: Sets Arthur Knox=3 and G.Gimble_Dead=1
+- **Related**: VMF L16816–17 triggers gimbleDead() via gimble_dead_relay
+- **VERIFIED**: KB research confirms VMF trigger and Python function
+
+**gimbleItemPickup()** - Called when player picks up Gimble's key
+- **Trigger**: VMF morgue_trunk ID 6146
+- **Action**: Sets Knox Asian=7 if player has item_k_gimble_key
+- **Related**: VMF L70542 calls gimbleItemPickup() on map load
+- **VERIFIED**: KB research confirms VMF trigger and Python function
+
+**gimbleQuestDone()** - Called to lock basement after quest
+- **Trigger**: VMF gimble_dead_relay ID 1139 and gimble_attack_check
+- **Action**: Locks intercom_button, optionally locks asementdr door
+- **Condition**: Called when G.Gimble_Dead=1 or G.Gimble_Vandal=1
+- **VERIFIED**: KB research confirms VMF triggers and Python function
+
+**knoxState()** - Called to handle Knox's presence
+- **Trigger**: Santa Monica hub, called when Mercurio_Quest==2 or Knox dies
+- **Action**: Removes Knox entity from hub, shows Knox in asylum based on conditions
+- **Related**: VMF knoxState() called from hub script
+- **VERIFIED**: KB research confirms function behavior
+
+### VMF Entity IDs
+
+**Stan_Gimble**: Basement pawn shop owner
+- Entity ID: 994
+- OnDeath triggers gimble_dead_relay and gimbleDeath()
+- Associated with doors: gimbledoor1/2/3
+
+**gimble_dead_relay**: Triggers Gimble death sequence
+- Entity ID: 1139
+- OnTrigger triggers sequence to unlock doors, teleport player, release Carson
+
+**morgue_trunk**: Medical clinic trunk
+- Entity ID: 6146
+- OnMapLoad calls gimbleItemPickup()
+- Stores gimble_ring and gimble_key
+
+### Quest Flow Triggers
+
+**Gimble Death Flow:**
+1. Player kills Stan_Gimble (entity death)
+2. OnDeath triggers gimble_dead_relay
+3. gimble_dead_relay triggers gimbleDeath() Python function
+4. Python function sets Arthur Knox=3 and G.Gimble_Dead=1
+5. Relay unlocks Gimble doors, teleports player, triggers Carson release
+
+**Gimble Key Flow:**
+1. Player enters medical clinic
+2. morgue_trunk OnMapLoad triggers gimbleItemPickup()
+3. Python function checks if player has item_k_gimble_key
+4. If yes, sets Knox Asian=7 (quest progression)
+
+### Known Gaps
+
+- sianVampDeath() call site not found in KB
+  - IMPLICATION: May be called directly from game engine on entity death
+  - SCOPE: Need to search VMF files for entity death handlers
+
+- kilpatrickDeath() call site not found in KB
+  - IMPLICATION: May be called from game engine or other scripts
+  - SCOPE: Need to search for Kilpatrick entity handlers
+
+- irgilViewed() call site not found in KB
+  - IMPLICATION: May be triggered by player dialogue or interaction
+  - SCOPE: Need to search for Virgil entity handlers
+
+- knoxDead() call site not found in KB
+  - IMPLICATION: Called when Knox entity dies
+  - SCOPE: Need to search for Knox entity handlers
+
+**Verified Call Sites in VMF and DLG Files**
+
+**kilpatrickDeath()** - Called when Arthur Kilpatrick dies
+- **Trigger 1**: `sm_bailbonds_1 - default.txt` (line 302)
+  - `"OnDeath" ",,,0,-1,kilpatrickDeath(),"`
+- **Trigger 2**: `sm_bailbonds_1 - up.txt` (line 693)
+  - `"OnDeath" ",,,0,-1,kilpatrickDeath(),"`
+- **Trigger 3**: `sm_bailbonds_1_d.vmf` (line 5081)
+  - `"OnDeath" ",,,0,-1,kilpatrickDeath(),"`
+- **VERIFIED**: Three distinct trigger locations in bail bondsman location
+- **Logic**: When player kills Arthur Kilpatrick, this function triggers
+
+**knoxDead()** - Called when Arthur Knox dies
+- **Trigger 1**: `sm_hub_1 - default.txt` (line 27214)
+  - `"OnDeath" ",,,0,-1,knoxDead(),"`
+- **Trigger 2**: `sm_hub_1 - up.txt` (line 27206)
+  - `"OnDeath" ",,,0,-1,knoxDead(),"`
+- **Trigger 3**: `sm_hub_1_d.vmf` (line 153175)
+  - `"OnDeath" ",,,0,-1,knoxDead(),"`
+- **VERIFIED**: Three distinct trigger locations in hub area
+- **Logic**: When Knox dies, this function triggers quest state changes
+
+**asianVampDeath()** - Called when Stan Gimble (Asian vampire) dies
+- **Trigger 1**: `sm_vamparena - default.txt` (line 313)
+  - `"OnDeath" ",,,0,-1,asianVampDeath(),"`
+- **Trigger 2**: `sm_vamparena - up.txt` (line 321)
+  - `"OnDeath" ",,,0,-1,asianVampDeath(),"`
+- **Trigger 3**: `sm_vamparena - up.txt` (line 372)
+  - `"OnDeath" ",,,0,-1,asianVampDeath(),"`
+- **Trigger 4**: `sm_vamparena.vmf` (line 13192)
+  - `"OnDeath" ",,,0,-1,asianVampDeath(),"`
+- **Trigger 5**: `sm_vamparena.vmf` (line 13253)
+  - `"OnDeath" ",,,0,-1,asianVampDeath(),"`
+- **VERIFIED**: Five distinct trigger locations in vampire arena
+- **Logic**: When Stan Gimble dies, this function triggers
+
+**virgilViewed()** - Called when player views Virgil's computer
+- **Trigger 1**: `hackterminals/krime_computer.txt` (line 62)
+  - `"runscript" "virgilViewed()"` // this text is printed when the player triggers this function
+- **VERIFIED**: One trigger location in crime computer
+- **Logic**: When player searches Virgil's computer, this function triggers
+
+### VMF Level Files Summary
+
+**sm_bailbonds_1**: Bail bondsman location (Arthur Kilpatrick)
+- Three trigger locations for kilpatrickDeath()
+- Main hub area for Arthur Kilpatrick quest
+
+**sm_hub_1**: Main hub area (Arthur Knox)
+- Three trigger locations for knoxDead()
+- Central area for Knox quest progression
+
+**sm_vamparena**: Vampire arena (Stan Gimble)
+- Five trigger locations for asianVampDeath()
+- Contains Gimble's arena fight and death triggers
+
+**hackterminals/krime_computer**: Crime computer terminal
+- One trigger location for virgilViewed()
+- Contains Virgil's morgue computer access
+

@@ -1,0 +1,19 @@
+﻿.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.trash/
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Игровые ресурсы
+*.bsp
+*.vpk
+*.vpk_*
+*.exe
+*.dll
+
+# Временные данные
+__pycache__/
+*.pyc

@@ -1,0 +1,22 @@
+digraph C {
+ graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.62", splines=ortho, fontname="DejaVu Sans", labelloc=t, label="SM-13.12 · Три уровня режиссуры", fontsize=21, fontcolor="#17263D"];
+ node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=12, margin="0.18,0.14", color="#D9DFE5", penwidth=1.2, fillcolor="#F7F8FA", fontcolor="#17263D"];
+ edge [fontname="DejaVu Sans", fontsize=10, color="#6F7B8A", arrowsize=0.8];
+ office [label="Python: populateOffice()\nTourette видна; Jeanette/Therese скрыты", fillcolor="#E6F2EF", color="#29836A"];
+ trigger [label="VMF: tourette_trigger → tourette_cam\nкамера cinematic / LookAtTarget_Snap", fillcolor="#EAF0F6"];
+ dialog [label="VMF: Tourette.StartPlayerDialog\nNPC default_camera = Tourette.txt", fillcolor="#EAF0F6"];
+ dlg [label="Tourette.dlg\npc.SetCamera(…) в узлах реплик", fillcolor="#F6EEE7"];
+ {rank=same; therese; jeanette; other;}
+ therese [label="tTherese.txt\nX=21 Y=−13 Z=59\nвзгляд: Bip01 Neck", fillcolor="#F9EEF2", color="#72384D"];
+ jeanette [label="tJeanette.txt\nX=21 Y=+13 Z=59\nвзгляд: Bip01 Neck", fillcolor="#ECF5FA", color="#3B769B"];
+ other [label="Tourette.txt / DialogDefault\nдругие вызовы камеры", fillcolor="#F3F4F6"];
+ point [label="Одна NPC-цель, два боковых ракурса\n[вывод из совместного анализа; кадр не проверен]", fillcolor="#FFF5E7", color="#B88440"];
+ office -> trigger [label="поздняя ветка / активация", color="#29836A"];
+ trigger -> dialog [label="I/O / по окончании анимации"];
+ dialog -> dlg;
+ dlg -> therese [label="45 вызовов", color="#72384D"];
+ dlg -> jeanette [label="44 вызова", color="#3B769B"];
+ dlg -> other [label="3 + 4 вызова"];
+ therese -> point [style=dashed,color="#72384D"];
+ jeanette -> point [style=dashed,color="#3B769B"];
+}

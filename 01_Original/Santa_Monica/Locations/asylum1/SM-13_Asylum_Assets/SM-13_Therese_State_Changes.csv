@@ -1,0 +1,65 @@
+﻿source_line,next,guard,action
+3,61,,G.Therese_Seduce = G.Therese_Seduce + 1
+14,31,,G.Therese_Seduce = G.Therese_Seduce - 1
+15,51,,G.Therese_Seduce = G.Therese_Seduce + 1
+23,31,,G.Therese_Seduce = G.Therese_Seduce - 1
+24,51,,G.Therese_Seduce = G.Therese_Seduce + 1
+33,41,,G.Therese_Seduce = G.Therese_Seduce - 1
+66,181,Thaumaturgy 1 & G.Patch_Plus == 1,dialogParticles()
+76,181,Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0,dialogParticles()
+111,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Feud = 1
+121,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Kill = 1
+142,191,,G.Therese_Seduce = G.Therese_Seduce - 1
+143,191,,G.Therese_Seduce = G.Therese_Seduce + 1
+145,161,,G.Therese_Seduce = G.Therese_Seduce - 2
+152,191,,G.Therese_Seduce = G.Therese_Seduce - 1
+154,191,,G.Therese_Seduce = G.Therese_Seduce + 1
+155,161,,G.Therese_Seduce = G.Therese_Seduce - 1
+201,#,"npc.SetDisposition(""Anger"",1)",G.Therese_Go = 1
+211,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Ghostbust = 1
+221,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Ghostitem = 1
+231,#,"npc.SetDisposition(""Neutral"",1)","G.Therese_Quest = 1; pc.SetQuest(""Hotel"",1)"
+232,661,,G.Therese_Seduce = G.Therese_Seduce - 1
+233,661,,G.Therese_Seduce = G.Therese_Seduce + 1
+241,#,"npc.SetDisposition(""Apathy"",1)",G.Therese_Bother = 1
+271,#,"npc.SetDisposition(""Anger"",3)","pc.SetQuest(""Release the Spirit"",2); pc.SetQuest(""Hotel"",6)"
+272,281,"pc.GetQuestState(""Slashterpiece"") == 3","pc.SetQuest(""Slashterpiece"",5)"
+273,281,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+274,281,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+275,281,"pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+284,371,Persuasion 2,G.Therese_Seduce = G.Therese_Seduce + 1
+293,301,"pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.RemoveItem(""item_g_oh_diary"")"
+295,351,,G.Therese_Seduce = G.Therese_Seduce + 1
+296,341,,G.Therese_Seduce = G.Therese_Seduce - 1
+313,321,G.Therese_Prince == 0,G.Therese_Seduce = G.Therese_Seduce - 1
+321,#,"npc.SetDisposition(""Anger"",1)",G.Therese_Prince = 1
+324,361,,G.Therese_Seduce = G.Therese_Seduce - 1
+333,341,,G.Therese_Seduce = G.Therese_Seduce - 1
+335,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+353,371,,G.Therese_Seduce = G.Therese_Seduce + 1
+381,#,"npc.SetDisposition(""Neutral"",1)","G.Therese_Quest = 3; pc.SetQuest(""Diner"",1)"
+382,411,,G.Therese_Questions = 2
+383,401,,G.Therese_Seduce = G.Therese_Seduce + 1; G.Therese_Questions = 2
+384,391,,G.Therese_Seduce = G.Therese_Seduce - 1; G.Therese_Questions = 2
+472,481,"pc.GetQuestState(""Slashterpiece"") != 2","pc.SetQuest(""Slashterpiece"",5)"
+473,481,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+474,481,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+475,481,"pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+493,521,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))","G.Therese_Liar = 1; pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce + 2"
+494,311,"not pc.HasItem(""item_g_ghost_pendant"")",G.Therese_Seduce = G.Therese_Seduce - 1
+495,501,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce - 1"
+496,521,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)","G.Therese_Liar = 1; pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce + 2"
+497,501,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce - 1"
+504,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+513,521,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce + 2"
+515,521,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce + 2"
+521,#,"npc.SetDisposition(""Neutral"",1)","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3)"
+531,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Respect = 1
+533,371,,G.Therese_Seduce = G.Therese_Seduce + 1
+534,541,,G.Therese_Seduce = G.Therese_Seduce - 1
+543,551,,G.Therese_Seduce = G.Therese_Seduce - 1
+544,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+554,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+561,#,,"pc.SetQuest(""Tourette"",2)"
+661,#,,"pc.GiveItem(""item_k_oceanhouse_sewer_key""); G.Therese_Questions = 1"
+674,191,G.Therese_Quest == 0,G.Therese_Questions = 0

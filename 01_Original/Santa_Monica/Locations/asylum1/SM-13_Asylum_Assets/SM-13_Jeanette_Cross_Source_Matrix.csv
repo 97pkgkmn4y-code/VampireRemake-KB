@@ -1,0 +1,11 @@
+﻿finding,source_a,evidence_a,source_b,evidence_b,status,limitation
+First meeting,jeanette.dlg,1: G.Jeanette_Know=1,santamonica.py,243-257: jeanetteDownstairs; 278-286: populateOffice,Confirmed code link,Actual call ordering and times_talked semantics depend on runtime
+Dialogue staged elevator,sm_asylum_1.vmf,"L38858 Jeanette, L39660 Jeanette_dialog, L39343 wait_for_elevator_relay",santamonica.py,243-257: enable trigger and relay,Confirmed wiring,Controller/camera actual playback untested
+Pendant given,jeanette.dlg,142/152/162/172/173/182/183 -> 191; RemoveItem,therese.dlg,"251, 255-257: Scorn==0 -> 261",Conditionally linked,Scorn may be influenced by history not observed
+Pendant refused,jeanette.dlg,"184/185 -> 581: Scorn=1, Hotel=5",therese.dlg,252-254: Scorn==1 -> 471,Confirmed dialogue dependence,Does not prove same runtime frame or quest ordering
+Gallery accepted,jeanette.dlg,361: Refuse=0 Quest=1 Slashterpiece=1 GiveItem(knife),santamonica.py,1964-1972 jeanetteRefused() reads Quest==1,Confirmed data dependency,Invocation site in surface VMF not provided
+Gallery rejected,jeanette.dlg,293/304 Refuse=1; 356/357/374 Refuse=2,santamonica.py,1973+: checks Refuse>=1 / Gallery_Slashed,Confirmed data dependency,"Depends on Jeanette_Fire, Story_State, Noir_Done"
+Office NPC choice,jeanette.dlg,361 Quest=1; 293/304/356/357/374 Refuse>0,santamonica.py,268-362 populateOffice() uses these variables,Confirmed code link,Priority of if/elif important; Quest=2 assignment missing
+Optional scene,jeanette.dlg,541: Boink=1 and Bloodloss(1),santamonica.py,236-240: jeanetteDialog triggers relay,Confirmed code link,Requires prior dialogue conditions and runtime
+Optional scene relay,santamonica.py,236-240,sm_asylum_1.vmf,L42122 jeanette_boink_relay,Confirmed entity link,Timing and animation not runtime tested
+Late-stage start conditions,jeanette.dlg,832-836 include flags Dead/Side and Quest4/Seduce8,santamonica.py,321-355 populateOffice() branches,Partial crosscheck,Do not infer outcome availability from condition alone

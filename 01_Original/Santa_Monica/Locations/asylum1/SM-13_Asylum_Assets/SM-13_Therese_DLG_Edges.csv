@@ -1,0 +1,336 @@
+source_id,target_id,kind,guard,source_line
+1,2,inferred_response_block,,2
+1,3,inferred_response_block,,3
+1,4,inferred_response_block,,4
+1,5,inferred_response_block,,5
+2,61,explicit_numeric,,2
+3,61,explicit_numeric,,3
+4,11,explicit_numeric,,4
+5,21,explicit_numeric,,5
+11,12,inferred_response_block,,12
+11,13,inferred_response_block,,13
+11,14,inferred_response_block,,14
+11,15,inferred_response_block,,15
+12,61,explicit_numeric,,12
+13,21,explicit_numeric,,13
+14,31,explicit_numeric,,14
+15,51,explicit_numeric,,15
+21,22,inferred_response_block,,22
+21,23,inferred_response_block,,23
+21,24,inferred_response_block,,24
+22,61,explicit_numeric,,22
+23,31,explicit_numeric,,23
+24,51,explicit_numeric,,24
+31,32,inferred_response_block,,32
+31,33,inferred_response_block,,33
+32,61,explicit_numeric,,32
+33,41,explicit_numeric,,33
+41,42,inferred_response_block,,42
+42,61,explicit_numeric,,42
+51,52,inferred_response_block,,52
+52,61,explicit_numeric,,52
+61,62,inferred_response_block,"not IsClan(pc,""Nosferatu"")",62
+61,63,inferred_response_block,"IsClan(pc,""Nosferatu"")",63
+61,64,inferred_response_block,Dominate 1,64
+61,65,inferred_response_block,,65
+61,66,inferred_response_block,Thaumaturgy 1 & G.Patch_Plus == 1,66
+62,81,explicit_numeric,"not IsClan(pc,""Nosferatu"")",62
+63,91,explicit_numeric,"IsClan(pc,""Nosferatu"")",63
+64,181,explicit_numeric,Dominate 1,64
+65,71,explicit_numeric,,65
+66,181,explicit_numeric,Thaumaturgy 1 & G.Patch_Plus == 1,66
+71,72,inferred_response_block,"not IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",72
+71,73,inferred_response_block,"IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",73
+71,74,inferred_response_block,Dominate 1 & G.Therese_Bother == 0,74
+71,75,inferred_response_block,G.Therese_Questions == 1,75
+71,76,inferred_response_block,Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0,76
+71,77,inferred_response_block,G.Therese_Questions == 1,77
+72,81,explicit_numeric,"not IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",72
+73,91,explicit_numeric,"IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",73
+74,181,explicit_numeric,Dominate 1 & G.Therese_Bother == 0,74
+75,671,explicit_numeric,G.Therese_Questions == 1,75
+76,181,explicit_numeric,Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0,76
+81,82,inferred_response_block,,82
+81,83,inferred_response_block,,83
+82,141,explicit_numeric,,82
+83,101,explicit_numeric,,83
+91,92,inferred_response_block,,92
+91,93,inferred_response_block,,93
+92,141,explicit_numeric,,92
+93,101,explicit_numeric,,93
+101,102,inferred_response_block,G.Therese_Questions == 0,102
+101,103,inferred_response_block,G.Therese_Kill == 0 and G.Therese_Questions == 0,103
+101,104,inferred_response_block,G.Therese_Questions == 1,104
+101,105,inferred_response_block,G.Therese_Kill == 0 and G.Therese_Questions == 1,105
+101,106,inferred_response_block,G.Therese_Questions == 1,106
+101,107,inferred_response_block,G.Therese_Questions == 1,107
+102,111,explicit_numeric,G.Therese_Questions == 0,102
+103,121,explicit_numeric,G.Therese_Kill == 0 and G.Therese_Questions == 0,103
+104,71,explicit_numeric,G.Therese_Questions == 1,104
+105,121,explicit_numeric,G.Therese_Kill == 0 and G.Therese_Questions == 1,105
+106,671,explicit_numeric,G.Therese_Questions == 1,106
+111,112,inferred_response_block,,112
+111,113,inferred_response_block,G.Therese_Kill == 0,113
+112,131,explicit_numeric,,112
+113,121,explicit_numeric,G.Therese_Kill == 0,113
+121,122,inferred_response_block,G.Therese_Feud == 0 and G.Therese_Questions == 0,122
+121,123,inferred_response_block,G.Therese_Feud == 1 and G.Therese_Questions == 0,123
+121,124,inferred_response_block,G.Therese_Questions == 1,124
+121,125,inferred_response_block,G.Therese_Questions == 1,125
+122,111,explicit_numeric,G.Therese_Feud == 0 and G.Therese_Questions == 0,122
+123,131,explicit_numeric,G.Therese_Feud == 1 and G.Therese_Questions == 0,123
+124,671,explicit_numeric,G.Therese_Questions == 1,124
+131,132,inferred_response_block,,132
+132,141,explicit_numeric,,132
+141,142,inferred_response_block,,142
+141,143,inferred_response_block,,143
+141,144,inferred_response_block,,144
+141,145,inferred_response_block,,145
+142,191,explicit_numeric,,142
+143,191,explicit_numeric,,143
+144,151,explicit_numeric,,144
+145,161,explicit_numeric,,145
+151,152,inferred_response_block,,152
+151,154,inferred_response_block,,154
+151,155,inferred_response_block,,155
+152,191,explicit_numeric,,152
+154,191,explicit_numeric,,154
+155,161,explicit_numeric,,155
+161,163,inferred_response_block,,163
+161,164,inferred_response_block,,164
+163,191,explicit_numeric,,163
+164,171,explicit_numeric,,164
+171,172,inferred_response_block,G.Therese_Questions == 0,172
+171,173,inferred_response_block,G.Therese_Questions == 1,173
+172,191,explicit_numeric,G.Therese_Questions == 0,172
+173,241,explicit_numeric,G.Therese_Questions == 1,173
+181,182,inferred_response_block,"not IsClan(pc,""Nosferatu"")",182
+181,183,inferred_response_block,"IsClan(pc,""Nosferatu"")",183
+182,81,explicit_numeric,"not IsClan(pc,""Nosferatu"")",182
+183,91,explicit_numeric,"IsClan(pc,""Nosferatu"")",183
+191,192,inferred_response_block,G.Therese_Go == 0 and G.Therese_Questions == 0,192
+191,193,inferred_response_block,G.Therese_Ghostitem == 0 and G.Therese_Questions == 0,193
+191,194,inferred_response_block,G.Therese_Go == 0 and G.Therese_Questions == 0,194
+191,196,inferred_response_block,G.Therese_Questions == 1,196
+191,197,inferred_response_block,G.Therese_Questions == 1,197
+192,231,explicit_numeric,G.Therese_Go == 0 and G.Therese_Questions == 0,192
+193,221,explicit_numeric,G.Therese_Ghostitem == 0 and G.Therese_Questions == 0,193
+194,201,explicit_numeric,G.Therese_Go == 0 and G.Therese_Questions == 0,194
+196,671,explicit_numeric,G.Therese_Questions == 1,196
+201,202,inferred_response_block,,202
+201,203,inferred_response_block,G.Therese_Ghostitem == 0,203
+201,204,inferred_response_block,G.Therese_Ghostbust == 0,204
+202,231,explicit_numeric,,202
+203,221,explicit_numeric,G.Therese_Ghostitem == 0,203
+204,211,explicit_numeric,G.Therese_Ghostbust == 0,204
+211,212,inferred_response_block,,212
+211,213,inferred_response_block,G.Therese_Ghostitem == 0,213
+211,214,inferred_response_block,G.Therese_Go == 0,214
+212,231,explicit_numeric,,212
+213,221,explicit_numeric,G.Therese_Ghostitem == 0,213
+214,201,explicit_numeric,G.Therese_Go == 0,214
+221,222,inferred_response_block,,222
+221,223,inferred_response_block,G.Therese_Ghostbust == 0,223
+221,224,inferred_response_block,G.Therese_Go == 0,224
+222,231,explicit_numeric,,222
+223,211,explicit_numeric,G.Therese_Ghostbust == 0,223
+224,201,explicit_numeric,G.Therese_Go == 0,224
+231,232,inferred_response_block,,232
+231,233,inferred_response_block,,233
+231,234,inferred_response_block,,234
+232,661,explicit_numeric,,232
+233,661,explicit_numeric,,233
+234,661,explicit_numeric,,234
+241,242,inferred_response_block,,242
+241,243,inferred_response_block,,243
+242,671,explicit_numeric,,242
+251,252,inferred_response_block,G.Jeanette_Scorn == 1,252
+251,253,inferred_response_block,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,253
+251,254,inferred_response_block,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,254
+251,255,inferred_response_block,G.Jeanette_Scorn == 0,255
+251,256,inferred_response_block,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,256
+251,257,inferred_response_block,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,257
+252,471,explicit_numeric,G.Jeanette_Scorn == 1,252
+253,471,explicit_numeric,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,253
+254,471,explicit_numeric,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,254
+255,261,explicit_numeric,G.Jeanette_Scorn == 0,255
+256,261,explicit_numeric,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,256
+257,261,explicit_numeric,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,257
+261,262,inferred_response_block,,262
+261,263,inferred_response_block,G.Extra_Lines == 1,263
+261,264,inferred_response_block,G.Extra_Lines == 1,264
+262,271,explicit_numeric,,262
+263,271,explicit_numeric,G.Extra_Lines == 1,263
+264,271,explicit_numeric,G.Extra_Lines == 1,264
+271,272,inferred_response_block,"pc.GetQuestState(""Slashterpiece"") == 3",272
+271,273,inferred_response_block,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",273
+271,274,inferred_response_block,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",274
+271,275,inferred_response_block,"pc.GetQuestState(""Slashterpiece"") != 3",275
+272,281,explicit_numeric,"pc.GetQuestState(""Slashterpiece"") == 3",272
+273,281,explicit_numeric,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",273
+274,281,explicit_numeric,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",274
+275,281,explicit_numeric,"pc.GetQuestState(""Slashterpiece"") != 3",275
+281,282,inferred_response_block,,282
+281,283,inferred_response_block,,283
+281,284,inferred_response_block,Persuasion 2,284
+282,301,explicit_numeric,,282
+283,291,explicit_numeric,,283
+284,371,explicit_numeric,Persuasion 2,284
+291,292,inferred_response_block,,292
+291,293,inferred_response_block,"pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1",293
+291,294,inferred_response_block,,294
+291,295,inferred_response_block,,295
+291,296,inferred_response_block,,296
+292,301,explicit_numeric,,292
+293,301,explicit_numeric,"pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1",293
+294,331,explicit_numeric,,294
+295,351,explicit_numeric,,295
+296,341,explicit_numeric,,296
+301,302,inferred_response_block,,302
+301,303,inferred_response_block,,303
+301,304,inferred_response_block,G.Therese_Prince == 0,304
+301,305,inferred_response_block,,305
+302,371,explicit_numeric,,302
+303,331,explicit_numeric,,303
+304,321,explicit_numeric,G.Therese_Prince == 0,304
+305,311,explicit_numeric,,305
+311,312,inferred_response_block,,312
+311,313,inferred_response_block,G.Therese_Prince == 0,313
+312,371,explicit_numeric,,312
+313,321,explicit_numeric,G.Therese_Prince == 0,313
+321,322,inferred_response_block,,322
+321,323,inferred_response_block,,323
+321,324,inferred_response_block,,324
+322,371,explicit_numeric,,322
+323,331,explicit_numeric,,323
+324,361,explicit_numeric,,324
+331,332,inferred_response_block,,332
+331,333,inferred_response_block,,333
+331,334,inferred_response_block,G.Therese_Prince == 0,334
+331,335,inferred_response_block,,335
+332,371,explicit_numeric,,332
+333,341,explicit_numeric,,333
+334,321,explicit_numeric,G.Therese_Prince == 0,334
+335,311,explicit_numeric,,335
+341,342,inferred_response_block,,342
+341,343,inferred_response_block,,343
+342,371,explicit_numeric,,342
+343,311,explicit_numeric,,343
+351,352,inferred_response_block,,352
+351,353,inferred_response_block,,353
+351,354,inferred_response_block,G.Therese_Prince == 0,354
+352,371,explicit_numeric,,352
+353,371,explicit_numeric,,353
+354,321,explicit_numeric,G.Therese_Prince == 0,354
+361,362,inferred_response_block,,362
+362,371,explicit_numeric,,362
+371,372,inferred_response_block,,372
+372,381,explicit_numeric,,372
+381,382,inferred_response_block,,382
+381,383,inferred_response_block,,383
+381,384,inferred_response_block,,384
+382,411,explicit_numeric,,382
+383,401,explicit_numeric,,383
+384,391,explicit_numeric,,384
+391,392,inferred_response_block,,392
+391,394,inferred_response_block,"not IsClan(pc,""Malkavian"")",394
+401,402,inferred_response_block,,402
+411,412,inferred_response_block,,412
+421,422,inferred_response_block,,422
+431,432,inferred_response_block,,432
+441,443,inferred_response_block,G.Story_State > 20 and G.Credits_Running == 0,443
+441,444,inferred_response_block,G.Story_State > 35,444
+441,445,inferred_response_block,,445
+441,446,inferred_response_block,"not IsClan(pc,""Malkavian"")",446
+443,451,explicit_numeric,G.Story_State > 20 and G.Credits_Running == 0,443
+444,461,explicit_numeric,G.Story_State > 35,444
+451,452,inferred_response_block,,452
+451,453,inferred_response_block,"not IsClan(pc,""Malkavian"")",453
+461,462,inferred_response_block,,462
+461,463,inferred_response_block,"not IsClan(pc,""Malkavian"")",463
+471,472,inferred_response_block,"pc.GetQuestState(""Slashterpiece"") != 2",472
+471,473,inferred_response_block,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",473
+471,474,inferred_response_block,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",474
+471,475,inferred_response_block,"pc.GetQuestState(""Slashterpiece"") == 2",475
+472,481,explicit_numeric,"pc.GetQuestState(""Slashterpiece"") != 2",472
+473,481,explicit_numeric,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",473
+474,481,explicit_numeric,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",474
+475,481,explicit_numeric,"pc.GetQuestState(""Slashterpiece"") == 2",475
+481,482,inferred_response_block,G.Therese_Seduce >= 3,482
+481,483,inferred_response_block,G.Therese_Seduce < 3,483
+482,511,explicit_numeric,G.Therese_Seduce >= 3,482
+483,491,explicit_numeric,G.Therese_Seduce < 3,483
+491,492,inferred_response_block,"not pc.HasItem(""item_g_ghost_pendant"")",492
+491,493,inferred_response_block,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))",493
+491,494,inferred_response_block,"not pc.HasItem(""item_g_ghost_pendant"")",494
+491,495,inferred_response_block,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))",495
+491,496,inferred_response_block,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)",496
+491,497,inferred_response_block,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)",497
+492,501,explicit_numeric,"not pc.HasItem(""item_g_ghost_pendant"")",492
+493,521,explicit_numeric,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))",493
+494,311,explicit_numeric,"not pc.HasItem(""item_g_ghost_pendant"")",494
+495,501,explicit_numeric,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))",495
+496,521,explicit_numeric,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)",496
+497,501,explicit_numeric,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)",497
+501,502,inferred_response_block,,502
+501,503,inferred_response_block,,503
+501,504,inferred_response_block,,504
+502,371,explicit_numeric,,502
+503,301,explicit_numeric,,503
+504,311,explicit_numeric,,504
+511,512,inferred_response_block,"not pc.HasItem(""item_g_ghost_pendant"")",512
+511,513,inferred_response_block,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)",513
+511,514,inferred_response_block,"G.Extra_Lines == 1 and not pc.HasItem(""item_g_ghost_pendant"")",514
+511,515,inferred_response_block,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1",515
+512,531,explicit_numeric,"not pc.HasItem(""item_g_ghost_pendant"")",512
+513,521,explicit_numeric,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)",513
+514,531,explicit_numeric,"G.Extra_Lines == 1 and not pc.HasItem(""item_g_ghost_pendant"")",514
+515,521,explicit_numeric,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1",515
+521,522,inferred_response_block,G.Therese_Liar == 0,522
+521,523,inferred_response_block,G.Therese_Liar == 1,523
+522,531,explicit_numeric,G.Therese_Liar == 0,522
+523,511,explicit_numeric,G.Therese_Liar == 1,523
+531,532,inferred_response_block,,532
+531,533,inferred_response_block,,533
+531,534,inferred_response_block,,534
+532,371,explicit_numeric,,532
+533,371,explicit_numeric,,533
+534,541,explicit_numeric,,534
+541,542,inferred_response_block,,542
+541,543,inferred_response_block,,543
+541,544,inferred_response_block,,544
+542,371,explicit_numeric,,542
+543,551,explicit_numeric,,543
+544,311,explicit_numeric,,544
+551,552,inferred_response_block,,552
+551,553,inferred_response_block,"not IsClan(pc,""Malkavian"")",553
+551,554,inferred_response_block,,554
+552,371,explicit_numeric,,552
+553,371,explicit_numeric,"not IsClan(pc,""Malkavian"")",553
+554,311,explicit_numeric,,554
+561,562,inferred_response_block,,562
+661,662,inferred_response_block,"IsClan(pc,""Nosferatu"")",662
+661,663,inferred_response_block,"IsClan(pc,""Toreador"")",663
+661,664,inferred_response_block,,664
+661,666,inferred_response_block,"not IsClan(pc,""Malkavian"") and not IsClan(pc,""Toreador"") and not IsClan(pc,""Nosferatu"")",666
+662,241,explicit_numeric,"IsClan(pc,""Nosferatu"")",662
+663,171,explicit_numeric,"IsClan(pc,""Toreador"")",663
+664,241,explicit_numeric,,664
+666,171,explicit_numeric,"not IsClan(pc,""Malkavian"") and not IsClan(pc,""Toreador"") and not IsClan(pc,""Nosferatu"")",666
+671,672,inferred_response_block,,672
+671,673,inferred_response_block,,673
+671,674,inferred_response_block,G.Therese_Quest == 0,674
+671,675,inferred_response_block,G.Therese_Quest == 1,675
+671,676,inferred_response_block,,676
+672,101,explicit_numeric,,672
+673,71,explicit_numeric,,673
+674,191,explicit_numeric,G.Therese_Quest == 0,674
+675,191,explicit_numeric,G.Therese_Quest == 1,675
+713,431,explicit_numeric,G.Jeanette_Dead == 1 and G.Therese_Side < 3,713
+714,441,explicit_numeric,G.Jeanette_Dead == 1 and G.Therese_Side >= 3,714
+715,421,explicit_numeric,G.Therese_Quest == 3,715
+716,251,explicit_numeric,G.Jeanette_Refuse == 2,716
+717,251,explicit_numeric,G.Jeanette_Refuse == 1,717
+718,251,explicit_numeric,G.Jeanette_Quest == 2,718
+719,241,explicit_numeric,G.Therese_Quest == 1,719
+720,1,explicit_numeric,npc.times_talked == 1,720

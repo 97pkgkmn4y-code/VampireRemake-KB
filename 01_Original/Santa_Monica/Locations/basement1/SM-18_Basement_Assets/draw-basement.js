@@ -1,0 +1,16 @@
+const fs=require('fs'),path=require('path'),d=require('./vmf-extract.json');
+const panels=[{name:'Entry and workshop',floor:-89,cut:-50,marks:['basement1','Stan_Gimble','leveldoor','stairdoor','waitingroomdoor','Carson']},{name:'Cells and Carson',floor:-389,cut:-350,marks:['Carson','gimbledoor1','gimbledoor2','gimbledoor3','gimble_attack','carson_switch','celldoor4','celldoor5']}];
+const esc=x=>String(x).replaceAll('&','&amp;').replaceAll('<','&lt;');
+let s=`<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="750" viewBox="0 0 1800 750"><rect width="1800" height="750" fill="#101820"/><style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e7e8e4}.h{font-size:24px;font-weight:bold}.sm{font-size:13px}.grid{stroke:#30444e}.floor{fill:#355c68;stroke:#90b5bf;stroke-width:1;fill-opacity:.8}.wall{fill:#8c6e59;stroke:#c5a58c;stroke-width:1;fill-opacity:.8}.npc{fill:#8bdaa3;stroke:#101820;stroke-width:2}.other{fill:#f1b56b;stroke:#101820;stroke-width:2}.num{font-size:10px;fill:#101820;font-weight:bold}</style><text class="h" x="24" y="32">Gimble basement — VMF world coordinates</text><text class="sm" x="24" y="54">Two selected supporting elevations. Clipped brush polygons and wall sections; points are entity origins, not verified passages.</text>`;
+for(let j=0;j<2;j++){
+ const p=panels[j],ox=25+j*875,X=x=>ox+30+(x+1352)*.43,Y=y=>615-(y+806)*.43;
+ const poly=(v,cls,tip)=>`<polygon class="${cls}" points="${v.map(q=>X(q[0])+','+Y(q[1])).join(' ')}"><title>${esc(tip)}</title></polygon>`;
+ s+=`<rect x="${ox}" y="75" width="855" height="625" rx="10" fill="#1b2932" stroke="#4c6671"/><text class="h" x="${ox+17}" y="107">${p.name} · floor Z=${p.floor}</text>`;
+ for(const x of [-1200,-800,-400,0,400])s+=`<line class="grid" x1="${X(x)}" x2="${X(x)}" y1="${Y(-806)}" y2="${Y(218)}"/><text class="sm" x="${X(x)+3}" y="630">${x}</text>`;
+ for(const y of [-800,-400,0,200])s+=`<line class="grid" x1="${X(-1352)}" x2="${X(492)}" y1="${Y(y)}" y2="${Y(y)}"/><text class="sm" x="${ox+4}" y="${Y(y)+4}">${y}</text>`;
+ for(const f of d.faces.filter(f=>Math.abs(f.z-p.floor)<.5&&f.area>250))s+=poly(f.vertices,'floor',`solid ${f.solid}, side ${f.side}, L${f.line}`);
+ for(const c of d.sections.filter(c=>c.z===p.cut&&['worldspawn','func_detail'].includes(c.parent)&&c.area<10000)){const xs=c.vertices.map(q=>q[0]),ys=c.vertices.map(q=>q[1]);if(Math.min(Math.max(...xs)-Math.min(...xs),Math.max(...ys)-Math.min(...ys))>48)continue;s+=poly(c.vertices,'wall',`solid ${c.solid}, cut Z=${p.cut}`)}
+ let n=0;for(const name of p.marks){const e=d.entities.find(e=>e.targetname?.toLowerCase()===name.toLowerCase());if(!e?.origin)continue;let q=e.origin.split(' ').map(Number);if(Math.abs(q[2]-p.floor)>95)continue;n++;const cl=/^npc_/.test(e.classname)?'npc':'other';s+=`<circle class="${cl}" cx="${X(q[0])}" cy="${Y(q[1])}" r="6"><title>${esc(name)}, ID ${e.id}, (${e.origin}), L${e.line}</title></circle><text class="num" x="${X(q[0])-3}" y="${Y(q[1])+3}">${n}</text><text class="sm" x="${ox+12+Math.floor((n-1)/3)*275}" y="${650+((n-1)%3)*18}">${n}. ${name} · ${e.id}</text>`}
+}
+s+=`<text class="sm" x="24" y="730">Source: UP SDK sm_basement_1.vmf · Blue: floor face · Brown: narrow solid at section height · Green: NPC · Orange: other entity</text></svg>`;
+fs.writeFileSync(path.join(__dirname,'SM-18_Basement_Levels.svg'),s);

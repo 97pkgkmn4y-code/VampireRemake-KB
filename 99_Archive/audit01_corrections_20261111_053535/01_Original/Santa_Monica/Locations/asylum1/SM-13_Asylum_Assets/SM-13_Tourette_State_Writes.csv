@@ -1,0 +1,68 @@
+﻿id,field,trigger_expression,expression,target,contains_global
+53,action,G.Therese_Seduce >= 5,G.Therese_Side = G.Therese_Side + 1,281,G.Therese_Side
+54,action,G.Jeanette_Seduce >= 8 and G.Patch_Plus == 0,G.Jeanette_Side = G.Jeanette_Side + 1,291,G.Jeanette_Side
+55,action,G.Jeanette_Seduce >= 5 and G.Patch_Plus == 1,G.Jeanette_Side = G.Jeanette_Side + 1,291,G.Jeanette_Side
+56,action,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,61,G.Tourette_Side
+102,action,,G.Therese_Side = G.Therese_Side + 1,111,G.Therese_Side
+103,action,,G.Jeanette_Side = G.Jeanette_Side + 1,301,G.Jeanette_Side
+104,action,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,111,G.Tourette_Side
+122,action,,G.Therese_Side = G.Therese_Side + 1,131,G.Therese_Side
+123,action,,G.Jeanette_Side = G.Jeanette_Side + 1,311,G.Jeanette_Side
+124,action,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,331,G.Tourette_Side
+152,action,,G.Therese_Side = G.Therese_Side + 1,161,G.Therese_Side
+153,action,,G.Jeanette_Side = G.Jeanette_Side + 1,161,G.Jeanette_Side
+154,action,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,161,G.Tourette_Side
+172,action,,G.Therese_Side = G.Therese_Side + 1,181,G.Therese_Side
+173,action,G.Jeanette_Refuse == 0,G.Jeanette_Side = G.Jeanette_Side + 1,191,G.Jeanette_Side
+174,action,Persuasion 4 & G.Tourette_Side == 4,G.Tourette_Side = G.Tourette_Side + 1,351,G.Tourette_Side
+202,action,,G.Jeanette_Side = G.Jeanette_Side + 1,211,G.Jeanette_Side
+203,action,,G.Therese_Side = G.Therese_Side + 1,371,G.Therese_Side
+204,action,Persuasion 4 & (G.Therese_Seduce >= 4 and G.Jeanette_Seduce >= 4),G.Tourette_Side = G.Tourette_Side + 1,211,G.Tourette_Side
+252,action,,G.Therese_Side = G.Therese_Side + 1,261,G.Therese_Side
+253,action,,G.Jeanette_Side = G.Jeanette_Side + 1,401,G.Jeanette_Side
+254,action,G.Tourette_Side >= 5,G.Tourette_Side = G.Tourette_Side + 1,421,G.Tourette_Side
+272,action,G.Therese_Side >= 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 1,921,"G.Jeanette_Dead,G.Tourette_Ending"
+273,action,G.Jeanette_Side >= 4,G.Therese_Dead = 1; G.Tourette_Ending = 2,921,"G.Therese_Dead,G.Tourette_Ending"
+274,action,G.Therese_Side < 4,G.Therese_Dead = 1; G.Tourette_Ending = 3,921,"G.Therese_Dead,G.Tourette_Ending"
+275,action,G.Jeanette_Side < 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,921,"G.Jeanette_Dead,G.Tourette_Ending"
+277,action,G.Tourette_Side < 5,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,921,"G.Jeanette_Dead,G.Tourette_Ending"
+422,action,G.Tourette_Live == 0,G.Tourette_Live = 1,451,G.Tourette_Live
+423,action,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,431,G.Tourette_Crazy
+424,action,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,471,G.Tourette_Powerful
+425,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+442,action,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,471,G.Tourette_Powerful
+443,action,G.Tourette_Live == 0,G.Tourette_Live = 1,451,G.Tourette_Live
+444,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+462,action,G.Tourette_Crazy == 0,G.Tourette_Crazy = 1,431,G.Tourette_Crazy
+463,action,G.Tourette_Powerful == 0,G.Tourette_Powerful = 1,471,G.Tourette_Powerful
+464,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+494,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+501,action,"pc.SetCamera(""tTherese"") or npc.SetDisposition(""apathy"",1)",G.Tourette_Power = 1,#,G.Tourette_Power
+515,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+541,action,"pc.SetCamera(""tJeanette"") or npc.SetDisposition(""anger"",2)",G.Tourette_Sabotage = 1,#,G.Tourette_Sabotage
+544,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+563,action,,G.Tourette_Side = G.Tourette_Side - 1,271,G.Tourette_Side
+652,action,"not pc.HasItem(""item_w_thirtyeight"")","pc.GiveItem(""item_w_thirtyeight"")",661,
+653,action,"pc.HasItem(""item_w_thirtyeight"")","pc.GiveAmmo(""item_w_thirtyeight"", 6)",661,
+663,action,G.Patch_Plus == 1,FindPlayer().HumanityAdd( 1 ),671,
+671,action,"pc.SetCamera(""tJeanette"") or npc.SetDisposition(""joy"",1)","G.Tourette_Wins = 1; pc.SetQuest(""Tourette"",5); pc.SetQuest(""Warehouse"",3)",#,G.Tourette_Wins
+711,action,"pc.SetCamera(""DialogDefault"") or npc.SetDisposition(""sad"",1)",G.Tourette_Change = 1,#,G.Tourette_Change
+713,action,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant"")",0,
+714,action,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary"")",0,
+721,action,"npc.SetDisposition(""neutral"",1)","pc.SetQuest(""Tourette"",4); pc.SetQuest(""Warehouse"",3)",#,
+722,action,G.Therese_Side >= 4,G.Tourette_Change = 2,731,G.Tourette_Change
+723,action,G.Jeanette_Side >= 4,G.Tourette_Change = 2,0,G.Tourette_Change
+724,action,G.Therese_Side < 4,G.Tourette_Change = 2,0,G.Tourette_Change
+725,action,G.Therese_Side >= 4,G.Tourette_Change = 2,731,G.Tourette_Change
+726,action,G.Jeanette_Side >= 4,G.Tourette_Change = 2,0,G.Tourette_Change
+741,action,"pc.SetCamera(""DialogDefault"") or npc.SetDisposition(""anger"",2)",G.Tourette_Change = 1,#,G.Tourette_Change
+743,action,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant"")",0,
+744,action,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.SetQuest(""Hotel"",8); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary"")",0,
+761,action,"npc.SetDisposition(""sad"",3)","pc.SetQuest(""Tourette"",3); pc.SetQuest(""Warehouse"",3)",#,
+771,action,"npc.SetDisposition(""sad"",2)",G.Jeanette_Invite = 1,#,G.Jeanette_Invite
+802,action,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,811,G.Tourette_1
+803,action,G.Story_State >= 20 and G.Tourette_2 == 0,G.Tourette_2 = 1,841,G.Tourette_2
+832,action,G.Story_State >= 20 and G.Tourette_2 == 0,G.Tourette_2 = 1,841,G.Tourette_2
+872,action,,"pc.SetQuest(""Release the Spirit"",4); pc.SetQuest(""Hotel"",7)",881,
+882,action,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,811,G.Tourette_1
+932,action,G.Story_State >= 10 and G.Tourette_1 == 0,G.Tourette_1 = 1,811,G.Tourette_1

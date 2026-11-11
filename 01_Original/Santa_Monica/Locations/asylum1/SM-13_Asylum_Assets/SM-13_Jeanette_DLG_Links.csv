@@ -1,0 +1,370 @@
+source_id,target_id,edge_type,condition,explanation
+1,2,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+1,3,inferred_response_block,"Seduction 2 & not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+1,4,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+1,5,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+1,6,inferred_response_block,"IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+1,7,inferred_response_block,"IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+2,11,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+3,21,explicit_numeric,"Seduction 2 & not IsClan(pc,""Malkavian"")",Literal target in DLG
+4,41,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+5,51,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+6,751,explicit_numeric,"IsClan(pc,""Malkavian"")",Literal target in DLG
+7,751,explicit_numeric,"IsClan(pc,""Malkavian"")",Literal target in DLG
+11,12,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+11,13,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+11,14,inferred_response_block,G.Jeanette_Curious == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+12,71,explicit_numeric,,Literal target in DLG
+13,71,explicit_numeric,,Literal target in DLG
+14,51,explicit_numeric,G.Jeanette_Curious == 0,Literal target in DLG
+21,22,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+21,23,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+22,31,explicit_numeric,,Literal target in DLG
+23,11,explicit_numeric,,Literal target in DLG
+31,32,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+31,33,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+32,11,explicit_numeric,,Literal target in DLG
+33,11,explicit_numeric,,Literal target in DLG
+41,42,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+41,43,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+41,44,inferred_response_block,"not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+41,45,inferred_response_block,"IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+41,46,inferred_response_block,"IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+41,47,inferred_response_block,"IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+42,11,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+43,61,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+44,51,explicit_numeric,"not IsClan(pc,""Malkavian"")",Literal target in DLG
+45,11,explicit_numeric,"IsClan(pc,""Malkavian"")",Literal target in DLG
+46,781,explicit_numeric,"IsClan(pc,""Malkavian"")",Literal target in DLG
+47,51,explicit_numeric,"IsClan(pc,""Malkavian"")",Literal target in DLG
+51,53,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+51,54,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+53,71,explicit_numeric,,Literal target in DLG
+54,81,explicit_numeric,,Literal target in DLG
+61,62,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+61,64,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+62,11,explicit_numeric,,Literal target in DLG
+64,51,explicit_numeric,,Literal target in DLG
+71,72,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+71,73,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+71,74,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+81,82,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+91,92,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+91,93,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+91,94,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+91,95,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+92,141,explicit_numeric,,Literal target in DLG
+93,111,explicit_numeric,,Literal target in DLG
+94,121,explicit_numeric,,Literal target in DLG
+95,131,explicit_numeric,,Literal target in DLG
+101,102,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+101,103,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+101,104,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+101,105,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+102,141,explicit_numeric,,Literal target in DLG
+103,111,explicit_numeric,,Literal target in DLG
+104,121,explicit_numeric,,Literal target in DLG
+105,131,explicit_numeric,,Literal target in DLG
+111,112,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+111,113,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+112,141,explicit_numeric,,Literal target in DLG
+113,151,explicit_numeric,,Literal target in DLG
+121,122,inferred_response_block,"IsClan(pc,""Nosferatu"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+121,123,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+121,124,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+121,125,inferred_response_block,Seduction 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+122,591,explicit_numeric,"IsClan(pc,""Nosferatu"")",Literal target in DLG
+123,111,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+124,111,explicit_numeric,,Literal target in DLG
+125,571,explicit_numeric,Seduction 2,Literal target in DLG
+131,132,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+131,133,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+132,111,explicit_numeric,,Literal target in DLG
+133,111,explicit_numeric,,Literal target in DLG
+141,142,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+141,143,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+142,191,explicit_numeric,,Literal target in DLG
+143,161,explicit_numeric,,Literal target in DLG
+151,152,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+151,153,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+152,191,explicit_numeric,,Literal target in DLG
+153,161,explicit_numeric,,Literal target in DLG
+161,162,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+161,163,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+161,164,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+162,191,explicit_numeric,,Literal target in DLG
+163,171,explicit_numeric,,Literal target in DLG
+164,171,explicit_numeric,,Literal target in DLG
+171,172,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+171,173,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+171,174,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+171,175,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+172,191,explicit_numeric,,Literal target in DLG
+173,191,explicit_numeric,,Literal target in DLG
+174,181,explicit_numeric,,Literal target in DLG
+175,181,explicit_numeric,,Literal target in DLG
+181,182,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+181,183,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+181,184,inferred_response_block,Humanity 5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+181,185,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+182,191,explicit_numeric,,Literal target in DLG
+183,191,explicit_numeric,,Literal target in DLG
+184,581,explicit_numeric,Humanity 5,Literal target in DLG
+185,581,explicit_numeric,,Literal target in DLG
+191,192,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+191,193,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+191,194,inferred_response_block,"Seduction 2 & not IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+191,195,inferred_response_block,"Seduction 2 & IsClan(pc,""Malkavian"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+192,221,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+193,221,explicit_numeric,,Literal target in DLG
+194,201,explicit_numeric,"Seduction 2 & not IsClan(pc,""Malkavian"")",Literal target in DLG
+195,801,explicit_numeric,"Seduction 2 & IsClan(pc,""Malkavian"")",Literal target in DLG
+201,202,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+201,203,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+202,221,explicit_numeric,,Literal target in DLG
+203,211,explicit_numeric,,Literal target in DLG
+211,212,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+211,213,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+211,214,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+212,221,explicit_numeric,,Literal target in DLG
+213,221,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+214,221,explicit_numeric,,Literal target in DLG
+221,222,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+221,223,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+221,224,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+221,225,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+222,261,explicit_numeric,,Literal target in DLG
+223,261,explicit_numeric,,Literal target in DLG
+224,231,explicit_numeric,,Literal target in DLG
+225,241,explicit_numeric,,Literal target in DLG
+231,232,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+231,233,inferred_response_block,Seduction 4,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+231,234,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+232,261,explicit_numeric,,Literal target in DLG
+233,261,explicit_numeric,Seduction 4,Literal target in DLG
+234,251,explicit_numeric,,Literal target in DLG
+241,242,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+241,243,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+242,261,explicit_numeric,,Literal target in DLG
+243,261,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+251,252,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+251,253,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+251,254,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+252,311,explicit_numeric,,Literal target in DLG
+253,261,explicit_numeric,,Literal target in DLG
+254,261,explicit_numeric,,Literal target in DLG
+261,262,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+261,263,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+261,264,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+262,311,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+263,311,explicit_numeric,,Literal target in DLG
+264,271,explicit_numeric,,Literal target in DLG
+271,272,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+271,273,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+272,311,explicit_numeric,,Literal target in DLG
+273,281,explicit_numeric,,Literal target in DLG
+281,282,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+281,283,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+281,284,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+282,311,explicit_numeric,,Literal target in DLG
+283,311,explicit_numeric,,Literal target in DLG
+284,291,explicit_numeric,,Literal target in DLG
+291,292,inferred_response_block,G.Jeanette_Refuse == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+291,293,inferred_response_block,G.Jeanette_Refuse == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+291,294,inferred_response_block,G.Jeanette_Refuse == 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+291,295,inferred_response_block,G.Jeanette_Refuse == 2 and G.Jeanette_Knife == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+291,296,inferred_response_block,G.Jeanette_Refuse == 2 and G.Jeanette_Knife == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+292,311,explicit_numeric,G.Jeanette_Refuse == 0,Literal target in DLG
+293,301,explicit_numeric,G.Jeanette_Refuse == 0,Literal target in DLG
+294,361,explicit_numeric,G.Jeanette_Refuse == 2,Literal target in DLG
+301,302,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+301,303,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+301,304,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+302,311,explicit_numeric,,Literal target in DLG
+303,311,explicit_numeric,,Literal target in DLG
+311,312,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+312,321,explicit_numeric,,Literal target in DLG
+321,322,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+321,323,inferred_response_block,Seduction 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+321,324,inferred_response_block,Humanity -5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+321,325,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+322,351,explicit_numeric,,Literal target in DLG
+323,351,explicit_numeric,Seduction 2,Literal target in DLG
+324,331,explicit_numeric,Humanity -5,Literal target in DLG
+325,341,explicit_numeric,,Literal target in DLG
+331,332,inferred_response_block,G.Extra_Lines == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+331,333,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+332,351,explicit_numeric,G.Extra_Lines == 1,Literal target in DLG
+333,351,explicit_numeric,,Literal target in DLG
+341,342,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+341,343,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+341,344,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+342,351,explicit_numeric,,Literal target in DLG
+343,351,explicit_numeric,,Literal target in DLG
+344,351,explicit_numeric,,Literal target in DLG
+351,352,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+351,353,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+351,354,inferred_response_block,Humanity 5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+351,355,inferred_response_block,Humanity -5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+351,356,inferred_response_block,"not IsClan(pc,""Toreador"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+351,357,inferred_response_block,"IsClan(pc,""Toreador"")","Inferred NPC→response association from adjacent slot layout, not an explicit link"
+352,361,explicit_numeric,,Literal target in DLG
+353,361,explicit_numeric,,Literal target in DLG
+354,371,explicit_numeric,Humanity 5,Literal target in DLG
+355,381,explicit_numeric,Humanity -5,Literal target in DLG
+356,291,explicit_numeric,"not IsClan(pc,""Toreador"")",Literal target in DLG
+357,291,explicit_numeric,"IsClan(pc,""Toreador"")",Literal target in DLG
+361,362,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+361,363,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+361,364,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+361,365,inferred_response_block,Seduction 4 & pc.bloodpool > 1 and G.Jeanette_Seduce >= 3 and G.Patch_Plus == 1 and (not pc.IsMale() or G.Player_Homo == 0),"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+362,811,explicit_numeric,,Literal target in DLG
+363,811,explicit_numeric,,Literal target in DLG
+364,811,explicit_numeric,,Literal target in DLG
+365,541,explicit_numeric,Seduction 4 & pc.bloodpool > 1 and G.Jeanette_Seduce >= 3 and G.Patch_Plus == 1 and (not pc.IsMale() or G.Player_Homo == 0),Literal target in DLG
+371,372,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+371,373,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+371,374,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+372,361,explicit_numeric,,Literal target in DLG
+373,361,explicit_numeric,,Literal target in DLG
+381,382,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+382,361,explicit_numeric,,Literal target in DLG
+391,392,inferred_response_block,G.Jeanette_Quest == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+391,393,inferred_response_block,Seduction 2 & G.Jeanette_Quest == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+391,394,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+392,411,explicit_numeric,G.Jeanette_Quest == 1,Literal target in DLG
+393,411,explicit_numeric,Seduction 2 & G.Jeanette_Quest == 1,Literal target in DLG
+394,421,explicit_numeric,,Literal target in DLG
+401,402,inferred_response_block,G.Jeanette_Quest == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+401,403,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+402,411,explicit_numeric,G.Jeanette_Quest == 1,Literal target in DLG
+403,421,explicit_numeric,,Literal target in DLG
+411,412,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+411,413,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+411,414,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+411,415,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+412,431,explicit_numeric,,Literal target in DLG
+413,431,explicit_numeric,,Literal target in DLG
+414,421,explicit_numeric,,Literal target in DLG
+415,421,explicit_numeric,,Literal target in DLG
+421,422,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+422,431,explicit_numeric,,Literal target in DLG
+431,432,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+461,462,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+461,463,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+461,464,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+471,472,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+472,481,explicit_numeric,,Literal target in DLG
+481,482,inferred_response_block,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+481,483,inferred_response_block,G.Jeanette_Mail == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+481,484,inferred_response_block,G.Story_State > 10,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+481,485,inferred_response_block,G.Story_State > 40 and G.Credits_Running == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+481,486,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+481,487,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+482,511,explicit_numeric,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,Literal target in DLG
+483,511,explicit_numeric,G.Jeanette_Mail == 1,Literal target in DLG
+484,491,explicit_numeric,G.Story_State > 10,Literal target in DLG
+485,501,explicit_numeric,G.Story_State > 40 and G.Credits_Running == 0,Literal target in DLG
+491,492,inferred_response_block,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+491,493,inferred_response_block,G.Jeanette_Mail == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+491,494,inferred_response_block,G.Story_State > 40 and G.Credits_Running == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+491,495,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+492,511,explicit_numeric,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,Literal target in DLG
+493,511,explicit_numeric,G.Jeanette_Mail == 1,Literal target in DLG
+494,501,explicit_numeric,G.Story_State > 40 and G.Credits_Running == 0,Literal target in DLG
+501,502,inferred_response_block,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+501,503,inferred_response_block,G.Jeanette_Mail == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+501,504,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+501,505,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+502,511,explicit_numeric,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,Literal target in DLG
+503,511,explicit_numeric,G.Jeanette_Mail == 1,Literal target in DLG
+511,512,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+511,513,inferred_response_block,G.Jeanette_Boink == 0 and pc.bloodpool > 1 and (not pc.IsMale() or G.Player_Homo == 0),"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+511,514,inferred_response_block,G.Jeanette_Boink == 2 and pc.bloodpool > 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+511,515,inferred_response_block,Humanity -5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+511,516,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+512,521,explicit_numeric,,Literal target in DLG
+513,541,explicit_numeric,G.Jeanette_Boink == 0 and pc.bloodpool > 1 and (not pc.IsMale() or G.Player_Homo == 0),Literal target in DLG
+514,541,explicit_numeric,G.Jeanette_Boink == 2 and pc.bloodpool > 1,Literal target in DLG
+515,531,explicit_numeric,Humanity -5,Literal target in DLG
+521,522,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+521,523,inferred_response_block,G.Jeanette_Boink == 0 and pc.bloodpool > 1 and (not pc.IsMale() or G.Player_Homo == 0),"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+521,524,inferred_response_block,G.Jeanette_Boink == 2 and pc.bloodpool > 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+521,525,inferred_response_block,Humanity -5,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+521,526,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+522,531,explicit_numeric,,Literal target in DLG
+523,541,explicit_numeric,G.Jeanette_Boink == 0 and pc.bloodpool > 1 and (not pc.IsMale() or G.Player_Homo == 0),Literal target in DLG
+524,541,explicit_numeric,G.Jeanette_Boink == 2 and pc.bloodpool > 1,Literal target in DLG
+525,531,explicit_numeric,Humanity -5,Literal target in DLG
+531,532,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+541,542,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+551,552,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+561,562,inferred_response_block,G.Jeanette_Refuse == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+561,563,inferred_response_block,G.Jeanette_Refuse == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+561,564,inferred_response_block,G.Jeanette_Refuse == 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+561,565,inferred_response_block,G.Jeanette_Refuse == 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+561,566,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+562,311,explicit_numeric,G.Jeanette_Refuse == 1,Literal target in DLG
+563,311,explicit_numeric,G.Jeanette_Refuse == 1,Literal target in DLG
+564,361,explicit_numeric,G.Jeanette_Refuse == 2,Literal target in DLG
+565,361,explicit_numeric,G.Jeanette_Refuse == 2,Literal target in DLG
+571,572,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+571,573,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+571,574,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+572,151,explicit_numeric,,Literal target in DLG
+573,151,explicit_numeric,,Literal target in DLG
+574,151,explicit_numeric,,Literal target in DLG
+581,582,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+581,583,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+581,584,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+581,585,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+582,311,explicit_numeric,,Literal target in DLG
+583,311,explicit_numeric,,Literal target in DLG
+584,301,explicit_numeric,,Literal target in DLG
+585,311,explicit_numeric,,Literal target in DLG
+591,592,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+591,593,inferred_response_block,Seduction 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+591,594,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+592,151,explicit_numeric,,Literal target in DLG
+593,151,explicit_numeric,Seduction 2,Literal target in DLG
+594,151,explicit_numeric,,Literal target in DLG
+701,702,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+711,712,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+721,722,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+731,732,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+751,752,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+752,761,explicit_numeric,,Literal target in DLG
+761,762,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+762,771,explicit_numeric,,Literal target in DLG
+771,772,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+771,773,inferred_response_block,Seduction 2,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+771,774,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+771,775,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+772,11,explicit_numeric,,Literal target in DLG
+773,21,explicit_numeric,Seduction 2,Literal target in DLG
+774,41,explicit_numeric,,Literal target in DLG
+775,51,explicit_numeric,,Literal target in DLG
+781,782,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+781,783,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+782,11,explicit_numeric,,Literal target in DLG
+783,51,explicit_numeric,,Literal target in DLG
+801,802,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+801,803,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+802,221,explicit_numeric,,Literal target in DLG
+803,211,explicit_numeric,,Literal target in DLG
+811,812,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+832,481,explicit_numeric,G.Jeanette_Baron == 1,Literal target in DLG
+833,461,explicit_numeric,G.Therese_Dead == 1 and G.Jeanette_Side < 4,Literal target in DLG
+834,471,explicit_numeric,G.Therese_Dead == 1 and G.Jeanette_Side >= 4,Literal target in DLG
+835,401,explicit_numeric,G.Therese_Quest == 4 and G.Jeanette_Seduce < 8,Literal target in DLG
+836,391,explicit_numeric,G.Therese_Quest == 4 and G.Jeanette_Seduce >= 8,Literal target in DLG
+837,551,explicit_numeric,G.Jeanette_Quest == 1,Literal target in DLG
+838,561,explicit_numeric,G.Jeanette_Refuse == 2,Literal target in DLG
+839,561,explicit_numeric,G.Jeanette_Refuse == 1,Literal target in DLG
+840,101,explicit_numeric,G.Therese_Quest == 2 and G.Jeanette_Seduce < 3,Literal target in DLG
+841,91,explicit_numeric,G.Therese_Quest == 2 and G.Jeanette_Seduce >= 3,Literal target in DLG
+842,721,explicit_numeric,G.Jeanette_Float == 2,Literal target in DLG
+843,711,explicit_numeric,G.Jeanette_Float == 1,Literal target in DLG
+844,701,explicit_numeric,npc.times_talked > 1 and G.Jeanette_Seduce >= 0 and G.Jeanette_Float == 0,Literal target in DLG
+845,731,explicit_numeric,npc.times_talked > 1 and G.Jeanette_Seduce < 0,Literal target in DLG
+846,1,explicit_numeric,npc.times_talked == 1,Literal target in DLG

@@ -1,0 +1,12 @@
+﻿finding,file1,exact1,file2,exact2,status,limitation
+Start resolution,tourette.dlg,943–949: starting conditions,santamonica.py,268–362 populateOffice(),F:code,actual engine priority of simultaneous DLG conditions untested
+Setup scene,santamonica.py,321–329: tourette_script and tourette_trigger,sm_asylum_1.vmf,"39923, 41857: named trigger, relay",F:code-wired,earlier if/elif branches can supersede
+Staging,sm_asylum_1.vmf,"39923–40080: trigger, sequences, npc_VVampire",tourette.dlg,1–51 camera changes via pc.SetCamera,F:code-wired,camera runtime not tested; layout not validated
+End event,sm_asylum_1.vmf,40080: OnDialogEnd→touretteDialogueResults(),santamonica.py,365–375,F:code-wired,conditional branches only
+Persuasion gate,tourette.dlg,56/104/124/154/204: Persuasion4 + both Seduce≥4,therese.dlg & jeanette.dlg,numeric Seduce variables maintained in prior dialogues,F:source-dependency,precise amount reachable in playthrough not exhaustively proven
+Patch threshold,tourette.dlg,"54: SeduceJeanette≥8, Plus0; 55: ≥5 Plus1",jeanette.dlg,Jeanette_Seduce changes per response,F:direct,other alternative checks remain
+Mediation outcome,tourette.dlg,"276→421... 652/653→661→663→671, Tourette_Wins=1",santamonica.py,365–375: ChangeMap when Tourette_Wins,F:source-dependency,runtime mode and quest awarding semantics untested
+Outcome dispatch,tourette.dlg,"272–277, 921–925, 711/751/781/741",santamonica.py,365–375: Jeanette_Dead invokes fade and model change,F:direct,"if only Therese_Dead, no explicit handling in this function"
+Humanity in Plus,tourette.dlg,663 HumanityAdd(1) if Patch_Plus==1,tourette.dlg,662 No write if Patch_Plus==0,F:direct,humanity upper bound mechanics unknown
+Late conversations,tourette.dlg,943–947: Change/Dead/Wins/Refuse,santamonica.py,321–355: office composition later,F:code-dependency,which conditions take precedence unresolved
+Quest connections,tourette.dlg,671: Quest Tourette=5 Warehouse=3; 721=4; 761=3,santamonica.py,TouretteDialogueResults(),F:state-write,specific downstream quest tasks not inferred

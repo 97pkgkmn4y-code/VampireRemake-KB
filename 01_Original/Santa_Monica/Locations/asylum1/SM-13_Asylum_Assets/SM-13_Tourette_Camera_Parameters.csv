@@ -1,0 +1,17 @@
+﻿section,field,value,interpretation,evidence
+End,Position,DialogTarget,Опорная сущность для позиции,Tourette.txt L8
+End,AttachPos,Origin,Опорная точка для позиции,Tourette.txt L9
+End,AttachType,Follow,Привязка Follow,Tourette.txt L10
+End,OffsetOrigin,"[48, 0, 53]",Смещение относительно опоры; ориентация системы координат не проверена,Tourette.txt L11
+Target/Point1,Position,DialogTarget,Цель наведения,Tourette.txt L18
+Target/Point1,AttachPos,Bone: Bip01 Head,Кость головы,Tourette.txt L19
+Target/Point1,AttachType,None,Отдельное поле привязки для точки цели,Tourette.txt L20
+CameraConstraints,MoveSpeed,500,Движение камеры; физические единицы не установлены,Tourette.txt L27
+CameraConstraints,MoveAccel,250,Ускорение камеры; единицы не установлены,Tourette.txt L28
+CameraConstraints,TurnAccel,30,Ускорение поворота; единицы не установлены,Tourette.txt L29
+CameraConstraints,MaxTurnRate,"[60, 60, 60]",Предел поворота по трём компонентам; единицы не установлены,Tourette.txt L30
+CameraConstraints,DistanceTolerance,5,Допуск расстояния,Tourette.txt L31
+CameraConstraints,AngularTolerance,"[7, 7, 7]",Угловой допуск по трём компонентам,Tourette.txt L32
+CameraConstraints,FieldOfView,40,FOV 40; угол/ось интерпретации не проверены,Tourette.txt L33
+CameraConstraints,DialogPOV,1,Параметр режима POV; движок не проверен,Tourette.txt L34
+CameraConstraints,SyncRotateOnMove,1,Параметр синхронизации поворота с движением,Tourette.txt L35

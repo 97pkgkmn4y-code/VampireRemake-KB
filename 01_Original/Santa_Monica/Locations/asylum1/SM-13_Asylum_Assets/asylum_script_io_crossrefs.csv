@@ -1,0 +1,14 @@
+﻿function,python_line,vmf_line,source_classname,source_targetname,output,raw_connection,match_type
+calDialog,163,38748,npc_VHuman,Cal,OnDialogEnd,",,,0,-1,calDialog(),",VERIFIED_DIRECT_IO
+calDialog,163,38813,logic_auto,,OnMapLoad,",,,0,-1,calDialog(),",VERIFIED_DIRECT_IO
+checkElevatorPermission,169,42167,math_counter,elev_counter_downstairs,OnHitMax,",,,0,-1,checkElevatorPermission(),",VERIFIED_DIRECT_IO
+chunkDancing,177,38813,logic_auto,,OnMapLoad,",,,0,-1,chunkDancing(),",VERIFIED_DIRECT_IO
+danielleDialog,191,38317,npc_VPedestrian,Danielle,OnDialogEnd,",,,0,-1,danielleDialog(),",VERIFIED_DIRECT_IO
+elevatorConversation,198,28650,func_door,elevgrating2,OnFullyClosed,",,,0.7,-1,elevatorConversation(),",VERIFIED_DIRECT_IO
+knoxPresence,221,38813,logic_auto,,OnMapLoad,",,,0,-1,knoxPresence(),",VERIFIED_DIRECT_IO
+jeanetteDialog,236,38858,npc_VVampire,Jeanette,OnDialogEnd,",,,0,-1,jeanetteDialog(),",VERIFIED_DIRECT_IO
+jeanetteDownstairs,243,38813,logic_auto,,OnMapLoad,",,,0,-1,jeanetteDownstairs(),",VERIFIED_DIRECT_IO
+jeanetteGoesUp,260,38748,npc_VHuman,Cal,OnDialogBegin,",,,0,-1,jeanetteGoesUp(),",VERIFIED_DIRECT_IO
+populateOffice,268,38813,logic_auto,,OnMapLoad,",,,0,-1,populateOffice(),",VERIFIED_DIRECT_IO
+touretteDialogueResults,365,40080,npc_VVampire,Tourette,OnDialogEnd,"Tourette_point_gun,Kill,,0,1,touretteDialogueResults(),",VERIFIED_DIRECT_IO
+touretteMuzzleFlash,378,,,,,,NO_DIRECT_VMF_IO

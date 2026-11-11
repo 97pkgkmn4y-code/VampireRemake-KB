@@ -1,0 +1,10 @@
+﻿entity,classname,binding_or_event,source,source_line
+tourette_trigger,trigger_once,OnStartTouch → tourette_cam.StartShot (+0.4s),sm_asylum_1.vmf,39923–39943
+tourette_cam,camera_cinematic,shotname = vdata/CameraShots/LookAtTarget_Snap.txt,sm_asylum_1.vmf,43071–43088
+tourette_cam,camera_cinematic,startent = tourette_cam; endent = tourette_cam,sm_asylum_1.vmf,43079–43080
+tourette_cam,camera_cinematic,target1 = Tourette; target2 = Tourette,sm_asylum_1.vmf,43081–43082
+tourette_cam,camera_cinematic,origin = -926.084 641.364 67.7361,sm_asylum_1.vmf,43083
+Tourette,npc_VVampire,origin = -906.727 452.287 -13.4556,sm_asylum_1.vmf,40139
+Tourette,npc_VVampire,default_camera = vdata/CameraShots/Tourette.txt,sm_asylum_1.vmf,40098
+Tourette,npc_VVampire,dialogname = dlg/Santa Monica/Tourette.dlg,sm_asylum_1.vmf,40117
+Tourette_point_gun,scripted_sequence,OnEndSequence → Tourette.StartPlayerDialog (+0.3s),sm_asylum_1.vmf,40052–40078

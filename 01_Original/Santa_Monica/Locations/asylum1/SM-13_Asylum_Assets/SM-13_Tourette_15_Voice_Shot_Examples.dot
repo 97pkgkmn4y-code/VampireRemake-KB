@@ -1,0 +1,13 @@
+digraph C {
+ graph [rankdir=LR, bgcolor="white", pad="0.24", nodesep="0.42", ranksep="0.67", splines=polyline, fontname="DejaVu Sans", labelloc=t,label="SM-13.12 · Примеры реплика → камера (без выдуманной хронологии)",fontsize=18,fontcolor="#17263D"];
+ node [shape=box, style="rounded,filled",fontname="DejaVu Sans",fontsize=12,color="#D9DFE5", margin="0.16,0.13"];
+ edge [fontname="DejaVu Sans",fontsize=11,arrowsize=.8,color="#697789"];
+ subgraph cluster_t {label="Реплики Therese";color="#F4DCE3";style="rounded";t7 [label="DLG 7: [Therese]",fillcolor="#F9EEF2",color="#72384D"]; t15 [label="DLG 15: [Therese]",fillcolor="#F9EEF2",color="#72384D"]; t25 [label="DLG 25: [Therese]",fillcolor="#F9EEF2",color="#72384D"];}
+ subgraph cluster_j {label="Реплики Jeanette";color="#DCECF4";style="rounded";j5 [label="DLG 5: [Jeanette]",fillcolor="#ECF5FA",color="#3B769B"];j17 [label="DLG 17: [Jeanette]",fillcolor="#ECF5FA",color="#3B769B"];j21 [label="DLG 21: [Jeanette]",fillcolor="#ECF5FA",color="#3B769B"];}
+ sT [label="SetCamera(\"tTherese\")\nлокальный боковой Offset = −13",fillcolor="#F6E8ED",color="#72384D"];
+ sJ [label="SetCamera(\"tJeanette\")\nлокальный боковой Offset = +13",fillcolor="#E2F0F8",color="#3B769B"];
+ npc [label="DialogTarget = NPC Tourette\nцель: Bip01 Neck",fillcolor="#FFF5E7",color="#B88440"];
+ {t7 t15 t25}->sT [color="#72384D"];
+ {j5 j17 j21}->sJ [color="#3B769B"];
+ sT->npc [style=dashed];sJ->npc [style=dashed];
+}

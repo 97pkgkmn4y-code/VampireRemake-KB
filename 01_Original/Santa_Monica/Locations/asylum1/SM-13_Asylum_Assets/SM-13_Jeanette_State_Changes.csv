@@ -1,0 +1,70 @@
+﻿dlg_id,source_field,condition,expression,next
+1,action,,G.Jeanette_Know = 1,#
+3,action,"Seduction 2 & not IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce + 1,21
+6,action,"IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce + 1,751
+13,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,71
+33,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,11
+43,action,"not IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce - 1,61
+46,action,"IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce - 1,781
+51,action,,G.Jeanette_Curious = 1,#
+54,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,81
+73,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,0
+94,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,121
+95,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,131
+104,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,121
+105,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,131
+125,action,Seduction 2,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,571
+133,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,111
+142,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+152,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+162,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+164,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,171
+172,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+173,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+174,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,181
+182,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+183,action,,"pc.RemoveItem(""item_g_ghost_pendant"")",191
+185,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,581
+191,action,"npc.SetDisposition(""joy"",1)","pc.SetQuest(""Hotel"",4)",#
+194,action,"Seduction 2 & not IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce + 1,201
+195,action,"Seduction 2 & IsClan(pc,""Malkavian"")",G.Jeanette_Seduce = G.Jeanette_Seduce + 1,801
+203,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,211
+214,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,221
+223,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,261
+224,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,231
+225,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,241
+233,action,Seduction 4,G.Jeanette_Seduce = G.Jeanette_Seduce + 2,261
+234,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,251
+264,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,271
+282,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,311
+284,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,291
+293,action,G.Jeanette_Refuse == 0,G.Jeanette_Seduce = G.Jeanette_Seduce - 1; G.Jeanette_Refuse = 1,301
+294,action,G.Jeanette_Refuse == 2,G.Jeanette_Refuse = 0,361
+295,action,G.Jeanette_Refuse == 2 and G.Jeanette_Knife == 0,G.Jeanette_Refuse = 1; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,0
+296,action,G.Jeanette_Refuse == 2 and G.Jeanette_Knife == 0,G.Jeanette_Refuse = 1; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,0
+303,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,311
+304,action,,G.Jeanette_Refuse = 1; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,0
+323,action,Seduction 2,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,351
+356,action,"not IsClan(pc,""Toreador"")",G.Jeanette_Refuse = 2; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,291
+357,action,"IsClan(pc,""Toreador"")",G.Jeanette_Refuse = 2; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,291
+361,action,"npc.SetDisposition(""joy"",1)","G.Jeanette_Refuse = 0; G.Jeanette_Quest = 1; pc.SetQuest(""Slashterpiece"",1); pc.GiveItem(""item_w_knife"")",#
+363,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,811
+364,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,811
+365,action,Seduction 4 & pc.bloodpool > 1 and G.Jeanette_Seduce >= 3 and G.Patch_Plus == 1 and (not pc.IsMale() or G.Player_Homo == 0),G.Jeanette_Seduce = G.Jeanette_Seduce + 1,541
+371,condition_expression,"npc.SetDisposition(""neutral"",1); G.Charity_Know = 1","npc.SetDisposition(""neutral"",1); G.Charity_Know = 1",#
+374,action,,G.Jeanette_Refuse = 2; G.Jeanette_Seduce = G.Jeanette_Seduce - 1,0
+393,action,Seduction 2 & G.Jeanette_Quest == 1,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,411
+394,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,421
+431,action,,"pc.SetQuest(""Tourette"",1)",#
+471,action,"npc.SetDisposition(""joy"",1)",G.Jeanette_Baron = 1,#
+541,action,"npc.SetDisposition(""joy"",3)",G.Jeanette_Boink = 1; pc.Bloodloss(1),#
+566,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,0
+573,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,151
+581,action,"npc.SetDisposition(""neutral"",1)","G.Jeanette_Scorn = 1; pc.AwardExperience(""Haunted04"") ; pc.SetQuest(""Hotel"",5)",#
+585,action,,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,311
+593,action,Seduction 2,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,151
+701,action,"npc.SetDisposition(""joy"",3)",G.Jeanette_Float = 1,#
+711,action,"npc.SetDisposition(""joy"",3)",G.Jeanette_Float = 2,#
+721,action,"npc.SetDisposition(""joy"",3)",G.Jeanette_Float = 0,#
+773,action,Seduction 2,G.Jeanette_Seduce = G.Jeanette_Seduce + 1,21
+803,action,,G.Jeanette_Seduce = G.Jeanette_Seduce - 1,211

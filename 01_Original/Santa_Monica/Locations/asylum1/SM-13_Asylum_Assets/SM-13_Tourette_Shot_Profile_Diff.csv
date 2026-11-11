@@ -1,0 +1,18 @@
+﻿section,parameter,cinematic_LookAtTarget_Snap,dialogue_Tourette,interpretation
+End,Position,Named,DialogTarget,Literal values from source; units/engine semantics unverified
+End,AttachPos,Origin,Origin,Literal values from source; units/engine semantics unverified
+End,AttachType,Follow,Follow,Literal values from source; units/engine semantics unverified
+End,OffsetOrigin,NOT_SPECIFIED,"[48, 0, 53]",Not specified is not 0; the engine default/override is not known
+Target/Point1,Position,Named,DialogTarget,Literal values from source; units/engine semantics unverified
+Target/Point1,AttachPos,Origin,Bone: Bip01 Head,Literal values from source; units/engine semantics unverified
+Target/Point1,AttachType,Follow,None,Literal values from source; units/engine semantics unverified
+CameraConstraints,MoveAccel,100.0,250,Literal values from source; units/engine semantics unverified
+CameraConstraints,TurnAccel,60,30,Literal values from source; units/engine semantics unverified
+CameraConstraints,MoveSpeed,250,500,Literal values from source; units/engine semantics unverified
+CameraConstraints,MaxTurnRate,"[60, 60, 60]","[60, 60, 60]",Literal values from source; units/engine semantics unverified
+CameraConstraints,DistanceTolerance,5,5,Literal values from source; units/engine semantics unverified
+CameraConstraints,AngularTolerance,"[5, 5, 5]","[7, 7, 7]",Literal values from source; units/engine semantics unverified
+CameraConstraints,FieldOfView,75,40,Literal values from source; units/engine semantics unverified
+CameraConstraints,DialogPOV,1,1,Literal values from source; units/engine semantics unverified
+CameraConstraints,SnapOnShotChange,1,NOT_SPECIFIED,Not specified is not 0; the engine default/override is not known
+CameraConstraints,SyncRotateOnMove,NOT_SPECIFIED,1,Not specified is not 0; the engine default/override is not known

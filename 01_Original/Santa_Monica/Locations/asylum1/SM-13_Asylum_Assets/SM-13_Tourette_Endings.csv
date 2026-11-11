@@ -1,0 +1,6 @@
+﻿choice,line_text,condition,action,through,result_node,fate,remark
+272,"Finish her off, Therese.",G.Therese_Side >= 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 1,921,711,Jeanette погибает,поддержка Therese достаточна
+273,"Grab the gun, Jeanette.",G.Jeanette_Side >= 4,G.Therese_Dead = 1; G.Tourette_Ending = 2,921,751,Therese погибает,поддержка Jeanette достаточна
+274,"Finish her off, Therese.",G.Therese_Side < 4,G.Therese_Dead = 1; G.Tourette_Ending = 3,921,781,Therese погибает,возможная инверсия произнесённого выбора
+275,"Grab the gun, Jeanette.",G.Jeanette_Side < 4,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,921,741,Jeanette погибает,возможная инверсия произнесённого выбора
+277,Give me the gun.,G.Tourette_Side < 5,G.Jeanette_Dead = 1; G.Tourette_Ending = 4,921,741,Jeanette погибает,низкая Tourette_Side

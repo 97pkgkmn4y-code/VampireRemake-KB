@@ -1,0 +1,250 @@
+dlg_id,node_type,english_excerpt,malkavian_excerpt,next,condition_or_disposition,action
+1,npc,"Please, come in. I do apologize for my sister's crassness if it made you uncomfortable. She's u",,#,"npc.SetDisposition(""Neutral"",1)",
+2,response,If you say so. I guess that means you're Therese?,Are you Therese? The dark daughter of Janus?,61,,
+3,response,I'm just glad she's gone. You are Therese?,"I could stomach her oozings no longer. You are Therese, the dark daughter?",61,,G.Therese_Seduce = G.Therese_Seduce + 1
+4,response,Jeanette? She was no trouble.,Her whiteness was no terrible weight.,11,,
+5,response,Where is she?,Where is the ivory princess?,21,,
+11,npc,"Nonsense, she's nothing but.",,#,"npc.SetDisposition(""Neutral"",1)",
+12,response,Are you Therese?,"Are you called Therese, dark daughter?",61,,
+13,response,Where is she?,Where is the ivory princess?,21,,
+14,response,"Actually, I liked her a lot.",My peas liked her carrots. Err... the other way around.,31,,G.Therese_Seduce = G.Therese_Seduce - 1
+15,response,I agree. You seem a lot more together.,"Yes. I like the weight of you much better, my sweet darkness.",51,,G.Therese_Seduce = G.Therese_Seduce + 1
+21,npc,She's got issues she's still trying to get over and so she's locked herself in the bathroom. Je,,#,"npc.SetDisposition(""Neutral"",1)",
+22,response,Are you Therese?,"Are you called Therese, dark daughter?",61,,
+23,response,That's too bad. I really wanted to see more of her.,I will satisfy her endless hunger.,31,,G.Therese_Seduce = G.Therese_Seduce - 1
+24,response,I'd much rather talk to the sensible sister.,I seek a more sensible sustenance.,51,,G.Therese_Seduce = G.Therese_Seduce + 1
+31,npc,Heh. Under the half-shirt and mini-skirt she's rotten to the bone.,,#,"npc.SetDisposition(""Anger"",1)",
+32,response,Are you Therese?,"Are you called Therese, dark daughter?",61,,
+33,response,Sounds like you're jealous.,"You wear jealousy like a thorned crown, dark one.",41,,G.Therese_Seduce = G.Therese_Seduce - 1
+41,npc,Please get to the point of your presence in my city.,,#,"npc.SetDisposition(""Anger"",1)",
+42,response,Are you Therese?,"Are you called Therese, dark daughter?",61,,
+51,npc,"That I am. My sister's schoolgirl-in-distress act may bring patrons in, but it's my level-heade",,#,"npc.SetDisposition(""Neutral"",1)",
+52,response,You are Therese?,"Are you called Therese, dark daughter?",61,,
+61,npc,"Therese Voerman, yes. I'm the proprietor of this club, and the only person in this city whose g",,#,"npc.SetDisposition(""Neutral"",1)",
+62,response,I need you to call off the feud with Bertram Tung.,"Call off your conflict with the worm, dark one.",81,"not IsClan(pc,""Nosferatu"")",
+63,response,I need you to call off the feud with Bertram Tung.,,91,"IsClan(pc,""Nosferatu"")",
+64,response,Call off the feud.,,181,Dominate 1,
+65,response,I thought Jeanette owned the club.,Does not the white mistress own this asylum?,71,,
+66,response,Call off the feud.,,181,Thaumaturgy 1 & G.Patch_Plus == 1,dialogParticles()
+71,npc,Jeanette is the freak show I keep around to lure in curiosity-seekers. She's very good with the,,#,"npc.SetDisposition(""Neutral"",1)",
+72,response,I need you to call off the feud with Bertram Tung.,"Call off your conflict with the worm, dark one.",81,"not IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",
+73,response,I need you to call off the feud with Bertram Tung.,,91,"IsClan(pc,""Nosferatu"") and G.Therese_Bother == 0",
+74,response,Call off the feud.,,181,Dominate 1 & G.Therese_Bother == 0,
+75,response,I've got a few more questions to bounce off you.,Can I pull some answers from your mind?,671,G.Therese_Questions == 1,
+76,response,Call off the feud.,,181,Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0,dialogParticles()
+77,response,I've got things to do. Later.,I am no longer here.,0,G.Therese_Questions == 1,
+81,npc,"Tung's exile is self-imposed, I assure you. But then, what reason would I have not to hate that",,#,"npc.SetDisposition(""Apathy"",1)",
+82,response,Your phobias don't concern me. Just tell him everything's cool.,"I don't want to meddle with your madness, just make a wormy peace.",141,,
+83,response,Why do you hate him?,What has brought your darkness upon him?,101,,
+91,npc,"Tung's exile is self-imposed, I assure you. But then, what reason would I have not to hate that",,#,"npc.SetDisposition(""Apathy"",1)",
+92,response,None taken. Now tell him that everything's cool.,,141,,
+93,response,Why do you hate him?,,101,,
+101,npc,"He meddles in my affairs. He's a bad influence on my sister, and she on him. If you were in my ",,#,"npc.SetDisposition(""Neutral"",1)",
+102,response,Then can you put out the word that you've got no feud with him?,Please tell the worm that all is forgiven.,111,G.Therese_Questions == 0,
+103,response,Want me to find him and kill him?,I will pluck this worm from the ground and dissect him.,121,G.Therese_Kill == 0 and G.Therese_Questions == 0,
+104,response,Tell me a little about your twin sister Jeanette.,"Tell me of your sister, the white princess.",71,G.Therese_Questions == 1,
+105,response,Want me to find him and kill him?,I will pluck this worm from the ground and dissect him.,121,G.Therese_Kill == 0 and G.Therese_Questions == 1,
+106,response,Just a couple more questions...,A few more answers from your gray matter.,671,G.Therese_Questions == 1,
+107,response,I think it's time for me to go. See ya.,You're talking to someone who is no longer here.,0,G.Therese_Questions == 1,
+111,npc,"Why would I do that? Let him think I mean to kill him - that way, I don't have to worry about h",,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Feud = 1
+112,response,"That's unfortunate, but I do need to see him.",I am no politicking blood-sucker. I need to see the worm.,131,,
+113,response,Want me to find him and kill him?,I will pluck this worm from the ground and dissect him.,121,G.Therese_Kill == 0,
+121,npc,"I'm not sure the Camarilla would find that an acceptable method of dealing with one's rival, an",,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Kill = 1
+122,response,Can you put the word out then that you've got no feud with him?,Please tell the worm that all is forgiven.,111,G.Therese_Feud == 0 and G.Therese_Questions == 0,
+123,response,Is there anything I can do to get you to call off the feud?,What can this shattered soul do to help your tongue proclaim worm-amnesty?,131,G.Therese_Feud == 1 and G.Therese_Questions == 0,
+124,response,"Your choice, I guess. I've got a few more questions.",A few more answers from your gray matter.,671,G.Therese_Questions == 1,
+125,response,Whatever. I'm outta here.,You're talking to someone who is no longer here.,0,G.Therese_Questions == 1,
+131,npc,Tung and his co-conspirator's actions ruined my chance at partnership in a crucial piece of pro,,#,"npc.SetDisposition(""Neutral"",1)",
+132,response,(Auto-Link),(Auto-Link),141,,
+141,npc,Hmm... I'd be willing to put the word out that my grievances with Tung have been swept under th,,#,"npc.SetDisposition(""Neutral"",1)",
+142,response,Another goddamn waste of my time.,A better use of my time would be ANYTHING else.,191,,G.Therese_Seduce = G.Therese_Seduce - 1
+143,response,Gladly. What do I have to do?,"Speak your quest, dark one.",191,,G.Therese_Seduce = G.Therese_Seduce + 1
+144,response,A spirit? You mean a ghost?,Spirit? A reflection of the living?,151,,
+145,response,"Couldn't I just kill you? Bertram would be willing to help me then, I'm sure.","Perhaps I will send you to the darkest sleep, and the worm will praise me.",161,,G.Therese_Seduce = G.Therese_Seduce - 2
+151,npc,"Ah, I forgot, you're still new to this. Allow me to break you in - yes, ghosts exist. Werewolve",,#,"npc.SetDisposition(""Neutral"",1)",
+152,response,I don't have time for this Halloween bullshit.,I will do this worthless deed. But how?,191,,G.Therese_Seduce = G.Therese_Seduce - 1
+154,response,"Sure, I'll do it. What do I have to do to get rid of the ghost?",I will cross into the world of spirits. What needs be done?,191,,G.Therese_Seduce = G.Therese_Seduce + 1
+155,response,"If I were to kill you, wouldn't Bertram come out of hiding?","Perhaps I will send you to the darkest sleep, and the worm will praise me.",161,,G.Therese_Seduce = G.Therese_Seduce - 1
+161,npc,"I suppose he would, if you killed me. But as I understand it, your existence is very tenuous at",,#,"npc.SetDisposition(""Anger"",1)",
+163,response,"Hmm. Fine, tell me how to get rid of the ghost.","The next ghost will be yours, dark one. Now how to get rid of this spirit?",191,,
+164,response,I'm willing to take that chance.,I will roll those perilous dice.,171,,
+171,npc,"Listen, you're young and naive so I'll offer you this chance one more time - continued existenc",,#,"npc.SetDisposition(""Anger"",1)",
+172,response,If this wasn't Elysium.... What about this ghost?,I can still feel the sun's heat in my memories. The spirit... what of it?,191,G.Therese_Questions == 0,
+173,response,"If I must, very well.",I can still feel the sun's heat in my memories. The spirit... what of it?,241,G.Therese_Questions == 1,
+181,npc,"[Laughs]You're new to this, aren't you? Were you trying to Dominate me just now? That was so st",,#,"npc.SetDisposition(""Anger"",1)",
+182,response,I need you to call off the feud with Bertram Tung.,,81,"not IsClan(pc,""Nosferatu"")",
+183,response,I need you to call off the feud with Bertram Tung.,,91,"IsClan(pc,""Nosferatu"")",
+191,npc,Rumor is that a personal item of a ghost's may be used to draw it out or excise it from its hau,,#,"npc.SetDisposition(""Neutral"",1)",
+192,response,I'll do it if you promise to call off the feud.,"If you will give word to the worm that he is not wanted, I will go.",231,G.Therese_Go == 0 and G.Therese_Questions == 0,
+193,response,And what if I can't find one?,And if this trinket will not be found?,221,G.Therese_Ghostitem == 0 and G.Therese_Questions == 0,
+194,response,Why don't you go?,Why don't you go and speak with the spirits?,201,G.Therese_Go == 0 and G.Therese_Questions == 0,
+196,response,Right. A few more questions...,A few more answers from your gray matter.,671,G.Therese_Questions == 1,
+197,response,I'm on it. See you later.,I've already left.,0,G.Therese_Questions == 1,
+201,npc,"As much as I'd like to ensure it's done properly, you're in no position to refuse - that is, if",,#,"npc.SetDisposition(""Anger"",1)",G.Therese_Go = 1
+202,response,I'll do it if you promise to call off the feud.,"If you will give word to the worm that he is not wanted, I will go.",231,,
+203,response,What if I can't find a personal item of the ghost's?,And if this bauble decides to hide itself?,221,G.Therese_Ghostitem == 0,
+204,response,How do I fight a ghost?,How to battle the ethereal?,211,G.Therese_Ghostbust == 0,
+211,npc,You don't. They're perfectly harmless.,,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Ghostbust = 1
+212,response,I'll do it if you promise to call off the feud.,"If you will give word to the worm that he is not wanted, I will go.",231,,
+213,response,What if I can't find a personal item of the ghost's?,And if this bauble decides to hide itself?,221,G.Therese_Ghostitem == 0,
+214,response,Why don't you go?,"Why not walk this path yourself, dark mistress?",201,G.Therese_Go == 0,
+221,npc,"If you have to tear the building apart, do so. Three construction crews have already refused to",,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Ghostitem = 1
+222,response,I'll do it if you promise to call off the feud.,I will bring you a bauble. But then you will call off your wormy curse.,231,,
+223,response,How do I fight a ghost?,How to battle the ethereal?,211,G.Therese_Ghostbust == 0,
+224,response,Why don't you go?,"Why not walk this path yourself, dark mistress?",201,G.Therese_Go == 0,
+231,npc,"Oh, I fully intend to do so. You'll find that dealing with me, on the whole, is appreciably mor",,#,"npc.SetDisposition(""Neutral"",1)","G.Therese_Quest = 1; pc.SetQuest(""Hotel"",1)"
+232,response,Business? Is that what it's called when a dog fetches a stick?,Then I am off to the House on the Ocean.,661,,G.Therese_Seduce = G.Therese_Seduce - 1
+233,response,I can respect that. And I appreciate it. Goodbye.,"Your words are like the reddest nectar, dark daughter. Farewell.",661,,G.Therese_Seduce = G.Therese_Seduce + 1
+234,response,Fine. Goodbye.,I am no longer here.,661,,
+241,npc,"If you'll excuse me, I've got situations to set straight.",,#,"npc.SetDisposition(""Apathy"",1)",G.Therese_Bother = 1
+242,response,I had a few questions.,A few more answers from your gray matter.,671,,
+243,response,Right. Goodbye.,Then I am off to the House on the Ocean.,0,,
+251,npc,You! What were you thinking?!?,,#,"npc.SetDisposition(""Anger"",3)",
+252,response,I -,I -,471,G.Jeanette_Scorn == 1,
+253,response,Er -,Er -,471,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,
+254,response,About -,About -,471,G.Extra_Lines == 1 and G.Jeanette_Scorn == 1,
+255,response,I -,I-,261,G.Jeanette_Scorn == 0,
+256,response,Er -,Er -,261,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,
+257,response,About -,About -,261,G.Extra_Lines == 1 and G.Jeanette_Scorn == 0,
+261,npc,How could you give her that item from the hotel?!? Do you know what she did with it?,,#,"npc.SetDisposition(""Anger"",3)",
+262,response,Wait a -,Jiggy -,271,,
+263,response,I didn't -,Slippery -,271,G.Extra_Lines == 1,
+264,response,What?,Perilous -,271,G.Extra_Lines == 1,
+271,npc,She threw it into the Pacific! Do you know what this means? It means that I can't get rid of th,,#,"npc.SetDisposition(""Anger"",3)","pc.SetQuest(""Release the Spirit"",2); pc.SetQuest(""Hotel"",6)"
+272,response,I can -,"Birds, bees, and...",281,"pc.GetQuestState(""Slashterpiece"") == 3","pc.SetQuest(""Slashterpiece"",5)"
+273,response,Listen -,Bingo chips and fuzzy dice...,281,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+274,response,Just shut -,Chicken-strip pheromones...,281,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+275,response,I can -,Pieces of eight...,281,"pc.GetQuestState(""Slashterpiece"") != 3",G.Gallery_Slashed = 1
+281,npc,"Shut up! I thought I could control my sister as long as Tung was out of the picture, but nothin",,#,"npc.SetDisposition(""Anger"",3)",
+282,response,Jeanette is YOUR baggage. You and I had a separate agreement.,Carry the burden of your sister alone and honor our agreement.,301,,
+283,response,This isn't fair!,The scale is not balanced.,291,,
+284,response,"You're a rational, professional woman. Certainly there's something I can do.","Let us talk as equals, dark one. Let business be our sweet nothings.",371,Persuasion 2,G.Therese_Seduce = G.Therese_Seduce + 1
+291,npc,Seldom life is. I should've never entrusted this with an amateur. Did you contemplate the conse,,#,"npc.SetDisposition(""Anger"",2)",
+292,response,Whatever. That doesn't have anything to do with OUR arrangement.,Carry the burden of your sister alone and honor our agreement.,301,,
+293,response,Whatever. That doesn't have anything to do with OUR arrangement. At least I brought you this di,Carry the burden of your sister alone and honor our agreement. Also I got you some old words fr,301,"pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.RemoveItem(""item_g_oh_diary"")"
+294,response,Why would Jeanette do that to you?,Why would the white mistress betray you?,331,,
+295,response,That bitch! I knew she was no good.,I never should have listened to her honey-laced love lies!,351,,G.Therese_Seduce = G.Therese_Seduce + 1
+296,response,You deserved it. You shouldn't underestimate her.,You wear your weakness like an old hat. You underestimated her.,341,,G.Therese_Seduce = G.Therese_Seduce - 1
+301,npc,"We had an agreement. You blew that agreement. Even if my sister was at fault, you played into h",,#,"npc.SetDisposition(""Anger"",1)",
+302,response,I need to talk to Tung. Is there something I can do?,I need to find the worm. What need I do?,371,,
+303,response,Why don't you just get rid of Jeanette?,Then kill the ivory princess.,331,,
+304,response,I don't care. I'm on a mission from the prince.,My concern is only for the jester's quest.,321,G.Therese_Prince == 0,
+305,response,Call off the feud or I'll tear you apart.,"Free the worm, or face Final Death.",311,,
+311,npc,"Incompetence I can forgive, somewhat. Threats, on the other hand, I do not tolerate. If you wan",,#,"npc.SetDisposition(""Anger"",2)",
+312,response,Which is?,"What further quest, dark one?",371,,
+313,response,"Listen, bitch, I've danced for you enough. I work for the prince!",My concern is only for the jester's quest.,321,G.Therese_Prince == 0,G.Therese_Seduce = G.Therese_Seduce - 1
+321,npc,Don't you think I'm aware of that? This is my city - I know everything that goes on from border,,#,"npc.SetDisposition(""Anger"",1)",G.Therese_Prince = 1
+322,response,What do you want me to do?,"What further quest, dark one?",371,,
+323,response,"Blame Jeanette and Tung, not me.",The fault lies twisted between the worm and the ivory.,331,,
+324,response,"I've got another idea - I kill you, I kill the prince, I kill everybody!",Perhaps I will set this whole city to burn and watch the flames lick you.,361,,G.Therese_Seduce = G.Therese_Seduce - 1
+331,npc,Jeanette and Tung are a noisome beauty and beast. Between them they've nearly crippled my plans,,#,"npc.SetDisposition(""Anger"",1)",
+332,response,Can I do something else to get you to call off the feud?,What need I do to call out the worm?,371,,
+333,response,You shouldn't have underestimated Jeanette.,You underestimate the white princess.,341,,G.Therese_Seduce = G.Therese_Seduce - 1
+334,response,That's your problem. I'm on a mission from the prince.,I care only for the jester's quest.,321,G.Therese_Prince == 0,
+335,response,Do I have to force you to call off the feud?,"Dark things will I do to you, if you do not heed my wish.",311,,G.Therese_Seduce = G.Therese_Seduce - 1
+341,npc,"Underestimate her? She's a clown! A painted, perverted joker on Tung's strings! Jeanette does t",,#,"npc.SetDisposition(""Anger"",3)",
+342,response,"Alright, alright! What can I do to make up for the mistake?",What deed must I do for my penance?,371,,
+343,response,Watch what you say to me. I won't put up with that shit.,"Your words are making me see blood and bones, dark one.",311,,
+351,npc,"You're not the first to fall victim to her duplicity. I'd like to make an exception for you, bu",,#,"npc.SetDisposition(""Neutral"",1)",
+352,response,What should I do?,"What further quest, dark one?",371,,
+353,response,I'd be happy to make amends. I'm furious at Jeanette.,I want nothing more than to purge the cursed white daughter.,371,,G.Therese_Seduce = G.Therese_Seduce + 1
+354,response,You handle it. I'm on a mission from the prince.,My concern is only for the jester's quest.,321,G.Therese_Prince == 0,
+361,npc,"What?!? You can't tell me what to do anymore, Father! You'll never tell me what to do ever agai",,#,"npc.SetDisposition(""Therese"",3)",
+362,response,"Alright, alright! What can I do to make up for the mistake?",What deed must I do for my penance?,371,,
+371,npc,"[Sighs, composes herself]I made some threats against my sister - idle threats - involving fire ",,#,"npc.SetDisposition(""Neutral"",1)",
+372,response,(Auto-Link),(Auto-Link),381,,
+381,npc,"I asked her to meet me at the Surfside Diner, to reconcile, but I'm busy with the club and my o",,#,"npc.SetDisposition(""Neutral"",1)","G.Therese_Quest = 3; pc.SetQuest(""Diner"",1)"
+382,response,I'll go - then the feud is off?,"This is more convoluted than my psyche. I will find her, and then we finish this.",411,,G.Therese_Questions = 2
+383,response,"If the Baron of Santa Monica wants her sister back, I will get her sister back.","Roses for her when they should be stones, dear baron.",401,,G.Therese_Seduce = G.Therese_Seduce + 1; G.Therese_Questions = 2
+384,response,Why don't I just kill the crazy bitch so this never happens again?,Shall I show her a sunrise?,391,,G.Therese_Seduce = G.Therese_Seduce - 1; G.Therese_Questions = 2
+391,npc,"Jeanette is my sister and my childe, or did you forget? What kind of monster would I be to cond",,#,"npc.SetDisposition(""Anger"",1)",
+392,response,Alright. I'll take care of it. Later.,I am no longer here.,0,,
+394,response,"You want to be soft, that's your business. I'll go meet her. See ya.",,0,"not IsClan(pc,""Malkavian"")",
+401,npc,"For all her unwholesome diversions and irritating disruptions, I should be less tolerant of her",,#,"npc.SetDisposition(""Neutral"",1)",
+402,response,Alright. I'll take care of it. Later.,I am no longer here.,0,,
+411,npc,"I want to see my sister. Yes, I'll call it off once I've spoken with her myself. Just do what I",,#,"npc.SetDisposition(""Anger"",1)",
+412,response,I'll do.,Done and done.,0,,
+421,npc,[Sighs]I need to speak to Jeanette face to face. I don't have time to argue about it.,,#,"npc.SetDisposition(""Anger"",1)",
+422,response,I understand.,I feel you.,0,,
+431,npc,"I don't have anything else to say to you. I won't forget what happened here, but I'd advise you",,#,"npc.SetDisposition(""Anger"",1)",
+432,response,I remember.,We keep it between our minds.,0,,
+441,npc,Good evening. I assume you're doing well for yourself. What brings you back to my domain?,,#,"npc.SetDisposition(""Neutral"",1)",
+443,response,How are things going in Santa Monica?,Tell me of the lady by the sea.,451,G.Story_State > 20 and G.Credits_Running == 0,
+444,response,How's your city?,"Tell me of your kingdom, dark one.",461,G.Story_State > 35,
+445,response,"Good to see you again, Therese. Goodbye.",I am no longer here.,0,,
+446,response,"You get off on power, don't you? Enjoy. Goodbye.",,0,"not IsClan(pc,""Malkavian"")",
+451,npc,"Since Jeanette's passing, I've had little trouble managing this city. In fact, my allegiance to",,#,"npc.SetDisposition(""Neutral"",1)",
+452,response,"Good to hear. Congratulations! Goodbye, Therese.","Perhaps you will share his fate as well, dark one. Farewell.",0,,
+453,response,"Guess they don't know about Jeanette. Goodbye, Therese.",,0,"not IsClan(pc,""Malkavian"")",
+461,npc,"I'm cleaning it up. The Sabbat will never get a foothold here again, I assure you. I am, at las",,#,"npc.SetDisposition(""Neutral"",1)",
+462,response,"If you ever need a favor, let me know. Goodbye, Therese.",Your shadow is like Indian ink. Farewell.,0,,
+463,response,"The way you said that was kind of unsettling. Goodbye, Therese.",,0,"not IsClan(pc,""Malkavian"")",
+471,npc,The museum! That was MY event! Did you think I wouldn't find out?!?,,#,"npc.SetDisposition(""Anger"",3)",
+472,response,But -,,481,"pc.GetQuestState(""Slashterpiece"") != 2","pc.SetQuest(""Slashterpiece"",5)"
+473,response,Wait -,,481,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+474,response,I -,,481,"G.Extra_Lines == 1 and pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+475,response,But -,,481,"pc.GetQuestState(""Slashterpiece"") == 2",G.Gallery_Slashed = 1
+481,npc,"Shut up! I thought I could control my sister as long as Tung was out of the picture, but nothin",,#,"npc.SetDisposition(""Anger"",3)",
+482,response,I didn't do it! I swear!,I don't know what your lips are saying!,511,G.Therese_Seduce >= 3,
+483,response,I didn't do it! I swear!,I don't know what your lips are saying!,491,G.Therese_Seduce < 3,
+491,npc,Don't lie to me! Jeanette already confessed she tricked you into doing it! It was probably all ,,#,"npc.SetDisposition(""Anger"",2)",
+492,response,But I really didn't do it!,No! I am not the soul who cast that shadow!,501,"not pc.HasItem(""item_g_ghost_pendant"")",
+493,response,"I swear I didn't do it! I even brought you the item from the Ocean House, here.",I have brought you the ghostly bauble.,521,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))","G.Therese_Liar = 1; pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce + 2"
+494,response,I didn't do it. Call off the feud now. Or else.,"Your words are like knives. Pray I do use my own. Free the worm, NOW.",311,"not pc.HasItem(""item_g_ghost_pendant"")",G.Therese_Seduce = G.Therese_Seduce - 1
+495,response,"At least I got your damned item from the Ocean House! Here, take it!","But see, I have brought you the ghostly bauble.",501,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0))","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce - 1"
+496,response,I swear I didn't do it! I even brought you the item from the Ocean House and a diary from there,I have brought you the ghostly bauble and old words.,521,"Persuasion 3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)","G.Therese_Liar = 1; pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce + 2"
+497,response,"At least I got your damned item from the Ocean House and a diary too! Here, take them!","But see, I have brought you the ghostly bauble and old words.",501,"Persuasion -3 & (pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1)","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3); pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce - 1"
+501,npc,"My museum is wrecked, do you understand? Now, if you'd like to atone, or if you'd like to provi",,#,"npc.SetDisposition(""Anger"",2)",
+502,response,Which is?,What new deed is this?,371,,
+503,response,We had an agreement!,Our word-bond held no clauses.,301,,
+504,response,I didn't do it. Call off the feud now. Or else.,Free the worm or I will free your slippery skull from its anchors.,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+511,npc,"Jeanette claimed you did it for her - but let's say I believe you. After all, you've acted dece",,#,"npc.SetDisposition(""Anger"",1)",
+512,response,Yes.,"Yes, the worm is wiggling.",531,"not pc.HasItem(""item_g_ghost_pendant"")",
+513,response,Yeah. I have the item from the Ocean House too.,"Yes. And I have brought you ghostly bauble, sweet darkness.",521,"pc.HasItem(""item_g_ghost_pendant"") and (not pc.HasItem(""item_g_oh_diary"") or G.Patch_Plus == 0)","pc.RemoveItem(""item_g_ghost_pendant""); G.Therese_Seduce = G.Therese_Seduce + 2"
+514,response,What do you think?,"Of course, dark one.",531,"G.Extra_Lines == 1 and not pc.HasItem(""item_g_ghost_pendant"")",
+515,response,Yeah. I have the item from the Ocean House and a diary from there too.,"Yes. And I have brought you ghostly bauble and words, sweet darkness.",521,"pc.HasItem(""item_g_ghost_pendant"") and pc.HasItem(""item_g_oh_diary"") and G.Patch_Plus == 1","pc.RemoveItem(""item_g_ghost_pendant""); pc.RemoveItem(""item_g_oh_diary""); G.Therese_Seduce = G.Therese_Seduce + 2"
+521,npc,Excellent! I'll take that. However...,,#,"npc.SetDisposition(""Neutral"",1)","pc.SetQuest(""Hotel"",3); pc.SetQuest(""Release the Spirit"",3)"
+522,response,(Auto-Link),,531,G.Therese_Liar == 0,
+523,response,(Auto-Link),,511,G.Therese_Liar == 1,
+531,npc,"There's only one problem. If Tung gets word that I threatened Jeanette, which he most certainly",,#,"npc.SetDisposition(""Neutral"",1)",G.Therese_Respect = 1
+532,response,And how do I do that?,How might this deed be done?,371,,
+533,response,"For Santa Monica's most powerful Kindred, I'd be happy to.","I side with she of the greatest power. Command me, dark daughter.",371,,G.Therese_Seduce = G.Therese_Seduce + 1
+534,response,Forget it. I've had enough of both of you.,I tire of the mendacities of Janus' daughters.,541,,G.Therese_Seduce = G.Therese_Seduce - 1
+541,npc,"You know, when you address me that way, I'm almost inclined to believe you were responsible for",,#,"npc.SetDisposition(""Anger"",1)",
+542,response,Lost my head. Sure. What do I have to do?,I will. How might this deed be done?,371,,
+543,response,And I'll tell you one more time - I'm through with you two.,I extricate myself from this twisted trio.,551,,G.Therese_Seduce = G.Therese_Seduce - 1
+544,response,Call off the feud now or I'll make you call off the feud.,Free the worm or I will free your slippery skull from its anchors.,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+551,npc,"Let me explain the situation to you: either you do this and absolve yourself of guilt, or you r",,#,"npc.SetDisposition(""Anger"",1)",
+552,response,When you put it that way... what do I have to do?,"Has a slave any choice? Command me, dark one.",371,,
+553,response,Fine. Let's do things your way. Bitch.,,371,"not IsClan(pc,""Malkavian"")",
+554,response,Call off the feud now or I'll make you call off the feud.,Free the worm or I will free your slippery skull from its anchors.,311,,G.Therese_Seduce = G.Therese_Seduce - 1
+561,npc,I'm terribly sorry about that. My sister was just furious about your refusal to take part in he,,#,,"pc.SetQuest(""Tourette"",2)"
+562,response,(Auto-Link),(Auto-Link),0,,
+571,npc,Of course you weren't! Just like you weren't working with him.,,#,,
+581,npc,"So vulgar. I can't even look at you sometimes, you jezebel.",,#,,
+591,npc,"Just the sight of you - the sight of that wicked, painted pout concealing that dirty, diseased ",,#,,
+601,npc,"Go ahead and mock me. You pull your pranks, make fun of my ways. It suits you. You're just one ",,#,,
+611,npc,Should I start calling a duck a pig as well?,,#,,
+621,npc,Is it any different than the way you treated Father?,,#,,
+631,npc,You don't say a word about Father!,,#,,
+641,npc,At least he loved me.,,#,,
+651,npc,"That's it, Jeanette. Run away from the truth. I'll take care of everything, as always.",,#,,
+661,npc,"Before I forget, take this. The only way to reach the Ocean House this time of night is through",,#,,"pc.GiveItem(""item_k_oceanhouse_sewer_key""); G.Therese_Questions = 1"
+662,response,Sewers? No problem.,,241,"IsClan(pc,""Nosferatu"")",
+663,response,Sewers? You can't seriously expect me to wade through such filth!,,171,"IsClan(pc,""Toreador"")",
+664,response,If that's what it takes to get the job done.,"I will do what needs be done, dark one.",241,,
+666,response,Sewers? You are really pushing it now.,,171,"not IsClan(pc,""Malkavian"") and not IsClan(pc,""Toreador"") and not IsClan(pc,""Nosferatu"")",
+671,npc,[Sigh]...,,#,"npc.SetDisposition(""Neutral"",1)",
+672,response,Why do you hate Bertram Tung?,Why so much hate between you and the worm?,101,,
+673,response,Tell me about your sister.,"Tell me of your sister, the white princess.",71,,
+674,response,I'll take care of your problem at the Ocean House. What do I do?,I will go to your House on the Ocean. What need I do?,191,G.Therese_Quest == 0,G.Therese_Questions = 0
+675,response,What am I supposed to be doing at the Ocean House Hotel?,What deeds need be done at the House on the Ocean?,191,G.Therese_Quest == 1,
+676,response,I've changed my mind. Goodbye.,My mind is gone. My body follows.,0,,
+713,start,(Starting Condition),,431,G.Jeanette_Dead == 1 and G.Therese_Side < 3,
+714,start,(Starting Condition),,441,G.Jeanette_Dead == 1 and G.Therese_Side >= 3,
+715,start,(Starting Condition),,421,G.Therese_Quest == 3,
+716,start,(Starting Condition),,251,G.Jeanette_Refuse == 2,
+717,start,(Starting Condition),,251,G.Jeanette_Refuse == 1,
+718,start,(Starting Condition),,251,G.Jeanette_Quest == 2,
+719,start,(Starting Condition),,241,G.Therese_Quest == 1,
+720,start,(Starting Condition),,1,npc.times_talked == 1,

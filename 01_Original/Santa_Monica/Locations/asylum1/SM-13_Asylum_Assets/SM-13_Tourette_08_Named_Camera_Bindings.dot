@@ -1,0 +1,21 @@
+digraph G {
+ graph [fontname="DejaVu Sans", bgcolor="#0F1725",rankdir=LR, nodesep="0.7",ranksep="0.9",pad="0.35",splines=polyline,label="SM-13.11 · Привязка кинематографической камеры",labelloc=t,fontsize=24,fontcolor="#F4F6FB"];
+ node [shape=box,style="rounded,filled",fillcolor="#18263A",color="#566F88",penwidth=1.6,fontname="DejaVu Sans",fontcolor="#F4F6FB",fontsize=14,margin="0.20,0.13"];
+ edge [color="#BAC9D8",fontcolor="#BAC9D8",fontname="DejaVu Sans",fontsize=11,arrowsize=0.8,penwidth=1.7];
+ trigger [label="tourette_trigger\nOnStartTouch",color="#F5D18E"];
+ camera [label="tourette_cam\ncamera_cinematic\norigin (-926.084, 641.364, 67.7361)",color="#8AC7F0"];
+ table [label="LookAtTarget_Snap.txt\nCameraShotTable",color="#BBA7EC"];
+ anchors [label="Named (позиция)\nstartent / endent = tourette_cam",color="#9CD7BE"];
+ look [label="Named (цель)\ntarget1 / target2 = Tourette",color="#EE9CB4"];
+ limit [label="FOV = 75\nSnapOnShotChange = 1",color="#F5D18E"];
+ unknown [label="ИТОГОВЫЙ КАДР В ИГРЕ\nНе восстановлен без поведения движка",color="#566F88",style="rounded,dashed,filled"];
+ trigger -> camera [label="StartShot +0.4 с"];
+ camera -> table [label="shotname"];
+ table -> anchors [label="End / Position = Named"];
+ table -> look [label="Target / Position = Named"];
+ table -> limit [label="CameraConstraints"];
+ {rank=same;anchors;look;limit};
+ anchors -> unknown [style=dashed,color="#566F88"];
+ look -> unknown [style=dashed,color="#566F88"];
+ limit -> unknown [style=dashed,color="#566F88"];
+}

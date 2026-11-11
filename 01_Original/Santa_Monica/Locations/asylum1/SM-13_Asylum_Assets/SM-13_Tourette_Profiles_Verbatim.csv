@@ -1,0 +1,64 @@
+﻿profile,source,section,subsection,key,literal_value
+tTherese,ttherese.txt,End,,Position,DialogTarget
+tTherese,ttherese.txt,End,,AttachPos,Origin
+tTherese,ttherese.txt,End,,AttachType,Follow
+tTherese,ttherese.txt,End,,OffsetOrigin,"[21, -13, 59]"
+tTherese,ttherese.txt,Target,Point1,Position,DialogTarget
+tTherese,ttherese.txt,Target,Point1,AttachPos,Bone: Bip01 Neck
+tTherese,ttherese.txt,Target,Point1,AttachType,None
+tTherese,ttherese.txt,CameraConstraints,,MoveSpeed,500
+tTherese,ttherese.txt,CameraConstraints,,MoveAccel,250
+tTherese,ttherese.txt,CameraConstraints,,TurnAccel,30
+tTherese,ttherese.txt,CameraConstraints,,MaxTurnRate,"[60, 60, 60]"
+tTherese,ttherese.txt,CameraConstraints,,DistanceTolerance,7
+tTherese,ttherese.txt,CameraConstraints,,AngularTolerance,"[5, 5, 5]"
+tTherese,ttherese.txt,CameraConstraints,,FieldOfView,75
+tTherese,ttherese.txt,CameraConstraints,,DialogPOV,0
+tTherese,ttherese.txt,CameraConstraints,,SnapOnShotChange,1
+tJeanette,tjeanette.txt,End,,Position,DialogTarget
+tJeanette,tjeanette.txt,End,,AttachPos,Origin
+tJeanette,tjeanette.txt,End,,AttachType,Follow
+tJeanette,tjeanette.txt,End,,OffsetOrigin,"[21, 13, 59]"
+tJeanette,tjeanette.txt,Target,Point1,Position,DialogTarget
+tJeanette,tjeanette.txt,Target,Point1,AttachPos,Bone: Bip01 Neck
+tJeanette,tjeanette.txt,Target,Point1,AttachType,None
+tJeanette,tjeanette.txt,CameraConstraints,,MoveSpeed,500
+tJeanette,tjeanette.txt,CameraConstraints,,MoveAccel,250
+tJeanette,tjeanette.txt,CameraConstraints,,TurnAccel,30
+tJeanette,tjeanette.txt,CameraConstraints,,MaxTurnRate,"[60, 60, 60]"
+tJeanette,tjeanette.txt,CameraConstraints,,DistanceTolerance,7
+tJeanette,tjeanette.txt,CameraConstraints,,AngularTolerance,"[5, 5, 5]"
+tJeanette,tjeanette.txt,CameraConstraints,,FieldOfView,75
+tJeanette,tjeanette.txt,CameraConstraints,,DialogPOV,0
+tJeanette,tjeanette.txt,CameraConstraints,,SnapOnShotChange,1
+Tourette,tourette.txt,End,,Position,DialogTarget
+Tourette,tourette.txt,End,,AttachPos,Origin
+Tourette,tourette.txt,End,,AttachType,Follow
+Tourette,tourette.txt,End,,OffsetOrigin,"[48, 0, 53]"
+Tourette,tourette.txt,Target,Point1,Position,DialogTarget
+Tourette,tourette.txt,Target,Point1,AttachPos,Bone: Bip01 Head
+Tourette,tourette.txt,Target,Point1,AttachType,None
+Tourette,tourette.txt,CameraConstraints,,MoveSpeed,500
+Tourette,tourette.txt,CameraConstraints,,MoveAccel,250
+Tourette,tourette.txt,CameraConstraints,,TurnAccel,30
+Tourette,tourette.txt,CameraConstraints,,MaxTurnRate,"[60, 60, 60]"
+Tourette,tourette.txt,CameraConstraints,,DistanceTolerance,5
+Tourette,tourette.txt,CameraConstraints,,AngularTolerance,"[7, 7, 7]"
+Tourette,tourette.txt,CameraConstraints,,FieldOfView,40
+Tourette,tourette.txt,CameraConstraints,,DialogPOV,1
+Tourette,tourette.txt,CameraConstraints,,SyncRotateOnMove,1
+LookAtTarget_Snap,lookattarget_snap.txt,End,,Position,Named
+LookAtTarget_Snap,lookattarget_snap.txt,End,,AttachPos,Origin
+LookAtTarget_Snap,lookattarget_snap.txt,End,,AttachType,Follow
+LookAtTarget_Snap,lookattarget_snap.txt,Target,Point1,Position,Named
+LookAtTarget_Snap,lookattarget_snap.txt,Target,Point1,AttachPos,Origin
+LookAtTarget_Snap,lookattarget_snap.txt,Target,Point1,AttachType,Follow
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,MoveAccel,100.0
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,TurnAccel,60
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,MoveSpeed,250
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,MaxTurnRate,"[60, 60, 60]"
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,DistanceTolerance,5
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,AngularTolerance,"[5, 5, 5]"
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,FieldOfView,75
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,DialogPOV,1
+LookAtTarget_Snap,lookattarget_snap.txt,CameraConstraints,,SnapOnShotChange,1

@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),d=require('./vmf-extract.json');
+const X=x=>95+(x+60)*1.15,Y=y=>600-(y+160)*.9;
+const poly=(v,cl,title)=>`<polygon class="${cl}" points="${v.map(q=>`${X(q[0])},${Y(q[1])}`).join(' ')}"><title>${title}</title></polygon>`;
+let s=`<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700"><rect width="1100" height="700" fill="#101820"/><style>text{font-family:Segoe UI,Arial,sans-serif;fill:#e9e9e5}.title{font-size:25px;font-weight:bold}.lab{font-size:14px}.grid{stroke:#30444e}.floor{fill:#355c68;stroke:#90b5bf;stroke-width:2}.wall{fill:#a57d60;stroke:#d2ad8d;stroke-width:1}.npc{fill:#8bd4a2;stroke:#101820;stroke-width:2}.note{fill:#efc76d;stroke:#101820;stroke-width:2}.door{fill:#e99083;stroke:#101820;stroke-width:2}</style><text class="title" x="26" y="36">SM-19 Smoke Shop · VMF floor Z=32</text><text class="lab" x="26" y="58">Brush polygons, walls at Z=40, entity origins. Door and note symbols do not assert traversal.</text>`;
+for(const x of [0,100,200,300,400,500])s+=`<line class="grid" x1="${X(x)}" x2="${X(x)}" y1="${Y(-160)}" y2="${Y(401)}"/><text class="lab" x="${X(x)}" y="655">${x}</text>`;
+for(const y of [-100,0,100,200,300,400])s+=`<line class="grid" x1="${X(109)}" x2="${X(521)}" y1="${Y(y)}" y2="${Y(y)}"/><text class="lab" x="60" y="${Y(y)}">${y}</text>`;
+for(const f of d.faces.filter(f=>f.z===32&&f.area>1000))s+=poly(f.vertices,'floor',`solid ${f.solid}, side ${f.side}, line ${f.line}`);
+for(const c of d.sections.filter(c=>c.z===40&&['worldspawn','func_detail'].includes(c.parent)&&c.area<12000))s+=poly(c.vertices,'wall',`solid ${c.solid}`);
+let marks=['front_door','back_door','Smoke_Vendor','Smoke_Patron','Smoke_Patron2','plus_Doll6','smoke_note','Smoke'];
+for(let i=0;i<marks.length;i++){const e=d.entities.find(e=>e.targetname===marks[i]);if(!e?.origin)continue;const [x,y]=e.origin.split(' ').map(Number),cl=/door/.test(marks[i])?'door':marks[i]==='smoke_note'?'note':'npc';s+=`<circle class="${cl}" cx="${X(x)}" cy="${Y(y)}" r="7"><title>${marks[i]}, ID ${e.id}, ${e.origin}, line ${e.line}</title></circle><text class="lab" x="${X(x)+11}" y="${Y(y)+4}">${marks[i]} · ${e.id}</text>`}
+const paper=d.entities.find(e=>e.id==='5455');if(paper){const [x,y]=paper.origin.split(' ').map(Number);s+=`<circle class="note" cx="${X(x)}" cy="${Y(y)}" r="7"><title>Newspaper, ID 5455, ${paper.origin}, line ${paper.line}</title></circle><text class="lab" x="${X(x)+11}" y="${Y(y)+4}">newspaper · 5455</text>`}
+s+=`<text class="lab" x="25" y="681">Blue floor · Brown wall section · Green NPC/landmark · Yellow note · Red door · Source: UP SDK sm_smoke_1.vmf</text></svg>`;
+fs.writeFileSync(path.join(__dirname,'SM-19_Smoke_Map.svg'),s);

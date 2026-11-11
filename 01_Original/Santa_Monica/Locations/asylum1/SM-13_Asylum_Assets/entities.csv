@@ -1,0 +1,543 @@
+﻿id,vmf_line,classname,targetname,origin,model,start_disabled,start_hidden,connections_count
+2519,26631,env_sprite,,-730 536.681 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2520,26651,light_spot,,-730 537 -204,,,,0
+2521,26669,env_sprite,,-730 482.521 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2522,26689,light_spot,,-730 483 -204,,,,0
+2523,26707,env_sprite,,-730 589.837 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2524,26727,light_spot,,-730 590 -204,,,,0
+2525,26745,env_sprite,,-730 642.994 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2526,26765,light_spot,,-730 643 -204,,,,0
+2527,26783,env_sprite,,-1054.39 470 174.506,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2528,26803,light_spot,,-1054.39 470 172.506,,,,0
+2529,26825,env_sprite,,-1055.39 339 174.506,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2530,26845,light_spot,,-1055.39 339 172.506,,,,0
+2531,26867,env_sprite,blue_stage_light,-820 -29 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2532,26888,env_sprite,green_stage_light,-875 -29 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2533,26909,env_sprite,red_stage_light,-989 -25 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2534,26930,env_sprite,blue_stage_light,-1041 -25 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2535,26951,env_sprite,yellow_stage_light,-931 -28 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2536,26972,env_sprite,red_stage_light,-877 -157 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2537,26993,env_sprite,green_stage_light,-991 -153 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2538,27014,env_sprite,yellow_stage_light,-933 -156 -43,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2539,27035,env_sprite,,-663.916 504.583 -168,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2540,27055,light_spot,,-663.916 505.062 -171,,,,0
+2541,27073,env_sprite,,-663.916 597.583 -168,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2542,27093,light_spot,,-663.916 598.062 -171,,,,0
+2543,27111,light_spot,,-897.147 716.035 -10.546,,,,0
+2544,27129,light_spot,,-728.15 716.938 -10.546,,,,0
+2545,27147,env_sprite,,-907.073 459.443 -165,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2546,27167,light_spot,,-1050 560.619 -174,,,,0
+2547,27185,light,,-649 666.619 -109,,,,0
+2548,27199,light,,-1249 60.619 -116,,,,0
+2549,27213,light,,-1249 19.619 -116,,,,0
+2550,27227,light,,-1249 65.619 -216,,,,0
+2551,27241,light,,-611 16.619 -216,,,,0
+2552,27255,light,,-611 65.619 -216,,,,0
+2553,27269,light,,-611 19.619 -116,,,,0
+2554,27283,light,,-611 60.619 -116,,,,0
+2555,27297,light,,-689 666.619 -109,,,,0
+2556,27311,light,,-818 666.619 -109,,,,0
+2557,27325,light,,-778 666.619 -109,,,,0
+2558,27339,light,,-946 666.619 -109,,,,0
+2559,27353,light,,-906 666.619 -109,,,,0
+2560,27367,light,,-1074 666.619 -109,,,,0
+2561,27381,light,,-1034 666.619 -109,,,,0
+2562,27395,light_spot,,-860 544.619 -34,,,,0
+2563,27414,light_spot,,-705 545.619 -34,,,,0
+2564,27433,light_spot,,-1039 425.619 -167,,,,0
+2565,27452,env_sprite,,-860 544.5 -28,materials/sprites/glowa.vmt,,,0
+2566,27472,env_sprite,,-705 545.667 -28,materials/sprites/glowa.vmt,,,0
+2567,27492,env_sprite,,-1039 426 -165,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2568,27512,env_sprite,,-712 437.006 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2569,27532,env_sprite,,-657 437.006 -201,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2570,27552,light_spot,,-712 437.619 -204,,,,0
+2571,27570,light_spot,,-657 437.619 -204,,,,0
+2572,27588,func_door,elevgrating,-1184 528.5 -229,,,,1
+2594,27846,func_door,elevgratingshadow,-1184 533.5 -229,,,,0
+2602,27951,func_door,elevinsd,-1200 537 -226,,,,1
+2610,28060,func_door,elevinsd,-1168 537 -226,,,,1
+2618,28169,light_spot,,-1184 496.619 -167,,,,0
+2619,28188,env_sprite,,-1184 497 -165,materials/sprites/streetlight3_proxyfade.vmt,,,0
+2620,28208,func_door,elev,-1168 535 -226,,,,1
+2628,28317,func_door,elev,-1168 539 -226,,,,3
+2636,28429,func_door,elev,-1200 539 -226,,,,3
+2644,28541,func_door,elev,-1200 535 -226,,,,1
+2652,28650,func_door,elevgrating2,-1113.5 606 38,,,,2
+2674,28909,func_door,elevgratingshadow2,-1118.5 606 38,,,,0
+2682,29014,func_door,elev2,-1120 590 41,,,,1
+2690,29123,func_door,elevinsd2,-1122 590 41,,,,1
+2698,29232,func_door,elev2,-1124 590 -226,,,,3
+2706,29344,func_door,elev2,-1120 622 41,,,,1
+2714,29453,func_door,elevinsd2,-1122 622 41,,,,1
+2722,29562,func_door,elev2,-1124 622 -226,,,,3
+2730,29674,func_elevator,elevator,-1181 601 -28.5,,,,11
+3303,35755,infodecal,,-924 682.942 -209.005,,,,0
+3304,35766,infodecal,,-925 682.942 -250.005,,,,0
+3305,35777,infodecal,,-867 669.942 -213.005,,,,0
+3306,35788,infodecal,,-1044 532.942 -209.005,,,,0
+3307,35799,infodecal,,-1175 682.942 -233.005,,,,0
+3308,35810,infodecal,,-1107 601.942 -216.005,,,,0
+3309,35821,infodecal,,-1073 519.942 -209.005,,,,0
+3310,35832,light_spot,blue_stage_light,-818 -30.381 -45,,,,0
+3311,35852,light_spot,green_stage_light,-874 -30.381 -45,,,,0
+3312,35872,light_spot,yellow_stage_light,-929 -29.381 -45,,,,0
+3313,35892,light_spot,red_stage_light,-988 -26.381 -45,,,,0
+3314,35912,light_spot,blue_stage_light,-1040 -26.381 -45,,,,0
+3315,35932,light_spot,green_stage_light,-991 -153.381 -45,,,,0
+3316,35952,light_spot,yellow_stage_light,-932 -156.381 -45,,,,0
+3317,35972,light_spot,red_stage_light,-877 -157.381 -45,,,,0
+3318,35992,prop_dynamic,,-859.908 -55.4361 -241,models/scenery/furniture/guitar_mockingbird/guitar_mockingbird.mdl,,,0
+3319,36014,prop_dynamic,,-931.084 -44.5277 -224.064,models/scenery/furniture/microphone/microphone.mdl,,,0
+3320,36036,env_sprite,,-834 512.619 -114,materials/sprites/candle.vmt,,,0
+3321,36056,env_sprite,,-1065 507.619 -114,materials/sprites/candle.vmt,,,0
+3322,36076,env_sprite,,-1025 604.619 -114,materials/sprites/candle.vmt,,,0
+3323,36096,env_sprite,,-675 594.619 -114,materials/sprites/candle.vmt,,,0
+3324,36116,env_sprite,,-724 492.619 -114,materials/sprites/candle.vmt,,,0
+3325,36136,infodecal,,-652 -74 -202,,,,0
+3326,36147,infodecal,,-1208 -73 -203,,,,0
+3327,36158,func_door_rotating,asylumdrl,-1096 676.5 -231.5,,,,1
+3335,36268,func_door_rotating,asylumdrr,-1012 676.5 -231.5,,,,1
+3343,36378,func_door_rotating,bathroom_door,-993.5 329 37.5,,,,0
+3351,36483,env_sprite,,-1119.11 362.1 95,materials/sprites/glowa.vmt,,,0
+3352,36503,env_sprite,,-1119.11 353.1 95,materials/sprites/glowa.vmt,,,0
+3353,36523,env_sprite,,-1119.11 344.1 95,materials/sprites/glowa.vmt,,,0
+3354,36543,env_sprite,,-1119.11 335.1 95,materials/sprites/glowa.vmt,,,0
+3355,36563,env_sprite,,-1119.11 326.1 95,materials/sprites/glowa.vmt,,,0
+3356,36583,light,,-1096.08 346 87.138,,,,0
+3357,36600,func_brush,,-612.5 42.5 -148.5,,0,,0
+3379,36845,info_landmark,asylum1,-1054 628 -272,,,,0
+3380,36858,trigger_changelevel,AsylumTeleport1,,,,,0
+3388,36949,info_player_start,,-1028.71 621.836 -273,,,,0
+3389,36960,info_node,,-657.273 -17.1917 -273,,,,0
+3390,36972,info_node,,-1200.43 111.137 -273,,,,0
+3391,36984,info_node,,-656.696 111.511 -273,,,,0
+3392,36996,info_node,,-1200.96 -44.7937 -273,,,,0
+3393,37008,info_node,,-1039.02 193.793 -273,,,,0
+3394,37020,info_node,,-792.871 190.636 -273,,,,0
+3395,37032,info_node,,-929.461 63.6174 -273,,,,0
+3396,37044,intersting_place,dance_spot,-801.359 80.3236 -273,,,,0
+3397,37067,intersting_place,dance_spot,-801.975 114.608 -273,,,,0
+3398,37090,intersting_place,dance_spot,-1007.43 16.9579 -273,,,,0
+3399,37113,intersting_place,dance_spot,-1041.2 15.8423 -273,,,,0
+3400,37136,intersting_place,dance_spot,-783.874 6.33311 -273,,,,0
+3401,37159,intersting_place,dance_spot,-1022.21 89.3688 -273,,,,0
+3402,37182,intersting_place,dance_spot,-848 104.813 -273,,,,0
+3403,37205,intersting_place,dance_spot,-850.924 24 -273,,,,0
+3404,37228,info_node,,-869.268 304.012 -273,,,,0
+3405,37240,info_node,,-1041.37 303.237 -273,,,,0
+3406,37252,info_node,,-896 448 -273,,,,0
+3407,37264,info_node,,-1088 448 -273,,,,0
+3408,37276,info_node,,-879.983 593.048 -273,,,,0
+3409,37288,info_node,,-1154.68 348.596 -273,,,,0
+3410,37300,info_node,,-1154.94 248.813 -182.018,,,,0
+3411,37312,info_node,,-1166.16 199.558 -196.972,,,,0
+3412,37324,info_node,,-1221.43 412.224 -153.622,,,,0
+3413,37336,info_node,,-1180.67 480.369 -153.622,,,,0
+3414,37348,info_node,,-992.508 496.857 -153.622,,,,0
+3415,37360,info_node,,-891.029 534.202 -153.622,,,,0
+3416,37372,info_node,,-846.683 456.242 -153.622,,,,0
+3417,37384,info_node,,-666.028 446.322 -153.622,,,,0
+3418,37396,info_node,,-636.801 377.006 -153.622,,,,0
+3419,37408,info_node,,-787.099 466.768 -153.622,,,,0
+3420,37420,info_node,,-643.411 226.967 -188.222,,,,0
+3421,37432,info_node,,-712.115 229.038 -198.809,,,,0
+3422,37444,info_node,,-711.926 345.422 -273,,,,0
+3423,37456,npc_VPedestrian,Doll1,-798.259 431.681 -277,models/character/npc/common/Blood_Doll/bd_asylum/Blood_Dollasylum.mdl,,,1
+3424,37521,npc_VPedestrian,female_dancer,-847.926 562.132 -145,models/character/npc/common/Goth_kids/female/Goth_Female.mdl,,,0
+3425,37580,npc_VPedestrian,basic_raver,-942.85 458.616 -145,models/character/npc/common/dancer/female_1/female_dancer_1.mdl,,0,0
+3426,37640,npc_VPedestrian,plus_raver,-942.85 458.616 -145,models/character/npc/common/raver/females/female_raver_1/female_raver_1.mdl,,1,0
+3427,37700,npc_VPedestrian,male_dancer,-844.234 459.101 -145,models/character/npc/common/dancer/male_1/Male_Dancer_1.mdl,,,0
+3428,37759,npc_VPedestrian,male_dancer,-926.786 277.51 -273,models/character/npc/common/dancer/male_2/Male_Dancer_2.mdl,,,0
+3429,37818,npc_VPedestrian,jeanette_flirt_partner,-855.495 410.311 -273,models/character/npc/common/hustler/Hustler_2_Ref.mdl,,,0
+3430,37877,npc_VPedestrian,basic_raver,-703.102 39.6804 -273,models/character/npc/common/dancer/female_1/female_dancer_1.mdl,,0,0
+3431,37937,npc_VPedestrian,plus_raver,-703.102 39.6804 -273,models/character/npc/common/raver/females/female_raver_1/female_raver_1.mdl,,1,0
+3432,37997,npc_VPedestrian,male_dancer,-1171.45 38.4032 -273,models/character/npc/common/dancer/male_1/Male_Dancer_1.mdl,,,0
+3433,38056,npc_VPedestrian,male_dancer,-992 16 -273,models/character/npc/common/dancer/male_2/male_dancer_2.mdl,,,0
+3434,38115,npc_VPedestrian,female_dancer,-768.29 342.569 -269.847,models/character/npc/common/dancer/female_1/female_dancer_1.mdl,,,0
+3435,38174,npc_VPedestrian,female_dancer,-971.338 186.93 -269.847,models/character/npc/common/dancer/female_2/Female_Dancer_2.mdl,,,0
+3436,38233,info_node,,-646.509 290.302 -145.034,,,,0
+3437,38245,info_node,,-710.538 280.933 -214.607,,,,0
+3438,38257,info_node,,-673.56 188.744 -199.241,,,,0
+3439,38269,info_node,,-1218.05 299.337 -153.622,,,,0
+3440,38281,info_node,,-1216.58 241.361 -153.622,,,,0
+3441,38293,info_node,,-1223.12 199.982 -194.353,,,,0
+3442,38305,info_node,,-1154.46 291.523 -214.06,,,,0
+3443,38317,npc_VPedestrian,Danielle,-768 452 -154,models/character/npc/unique/Santa_Monica/Danielle/Danielle.mdl,,,2
+3444,38383,intersting_place,,-760 556 -145,,,,0
+3445,38405,intersting_place,convo_spot_3,-924.127 556.44 -145,,,,0
+3446,38428,intersting_place,convo_spot_3,-927.511 625.702 -145,,,,0
+3447,38451,intersting_place,convo_spot_3,-838.861 553.287 -145,,,,0
+3448,38474,intersting_place,,-931.893 455.12 -145,,,,0
+3449,38496,info_node,,-951.278 573.561 -153.622,,,,0
+3450,38508,info_node,,-1066.91 563.547 -153.622,,,,0
+3451,38520,info_node,,-795.817 560.038 -153.622,,,,0
+3452,38532,intersting_place,,-1048.74 450.748 -145,,,,0
+3453,38554,intersting_place,,-1137.45 425.123 -145,,,,0
+3454,38576,info_node,,-795 370 -273,,,,0
+3455,38588,info_node,,-950.264 370.5 -273,,,,0
+3456,38600,intersting_place,convo_spot_1,-1020.35 499.625 -273,,,,0
+3457,38623,intersting_place,,-1083.86 234.521 -273,,,,0
+3458,38645,intersting_place,,-773.309 229.705 -273,,,,0
+3459,38667,intersting_place,convo_spot_2,-901.643 646.004 -273,,,,0
+3460,38690,intersting_place,convo_spot_2,-865.429 648.234 -273,,,,0
+3461,38713,intersting_place,convo_spot_1,-1062.19 500.643 -273,,,,0
+3462,38736,info_node,,-678.898 567.247 -270,,,,0
+3463,38748,npc_VHuman,Cal,-696.665 488.069 -276.998,models/character/npc/unique/Santa_Monica/Cal/Cal.mdl,,,2
+3464,38813,logic_auto,,-926.139 590.033 -262.725,,,,7
+3465,38834,scripted_sequence,Jeanette_wait_for_elevator,-1144 491.121 -280,,,,1
+3466,38858,npc_VVampire,Jeanette,-820.077 410 -12.7639,models/character/npc/unique/Santa_Monica/Jeanette/Jeanette.mdl,,,2
+3467,38923,npc_VVampire,Therese,-782.922 509.587 -12.7639,models/character/npc/unique/Santa_Monica/Therese/Therese.mdl,,,0
+3468,38983,point_teleport,bring_Jeanette_down,-904.223 420.837 -280.691,,,,0
+3469,38997,logic_relay,elevator_relay,-1139.43 513 -180.338,,0,,1
+3470,39013,trigger_multiple,fade_in_hall,-1182 604 -6.54,,0,,2
+3478,39114,trigger_multiple,fade_out_all,-1184 602 53.65,,0,,3
+3486,39216,trigger_multiple,fade_in_office,-1183.81 604 7.25,,0,,2
+3494,39317,ambient_soundscheme,sound_default,-1004.94 294.105 -192.284,,,,0
+3495,39330,ambient_soundscheme,sound_override_1,-772.636 673.378 112.642,,,,0
+3496,39343,logic_relay,wait_for_elevator_relay,-1142.21 455.118 -273,,1,,4
+3497,39363,prop_dynamic,front_doorknob,-1057.81 670.884 -238.985,models/scenery/structural/doorknoba/drknobantiquel.mdl,,,0
+3498,39391,prop_dynamic,front_doorknob,-1049.51 670.934 -238.985,models/scenery/structural/doorknoba/drknobantique.mdl,,,0
+3499,39419,prop_dynamic,bathroom_doorknob,-999.137 374.313 36,models/scenery/structural/doorknoba/drknobantique.mdl,,,0
+3500,39447,prop_dynamic,bathroom_doorknob,-987.987 374.628 36,models/scenery/structural/doorknoba/drknobantiquel.mdl,,,0
+3501,39475,ambient_generic,sisters_argument,-1036.81 551.528 58,,,,0
+3502,39505,ambient_generic,bathroom_door_slam,-972.587 362.548 -6,,,,0
+3503,39536,ambient_generic,elevator_ok_sound,-1146.46 513 -224.621,,,,0
+3504,39567,ambient_generic,elevator_ok_sound_2,-1105.89 644 28.0242,,,,0
+3505,39598,ambient_generic,elevator_locked_sound,-1123.23 513 -229.985,,,,0
+3506,39629,ambient_generic,elevator_locked_sound_2,-1105.89 644 28.0242,,,,0
+3507,39660,trigger_once,Jeanette_dialog,-849.72 545.91 -238.22,,1,,4
+3515,39762,logic_timer,blue_timer,-858.356 -102.43 0,,0,,2
+3516,39783,logic_timer,red_timer,-890.356 -110.43 0,,0,,2
+3517,39804,logic_timer,green_timer,-888.047 -87.053 0,,0,,2
+3518,39825,logic_timer,yellow_timer,-862.372 -79.9086 0,,0,,2
+3519,39846,intersting_place,ladies_room,-1202.41 -52.9519 -273,,,,0
+3520,39869,intersting_place,mens_room,-656.738 -53.557 -273,,,,0
+3521,39892,ambient_generic,music,-921.205 -85.3192 -232,,,,0
+3522,39923,trigger_once,tourette_trigger,-929.94 693.37 36.55,,1,,5
+3530,40026,scripted_sequence,Tourette_gun,-935.897 449.187 -18,,,0,1
+3531,40052,scripted_sequence,Tourette_point_gun,-938.607 516.532 -18,,,0,3
+3532,40080,npc_VVampire,Tourette,-906.727 452.287 -13.4556,models/character/npc/unique/Santa_Monica/Tourette/Tourette.mdl,,,2
+3533,40145,env_fade,asylum_fade,-776.23 482.31 -6,,,,3
+3534,40167,npc_VDialogPedestrian,Chunk,-960.134 339.872 -266,models/character/npc/common/security_guard/Security_Guard.mdl,,1,0
+3535,40226,prop_dynamic,,-739.408 556.595 -237.16,models/scenery/misc/bottles/glassa.mdl,,,0
+3536,40250,prop_dynamic,,-727.538 594.493 -232.892,models/scenery/misc/bottles/bottlec.mdl,,,0
+3537,40274,prop_dynamic,,-738.538 611.493 -232.892,models/scenery/misc/bottles/bottlec.mdl,,,0
+3538,40298,infodecal,,-738.664 612.149 -240,,,,0
+3539,40309,infodecal,,-732.646 567.674 -240,,,,0
+3540,40320,infodecal,,-728.883 594.203 -240,,,,0
+3541,40331,infodecal,,-728.648 512.835 -240,,,,0
+3542,40342,light_spot,,-1251 17 -229,,,,0
+3543,40363,light,,-1249 16.619 -216,,,,0
+3544,40377,light_spot,,-1251 68 -229,,,,0
+3545,40398,light_spot,,-1251 63 -127,,,,0
+3546,40419,light_spot,,-1251 21 -127,,,,0
+3547,40440,light_spot,,-609 17 -127,,,,0
+3548,40461,light_spot,,-609 68 -127,,,,0
+3549,40482,light_spot,,-609 68 -229,,,,0
+3550,40503,light_spot,,-609 17 -229,,,,0
+3551,40524,light_spot,,-1073 670 -109,,,,0
+3552,40545,light_spot,,-1035 670 -109,,,,0
+3553,40566,light_spot,,-907 670 -109,,,,0
+3554,40587,light_spot,,-945 670 -109,,,,0
+3555,40608,light_spot,,-779 670 -109,,,,0
+3556,40629,light_spot,,-817 670 -109,,,,0
+3557,40650,light_spot,,-651 670 -109,,,,0
+3558,40671,light_spot,,-689 670 -109,,,,0
+3559,40692,env_sprite,,-1013 543.881 -28,materials/sprites/glowa.vmt,,,0
+3560,40712,light_spot,,-1013 544 -34,,,,0
+3561,40731,light_spot,,-1182.07 451.346 -34,,,,0
+3562,40750,env_sprite,,-1182.07 451.227 -28,materials/sprites/glowa.vmt,,,0
+3563,40770,light_spot,,-664.073 445.443 -34,,,,0
+3564,40789,env_sprite,,-664.073 445.324 -28,materials/sprites/glowa.vmt,,,0
+3565,40809,prop_dynamic,,-949 520 -109.479,models/scenery/misc/bottles/bottlec.mdl,,,0
+3566,40833,prop_dynamic,,-682 589 -109.949,models/scenery/misc/bottles/bottleb.mdl,,,0
+3567,40857,prop_dynamic,,-838 521 -114,models/scenery/misc/bottles/glassa.mdl,,,0
+3568,40881,prop_dynamic,,-1067 500 -109.949,models/scenery/misc/bottles/bottleb.mdl,,,0
+3569,40905,prop_dynamic,,-1029 596 -109.949,models/scenery/misc/bottles/bottleb.mdl,,,0
+3570,40929,light,,-754.077 514 83,,,,0
+3571,40945,light,,-908 249 41,,,,0
+3572,40959,light,,-936 292 44,,,,0
+3573,40973,logic_relay,cops_relay,-1036.12 617.933 -251,,0,0,3
+3574,40993,ambient_generic,cops_yell,-1048.99 615.687 -251,,,,0
+3575,41023,ambient_generic,cops_arrive,-1052.47 631.003 -251,,,,0
+3576,41053,ambient_soundscheme,cops_outside,-1033.7 635.119 -251,,,,0
+3577,41066,light_spot,,-865.975 492.472 213.887,,,,0
+3578,41085,env_sprite,,-867.656 492.749 214,materials/sprites/glowa.vmt,,,0
+3579,41105,item_g_ring_gold,wedding_ring,-1016 744 -8,,,,0
+3580,41117,inspection_node,,-1016 744 -6,,,,0
+3581,41130,prop_hacking,jeanette_laptop,-930.787 255.972 13.5879,models/scenery/misc/laptop/laptop2.mdl,,0,0
+3582,41159,prop_hacking,therese_pc,-760.568 600.732 20,models/scenery/furniture/computer/monitor_useable.mdl,,0,0
+3583,41188,env_shake,elevator_shake,-1175.09 625.774 -273,,,,0
+3584,41204,func_door_rotating,bedroom_door,-994 714 37.5,,,,0
+3592,41309,light_spot,,-1051.92 607 111,,,,0
+3593,41328,light_spot,,-1053.07 691 111,,,,0
+3594,41347,logic_relay,argument_relay,-980 614 10,,0,0,4
+3595,41368,ambient_generic,unlock_door_sound,-983 704.538 32.0026,,,,0
+3596,41398,prop_sign,voerman_note,-1061.77 743.168 21.909,models/items/Newspaper/Ground/Newspaper.mdl,,0,1
+3597,41425,info_node,,-1190.53 496.206 -273,,,,0
+3598,41437,info_node,,-1189.98 567.474 -273,,,,0
+3599,41449,scripted_sequence,Jeanette_in_elevator,-1190.29 574.787 -281.652,,,0,8
+3600,41480,camera_cinematic,jeanette_to_elevator_camera,-996.83 338.246 -225.014,,,0,0
+3601,41498,intersting_place_conversation,,-1039.21 513 -189.114,,,,0
+3602,41518,intersting_place_conversation,,-879.214 641 -189.114,,,,0
+3603,41538,intersting_place_conversation,,-880 592 -97.1142,,,,0
+3604,41558,point_teleport,bring_Jeanette_up,-823.676 412 -14.8935,,,,0
+3605,41572,intersting_place,Jeanette_spot,-838.693 423.385 -6,,,,0
+3606,41596,info_node,,-824.043 412.248 -6,,,,0
+3607,41608,info_node,,-874.416 415.817 -6,,,,0
+3608,41620,prop_dynamic_ornament,Tourette_thirtyeight,-908 468 20,models/weapons/ThirtyEight/wield/w_f_thirtyeight.mdl,,1,0
+3609,41649,events_player,tourette_control_player,-981 607.891 129.795,,,,0
+3610,41661,scripted_sequence,player_to_tourette,-932.865 557.017 -14.8927,,,,0
+3611,41679,info_node,,-934.118 568.523 -6,,,,0
+3612,41691,prop_button,downstairsbttn,-1145.01 520.85 -224.04,models/scenery/structural/elevator_dial/elevbutton_up.mdl,,,6
+3613,41722,prop_button,upstairsbttn,-1105.89 644 28.0242,models/scenery/structural/elevator_dial/elevbutton_dn.mdl,,,6
+3614,41753,prop_button,down_button_inside_elevator,-1128 566.482 -234.843,models/scenery/structural/elevator_dial/elevbutton_1.mdl,,,3
+3615,41782,prop_button,up_button_inside_elevator,-1128 566.47 -231.248,models/scenery/structural/elevator_dial/elevbutton_2.mdl,,,3
+3616,41811,logic_relay,skin_reverter,-1239 462.266 -220.211,,0,,4
+3617,41831,point_target,camera_end,-892 336 -225,,,0,0
+3618,41844,point_target,camera_start,-796 496 -225.014,,,0,0
+3619,41857,logic_relay,tourette_sequence_relay,-887.408 464.971 -6,,0,,1
+3620,41874,env_particle,muzzle_flash,-887.269 436.013 -6,,,,0
+3621,41894,trigger_once,Therese_mad_trigger,-870 594 23.24,,1,,4
+3629,41996,intersting_place,,-1056 624 -273,,,,1
+3630,42023,trigger_once,danielle_kill_trigger,-932 484 -218,,1,,1
+3638,42122,logic_relay,jeanette_boink_relay,-855.518 364.352 -6,,0,,8
+3639,42146,math_counter,elev_counter_upstairs,-1098 646.649 60.3341,,,,4
+3640,42167,math_counter,elev_counter_downstairs,-1147.8 513 -200.133,,,,4
+3641,42188,scripted_sequence,player_to_therese,-857.107 553.471 -6,,,,0
+3642,42205,trigger_multiple,,-944.5 490 116.5,,0,,1
+3650,42304,trigger_multiple,,-1200 508 -233,,,,1
+3658,42402,prop_dynamic,,-999 668 36,models/scenery/structural/doorknoba/drknobantiquel.mdl,,,0
+3659,42428,prop_dynamic,,-988.081 668.559 36,models/scenery/structural/doorknoba/drknobantique.mdl,,,0
+3660,42454,trigger_once,interior_elevator_disable,-1066 600 38,,1,,0
+3668,42549,npc_VPedestrian,Knox_basic,-748 396 -277,models/character/npc/unique/Santa_Monica/Knox/Knox.mdl,,1,0
+3669,42609,light,,-924 478 -192,,,,0
+3670,42623,light,,-773 415 -98,,,,0
+3671,42637,light,,-897.147 716.097 5,,,,0
+3672,42651,light,,-728.15 717 5,,,,0
+3673,42665,logic_relay,argument_done_relay,-981 624.642 10.1723,,0,1,4
+3674,42686,trigger_electric_bugaloo,player_dance_trigger,,,0,,6
+3682,42781,intersting_place,dance_spot_player,-860 100 -273,,,,0
+3683,42804,intersting_place,dance_spot_player,-860 52 -273,,,,0
+3684,42827,intersting_place,dance_spot_player,-900 4 -273,,,,0
+3685,42850,intersting_place,dance_spot_player,-952 8 -273,,,,0
+3686,42873,intersting_place,dance_spot_player,-996 44 -273,,,,0
+3687,42896,intersting_place,dance_spot_player,-996 92 -273,,,,0
+3688,42919,intersting_place,dance_spot_player,-972 144 -273,,,,0
+3689,42942,intersting_place,dance_spot_player,-920 140 -273,,,,0
+3690,42965,intersting_place,dance_spot_player,-872 140 -273,,,,0
+3691,42988,info_node,,-1004 8 -273,,,,0
+3692,43000,info_node,,-856 8 -273,,,,0
+3693,43012,info_node,,-856 128 -273,,,,0
+3694,43024,info_node,,-1004 136 -273,,,,0
+3695,43036,ambient_generic,jeannette_boink_sound,-865.635 379.661 -6,,,,0
+3696,43071,camera_cinematic,tourette_cam,-926.084 641.364 67.7361,,,,0
+3697,43089,env_fade,jeanette_boink_fade,-840.448 374.404 -6,,,,1
+3698,43109,env_fade,jeanette_boink_fade_2,-828 356 -6,,,,1
+3699,43129,env_fade,jeanette_boink_fade_3,-812 336 -6,,,,1
+3700,43149,env_fade,jeanette_boink_fade_4,-804 312 -6,,,,0
+3701,43165,prop_dynamic,plus_keyboard,-1010.04 -110.235 -240.998,models/scenery/misc/keyboard/keyboard.mdl,,1,0
+3702,43190,prop_dynamic,plus_guitar,-825.232 -145.434 -240.72,models/scenery/misc/guitar/guitar5.mdl,,1,0
+3703,43214,prop_dynamic,plus_guitar,-829.257 -159.749 -240.652,models/scenery/misc/guitar/guitar8.mdl,,1,0
+3704,43238,prop_dynamic,plus_guitar,-824.032 -180.179 -240.74,models/scenery/misc/guitar/guitar3.mdl,,1,0
+3705,43262,env_particle,plus_cigar_particle,0 0 0,,,1,0
+3706,43282,prop_dynamic,plus_umbrella,-949.555 725.43 -14.7508,models/scenery/misc/umbrella/umbrella.mdl,,1,0
+3707,43308,prop_dynamic,plus_bookcase,-836.101 254.004 -15,models/scenery/furniture/bookcase/library_bookcase_small2.mdl,,1,0
+3708,43332,func_brush,,-1216 354 -222,,0,0,0
+3740,43682,func_brush,,-644 354 -222,,0,0,0
+3772,44032,logic_auto,cubemaps_builder,0 0 0,,,,1
+3773,44048,func_illusionary,,-837.6 316.5 -281.5,,,0,0
+3781,44146,func_brush,,-1247.5 42.5 -148.5,,0,,0
+3803,44391,func_illusionary,,-670.5 666.5 -92,,,0,0
+3811,44489,func_illusionary,,-798.5 666.5 -92,,,0,0
+3819,44587,func_illusionary,,-926.5 666.5 -92,,,0,0
+3827,44685,func_illusionary,,-1054.5 666.5 -92,,,0,0
+3835,44783,func_illusionary,,-1000.06 550.17 -281.5,,,0,0
+3843,44881,func_brush,,-683 545.5 -188.5,,0,0,0
+3886,45349,func_brush,,-628 428.5 -252.5,,0,0,0
+3929,45817,infodecal,,-883 612 -15,,,,0
+3930,45828,light,,-1168 608 72,,,,0
+3931,45842,func_brush,,-1031.5 602.74 -167.5,,0,0,0
+3974,46310,func_brush,therese_pc_blocker,-762 600 32,,,,0
+3982,46402,func_brush,jeanette_pc_blocker,-930 256 22.86,,,1,0
+3990,46495,npc_VPedestrian,Knox_plus,-1028 637 -153,models/character/npc/unique/Santa_Monica/Knox/Knox.mdl,,1,0
+3991,46555,logic_auto,,0 0 0,,,,1
+3992,46570,logic_timer,idle_timer,0 0 0,,0,,1
+3993,46588,params_particle,dominate_particles,0 0 0,,,,0
+3994,46601,params_particle,presence_particles,0 0 0,,,,0
+3995,46614,events_player,events_player_plus,0 0 0,,,,21
+3996,46650,events_world,world,0 0 0,,,0,24
+3997,46689,func_detail,,,,,,0
+4061,47364,func_detail,,,,,,0
+4656,53625,func_detail,,,,,,0
+5113,58458,func_detail,,,,,,0
+5357,61029,func_detail,,,,,,0
+5426,61756,func_detail,,,,,,0
+5495,62483,func_detail,,,,,,0
+5616,63752,func_detail,,,,,,0
+5743,65093,func_detail,,,,,,0
+5821,65916,func_detail,,,,,,0
+5890,66643,func_detail,,,,,,0
+5912,66874,func_detail,,,,,,0
+5920,66957,func_detail,,,,,,0
+5989,67684,func_detail,,,,,,0
+6067,68507,func_detail,,,,,,0
+6188,69776,func_detail,,,,,,0
+6210,70007,func_detail,,,,,,0
+6367,71660,func_detail,,,,,,0
+6395,71954,func_detail,,,,,,0
+6466,72703,func_detail,,,,,,0
+6474,72786,func_detail,,,,,,0
+6545,73535,func_detail,,,,,,0
+6553,73618,func_detail,,,,,,0
+6561,73701,func_detail,,,,,,0
+6583,73932,func_detail,,,,,,0
+6605,74163,func_detail,,,,,,0
+6627,74394,func_detail,,,,,,0
+6635,74477,func_detail,,,,,,0
+6657,74708,func_detail,,,,,,0
+6665,74791,func_detail,,,,,,0
+6673,74874,func_detail,,,,,,0
+6743,75612,func_detail,,,,,,0
+6772,75917,func_detail,,,,,,0
+6780,76000,func_detail,,,,,,0
+6802,76231,func_detail,,,,,,0
+6810,76314,func_detail,,,,,,0
+6818,76397,func_detail,,,,,,0
+6826,76480,func_detail,,,,,,0
+6897,77229,func_detail,,,,,,0
+6905,77312,func_detail,,,,,,0
+6933,77606,func_detail,,,,,,0
+6941,77689,func_detail,,,,,,0
+6963,77920,func_detail,,,,,,0
+6971,78003,func_detail,,,,,,0
+6979,78086,func_detail,,,,,,0
+6987,78169,func_detail,,,,,,0
+6995,78252,func_detail,,,,,,0
+7003,78335,func_detail,,,,,,0
+7011,78418,func_detail,,,,,,0
+7019,78501,func_detail,,,,,,0
+7027,78584,func_detail,,,,,,0
+7035,78667,func_detail,,,,,,0
+7050,78824,func_detail,,,,,,0
+7058,78907,func_detail,,,,,,0
+7066,78990,func_detail,,,,,,0
+7074,79073,func_detail,,,,,,0
+7082,79156,func_detail,,,,,,0
+7090,79239,prop_static,,-730 537 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7091,79257,prop_static,,-730 483 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7092,79275,prop_static,,-730 590 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7093,79293,prop_static,,-730 643 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7094,79311,prop_static,,-1054.15 469.965 175.506,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7095,79329,prop_static,,-1055.15 338.965 175.506,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7096,79347,prop_static,,-620 508 -234.534,models/scenery/structural/vesuvius/bar.mdl,,,0
+7097,79365,prop_static,,-625.259 446.593 -231.159,models/scenery/misc/Cash_Register/Cash_Register.mdl,,,0
+7098,79383,prop_static,,-631.118 447.45 -231.159,models/scenery/misc/Cash_Register/Cash_Registerdrawr.mdl,,,0
+7099,79401,prop_static,,-700.17 557.106 -232.005,models/scenery/structural/vesuvius/bartap.mdl,,,0
+7100,79419,prop_static,,-663.916 505.062 -168,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7101,79437,prop_static,,-663.916 598.062 -168,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7102,79455,prop_static,,-897.147 716.035 -13.1843,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7103,79473,prop_static,,-728.15 716.938 -13.1843,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7104,79491,prop_static,,-907.073 459.062 -165,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7105,79509,prop_static,,-1039 425.619 -165,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7106,79527,prop_static,,-1013 543.619 -28,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7107,79545,prop_static,,-860 544.619 -28,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7108,79563,prop_static,,-705 545.619 -28,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7109,79581,prop_static,,-770.937 649.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7110,79599,prop_static,,-770.937 609.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7111,79617,prop_static,,-770.937 569.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7112,79635,prop_static,,-770.937 529.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7113,79653,prop_static,,-770.937 489.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7114,79671,prop_static,,-770.937 449.981 -262.09,models/scenery/furniture/barstool/barstool.mdl,,,0
+7115,79689,prop_static,,-712 437.619 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7116,79707,prop_static,,-657 437.619 -201,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7117,79725,prop_static,,-1184 496.619 -165,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7118,79743,prop_static,,-675 592.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7119,79761,prop_static,,-724 492.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7120,79779,prop_static,,-780 590.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7121,79797,prop_static,,-834 512.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7122,79815,prop_static,,-883 593.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7123,79833,prop_static,,-956 519.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7124,79851,prop_static,,-1022 604.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7125,79869,prop_static,,-1065 508.619 -135.594,models/scenery/furniture/bartable/bartable.mdl,,,0
+7126,79887,prop_static,,-930.804 -185.074 -240.747,models/scenery/misc/drums/drum1.mdl,,,0
+7127,79905,prop_static,,-819 -31.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7128,79923,prop_static,,-930 -28.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7129,79941,prop_static,,-1042 -27.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7130,79959,prop_static,,-875 -30.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7131,79977,prop_static,,-988 -27.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7132,79995,prop_static,,-877 -158.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7133,80013,prop_static,,-932 -156.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7134,80031,prop_static,,-990 -155.381 -25,models/scenery/theater/stage_light.mdl,,,0
+7135,80049,prop_static,,-834 512.619 -116,models/scenery/furniture/ascandle/ascandle.mdl,,,0
+7136,80067,prop_static,,-846.837 752.909 53.2005,models/scenery/furniture/BookEnd/BookEnd.mdl,,,0
+7137,80085,prop_static,,-896.905 742.63 81.0892,models/scenery/furniture/asstatue/asstatue.mdl,,,0
+7138,80103,prop_static,,-1065 507.619 -116,models/scenery/furniture/ascandle/ascandle.mdl,,,0
+7139,80121,prop_static,,-956 518.619 -116,models/scenery/furniture/ascandleb/ascandleb.mdl,,,0
+7140,80139,prop_static,,-1025 604.619 -116,models/scenery/furniture/ascandle/ascandle.mdl,,,0
+7141,80157,prop_static,,-883 594.619 -116,models/scenery/furniture/ascandleb/ascandleb.mdl,,,0
+7142,80175,prop_static,,-675 594.619 -116,models/scenery/furniture/ascandle/ascandle.mdl,,,0
+7143,80193,prop_static,,-724 492.619 -116,models/scenery/furniture/ascandle/ascandle.mdl,,,0
+7144,80211,prop_static,,-1082.08 479 -15,models/scenery/furniture/bath/bath.mdl,,,0
+7145,80229,prop_static,,-1105.08 293 -15,models/scenery/furniture/toilet2/toilet_hightank2.mdl,,,0
+7146,80247,prop_static,,-1112.08 344 -15,models/scenery/furniture/sink2/sink2w.mdl,,,0
+7147,80265,prop_static,,-1120.12 344 94,models/scenery/structural/theatlights/theatlights.mdl,,,0
+7148,80283,prop_static,,-620 613 -234.534,models/scenery/structural/vesuvius/bar.mdl,,,0
+7149,80301,prop_static,,-813.006 735.852 1.9163,models/scenery/furniture/CouchBackless/CouchBackless.mdl,,,0
+7150,80319,prop_static,,-639.866 730.31 37.795,models/scenery/furniture/ChinaCabinet/ChinaCabinet.mdl,,,0
+7151,80337,prop_static,,-775.189 750.746 67.1627,models/scenery/furniture/ClockDesktop/ClockDesktop.mdl,,,0
+7152,80355,prop_static,,-648.598 487.435 24,models/scenery/furniture/Divider/Divider.mdl,,,0
+7153,80373,prop_static,,-907.736 249.316 16.3905,models/scenery/furniture/LampFloor02/LampFloor02.mdl,,,0
+7154,80391,prop_static,,-614.192 632.864 89,models/scenery/furniture/Mask/Mask.mdl,,,0
+7155,80409,prop_static,,-989 612 51,models/scenery/furniture/MirrorMetal/MirrorMetal.mdl,,,0
+7156,80427,prop_static,,-612.857 410.82 59.8682,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting03.mdl,,,0
+7157,80445,prop_static,,-662.242 448.932 10.3128,models/scenery/furniture/Papasan/Papasan.mdl,,,0
+7158,80463,prop_static,,-951.177 274.436 26,models/scenery/furniture/Vanity/Vanity.mdl,,,0
+7159,80481,prop_static,,-612.857 325.313 79.4688,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting02.mdl,,,0
+7160,80499,prop_static,,-726.077 744 81,models/scenery/furniture/asstatue/asstatue.mdl,,,0
+7161,80517,prop_static,,-614.054 662.538 48,models/scenery/furniture/Mask/Mask.mdl,,,0
+7162,80535,prop_static,,-614.471 696.226 78,models/scenery/furniture/Mask/Mask.mdl,,,0
+7163,80553,prop_static,,-818.837 752.909 53.2005,models/scenery/furniture/BookEnd/BookEnd.mdl,,,0
+7164,80571,prop_static,,-1182.07 450.965 -28,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7165,80589,prop_static,,-664.073 445.062 -28,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7166,80607,prop_static,,-612.857 555.904 60.86,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting04.mdl,,,0
+7167,80625,prop_static,,-715.695 585.096 -15,models/scenery/furniture/chair_executive/chair_executive.mdl,,,0
+7168,80643,prop_static,,-758.095 587.625 -14.9869,models/scenery/furniture/desk_executive/desk_executive.mdl,,,0
+7169,80661,prop_static,,-827.554 583.522 -15,models/scenery/furniture/Diningroom_Chairs/Diningroom_Chairs.mdl,,,0
+7170,80679,prop_static,,-757.077 515 -15,models/scenery/furniture/Fancystandinglamp/fancystandinglamp.mdl,,,0
+7171,80697,prop_static,,-928.37 298.611 -15,models/scenery/furniture/chair_newage/chair.mdl,,,0
+7172,80715,prop_static,,-712.07 351.71 14.0047,models/scenery/furniture/HeartBed/HeartBed.mdl,,,0
+7173,80733,prop_static,,-1122.15 344 63,models/scenery/furniture/MirrorMetal/MirrorMetal.mdl,,,0
+7174,80751,prop_static,,-1110.08 418 20.0003,models/scenery/misc/shampoo/shampoo.mdl,,,0
+7175,80769,prop_static,,-1102.08 414 20,models/scenery/misc/soap/soap.mdl,,,0
+7176,80787,prop_static,,-1119.9 355 30.0051,models/scenery/misc/toothbrush/toothbrush.mdl,,,0
+7177,80805,prop_static,,-1114.08 310 -15,models/scenery/misc/trash/trash.mdl,,,0
+7178,80823,prop_static,,-990 491.74 98.8815,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting05.mdl,,,0
+7179,80841,prop_static,,-856.075 492.058 223.786,models/scenery/theater/stage_light.mdl,,,0
+7180,80859,prop_static,,-718.674 482.435 24,models/scenery/furniture/Divider/Divider.mdl,,,0
+7181,80877,prop_static,,-789.674 482.435 24,models/scenery/furniture/Divider/Divider.mdl,,,0
+7182,80895,prop_static,,-752.519 622.482 20.1309,models/scenery/furniture/computer/computer_case.mdl,,,0
+7183,80913,prop_static,,-740.705 612.163 20.1309,models/scenery/furniture/computer/mouse.mdl,,,0
+7184,80931,prop_static,,-743.606 598.559 20.1309,models/scenery/furniture/computer/keyboard.mdl,,,0
+7185,80949,prop_static,,-998 612 51,models/scenery/furniture/MirrorMetal/MirrorMetal.mdl,,,0
+7186,80967,prop_static,,-1055 757 61,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting04.mdl,,,0
+7187,80985,prop_static,,-1059.79 526.249 63.6782,models/scenery/furniture/Paintings/JeanetteThereseRoom/Painting02.mdl,,,0
+7188,81003,prop_static,,-1015 561.377 -15,models/scenery/furniture/Diningroom_Chairs/Diningroom_Chairs.mdl,,,0
+7189,81021,prop_static,,-1051.92 607.062 111,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7190,81039,prop_static,,-1053.07 691.062 111,models/scenery/structural/ceilinglight/ceilinglight.mdl,,,0
+7191,81057,prop_static,,-1062.46 746.051 2.9111,models/scenery/furniture/CoffeeTable1/chanttbl.mdl,,,0
+7192,81075,prop_static,,-930 294 -198,models/scenery/structural/ashandrail/ashandrail.mdl,,,0
+7193,81093,env_cubemap,,-1043 597 -237,,,,0
+7194,81104,env_cubemap,,-928 335 -252,,,,0
+7195,81115,env_cubemap,,-928 -112 -214,,,,0
+7196,81126,env_cubemap,,-889 523 -121,,,,0
+7197,81137,env_cubemap,,-1183 608 -245,,,,0
+7198,81148,env_cubemap,,-801 539 37,,,,0
+7199,81159,env_cubemap,,-667 49 -215,,,,0
+7200,81170,env_cubemap,,-1188 43 -215,,,,0
+7201,81181,env_cubemap,,-678 560 -228,,,,0
+7202,81192,env_cubemap,,-1062 347 18,,,,0
+7203,81203,env_cubemap,,-1051 642 50,,,,0
+7204,81214,env_cubemap,,-1000 612 45,,,,0
+7205,81225,env_cubemap,,-924 298 44,,,,0
+7206,81236,env_cubemap,,-1122 344 58,,,,0

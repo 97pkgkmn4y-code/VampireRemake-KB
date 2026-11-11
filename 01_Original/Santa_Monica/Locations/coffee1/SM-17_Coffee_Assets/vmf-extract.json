@@ -1,0 +1,9345 @@
+{
+  "source": "C:\\Users\\Slava\\Documents\\VampireRemake-Starter\\Reference\\Vampire - The Masquerade Bloodlines\\SDKContent\\MapSrc\\up sources\\sm_coffee_1.vmf",
+  "world": {
+    "id": "1",
+    "mapversion": "348",
+    "classname": "worldspawn",
+    "skyname": "hav",
+    "sounds": "0",
+    "MaxRange": "4096",
+    "fogcolor": "255 255 255",
+    "fogcolor2": "255 255 255",
+    "fogdir": "1 0 0",
+    "fogstart": "500.0",
+    "fogend": "2000.0",
+    "safearea": "0",
+    "copwaitarea": "1",
+    "wetness_fadetarget": "0.0",
+    "wetness_fadein": "5.0",
+    "wetness_fadeout": "10.0",
+    "levelscript": "santamonica",
+    "comment": "Created by Wesp5 and improved by Psycho-A"
+  },
+  "entities": [
+    {
+      "line": 5311,
+      "id": "14307",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 7626,
+      "id": "14319",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "177.054 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7644,
+      "id": "14323",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "182.453 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7662,
+      "id": "14327",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "215.254 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7680,
+      "id": "14331",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "219.83 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7698,
+      "id": "14335",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "254.754 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7716,
+      "id": "14339",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "259.903 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7734,
+      "id": "14343",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "293.403 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7752,
+      "id": "14347",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "298.443 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7770,
+      "id": "14351",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "138.87 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7788,
+      "id": "14355",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "144.269 45.9298 22",
+      "outputs": []
+    },
+    {
+      "line": 7806,
+      "id": "14359",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "106.084 45.9308 22",
+      "outputs": []
+    },
+    {
+      "line": 7824,
+      "id": "14363",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "0",
+      "origin": "100.685 45.9308 22",
+      "outputs": []
+    },
+    {
+      "line": 7842,
+      "id": "18039",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 8603,
+      "id": "17659",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "3",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "200.746 -535 25",
+      "outputs": []
+    },
+    {
+      "line": 8621,
+      "id": "17663",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "195.346 -535 25",
+      "outputs": []
+    },
+    {
+      "line": 8639,
+      "id": "17667",
+      "classname": "prop_dynamic",
+      "angles": "0 186 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "195.485 -550.294 41",
+      "outputs": []
+    },
+    {
+      "line": 8671,
+      "id": "17673",
+      "classname": "prop_dynamic",
+      "angles": "0 179 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "216.993 -549.993 44.601",
+      "outputs": []
+    },
+    {
+      "line": 8703,
+      "id": "17677",
+      "classname": "prop_dynamic",
+      "angles": "0 179 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "216.95 -549.993 48.2553",
+      "outputs": []
+    },
+    {
+      "line": 8735,
+      "id": "17681",
+      "classname": "prop_dynamic",
+      "angles": "0 179 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "216.942 -549.993 51.9762",
+      "outputs": []
+    },
+    {
+      "line": 8767,
+      "id": "17685",
+      "classname": "prop_dynamic",
+      "angles": "0 179 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "217.001 -549.993 41",
+      "outputs": []
+    },
+    {
+      "line": 8799,
+      "id": "8282",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "227.3 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8817,
+      "id": "8278",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "232.7 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8835,
+      "id": "8274",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "265.5 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8853,
+      "id": "8270",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "270.076 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8871,
+      "id": "8266",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "305 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8889,
+      "id": "8262",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "309.15 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8907,
+      "id": "8258",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "342.65 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8925,
+      "id": "8254",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "0",
+      "model": "models/scenery/misc/609handle/609handle.mdl",
+      "disableshadows": "1",
+      "origin": "347.69 98.76 23",
+      "outputs": []
+    },
+    {
+      "line": 8943,
+      "id": "8098",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 10296,
+      "id": "8250",
+      "classname": "prop_static",
+      "angles": "0 -180 0",
+      "skin": "0",
+      "fademindist": "1500",
+      "fademaxdist": "2000",
+      "solid": "6",
+      "model": "models/scenery/furniture/ovena/ovenb.mdl",
+      "disableshadows": "0",
+      "origin": "104.049 112.634 38.0565",
+      "outputs": []
+    },
+    {
+      "line": 10314,
+      "id": "8138",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 11245,
+      "id": "8232",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 12017,
+      "id": "8246",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "1500",
+      "fademaxdist": "2000",
+      "solid": "6",
+      "model": "models/scenery/furniture/ovena/ovenb.mdl",
+      "disableshadows": "0",
+      "origin": "146.049 112.634 38.0565",
+      "outputs": []
+    },
+    {
+      "line": 12035,
+      "id": "8226",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 12966,
+      "id": "8200",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 13738,
+      "id": "8180",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 14669,
+      "id": "8242",
+      "classname": "prop_static",
+      "angles": "0 -180 0",
+      "skin": "0",
+      "fademindist": "1500",
+      "fademaxdist": "2000",
+      "solid": "6",
+      "model": "models/scenery/furniture/ovena/ovenb.mdl",
+      "disableshadows": "0",
+      "origin": "188.049 112.634 38.0565",
+      "outputs": []
+    },
+    {
+      "line": 14687,
+      "id": "8162",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 15459,
+      "id": "94090",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffeMaker.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "121.573 30.0972 38",
+      "outputs": []
+    },
+    {
+      "line": 15491,
+      "id": "94086",
+      "classname": "prop_dynamic",
+      "angles": "0 17.5 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffePotMetal.mdl",
+      "disableshadows": "1",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "121.573 35.7542 41",
+      "outputs": []
+    },
+    {
+      "line": 15523,
+      "id": "94082",
+      "classname": "prop_dynamic",
+      "angles": "0 294.5 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffePotMetal.mdl",
+      "disableshadows": "1",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "106.573 35.7542 41",
+      "outputs": []
+    },
+    {
+      "line": 15555,
+      "id": "94078",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffeMaker.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "106.573 30.0972 38",
+      "outputs": []
+    },
+    {
+      "line": 15587,
+      "id": "94070",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffePotMetal.mdl",
+      "disableshadows": "1",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "92.8915 35.7542 41",
+      "outputs": []
+    },
+    {
+      "line": 15619,
+      "id": "94074",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "skin": "0",
+      "solid": "0",
+      "model": "models/scenery/furniture/CoffeMaker/CoffeMaker.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "92.8915 30.0972 38",
+      "outputs": []
+    },
+    {
+      "line": 15651,
+      "id": "24016",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 16253,
+      "id": "141",
+      "classname": "env_sprite",
+      "renderfx": "14",
+      "renderamt": "50",
+      "rendercolor": "196 188 157",
+      "framerate": "0",
+      "rendermode": "3",
+      "disableshadows": "0",
+      "model": "materials/sprites/glowa.vmt",
+      "scale": ".5",
+      "spawnflags": "1",
+      "angles": "0 0 0",
+      "origin": "395 -208 126",
+      "outputs": []
+    },
+    {
+      "line": 16273,
+      "id": "142",
+      "classname": "light_spot",
+      "angles": "90 180 0",
+      "_light": "188 175 137 250",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "320",
+      "_inner_cone": "30",
+      "_cone": "60",
+      "_exponent": "1",
+      "pitch": "-90",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "395.087 -208 123",
+      "outputs": []
+    },
+    {
+      "line": 16296,
+      "id": "145",
+      "classname": "env_sprite",
+      "renderfx": "14",
+      "renderamt": "50",
+      "rendercolor": "196 188 157",
+      "framerate": "0",
+      "rendermode": "3",
+      "disableshadows": "0",
+      "model": "materials/sprites/glowa.vmt",
+      "scale": ".5",
+      "spawnflags": "1",
+      "angles": "0 0 0",
+      "origin": "395 6.1329 126",
+      "outputs": []
+    },
+    {
+      "line": 16316,
+      "id": "146",
+      "classname": "light_spot",
+      "angles": "90 0 0",
+      "_light": "188 175 137 150",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "320",
+      "_inner_cone": "30",
+      "_cone": "60",
+      "_exponent": "1",
+      "pitch": "-90",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "395 5.6272 123",
+      "outputs": []
+    },
+    {
+      "line": 16339,
+      "id": "160",
+      "classname": "infodecal",
+      "texture": "decals/structural/lightswitchb",
+      "origin": "424 44 58",
+      "outputs": []
+    },
+    {
+      "line": 16350,
+      "id": "161",
+      "classname": "infodecal",
+      "texture": "decals/structural/lightswitchb",
+      "origin": "424 -424 56",
+      "outputs": []
+    },
+    {
+      "line": 16361,
+      "id": "162",
+      "classname": "infodecal",
+      "texture": "decals/structural/lightswitchb",
+      "origin": "424 -552 56",
+      "outputs": []
+    },
+    {
+      "line": 16372,
+      "id": "163",
+      "classname": "func_door_rotating",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "disableshadows": "0",
+      "speed": "100",
+      "wait": "4",
+      "lip": "0",
+      "dmg": "0",
+      "health": "0",
+      "distance": "90",
+      "climbable": "0",
+      "spawnflags": "256",
+      "origin": "419.03 -479 53.5",
+      "targetname": "redspotbthrm1",
+      "soundgroup": "push_arm_door",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "outputs": []
+    },
+    {
+      "line": 16477,
+      "id": "165",
+      "classname": "func_door_rotating",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "disableshadows": "0",
+      "speed": "100",
+      "wait": "4",
+      "lip": "0",
+      "dmg": "0",
+      "health": "0",
+      "distance": "90",
+      "climbable": "0",
+      "spawnflags": "256",
+      "origin": "419 -351 53.5",
+      "targetname": "redspotbthrm2",
+      "soundgroup": "push_arm_door",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "outputs": []
+    },
+    {
+      "line": 16582,
+      "id": "173",
+      "classname": "light",
+      "_light": "120 100 80 25",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "205 -332 102",
+      "outputs": []
+    },
+    {
+      "line": 16600,
+      "id": "174",
+      "classname": "light",
+      "_light": "120 100 80 28",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "123 -332 102",
+      "outputs": []
+    },
+    {
+      "line": 16618,
+      "id": "185",
+      "classname": "infodecal",
+      "texture": "decals/signs/gentlemen",
+      "origin": "417 -376 79",
+      "outputs": []
+    },
+    {
+      "line": 16629,
+      "id": "186",
+      "classname": "infodecal",
+      "texture": "decals/signs/ladies",
+      "origin": "417 -504 79",
+      "outputs": []
+    },
+    {
+      "line": 16640,
+      "id": "196",
+      "classname": "info_landmark",
+      "angles": "0 90 0",
+      "targetname": "coffee",
+      "spawnflags": "1",
+      "origin": "360 -549 8",
+      "outputs": []
+    },
+    {
+      "line": 16653,
+      "id": "203",
+      "classname": "info_player_start",
+      "angles": "0 90 0",
+      "origin": "359.126 -549.025 8.88366",
+      "outputs": []
+    },
+    {
+      "line": 16664,
+      "id": "214",
+      "classname": "infodecal",
+      "texture": "decals/signs/cepsi",
+      "origin": "414 67 64",
+      "outputs": []
+    },
+    {
+      "line": 16675,
+      "id": "232",
+      "classname": "infodecal",
+      "texture": "decals/signs/slopsinkclean",
+      "origin": "487 -452 87",
+      "outputs": []
+    },
+    {
+      "line": 16686,
+      "id": "240",
+      "classname": "infodecal",
+      "texture": "decals/details/paperr",
+      "origin": "487 -440 71",
+      "outputs": []
+    },
+    {
+      "line": 16697,
+      "id": "250",
+      "classname": "light",
+      "spawnflags": "1",
+      "_light": "206 222 240 50",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "144",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "476 42 99",
+      "outputs": []
+    },
+    {
+      "line": 16716,
+      "id": "257",
+      "classname": "info_node",
+      "nodeid": "13",
+      "angles": "0 135 0",
+      "origin": "283 -485 9",
+      "outputs": []
+    },
+    {
+      "line": 16728,
+      "id": "258",
+      "classname": "info_node",
+      "nodeid": "1",
+      "angles": "0 135 0",
+      "origin": "349.627 -485.373 9",
+      "outputs": []
+    },
+    {
+      "line": 16740,
+      "id": "259",
+      "classname": "info_node",
+      "nodeid": "2",
+      "angles": "0 135 0",
+      "origin": "346.357 -356.66 9",
+      "outputs": []
+    },
+    {
+      "line": 16752,
+      "id": "261",
+      "classname": "info_node",
+      "nodeid": "4",
+      "angles": "0 135 0",
+      "origin": "345 -216 9",
+      "outputs": []
+    },
+    {
+      "line": 16764,
+      "id": "262",
+      "classname": "info_node",
+      "nodeid": "5",
+      "angles": "0 135 0",
+      "origin": "166.627 -22.3726 9",
+      "outputs": []
+    },
+    {
+      "line": 16776,
+      "id": "266",
+      "classname": "info_node",
+      "nodeid": "9",
+      "angles": "0 135 0",
+      "origin": "339.627 -49.3726 9",
+      "outputs": []
+    },
+    {
+      "line": 16788,
+      "id": "267",
+      "classname": "info_node",
+      "nodeid": "10",
+      "angles": "0 135 0",
+      "origin": "368.627 38.6274 9",
+      "outputs": []
+    },
+    {
+      "line": 16800,
+      "id": "268",
+      "classname": "info_node",
+      "nodeid": "11",
+      "angles": "0 135 0",
+      "origin": "189.627 67.6274 9",
+      "outputs": []
+    },
+    {
+      "line": 16812,
+      "id": "301",
+      "classname": "logic_auto",
+      "spawnflags": "0",
+      "origin": "702.739 -291.605 0",
+      "outputs": [
+        {
+          "event": "OnMapLoad",
+          "value": ",,,0,-1,unhidePlus(),",
+          "line": 16818
+        }
+      ]
+    },
+    {
+      "line": 16827,
+      "id": "302",
+      "classname": "logic_timer",
+      "targetname": "idle_timer",
+      "StartDisabled": "0",
+      "UseRandomTime": "0",
+      "RefireTime": "5.0",
+      "origin": "702.739 -291.605 0",
+      "outputs": [
+        {
+          "event": "OnTimer",
+          "value": ",,,0,-1,IsIdling(),",
+          "line": 16836
+        }
+      ]
+    },
+    {
+      "line": 16845,
+      "id": "303",
+      "classname": "params_particle",
+      "targetname": "dominate_particles",
+      "particle_definition": "particles/dialog_domination_emitter.txt",
+      "attach_type": "2",
+      "origin": "702.739 -291.605 0",
+      "outputs": []
+    },
+    {
+      "line": 16858,
+      "id": "304",
+      "classname": "params_particle",
+      "targetname": "presence_particles",
+      "particle_definition": "particles/dialog_presence_emitter.txt",
+      "attach_type": "2",
+      "origin": "702.739 -291.605 0",
+      "outputs": []
+    },
+    {
+      "line": 16871,
+      "id": "305",
+      "classname": "events_player",
+      "targetname": "events_player_plus",
+      "enabled": "0",
+      "origin": "702.739 -291.605 0",
+      "outputs": [
+        {
+          "event": "OnPlayerTookDamage",
+          "value": ",,,0,-1,OnPlayerTookDamage(),",
+          "line": 16878
+        },
+        {
+          "event": "OnPlayerKilled",
+          "value": ",,,0,-1,OnPlayerKilled(),",
+          "line": 16879
+        },
+        {
+          "event": "OnFrenzyEnd",
+          "value": ",,,0,-1,OnFrenzyEnd(),",
+          "line": 16880
+        },
+        {
+          "event": "OnFrenzyBegin",
+          "value": ",,,0,-1,OnFrenzyBegin(),",
+          "line": 16881
+        },
+        {
+          "event": "OnActivateProtean",
+          "value": ",,,0,-1,OnActivateProtean(),",
+          "line": 16882
+        },
+        {
+          "event": "OnActivateAuspex",
+          "value": ",,,0,-1,OnActivateAuspex(),",
+          "line": 16883
+        },
+        {
+          "event": "OnActivateFortitude",
+          "value": ",,,0,-1,OnActivateFortitude(),",
+          "line": 16884
+        },
+        {
+          "event": "OnActivateObfuscate",
+          "value": ",,,0,-1,OnActivateObfuscate(),",
+          "line": 16885
+        },
+        {
+          "event": "OnActivatePotence",
+          "value": ",,,0,-1,OnActivatePotence(),",
+          "line": 16886
+        },
+        {
+          "event": "OnActivateCelerity",
+          "value": ",,,0,-1,OnActivateCelerity(),",
+          "line": 16887
+        },
+        {
+          "event": "OnWolfMorphEnd",
+          "value": ",,,0,-1,OnWolfMorphEnd(),",
+          "line": 16888
+        },
+        {
+          "event": "OnWolfMorphBegin",
+          "value": ",,,0,1,OnWolfMorphBegin(),",
+          "line": 16889
+        },
+        {
+          "event": "OnActivatePresense",
+          "value": ",,,0,-1,OnActivatePresence(),",
+          "line": 16890
+        },
+        {
+          "event": "OnActivateAnimalismLvl1",
+          "value": ",,,0,-1,OnActivateAnimalismLvl1(),",
+          "line": 16891
+        },
+        {
+          "event": "OnActivateAnimalismLvl2",
+          "value": ",,,0,-1,OnActivateAnimalismLvl2(),",
+          "line": 16892
+        },
+        {
+          "event": "OnActivateDementationLvl1",
+          "value": ",,,0,-1,OnActivateDementationLvl1(),",
+          "line": 16893
+        },
+        {
+          "event": "OnActivateDementationLvl2",
+          "value": ",,,0,-1,OnActivateDementationLvl2(),",
+          "line": 16894
+        },
+        {
+          "event": "OnActivateDominateLvl1",
+          "value": ",,,0,-1,OnActivateDominateLvl1(),",
+          "line": 16895
+        },
+        {
+          "event": "OnActivateDominateLvl2",
+          "value": ",,,0,-1,OnActivateDominateLvl2(),",
+          "line": 16896
+        },
+        {
+          "event": "OnActivateThaumaturgyLvl1",
+          "value": ",,,0,-1,OnActivateThaumLvl1(),",
+          "line": 16897
+        },
+        {
+          "event": "OnActivateThaumaturgyLvl2",
+          "value": ",,,0,-1,OnActivateThaumLvl2(),",
+          "line": 16898
+        }
+      ]
+    },
+    {
+      "line": 16907,
+      "id": "306",
+      "classname": "events_world",
+      "targetname": "world",
+      "StartHidden": "0",
+      "origin": "702.739 -291.605 0",
+      "outputs": [
+        {
+          "event": "OnUseEnd",
+          "value": ",,,0,-1,OnUseEnd(),",
+          "line": 16914
+        },
+        {
+          "event": "OnUseBegin",
+          "value": ",,,0,-1,OnUseBegin(),",
+          "line": 16915
+        },
+        {
+          "event": "OnNormalMusicEnd",
+          "value": ",,,0,-1,OnNormalMusicEnd(),",
+          "line": 16916
+        },
+        {
+          "event": "OnNormalMusicStart",
+          "value": ",,,0,-1,OnNormalMusicStart(),",
+          "line": 16917
+        },
+        {
+          "event": "OnAlertMusicEnd",
+          "value": ",,,0,-1,OnAlertMusicEnd(),",
+          "line": 16918
+        },
+        {
+          "event": "OnAlertMusicStart",
+          "value": ",,,0,-1,OnAlertMusicStart(),",
+          "line": 16919
+        },
+        {
+          "event": "OnCombatMusicEnd",
+          "value": ",,,0,-1,OnCombatMusicEnd(),",
+          "line": 16920
+        },
+        {
+          "event": "OnCombatMusicStart",
+          "value": ",,,0,-1,OnCombatMusicStart(),",
+          "line": 16921
+        },
+        {
+          "event": "OnPlayerHasNoBlood",
+          "value": ",,,0,-1,OnPlayerHasNoBlood(),",
+          "line": 16922
+        },
+        {
+          "event": "OnMasqueradeLevelChanged",
+          "value": ",,,0,-1,OnMasqueradeLevelChanged(),",
+          "line": 16923
+        },
+        {
+          "event": "OnMasqueradeLevel5",
+          "value": ",,,0,-1,OnMasqueradeLevel5(),",
+          "line": 16924
+        },
+        {
+          "event": "OnMasqueradeLevel4",
+          "value": ",,,0,-1,OnMasqueradeLevel4(),",
+          "line": 16925
+        },
+        {
+          "event": "OnMasqueradeLevel3",
+          "value": ",,,0,-1,OnMasqueradeLevel3(),",
+          "line": 16926
+        },
+        {
+          "event": "OnMasqueradeLevel2",
+          "value": ",,,0,-1,OnMasqueradeLevel2(),",
+          "line": 16927
+        },
+        {
+          "event": "OnMasqueradeLevel1",
+          "value": ",,,0,-1,OnMasqueradeLevel1(),",
+          "line": 16928
+        },
+        {
+          "event": "OnEndHunterPursuitMode",
+          "value": ",,,0,-1,OnEndHunterPursuitMode(),",
+          "line": 16929
+        },
+        {
+          "event": "OnStartHunterPursuitMode",
+          "value": ",,,0,-1,OnStartHunterPursuitMode(),",
+          "line": 16930
+        },
+        {
+          "event": "OnEndCopAlertMode",
+          "value": ",,,0,-1,OnEndCopAlertMode(),",
+          "line": 16931
+        },
+        {
+          "event": "OnStartCopAlertMode",
+          "value": ",,,0,-1,OnStartCopAlertMode(),",
+          "line": 16932
+        },
+        {
+          "event": "OnEndCopPursuitMode",
+          "value": ",,,0,-1,OnEndCopPursuitMode(),",
+          "line": 16933
+        },
+        {
+          "event": "OnStartCopPursuitMode",
+          "value": ",,,0,-1,OnStartCopPursuitMode(),",
+          "line": 16934
+        },
+        {
+          "event": "OnCopsComing",
+          "value": ",,,0,-1,OnCopsComing(),",
+          "line": 16935
+        },
+        {
+          "event": "OnCopsOutside",
+          "value": ",,,0,-1,OnCopsOutside(),",
+          "line": 16936
+        }
+      ]
+    },
+    {
+      "line": 16945,
+      "id": "340",
+      "classname": "prop_static",
+      "angles": "0 135 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/ceilinglight/ceilinglight.mdl",
+      "disableshadows": "0",
+      "origin": "395.087 -208.079 126",
+      "outputs": []
+    },
+    {
+      "line": 16962,
+      "id": "342",
+      "classname": "prop_static",
+      "angles": "0 135 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/ceilinglight/ceilinglight.mdl",
+      "disableshadows": "0",
+      "origin": "395 5.9208 126",
+      "outputs": []
+    },
+    {
+      "line": 16979,
+      "id": "373",
+      "classname": "prop_physics",
+      "angles": "0 270 -63",
+      "skin": "0",
+      "model": "models/scenery/structural/oilfield/pallet.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "health": "0",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "spawnflags": "1",
+      "origin": "106.815 -526.963 39.8555",
+      "outputs": []
+    },
+    {
+      "line": 17008,
+      "id": "375",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/sink2/sink2.mdl",
+      "disableshadows": "0",
+      "origin": "521.163 -353.347 0",
+      "outputs": []
+    },
+    {
+      "line": 17025,
+      "id": "376",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/toileta/toileta.mdl",
+      "disableshadows": "0",
+      "origin": "510.405 -404.36 19.1938",
+      "outputs": []
+    },
+    {
+      "line": 17042,
+      "id": "377",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/sink2/sink2.mdl",
+      "disableshadows": "0",
+      "origin": "521.163 -485.347 0",
+      "outputs": []
+    },
+    {
+      "line": 17059,
+      "id": "378",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/toileta/toileta.mdl",
+      "disableshadows": "0",
+      "origin": "511.405 -535.36 19.1938",
+      "outputs": []
+    },
+    {
+      "line": 17076,
+      "id": "509",
+      "classname": "env_cubemap",
+      "cubemapsize": "0",
+      "origin": "233 -465 64",
+      "outputs": []
+    },
+    {
+      "line": 17087,
+      "id": "510",
+      "classname": "env_cubemap",
+      "cubemapsize": "0",
+      "origin": "510 -353 72",
+      "outputs": []
+    },
+    {
+      "line": 17098,
+      "id": "511",
+      "classname": "env_cubemap",
+      "cubemapsize": "0",
+      "origin": "510 -486 72",
+      "outputs": []
+    },
+    {
+      "line": 17109,
+      "id": "513",
+      "classname": "env_cubemap",
+      "cubemapsize": "0",
+      "sides": "3848 241",
+      "origin": "245 -153 61",
+      "outputs": []
+    },
+    {
+      "line": 17121,
+      "id": "197",
+      "classname": "trigger_changelevel",
+      "map": "sm_hub_1",
+      "landmark": "coffee",
+      "targetname": "coffee_transition",
+      "spawnflags": "2",
+      "outputs": []
+    },
+    {
+      "line": 17212,
+      "id": "6416",
+      "classname": "func_door_rotating",
+      "StartHidden": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "disableshadows": "1",
+      "speed": "100",
+      "wait": "5",
+      "lip": "0",
+      "dmg": "0",
+      "health": "0",
+      "noopenwanted": "1",
+      "distance": "20",
+      "climbable": "0",
+      "spawnflags": "256",
+      "use_icon": "73",
+      "locked_icon": "73",
+      "origin": "381 -575 49.5",
+      "soundgroup": "standard_door",
+      "targetname": "coffee_frontdoor",
+      "rendercolor": "255 255 255",
+      "outputs": [
+        {
+          "event": "OnOpen",
+          "value": "coffee_transition,ChangeNow,,0,-1,,",
+          "line": 17237
+        }
+      ]
+    },
+    {
+      "line": 17323,
+      "id": "323",
+      "classname": "logic_auto",
+      "targetname": "cubemaps_builder",
+      "spawnflags": "1",
+      "origin": "0 0 0",
+      "outputs": [
+        {
+          "event": "OnMapLoad",
+          "value": ",,,1.5,1,ccmd.wc_create,",
+          "line": 17330
+        }
+      ]
+    },
+    {
+      "line": 17339,
+      "id": "7569",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "121.603 -91.0894 96.9365",
+      "outputs": []
+    },
+    {
+      "line": 17363,
+      "id": "7063",
+      "classname": "prop_hacking",
+      "model": "models/scenery/misc/laptop/laptop2.mdl",
+      "targetname": "scott_laptop",
+      "StartHidden": "0",
+      "angles": "0 109 0",
+      "difficulty": "4",
+      "skilltype": "2",
+      "start_enabled": "1",
+      "colorscheme": "0",
+      "textcolumns": "36",
+      "textrows": "24",
+      "ss_delay": "1.5",
+      "ss_start": "5.0",
+      "hack_file": "vdata/HackTerminals/Scott_laptop.txt",
+      "soundgroup": "old_computer",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "457.161 101.714 36.0059",
+      "outputs": []
+    },
+    {
+      "line": 17390,
+      "id": "8374",
+      "classname": "prop_dynamic",
+      "angles": "0 0 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/tray/traystack.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "118 -448 38",
+      "outputs": []
+    },
+    {
+      "line": 17421,
+      "id": "14149",
+      "classname": "infodecal",
+      "texture": "decals/signs/orderhere",
+      "origin": "200 15 28",
+      "outputs": []
+    },
+    {
+      "line": 17432,
+      "id": "15097",
+      "classname": "prop_dynamic",
+      "angles": "0 137 180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "179.792 -223.05 70",
+      "outputs": []
+    },
+    {
+      "line": 17463,
+      "id": "15101",
+      "classname": "prop_static",
+      "angles": "0 350.5 0",
+      "skin": "0",
+      "fademindist": "1024",
+      "fademaxdist": "1800",
+      "solid": "6",
+      "model": "models/scenery/furniture/tablecafe/tablecafe.mdl",
+      "disableshadows": "0",
+      "origin": "166.158 -209.006 14.0031",
+      "outputs": []
+    },
+    {
+      "line": 17480,
+      "id": "15276",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "202.603 -91.0894 96.9365",
+      "outputs": []
+    },
+    {
+      "line": 17504,
+      "id": "15300",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "202.603 -331.089 97.9365",
+      "outputs": []
+    },
+    {
+      "line": 17528,
+      "id": "15302",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "121.603 -331.089 97.9365",
+      "outputs": []
+    },
+    {
+      "line": 17552,
+      "id": "15352",
+      "classname": "light",
+      "_light": "120 100 80 28",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "124 -91 101",
+      "outputs": []
+    },
+    {
+      "line": 17570,
+      "id": "15358",
+      "classname": "light",
+      "_light": "120 100 80 2 5",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "206 -91 101",
+      "outputs": []
+    },
+    {
+      "line": 17588,
+      "id": "8318",
+      "classname": "prop_static",
+      "angles": "0 270 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/SodaFountain/SodaFountain.mdl",
+      "disableshadows": "0",
+      "origin": "349.055 112.841 63.7409",
+      "outputs": []
+    },
+    {
+      "line": 17605,
+      "id": "17074",
+      "classname": "func_door_rotating",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "disableshadows": "0",
+      "speed": "100",
+      "wait": "4",
+      "lip": "0",
+      "dmg": "0",
+      "health": "0",
+      "distance": "90",
+      "climbable": "0",
+      "spawnflags": "256",
+      "origin": "419 -19 53.5",
+      "targetname": "backdoor",
+      "soundgroup": "push_arm_door",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "outputs": []
+    },
+    {
+      "line": 17710,
+      "id": "17377",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "101.988 -60.2302 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17741,
+      "id": "17381",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "132.988 -60.2302 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17772,
+      "id": "17385",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "164.988 -60.2302 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17803,
+      "id": "17389",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "195.988 -60.2302 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17834,
+      "id": "17393",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "227.988 -60.2302 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17865,
+      "id": "17457",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "102.988 -123.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17896,
+      "id": "17461",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "133.988 -123.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17927,
+      "id": "17465",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "164.988 -123.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17958,
+      "id": "17469",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "195.988 -123.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 17989,
+      "id": "17473",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "226.988 -123.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18020,
+      "id": "17497",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "99.9882 -300.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18051,
+      "id": "17501",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "131.988 -300.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18082,
+      "id": "17505",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "163.988 -300.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18113,
+      "id": "17509",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "195.988 -300.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18144,
+      "id": "17513",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "227.988 -300.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18175,
+      "id": "17557",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "99.9882 -363.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18206,
+      "id": "17561",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "131.988 -363.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18237,
+      "id": "17565",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "163.988 -363.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18268,
+      "id": "17569",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "195.988 -363.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18299,
+      "id": "17573",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/diner/barstool.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "227.988 -363.23 16.9097",
+      "outputs": []
+    },
+    {
+      "line": 18330,
+      "id": "18101",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "121.603 31.9106 95.9365",
+      "outputs": []
+    },
+    {
+      "line": 18354,
+      "id": "18103",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "197.603 31.9106 95.9365",
+      "outputs": []
+    },
+    {
+      "line": 18378,
+      "id": "18115",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "model": "models/scenery/misc/pooltablelamp/pooltablelights1.mdl",
+      "StartHidden": "0",
+      "health": "0",
+      "skin": "0",
+      "disableshadows": "1",
+      "solid": "6",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "273.603 31.9106 95.9365",
+      "outputs": []
+    },
+    {
+      "line": 18402,
+      "id": "18141",
+      "classname": "light",
+      "_light": "120 100 80 25",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "205 32 101",
+      "outputs": []
+    },
+    {
+      "line": 18420,
+      "id": "18147",
+      "classname": "light",
+      "_light": "120 100 80 28",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "123 32 101",
+      "outputs": []
+    },
+    {
+      "line": 18438,
+      "id": "18183",
+      "classname": "light",
+      "_light": "120 100 80 25",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "192",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "276 32 101",
+      "outputs": []
+    },
+    {
+      "line": 18456,
+      "id": "18195",
+      "classname": "prop_static",
+      "angles": "0 360 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/trashcafe/trashcafe.mdl",
+      "disableshadows": "0",
+      "origin": "96.1814 -211.568 1",
+      "outputs": []
+    },
+    {
+      "line": 18473,
+      "id": "19160",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 18556,
+      "id": "20803",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 18639,
+      "id": "507",
+      "classname": "prop_static",
+      "angles": "0 0 0",
+      "skin": "0",
+      "fademindist": "2250",
+      "fademaxdist": "2500",
+      "solid": "6",
+      "model": "models/scenery/structural/shoplight/shoplightwithbulbs.mdl",
+      "disableshadows": "0",
+      "origin": "476.792 41.6688 124.335",
+      "outputs": []
+    },
+    {
+      "line": 18656,
+      "id": "25900",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 19406,
+      "id": "33300",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 20096,
+      "id": "44729",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 20328,
+      "id": "44746",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 20560,
+      "id": "45331",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 20792,
+      "id": "45941",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 21024,
+      "id": "45945",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 21256,
+      "id": "45949",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 21488,
+      "id": "47949",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 21678,
+      "id": "47962",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 21868,
+      "id": "49374",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 22100,
+      "id": "50112",
+      "classname": "env_cubemap",
+      "origin": "288 72 64",
+      "outputs": []
+    },
+    {
+      "line": 22110,
+      "id": "51847",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 22342,
+      "id": "53811",
+      "classname": "prop_physics",
+      "angles": "0 30 0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/trash/trash.mdl",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "spawnflags": "1",
+      "origin": "437 -554 0.0121298",
+      "outputs": []
+    },
+    {
+      "line": 22367,
+      "id": "53919",
+      "classname": "prop_physics",
+      "angles": "0 47 0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/trash/trash.mdl",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "spawnflags": "1",
+      "origin": "436 -423 0.01213",
+      "outputs": []
+    },
+    {
+      "line": 22392,
+      "id": "54582",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 22697,
+      "id": "54874",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 23002,
+      "id": "57166",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 23307,
+      "id": "57420",
+      "classname": "func_brush",
+      "StartHidden": "0",
+      "disableshadows": "1",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "StartDisabled": "0",
+      "Solidity": "0",
+      "climbable": "0",
+      "InputFilter": "0",
+      "origin": "478 -567.5 38.5",
+      "outputs": []
+    },
+    {
+      "line": 23554,
+      "id": "61033",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 24156,
+      "id": "75786",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 24758,
+      "id": "76893",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 25360,
+      "id": "77991",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 25962,
+      "id": "80241",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 26564,
+      "id": "81357",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 27166,
+      "id": "82504",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 27768,
+      "id": "83794",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 28370,
+      "id": "85155",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 28676,
+      "id": "85849",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 28982,
+      "id": "85916",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 29288,
+      "id": "86541",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 29594,
+      "id": "88989",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 29899,
+      "id": "89257",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 30204,
+      "id": "90709",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 30509,
+      "id": "90712",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 30814,
+      "id": "93283",
+      "classname": "prop_dynamic",
+      "angles": "0 29.5 180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "150.803 -221.772 70",
+      "outputs": []
+    },
+    {
+      "line": 30845,
+      "id": "93311",
+      "classname": "prop_dynamic",
+      "angles": "0 317 -180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "152.406 -192.514 71",
+      "outputs": []
+    },
+    {
+      "line": 30876,
+      "id": "93313",
+      "classname": "prop_dynamic",
+      "angles": "0 209.5 -180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "181.395 -193.792 71",
+      "outputs": []
+    },
+    {
+      "line": 30907,
+      "id": "93722",
+      "classname": "prop_static",
+      "angles": "0 3 0",
+      "skin": "0",
+      "fademindist": "1024",
+      "fademaxdist": "1800",
+      "solid": "6",
+      "model": "models/scenery/furniture/tablecafe/tablecafe.mdl",
+      "disableshadows": "0",
+      "origin": "257.345 -229.813 14.0031",
+      "outputs": []
+    },
+    {
+      "line": 30924,
+      "id": "93726",
+      "classname": "prop_dynamic",
+      "angles": "0 149.5 -180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "273.695 -240.573 70",
+      "outputs": []
+    },
+    {
+      "line": 30955,
+      "id": "93728",
+      "classname": "prop_dynamic",
+      "angles": "0 222 180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "268.928 -211.661 71",
+      "outputs": []
+    },
+    {
+      "line": 30986,
+      "id": "93730",
+      "classname": "prop_dynamic",
+      "angles": "0 329.5 180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "240.349 -216.687 71",
+      "outputs": []
+    },
+    {
+      "line": 31017,
+      "id": "93732",
+      "classname": "prop_dynamic",
+      "angles": "0 42 -180",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chaircafe/chaircafe.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "245.116 -245.599 70",
+      "outputs": []
+    },
+    {
+      "line": 31048,
+      "id": "94446",
+      "classname": "prop_static",
+      "angles": "0 90 0",
+      "skin": "0",
+      "fademindist": "2250",
+      "fademaxdist": "2500",
+      "solid": "0",
+      "model": "models/scenery/furniture/microwave/microwave_blink.mdl",
+      "disableshadows": "1",
+      "origin": "308.491 117.339 53.2061",
+      "outputs": []
+    },
+    {
+      "line": 31065,
+      "id": "94450",
+      "classname": "prop_static",
+      "angles": "0 90 0",
+      "skin": "0",
+      "fademindist": "2250",
+      "fademaxdist": "2500",
+      "solid": "0",
+      "model": "models/scenery/furniture/microwave/microwave_blink.mdl",
+      "disableshadows": "1",
+      "origin": "308.491 117.339 39.0847",
+      "outputs": []
+    },
+    {
+      "line": 31082,
+      "id": "94574",
+      "classname": "prop_destructable",
+      "model": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D0.mdl",
+      "angles": "0 199 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "health": "1",
+      "damage_absorption": "0",
+      "break_on_end": "0",
+      "physics_level": "9999",
+      "targetname": "cover_5",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "dmg_model_1": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D1.mdl",
+      "dmg_model_2": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D2.mdl",
+      "dmg_model_3": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D3.mdl",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "spawnflags": "0",
+      "origin": "161.581 -488.475 27.3819",
+      "outputs": []
+    },
+    {
+      "line": 31110,
+      "id": "94576",
+      "classname": "prop_physics",
+      "model": "models/scenery/structural/zhaos/boxd.mdl",
+      "angles": "87.5411 324.646 -125.805",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "spawnflags": "1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "123.684 -407.312 47.0023",
+      "outputs": []
+    },
+    {
+      "line": 31136,
+      "id": "94578",
+      "classname": "prop_physics",
+      "model": "models/scenery/structural/zhaos/boxc.mdl",
+      "angles": "0 235 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "spawnflags": "1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "122.529 -404.609 28.1912",
+      "outputs": []
+    },
+    {
+      "line": 31162,
+      "id": "94580",
+      "classname": "prop_physics",
+      "model": "models/scenery/structural/zhaos/boxa.mdl",
+      "angles": "0 220 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "spawnflags": "1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "123.051 -407.518 10.1626",
+      "outputs": []
+    },
+    {
+      "line": 31188,
+      "id": "94582",
+      "classname": "prop_physics",
+      "model": "models/scenery/structural/zhaos/boxd.mdl",
+      "angles": "0 350.5 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "spawnflags": "1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "265.705 -531.202 11.3585",
+      "outputs": []
+    },
+    {
+      "line": 31214,
+      "id": "94584",
+      "classname": "prop_destructable",
+      "model": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D0.mdl",
+      "angles": "0 97 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "health": "1",
+      "damage_absorption": "0",
+      "break_on_end": "0",
+      "physics_level": "9999",
+      "targetname": "cover_3",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "dmg_model_1": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D1.mdl",
+      "dmg_model_2": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D2.mdl",
+      "dmg_model_3": "models/scenery/misc/BoxesBreakable/BoxesBreakable_D3.mdl",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "253.353 -407.707 27.3819",
+      "outputs": []
+    },
+    {
+      "line": 31241,
+      "id": "94586",
+      "classname": "prop_physics",
+      "model": "models/scenery/misc/dolly/dolly.mdl",
+      "angles": "0 79.5 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "spawnflags": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "263.478 -540.518 29.2163",
+      "outputs": []
+    },
+    {
+      "line": 31267,
+      "id": "94657",
+      "classname": "prop_dynamic",
+      "angles": "0 355.5 0",
+      "skin": "0",
+      "model": "models/scenery/structural/oilfield/pallet.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "health": "0",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "collideable_gibs": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "spawnflags": "1",
+      "solid": "6",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "blocks_traces": "0",
+      "origin": "166.009 -207.001 7",
+      "outputs": []
+    },
+    {
+      "line": 31299,
+      "id": "94673",
+      "classname": "prop_dynamic",
+      "angles": "0 3 0",
+      "skin": "0",
+      "model": "models/scenery/structural/oilfield/pallet.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "health": "0",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "collideable_gibs": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "spawnflags": "1",
+      "solid": "6",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "blocks_traces": "0",
+      "origin": "257 -230 7",
+      "outputs": []
+    },
+    {
+      "line": 31331,
+      "id": "94777",
+      "classname": "prop_physics",
+      "model": "models/scenery/structural/zhaos/boxc.mdl",
+      "angles": "0 274 0",
+      "skin": "0",
+      "disableshadows": "0",
+      "demo_sequence": "None",
+      "health": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "physdamagescale": "0.1",
+      "spawnflags": "1",
+      "npc_transparent": "1",
+      "override_mass": "-1",
+      "crossfade_skin_time": "2.0",
+      "npc_kickable": "1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "273.211 112.914 46.1912",
+      "outputs": []
+    },
+    {
+      "line": 31357,
+      "id": "94824",
+      "classname": "infodecal",
+      "texture": "decals/signs/creditok",
+      "origin": "296 15 31",
+      "outputs": []
+    },
+    {
+      "line": 31368,
+      "id": "94869",
+      "classname": "infodecal",
+      "texture": "decals/signs/onlytoday",
+      "origin": "120 15 24",
+      "outputs": []
+    },
+    {
+      "line": 31379,
+      "id": "94947",
+      "classname": "prop_static",
+      "angles": "0 270 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/desk_executive/desk_executive.mdl",
+      "disableshadows": "0",
+      "origin": "476.625 104.701 1.0131",
+      "outputs": []
+    },
+    {
+      "line": 31396,
+      "id": "94951",
+      "classname": "prop_dynamic",
+      "angles": "0 108 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/chair_newage/chair.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "483.117 68.0807 0",
+      "outputs": []
+    },
+    {
+      "line": 31427,
+      "id": "94955",
+      "classname": "prop_static",
+      "angles": "0 253 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/PhoneOffice/PhoneOffice.mdl",
+      "disableshadows": "1",
+      "origin": "506.944 108.459 36",
+      "outputs": []
+    },
+    {
+      "line": 31444,
+      "id": "95044",
+      "classname": "infodecal",
+      "texture": "decals/details/calendar",
+      "origin": "424 80 85",
+      "outputs": []
+    },
+    {
+      "line": 31455,
+      "id": "95077",
+      "classname": "infodecal",
+      "texture": "decals/pictures/loft002",
+      "origin": "478 132 92",
+      "outputs": []
+    },
+    {
+      "line": 31466,
+      "id": "95192",
+      "classname": "infodecal",
+      "texture": "decals/signs/special",
+      "origin": "240 15 24",
+      "outputs": []
+    },
+    {
+      "line": 31477,
+      "id": "95288",
+      "classname": "ambient_soundscheme",
+      "targetname": "SchemeCoffee",
+      "scheme_file": "sound/schemes/sm_coffee_1.txt",
+      "start_enabled": "1",
+      "origin": "475 14 8",
+      "outputs": []
+    },
+    {
+      "line": 31490,
+      "id": "97000",
+      "classname": "infodecal",
+      "texture": "decals/signs/employeesonly",
+      "origin": "417 5 76",
+      "outputs": []
+    },
+    {
+      "line": 31501,
+      "id": "98638",
+      "classname": "prop_dynamic",
+      "angles": "0 352.5 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/mop/mop.mdl",
+      "disableshadows": "1",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "collideable_gibs": "0",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "301 -550 0.00994",
+      "outputs": []
+    },
+    {
+      "line": 31532,
+      "id": "99047",
+      "classname": "infodecal",
+      "texture": "decals/pictures/loft005",
+      "origin": "532 48 88",
+      "outputs": []
+    },
+    {
+      "line": 31543,
+      "id": "99902",
+      "classname": "prop_static",
+      "angles": "0 22 0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/chateau/column.mdl",
+      "skin": "0",
+      "solid": "6",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "lightingorigin": "sprp_lighting_1a",
+      "origin": "413.48 -124.203 69.4012",
+      "outputs": []
+    },
+    {
+      "line": 31561,
+      "id": "100643",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/trashtrestaurant/trashtrestaurant1.mdl",
+      "disableshadows": "0",
+      "origin": "402.192 -439.535 0.05632",
+      "outputs": []
+    },
+    {
+      "line": 31578,
+      "id": "100698",
+      "classname": "prop_static",
+      "angles": "0 360 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/trashcafe/trashcafe.mdl",
+      "disableshadows": "0",
+      "origin": "95.1814 -447.568 0",
+      "outputs": []
+    },
+    {
+      "line": 31595,
+      "id": "100774",
+      "classname": "prop_static",
+      "angles": "0 22 0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/chateau/column.mdl",
+      "skin": "0",
+      "solid": "6",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "lightingorigin": "sprp_lighting_1b",
+      "origin": "413.48 -292.203 69.4012",
+      "outputs": []
+    },
+    {
+      "line": 31613,
+      "id": "99507",
+      "classname": "env_sprite",
+      "renderfx": "14",
+      "renderamt": "50",
+      "rendercolor": "196 188 157",
+      "framerate": "0",
+      "rendermode": "3",
+      "disableshadows": "0",
+      "model": "materials/sprites/glowa.vmt",
+      "scale": ".5",
+      "spawnflags": "1",
+      "angles": "0 0 0",
+      "origin": "395 -503 126",
+      "outputs": []
+    },
+    {
+      "line": 31633,
+      "id": "343",
+      "classname": "prop_static",
+      "angles": "0 135 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/ceilinglight/ceilinglight.mdl",
+      "disableshadows": "0",
+      "origin": "395 -503.079 126",
+      "outputs": []
+    },
+    {
+      "line": 31650,
+      "id": "148",
+      "classname": "light_spot",
+      "angles": "90 180 0",
+      "_light": "188 175 137 150",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_inner_cone": "30",
+      "_cone": "75",
+      "_exponent": "1",
+      "pitch": "-90",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "395 -503 123",
+      "outputs": []
+    },
+    {
+      "line": 31672,
+      "id": "99457",
+      "classname": "prop_static",
+      "angles": "0 135 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/structural/ceilinglight/ceilinglight.mdl",
+      "disableshadows": "0",
+      "origin": "395 -376.079 126",
+      "outputs": []
+    },
+    {
+      "line": 31689,
+      "id": "147",
+      "classname": "env_sprite",
+      "renderfx": "14",
+      "renderamt": "50",
+      "rendercolor": "196 188 157",
+      "framerate": "0",
+      "rendermode": "3",
+      "disableshadows": "0",
+      "model": "materials/sprites/glowa.vmt",
+      "scale": ".5",
+      "spawnflags": "1",
+      "angles": "0 0 0",
+      "origin": "395 -376 126",
+      "outputs": []
+    },
+    {
+      "line": 31709,
+      "id": "99451",
+      "classname": "light_spot",
+      "angles": "90 180 0",
+      "_light": "188 175 137 150",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_inner_cone": "30",
+      "_cone": "75",
+      "_exponent": "1",
+      "pitch": "-90",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "_distance": "0",
+      "origin": "395 -376 123",
+      "outputs": []
+    },
+    {
+      "line": 31732,
+      "id": "101100",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "skin": "0",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "solid": "6",
+      "model": "models/scenery/misc/trashtrestaurant/trashtrestaurant1.mdl",
+      "disableshadows": "0",
+      "origin": "402.192 -63.5348 0.05632",
+      "outputs": []
+    },
+    {
+      "line": 31749,
+      "id": "107468",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 32128,
+      "id": "107861",
+      "classname": "prop_dynamic",
+      "angles": "0 69.5 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/clothing/clothing2.mdl",
+      "disableshadows": "1",
+      "origin": "468 -358 0",
+      "outputs": []
+    },
+    {
+      "line": 32149,
+      "id": "108422",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 32602,
+      "id": "108676",
+      "classname": "prop_dynamic",
+      "angles": "0 270 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/skyline/towelbar.mdl",
+      "origin": "219.366 129.869 63.2211",
+      "outputs": []
+    },
+    {
+      "line": 32622,
+      "id": "108751",
+      "classname": "prop_dynamic",
+      "angles": "0 180 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/skyline/handtowel.mdl",
+      "origin": "528.899 -514.21 71.1251",
+      "outputs": []
+    },
+    {
+      "line": 32642,
+      "id": "109598",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 32726,
+      "id": "109614",
+      "classname": "prop_dynamic",
+      "angles": "0 166.5 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/trash_litterb_lit.mdl",
+      "disableshadows": "1",
+      "origin": "443 -472 0",
+      "outputs": []
+    },
+    {
+      "line": 32747,
+      "id": "109741",
+      "classname": "prop_dynamic",
+      "angles": "0 0 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/trash_littera_lit.mdl",
+      "disableshadows": "1",
+      "origin": "445 -546 -1",
+      "outputs": []
+    },
+    {
+      "line": 32768,
+      "id": "109992",
+      "classname": "prop_dynamic",
+      "angles": "0 140 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/junk4_lit.mdl",
+      "disableshadows": "1",
+      "origin": "370.517 -76.6982 0.0181",
+      "outputs": []
+    },
+    {
+      "line": 32789,
+      "id": "110075",
+      "classname": "prop_dynamic",
+      "angles": "0 0 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/junk5_lit.mdl",
+      "disableshadows": "1",
+      "origin": "452 -408 0",
+      "outputs": []
+    },
+    {
+      "line": 32810,
+      "id": "110226",
+      "classname": "prop_dynamic",
+      "angles": "0 140 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/trash_litterc_lit.mdl",
+      "disableshadows": "1",
+      "origin": "388.498 -453.715 0",
+      "outputs": []
+    },
+    {
+      "line": 32831,
+      "id": "112818",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 33433,
+      "id": "113581",
+      "classname": "infodecal",
+      "texture": "decals/signs/sale",
+      "origin": "248 -332 21",
+      "outputs": []
+    },
+    {
+      "line": 33444,
+      "id": "114136",
+      "classname": "prop_physics",
+      "angles": "0 21.5 0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/trash/trash.mdl",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "spawnflags": "1",
+      "origin": "516 71 0.01213",
+      "outputs": []
+    },
+    {
+      "line": 33469,
+      "id": "114204",
+      "classname": "info_lighting",
+      "targetname": "sprp_lighting_1a",
+      "origin": "385 -123 120",
+      "outputs": []
+    },
+    {
+      "line": 33480,
+      "id": "114206",
+      "classname": "info_lighting",
+      "targetname": "sprp_lighting_1b",
+      "origin": "385 -290 120",
+      "outputs": []
+    },
+    {
+      "line": 33491,
+      "id": "114676",
+      "classname": "prop_dynamic",
+      "angles": "0 16.5 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/trash_stuff/trash_littera_lit.mdl",
+      "origin": "108 -192 0",
+      "outputs": []
+    },
+    {
+      "line": 33511,
+      "id": "115585",
+      "classname": "func_brush",
+      "StartHidden": "0",
+      "disableshadows": "1",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "StartDisabled": "0",
+      "Solidity": "1",
+      "climbable": "0",
+      "InputFilter": "0",
+      "origin": "478 43.5 24",
+      "outputs": []
+    },
+    {
+      "line": 34436,
+      "id": "115688",
+      "classname": "func_detail",
+      "outputs": []
+    },
+    {
+      "line": 34896,
+      "id": "115806",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/doorknoboffice/doorknoboffice.mdl",
+      "disableshadows": "1",
+      "origin": "411.975 -212.92 46.5848",
+      "outputs": []
+    },
+    {
+      "line": 34917,
+      "id": "115877",
+      "classname": "prop_dynamic",
+      "angles": "0 270 180",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/doorknoboffice/doorknoboffice.mdl",
+      "disableshadows": "1",
+      "origin": "411.975 -201.818 45.9139",
+      "outputs": []
+    },
+    {
+      "line": 34938,
+      "id": "115935",
+      "classname": "prop_doorknob",
+      "angles": "0 90 0",
+      "crossfade_skin_time": "2.0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/doorknoba/doorknoba.mdl",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "key_icon": "4",
+      "delete_key": "0",
+      "skilltype": "1",
+      "difficulty": "0",
+      "diceroll": "1",
+      "parentname": "redspotbthrm2",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "415.243 -397.69 45.3723",
+      "outputs": []
+    },
+    {
+      "line": 34963,
+      "id": "116040",
+      "classname": "prop_doorknob",
+      "angles": "0 90 0",
+      "crossfade_skin_time": "2.0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/doorknoba/doorknoba.mdl",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "key_icon": "4",
+      "delete_key": "0",
+      "skilltype": "1",
+      "difficulty": "0",
+      "diceroll": "1",
+      "parentname": "redspotbthrm1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "415.243 -525.69 45.3723",
+      "outputs": []
+    },
+    {
+      "line": 34988,
+      "id": "116540",
+      "classname": "prop_doorknob",
+      "angles": "0 270 0",
+      "crossfade_skin_time": "2.0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/doorknoba/doorknoba.mdl",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "key_icon": "4",
+      "delete_key": "0",
+      "skilltype": "1",
+      "difficulty": "0",
+      "diceroll": "1",
+      "parentname": "redspotbthrm2",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "422.751 -397.684 45.3723",
+      "outputs": []
+    },
+    {
+      "line": 35013,
+      "id": "116542",
+      "classname": "prop_doorknob",
+      "angles": "0 270 0",
+      "crossfade_skin_time": "2.0",
+      "disableshadows": "1",
+      "model": "models/scenery/structural/doorknoba/doorknoba.mdl",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "key_icon": "4",
+      "delete_key": "0",
+      "skilltype": "1",
+      "difficulty": "0",
+      "diceroll": "1",
+      "parentname": "redspotbthrm1",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "422.751 -525.684 45.3723",
+      "outputs": []
+    },
+    {
+      "line": 35038,
+      "id": "116607",
+      "classname": "prop_doorknob",
+      "angles": "0 90 0",
+      "model": "models/scenery/structural/doorknoba/drknobantiquel.mdl",
+      "crossfade_skin_time": "2.0",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "key_icon": "4",
+      "skilltype": "1",
+      "diceroll": "1",
+      "disableshadows": "1",
+      "parentname": "coffee_frontdoor",
+      "renderamt": "128",
+      "rendercolor": "255 255 255",
+      "origin": "335 -567 38.901",
+      "outputs": []
+    },
+    {
+      "line": 35061,
+      "id": "121818",
+      "classname": "env_cubemap",
+      "origin": "475 42 60",
+      "outputs": []
+    },
+    {
+      "line": 35071,
+      "id": "123612",
+      "classname": "light",
+      "_light": "196 157 77 2",
+      "fade_time": "0.05",
+      "_quadratic_attn": "1",
+      "_distance": "24",
+      "_distance_smooth": "0.25",
+      "origin": "403 -208 114",
+      "outputs": []
+    },
+    {
+      "line": 35086,
+      "id": "123898",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/toiletpaperholder/toiletpaperholder.mdl",
+      "origin": "504.545 -436 36.7163",
+      "outputs": []
+    },
+    {
+      "line": 35106,
+      "id": "123970",
+      "classname": "prop_dynamic",
+      "angles": "0 90 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/toiletpaperholder/toiletpaperholder.mdl",
+      "origin": "504.545 -567 36.7163",
+      "outputs": []
+    },
+    {
+      "line": 35126,
+      "id": "119387",
+      "classname": "prop_physics",
+      "angles": "0 170.5 0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/furniture/chair/crappy_chair.mdl",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "spawnflags": "1",
+      "origin": "518 -25 0",
+      "outputs": []
+    },
+    {
+      "line": 35151,
+      "id": "119352",
+      "classname": "prop_physics",
+      "angles": "0 180 0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/furniture/chair/crappy_chair.mdl",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "spawnflags": "1",
+      "origin": "519 -1 0",
+      "outputs": []
+    },
+    {
+      "line": 35176,
+      "id": "125155",
+      "classname": "infodecal",
+      "texture": "decals/signs/sale",
+      "origin": "248 -90 21",
+      "outputs": []
+    },
+    {
+      "line": 35187,
+      "id": "125307",
+      "classname": "prop_dynamic",
+      "angles": "0 180 0",
+      "crossfade_skin_time": "2.0",
+      "solid": "6",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/structural/skyline/handtowel.mdl",
+      "origin": "528.101 -386.21 70.1251",
+      "outputs": []
+    },
+    {
+      "line": 35207,
+      "id": "125309",
+      "classname": "infodecal",
+      "texture": "decals/signs/slopsinkclean",
+      "origin": "486.202 -324 86",
+      "outputs": []
+    },
+    {
+      "line": 35218,
+      "id": "283",
+      "classname": "light",
+      "spawnflags": "1",
+      "_light": "206 222 240 10",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "112",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "476 -507 99",
+      "outputs": []
+    },
+    {
+      "line": 35237,
+      "id": "282",
+      "classname": "light",
+      "spawnflags": "1",
+      "_light": "206 222 240 15",
+      "style": "0",
+      "_constant_attn": "0",
+      "_linear_attn": "0",
+      "_quadratic_attn": "1",
+      "_distance": "112",
+      "fade_time": "0.05",
+      "_distance_smooth": "0.25",
+      "origin": "476 -377 99",
+      "outputs": []
+    },
+    {
+      "line": 35256,
+      "id": "127476",
+      "classname": "infodecal",
+      "texture": "decals/details/beercoasterb",
+      "origin": "149.778 -84 41",
+      "outputs": []
+    },
+    {
+      "line": 35267,
+      "id": "127479",
+      "classname": "infodecal",
+      "texture": "decals/details/beercoasterb",
+      "origin": "213.038 -325.647 41",
+      "outputs": []
+    },
+    {
+      "line": 35278,
+      "id": "127482",
+      "classname": "infodecal",
+      "texture": "decals/details/beercoastere",
+      "origin": "145.973 -335.898 41",
+      "outputs": []
+    },
+    {
+      "line": 35289,
+      "id": "128046",
+      "classname": "prop_static",
+      "angles": "0 348.5 0",
+      "solid": "6",
+      "model": "models/scenery/structural/skyline/clothes.mdl",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "lightingorigin": "sprp_lighting_0",
+      "origin": "480.801 -57.138 74.7004",
+      "outputs": []
+    },
+    {
+      "line": 35305,
+      "id": "128050",
+      "classname": "prop_static",
+      "angles": "0 180 0",
+      "solid": "6",
+      "model": "models/scenery/structural/skyline/clothes.mdl",
+      "fademindist": "-1",
+      "fademaxdist": "0",
+      "lightingorigin": "sprp_lighting_0",
+      "origin": "467.676 -56.951 74.7004",
+      "outputs": []
+    },
+    {
+      "line": 35321,
+      "id": "128054",
+      "classname": "info_lighting",
+      "targetname": "sprp_lighting_0",
+      "origin": "476 -31.1504 74.8367",
+      "outputs": []
+    },
+    {
+      "line": 35332,
+      "id": "129351",
+      "classname": "prop_doorknob",
+      "angles": "0 180 0",
+      "difficulty": "3",
+      "skilltype": "1",
+      "diceroll": "1",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "delete_key": "0",
+      "model": "models/scenery/structural/doorknoba/drknobantique.mdl",
+      "parentname": "backdoor",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "key_icon": "4",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "413 26 51.401",
+      "outputs": []
+    },
+    {
+      "line": 35356,
+      "id": "129353",
+      "classname": "prop_doorknob",
+      "angles": "0 0 0",
+      "difficulty": "3",
+      "skilltype": "1",
+      "diceroll": "1",
+      "locksnd": "environmental/electronic/button_click_1.wav",
+      "delete_key": "0",
+      "model": "models/scenery/structural/doorknoba/drknobantiquel.mdl",
+      "parentname": "backdoor",
+      "use_icon": "10",
+      "locked_icon": "3",
+      "key_icon": "4",
+      "crossfade_skin_time": "2.0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "origin": "425 26 51.401",
+      "outputs": []
+    },
+    {
+      "line": 35380,
+      "id": "18199",
+      "classname": "prop_dynamic",
+      "angles": "0 180 0",
+      "skin": "0",
+      "solid": "6",
+      "model": "models/scenery/furniture/refrigerator/refrigeratorold_anim2x.mdl",
+      "disableshadows": "0",
+      "StartHidden": "0",
+      "crossfade_skin_time": "2.0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "health": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "RandomAnimation": "0",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "collideable_gibs": "0",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "blocks_traces": "0",
+      "origin": "395 114 -2",
+      "outputs": []
+    },
+    {
+      "line": 35411,
+      "id": "130799",
+      "classname": "prop_dynamic",
+      "angles": "21.3275 159.682 -100.312",
+      "crossfade_skin_time": "2.0",
+      "solid": "0",
+      "npc_transparent": "1",
+      "demo_sequence": "None",
+      "MinAnimTime": "5",
+      "MaxAnimTime": "10",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "model": "models/scenery/misc/clothing/clothing4.mdl",
+      "disableshadows": "1",
+      "origin": "499 -484 13",
+      "outputs": []
+    },
+    {
+      "line": 35432,
+      "id": "130876",
+      "classname": "prop_physics",
+      "angles": "0 84 0",
+      "skin": "0",
+      "model": "models/scenery/misc/liquor/bot1.mdl",
+      "disableshadows": "0",
+      "health": "0",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "crossfade_skin_time": "2.0",
+      "spawnflags": "1",
+      "StartHidden": "0",
+      "origin": "376 105 39",
+      "outputs": []
+    },
+    {
+      "line": 35461,
+      "id": "130895",
+      "classname": "prop_physics",
+      "angles": "0 112 0",
+      "skin": "0",
+      "model": "models/scenery/misc/liquor/bot4.mdl",
+      "disableshadows": "0",
+      "health": "0",
+      "demo_sequence": "None",
+      "npc_transparent": "1",
+      "npc_kickable": "1",
+      "collideable_gibs": "0",
+      "override_mass": "-1",
+      "ExplodeDamage": "0",
+      "ExplodeRadius": "0",
+      "renderfx": "0",
+      "rendermode": "0",
+      "renderamt": "255",
+      "rendercolor": "255 255 255",
+      "crossfade_skin_time": "2.0",
+      "spawnflags": "1",
+      "StartHidden": "0",
+      "origin": "376.272 116.464 39",
+      "outputs": []
+    },
+    {
+      "line": 35490,
+      "id": "131331",
+      "classname": "infodecal",
+      "texture": "decals/details/beercoastera",
+      "origin": "274.391 32.8191 38",
+      "outputs": []
+    }
+  ],
+  "faces": [
+    {
+      "solid": "46",
+      "side": "264",
+      "line": 109,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -452,
+          128
+        ],
+        [
+          532,
+          -451.99,
+          128
+        ],
+        [
+          532,
+          -436,
+          128
+        ],
+        [
+          424,
+          -436,
+          128
+        ]
+      ],
+      "area": 1728
+    },
+    {
+      "solid": "47",
+      "side": "270",
+      "line": 183,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -321,
+          128
+        ],
+        [
+          532,
+          -321,
+          128
+        ],
+        [
+          532,
+          -45,
+          128
+        ],
+        [
+          424,
+          -45,
+          128
+        ]
+      ],
+      "area": 29808
+    },
+    {
+      "solid": "6297",
+      "side": "983",
+      "line": 331,
+      "material": "EFFECTS/BLACK",
+      "entity": null,
+      "z": 108,
+      "vertices": [
+        [
+          327.43,
+          -604.38,
+          108
+        ],
+        [
+          384,
+          -604.38,
+          108
+        ],
+        [
+          384,
+          -600.14,
+          108
+        ],
+        [
+          327.43,
+          -600.14,
+          108
+        ]
+      ],
+      "area": 240
+    },
+    {
+      "solid": "6298",
+      "side": "989",
+      "line": 405,
+      "material": "EFFECTS/BLACK",
+      "entity": null,
+      "z": 112,
+      "vertices": [
+        [
+          327.43,
+          -600.14,
+          112
+        ],
+        [
+          384,
+          -600.14,
+          112
+        ],
+        [
+          384,
+          -584,
+          112
+        ],
+        [
+          327.43,
+          -584,
+          112
+        ]
+      ],
+      "area": 913
+    },
+    {
+      "solid": "6301",
+      "side": "1007",
+      "line": 627,
+      "material": "EFFECTS/BLACK",
+      "entity": null,
+      "z": 0,
+      "vertices": [
+        [
+          327.43,
+          -600.14,
+          0
+        ],
+        [
+          384,
+          -600.14,
+          0
+        ],
+        [
+          384,
+          -584,
+          0
+        ],
+        [
+          327.43,
+          -584,
+          0
+        ]
+      ],
+      "area": 913
+    },
+    {
+      "solid": "19",
+      "side": "105",
+      "line": 712,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 208,
+      "vertices": [
+        [
+          66.11,
+          -584,
+          208
+        ],
+        [
+          544,
+          -584,
+          208
+        ],
+        [
+          544,
+          148,
+          208
+        ],
+        [
+          66,
+          148,
+          208
+        ]
+      ],
+      "area": 349857
+    },
+    {
+      "solid": "95675",
+      "side": "3513",
+      "line": 775,
+      "material": "SIGNS/CMOORES",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -229,
+          128
+        ],
+        [
+          424,
+          -229,
+          128
+        ],
+        [
+          424,
+          -187,
+          128
+        ],
+        [
+          414,
+          -187,
+          128
+        ]
+      ],
+      "area": 420
+    },
+    {
+      "solid": "96101",
+      "side": "3519",
+      "line": 849,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -187,
+          128
+        ],
+        [
+          424,
+          -187,
+          128
+        ],
+        [
+          424,
+          -136,
+          128
+        ],
+        [
+          414,
+          -136,
+          128
+        ]
+      ],
+      "area": 510
+    },
+    {
+      "solid": "96110",
+      "side": "3525",
+      "line": 923,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -280,
+          128
+        ],
+        [
+          424,
+          -280,
+          128
+        ],
+        [
+          424,
+          -229,
+          128
+        ],
+        [
+          414,
+          -229,
+          128
+        ]
+      ],
+      "area": 510
+    },
+    {
+      "solid": "113610",
+      "side": "3842",
+      "line": 986,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 104,
+      "vertices": [
+        [
+          544,
+          -30,
+          104
+        ],
+        [
+          568,
+          -30,
+          104
+        ],
+        [
+          568,
+          32,
+          104
+        ],
+        [
+          544,
+          32,
+          104
+        ]
+      ],
+      "area": 1488
+    },
+    {
+      "solid": "125284",
+      "side": "3931",
+      "line": 1082,
+      "material": "TOOLS/TOOLSCLIP",
+      "entity": null,
+      "z": 68,
+      "vertices": [
+        [
+          296,
+          107,
+          68
+        ],
+        [
+          321,
+          107.06,
+          68
+        ],
+        [
+          321,
+          127,
+          68
+        ],
+        [
+          296,
+          126.94,
+          68
+        ]
+      ],
+      "area": 498
+    },
+    {
+      "solid": "125294",
+      "side": "3937",
+      "line": 1156,
+      "material": "TOOLS/TOOLSCLIP",
+      "entity": null,
+      "z": 64,
+      "vertices": [
+        [
+          86,
+          20,
+          64
+        ],
+        [
+          128,
+          20.07,
+          64
+        ],
+        [
+          128,
+          43,
+          64
+        ],
+        [
+          86,
+          42.93,
+          64
+        ]
+      ],
+      "area": 963
+    },
+    {
+      "solid": "6575",
+      "side": "1023",
+      "line": 1263,
+      "material": "DEV/DEV_MEASUREGENERIC01B",
+      "entity": null,
+      "z": 33,
+      "vertices": [
+        [
+          648,
+          -347,
+          33
+        ],
+        [
+          757,
+          -347,
+          33
+        ],
+        [
+          757,
+          -234,
+          33
+        ],
+        [
+          648,
+          -234,
+          33
+        ]
+      ],
+      "area": 12317
+    },
+    {
+      "solid": "14663",
+      "side": "2003",
+      "line": 1669,
+      "material": "PLASTER/CMDOORA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          380,
+          -584,
+          128
+        ],
+        [
+          424,
+          -584,
+          128
+        ],
+        [
+          424,
+          -568,
+          128
+        ],
+        [
+          380,
+          -568,
+          128
+        ]
+      ],
+      "area": 704
+    },
+    {
+      "solid": "5",
+      "side": "21",
+      "line": 1755,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -584,
+          128
+        ],
+        [
+          544,
+          -584,
+          128
+        ],
+        [
+          544,
+          -568,
+          128
+        ],
+        [
+          424,
+          -568,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "14662",
+      "side": "1997",
+      "line": 1819,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          331,
+          -584,
+          128
+        ],
+        [
+          380,
+          -584,
+          128
+        ],
+        [
+          380,
+          -568,
+          128
+        ],
+        [
+          331,
+          -568,
+          128
+        ]
+      ],
+      "area": 784
+    },
+    {
+      "solid": "14664",
+      "side": "2009",
+      "line": 1894,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          316,
+          -584,
+          128
+        ],
+        [
+          331,
+          -584,
+          128
+        ],
+        [
+          331,
+          -568,
+          128
+        ],
+        [
+          316,
+          -568,
+          128
+        ]
+      ],
+      "area": 240
+    },
+    {
+      "solid": "9923",
+      "side": "1697",
+      "line": 1980,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          196,
+          -584,
+          128
+        ],
+        [
+          316,
+          -584,
+          128
+        ],
+        [
+          316,
+          -568,
+          128
+        ],
+        [
+          196,
+          -568,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9709",
+      "side": "1685",
+      "line": 2056,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -584,
+          128
+        ],
+        [
+          196,
+          -584,
+          128
+        ],
+        [
+          196,
+          -568,
+          128
+        ],
+        [
+          66,
+          -568,
+          128
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "64",
+      "side": "372",
+      "line": 2120,
+      "material": "PLASTER/CMDOORA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -568,
+          128
+        ],
+        [
+          424,
+          -568,
+          128
+        ],
+        [
+          424,
+          -529,
+          128
+        ],
+        [
+          414,
+          -529,
+          128
+        ]
+      ],
+      "area": 390
+    },
+    {
+      "solid": "65",
+      "side": "378",
+      "line": 2195,
+      "material": "PLASTER/CMDOORA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -529,
+          128
+        ],
+        [
+          424,
+          -529,
+          128
+        ],
+        [
+          424,
+          -479,
+          128
+        ],
+        [
+          414,
+          -479,
+          128
+        ]
+      ],
+      "area": 500
+    },
+    {
+      "solid": "63",
+      "side": "366",
+      "line": 2270,
+      "material": "PLASTER/CMDOORA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -479,
+          128
+        ],
+        [
+          424,
+          -479,
+          128
+        ],
+        [
+          424,
+          -401,
+          128
+        ],
+        [
+          414,
+          -401,
+          128
+        ]
+      ],
+      "area": 780
+    },
+    {
+      "solid": "66",
+      "side": "384",
+      "line": 2345,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -401,
+          128
+        ],
+        [
+          424,
+          -401,
+          128
+        ],
+        [
+          424,
+          -351,
+          128
+        ],
+        [
+          414,
+          -351,
+          128
+        ]
+      ],
+      "area": 500
+    },
+    {
+      "solid": "62",
+      "side": "360",
+      "line": 2420,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -351,
+          128
+        ],
+        [
+          424,
+          -351,
+          128
+        ],
+        [
+          424,
+          -280,
+          128
+        ],
+        [
+          414,
+          -280,
+          128
+        ]
+      ],
+      "area": 710
+    },
+    {
+      "solid": "44",
+      "side": "252",
+      "line": 2495,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 105,
+      "vertices": [
+        [
+          414,
+          -280,
+          105
+        ],
+        [
+          424,
+          -280,
+          105
+        ],
+        [
+          424,
+          -136,
+          105
+        ],
+        [
+          414,
+          -136,
+          105
+        ]
+      ],
+      "area": 1440
+    },
+    {
+      "solid": "54",
+      "side": "312",
+      "line": 2570,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -136,
+          128
+        ],
+        [
+          424,
+          -136,
+          128
+        ],
+        [
+          424,
+          -23,
+          128
+        ],
+        [
+          414,
+          -23,
+          128
+        ]
+      ],
+      "area": 1130
+    },
+    {
+      "solid": "53",
+      "side": "306",
+      "line": 2720,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          -19,
+          128
+        ],
+        [
+          424,
+          -19,
+          128
+        ],
+        [
+          424,
+          31,
+          128
+        ],
+        [
+          414,
+          31,
+          128
+        ]
+      ],
+      "area": 500
+    },
+    {
+      "solid": "45",
+      "side": "258",
+      "line": 2870,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          35,
+          128
+        ],
+        [
+          424,
+          35,
+          128
+        ],
+        [
+          424,
+          132,
+          128
+        ],
+        [
+          414,
+          132,
+          128
+        ]
+      ],
+      "area": 970
+    },
+    {
+      "solid": "52",
+      "side": "301",
+      "line": 2956,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          532,
+          -568,
+          128
+        ],
+        [
+          544,
+          -568,
+          128
+        ],
+        [
+          544,
+          -53,
+          128
+        ],
+        [
+          532,
+          -53,
+          128
+        ]
+      ],
+      "area": 6179
+    },
+    {
+      "solid": "21083",
+      "side": "2161",
+      "line": 3020,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          532,
+          -53,
+          128
+        ],
+        [
+          544,
+          -53,
+          128
+        ],
+        [
+          544,
+          132,
+          128
+        ],
+        [
+          532,
+          132,
+          128
+        ]
+      ],
+      "area": 2220
+    },
+    {
+      "solid": "9998",
+      "side": "1745",
+      "line": 3106,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          30,
+          128
+        ],
+        [
+          82,
+          30,
+          128
+        ],
+        [
+          82,
+          132,
+          128
+        ],
+        [
+          66,
+          132,
+          128
+        ]
+      ],
+      "area": 1632
+    },
+    {
+      "solid": "9997",
+      "side": "1739",
+      "line": 3181,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -90,
+          128
+        ],
+        [
+          82,
+          -90,
+          128
+        ],
+        [
+          82,
+          30,
+          128
+        ],
+        [
+          66,
+          30,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9978",
+      "side": "1721",
+      "line": 3256,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -210,
+          128
+        ],
+        [
+          82,
+          -210,
+          128
+        ],
+        [
+          82,
+          -90,
+          128
+        ],
+        [
+          66,
+          -90,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9977",
+      "side": "1715",
+      "line": 3331,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -330,
+          128
+        ],
+        [
+          82,
+          -330,
+          128
+        ],
+        [
+          82,
+          -210,
+          128
+        ],
+        [
+          66,
+          -210,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9948",
+      "side": "1709",
+      "line": 3406,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -450,
+          128
+        ],
+        [
+          82,
+          -450,
+          128
+        ],
+        [
+          82,
+          -330,
+          128
+        ],
+        [
+          66,
+          -330,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9947",
+      "side": "1703",
+      "line": 3481,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          -568,
+          128
+        ],
+        [
+          82,
+          -568,
+          128
+        ],
+        [
+          82,
+          -450,
+          128
+        ],
+        [
+          66,
+          -450,
+          128
+        ]
+      ],
+      "area": 1888
+    },
+    {
+      "solid": "13496",
+      "side": "1775",
+      "line": 3556,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          202,
+          132,
+          128
+        ],
+        [
+          322,
+          132.01,
+          128
+        ],
+        [
+          322,
+          148,
+          128
+        ],
+        [
+          202,
+          148,
+          128
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "13497",
+      "side": "1781",
+      "line": 3631,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          322,
+          132,
+          128
+        ],
+        [
+          414,
+          132.01,
+          128
+        ],
+        [
+          414,
+          148,
+          128
+        ],
+        [
+          322,
+          148,
+          128
+        ]
+      ],
+      "area": 1472
+    },
+    {
+      "solid": "13498",
+      "side": "1787",
+      "line": 3706,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          414,
+          132,
+          128
+        ],
+        [
+          544,
+          132.01,
+          128
+        ],
+        [
+          544,
+          148,
+          128
+        ],
+        [
+          414,
+          148,
+          128
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "13499",
+      "side": "1793",
+      "line": 3781,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          66,
+          132,
+          128
+        ],
+        [
+          202,
+          132.01,
+          128
+        ],
+        [
+          202,
+          148,
+          128
+        ],
+        [
+          66,
+          148,
+          128
+        ]
+      ],
+      "area": 2175
+    },
+    {
+      "solid": "6",
+      "side": "28",
+      "line": 3867,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          532,
+          -566,
+          192
+        ],
+        [
+          544,
+          -566,
+          192
+        ],
+        [
+          544,
+          130,
+          192
+        ],
+        [
+          532,
+          130,
+          192
+        ]
+      ],
+      "area": 8352
+    },
+    {
+      "solid": "4",
+      "side": "15",
+      "line": 3931,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          66,
+          -584,
+          192
+        ],
+        [
+          544,
+          -584,
+          192
+        ],
+        [
+          544,
+          -566,
+          192
+        ],
+        [
+          66,
+          -566,
+          192
+        ]
+      ],
+      "area": 8604
+    },
+    {
+      "solid": "9",
+      "side": "46",
+      "line": 4017,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          66,
+          130,
+          192
+        ],
+        [
+          544,
+          130,
+          192
+        ],
+        [
+          544,
+          148,
+          192
+        ],
+        [
+          66,
+          148,
+          192
+        ]
+      ],
+      "area": 8604
+    },
+    {
+      "solid": "82",
+      "side": "483",
+      "line": 4070,
+      "material": "METAL/BLACKPAINTED",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          66,
+          -566,
+          192
+        ],
+        [
+          84,
+          -566,
+          192
+        ],
+        [
+          84,
+          130,
+          192
+        ],
+        [
+          66,
+          130,
+          192
+        ]
+      ],
+      "area": 12528
+    },
+    {
+      "solid": "77",
+      "side": "453",
+      "line": 4145,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          414,
+          -321,
+          192
+        ],
+        [
+          532,
+          -321,
+          192
+        ],
+        [
+          532,
+          130,
+          192
+        ],
+        [
+          414,
+          130,
+          192
+        ]
+      ],
+      "area": 53217
+    },
+    {
+      "solid": "29670",
+      "side": "2300",
+      "line": 4221,
+      "material": "PLASTER/REDWLLA",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          378,
+          -324,
+          192
+        ],
+        [
+          414,
+          -324,
+          192
+        ],
+        [
+          414,
+          130,
+          192
+        ],
+        [
+          378,
+          130,
+          192
+        ]
+      ],
+      "area": 16344
+    },
+    {
+      "solid": "121223",
+      "side": "3863",
+      "line": 4296,
+      "material": "STONE/CHFLOORB",
+      "entity": null,
+      "z": 0,
+      "vertices": [
+        [
+          420,
+          -321,
+          0
+        ],
+        [
+          544,
+          -321,
+          0
+        ],
+        [
+          544,
+          148,
+          0
+        ],
+        [
+          420,
+          148,
+          0
+        ]
+      ],
+      "area": 58156
+    },
+    {
+      "solid": "42",
+      "side": "241",
+      "line": 4393,
+      "material": "STONE/CHFLOORB",
+      "entity": null,
+      "z": 0,
+      "vertices": [
+        [
+          66,
+          -584,
+          0
+        ],
+        [
+          420,
+          -584,
+          0
+        ],
+        [
+          420,
+          148,
+          0
+        ],
+        [
+          66,
+          148,
+          0
+        ]
+      ],
+      "area": 259128
+    },
+    {
+      "solid": "120405",
+      "side": "3848",
+      "line": 4446,
+      "material": "TILE/CMFLOORA",
+      "entity": null,
+      "z": 0,
+      "vertices": [
+        [
+          420,
+          -584,
+          0
+        ],
+        [
+          544,
+          -584,
+          0
+        ],
+        [
+          544,
+          -321,
+          0
+        ],
+        [
+          420,
+          -321,
+          0
+        ]
+      ],
+      "area": 32612
+    },
+    {
+      "solid": "126244",
+      "side": "3974",
+      "line": 4532,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          414,
+          -444,
+          192
+        ],
+        [
+          532,
+          -444,
+          192
+        ],
+        [
+          532,
+          -321,
+          192
+        ],
+        [
+          414,
+          -321,
+          192
+        ]
+      ],
+      "area": 14514
+    },
+    {
+      "solid": "126245",
+      "side": "3980",
+      "line": 4608,
+      "material": "PLASTER/REDWLLA",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          378,
+          -444,
+          192
+        ],
+        [
+          414,
+          -444,
+          192
+        ],
+        [
+          414,
+          -324,
+          192
+        ],
+        [
+          378,
+          -324,
+          192
+        ]
+      ],
+      "area": 4320
+    },
+    {
+      "solid": "126297",
+      "side": "3987",
+      "line": 4694,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          414,
+          -566,
+          192
+        ],
+        [
+          532,
+          -566,
+          192
+        ],
+        [
+          532,
+          -444,
+          192
+        ],
+        [
+          414,
+          -444,
+          192
+        ]
+      ],
+      "area": 14396
+    },
+    {
+      "solid": "126298",
+      "side": "3993",
+      "line": 4770,
+      "material": "PLASTER/REDWLLA",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          378,
+          -566,
+          192
+        ],
+        [
+          414,
+          -566,
+          192
+        ],
+        [
+          414,
+          -444,
+          192
+        ],
+        [
+          378,
+          -444,
+          192
+        ]
+      ],
+      "area": 4392
+    },
+    {
+      "solid": "128480",
+      "side": "4068",
+      "line": 4856,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.36,
+          -536,
+          192
+        ],
+        [
+          379,
+          -536,
+          192
+        ],
+        [
+          379,
+          -534,
+          192
+        ],
+        [
+          76.36,
+          -534,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "128476",
+      "side": "4062",
+      "line": 4931,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.36,
+          -415,
+          192
+        ],
+        [
+          379,
+          -415,
+          192
+        ],
+        [
+          379,
+          -413,
+          192
+        ],
+        [
+          76.36,
+          -413,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "128473",
+      "side": "4056",
+      "line": 5006,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.36,
+          72,
+          192
+        ],
+        [
+          379,
+          72,
+          192
+        ],
+        [
+          379,
+          74,
+          192
+        ],
+        [
+          76.36,
+          74,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "14294",
+      "side": "1912",
+      "line": 5477,
+      "material": "TILE/COUNTERTOPB",
+      "entity": null,
+      "z": 38,
+      "vertices": [
+        [
+          82,
+          16,
+          38
+        ],
+        [
+          317,
+          16,
+          38
+        ],
+        [
+          317,
+          47.11,
+          38
+        ],
+        [
+          82,
+          47.11,
+          38
+        ]
+      ],
+      "area": 7311
+    },
+    {
+      "solid": "14278",
+      "side": "1828",
+      "line": 7486,
+      "material": "CARPET/REDCARPET",
+      "entity": null,
+      "z": 1,
+      "vertices": [
+        [
+          83.41,
+          16,
+          1
+        ],
+        [
+          317,
+          16,
+          1
+        ],
+        [
+          317,
+          47.11,
+          1
+        ],
+        [
+          83.41,
+          47.11,
+          1
+        ]
+      ],
+      "area": 7267
+    },
+    {
+      "solid": "14275",
+      "side": "1810",
+      "line": 7560,
+      "material": "CARPET/REDCARPET",
+      "entity": null,
+      "z": 35,
+      "vertices": [
+        [
+          83.41,
+          16,
+          35
+        ],
+        [
+          317,
+          16,
+          35
+        ],
+        [
+          317,
+          47.11,
+          35
+        ],
+        [
+          83.41,
+          47.11,
+          35
+        ]
+      ],
+      "area": 7267
+    },
+    {
+      "solid": "17658",
+      "side": "2119",
+      "line": 8348,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 4,
+      "vertices": [
+        [
+          163,
+          -567,
+          4
+        ],
+        [
+          230,
+          -567,
+          4
+        ],
+        [
+          230,
+          -536,
+          4
+        ],
+        [
+          163,
+          -536,
+          4
+        ]
+      ],
+      "area": 2077
+    },
+    {
+      "solid": "17672",
+      "side": "2125",
+      "line": 8422,
+      "material": "METAL/BRUSHEDCOUNTER",
+      "entity": null,
+      "z": 41,
+      "vertices": [
+        [
+          163,
+          -567,
+          41
+        ],
+        [
+          230,
+          -567,
+          41
+        ],
+        [
+          230,
+          -535,
+          41
+        ],
+        [
+          163,
+          -535,
+          41
+        ]
+      ],
+      "area": 2144
+    },
+    {
+      "solid": "8087",
+      "side": "1217",
+      "line": 9227,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 36,
+      "vertices": [
+        [
+          209,
+          99.76,
+          36
+        ],
+        [
+          382,
+          99.76,
+          36
+        ],
+        [
+          382,
+          100.76,
+          36
+        ],
+        [
+          209,
+          100.76,
+          36
+        ]
+      ],
+      "area": 173
+    },
+    {
+      "solid": "8067",
+      "side": "1155",
+      "line": 9745,
+      "material": "METAL/BRUSHEDCOUNTER",
+      "entity": null,
+      "z": 39,
+      "vertices": [
+        [
+          209,
+          98.76,
+          39
+        ],
+        [
+          382,
+          98.76,
+          39
+        ],
+        [
+          382,
+          130.76,
+          39
+        ],
+        [
+          209,
+          130.76,
+          39
+        ]
+      ],
+      "area": 5536
+    },
+    {
+      "solid": "8091",
+      "side": "1229",
+      "line": 10126,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          209,
+          99.76,
+          2
+        ],
+        [
+          382,
+          99.76,
+          2
+        ],
+        [
+          382,
+          130.76,
+          2
+        ],
+        [
+          209,
+          130.76,
+          2
+        ]
+      ],
+      "area": 5363
+    },
+    {
+      "solid": "8031",
+      "side": "1129",
+      "line": 11529,
+      "material": "OBJECTS/OVENATRAY",
+      "entity": null,
+      "z": 10,
+      "vertices": [
+        [
+          85,
+          101.76,
+          10
+        ],
+        [
+          86,
+          100.76,
+          10
+        ],
+        [
+          122,
+          100.76,
+          10
+        ],
+        [
+          123,
+          101.76,
+          10
+        ],
+        [
+          123,
+          127.76,
+          10
+        ],
+        [
+          85,
+          127.76,
+          10
+        ]
+      ],
+      "area": 1025
+    },
+    {
+      "solid": "8237",
+      "side": "1662",
+      "line": 11603,
+      "material": "OBJECTS/OVENAINSD",
+      "entity": null,
+      "z": 3,
+      "vertices": [
+        [
+          85,
+          95.76,
+          3
+        ],
+        [
+          123,
+          95.76,
+          3
+        ],
+        [
+          123,
+          130.76,
+          3
+        ],
+        [
+          85,
+          130.76,
+          3
+        ]
+      ],
+      "area": 1330
+    },
+    {
+      "solid": "8239",
+      "side": "1668",
+      "line": 11677,
+      "material": "OBJECTS/OVENASD",
+      "entity": null,
+      "z": 32,
+      "vertices": [
+        [
+          84,
+          95.76,
+          32
+        ],
+        [
+          124,
+          95.76,
+          32
+        ],
+        [
+          124,
+          130.76,
+          32
+        ],
+        [
+          84,
+          130.76,
+          32
+        ]
+      ],
+      "area": 1400
+    },
+    {
+      "solid": "8025",
+      "side": "1075",
+      "line": 11751,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 33,
+      "vertices": [
+        [
+          83,
+          95.76,
+          33
+        ],
+        [
+          125,
+          95.76,
+          33
+        ],
+        [
+          125,
+          130.76,
+          33
+        ],
+        [
+          83,
+          130.76,
+          33
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "8022",
+      "side": "1059",
+      "line": 11995,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          83,
+          95.76,
+          2
+        ],
+        [
+          125,
+          95.76,
+          2
+        ],
+        [
+          125,
+          130.76,
+          2
+        ],
+        [
+          83,
+          130.76,
+          2
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "8201",
+      "side": "1557",
+      "line": 13028,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          125,
+          95.76,
+          2
+        ],
+        [
+          167,
+          95.76,
+          2
+        ],
+        [
+          167,
+          130.76,
+          2
+        ],
+        [
+          125,
+          130.76,
+          2
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "8207",
+      "side": "1573",
+      "line": 13154,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 33,
+      "vertices": [
+        [
+          125,
+          95.76,
+          33
+        ],
+        [
+          167,
+          95.76,
+          33
+        ],
+        [
+          167,
+          130.76,
+          33
+        ],
+        [
+          125,
+          130.76,
+          33
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "8197",
+      "side": "1543",
+      "line": 13302,
+      "material": "OBJECTS/OVENASD",
+      "entity": null,
+      "z": 32,
+      "vertices": [
+        [
+          126,
+          95.76,
+          32
+        ],
+        [
+          166,
+          95.76,
+          32
+        ],
+        [
+          166,
+          130.76,
+          32
+        ],
+        [
+          126,
+          130.76,
+          32
+        ]
+      ],
+      "area": 1400
+    },
+    {
+      "solid": "8029",
+      "side": "1111",
+      "line": 13398,
+      "material": "OBJECTS/OVENATRAY",
+      "entity": null,
+      "z": 10,
+      "vertices": [
+        [
+          127,
+          101.76,
+          10
+        ],
+        [
+          128,
+          100.76,
+          10
+        ],
+        [
+          164,
+          100.76,
+          10
+        ],
+        [
+          165,
+          101.76,
+          10
+        ],
+        [
+          165,
+          127.76,
+          10
+        ],
+        [
+          127,
+          127.76,
+          10
+        ]
+      ],
+      "area": 1025
+    },
+    {
+      "solid": "8195",
+      "side": "1537",
+      "line": 13694,
+      "material": "OBJECTS/OVENAINSD",
+      "entity": null,
+      "z": 3,
+      "vertices": [
+        [
+          127,
+          95.76,
+          3
+        ],
+        [
+          165,
+          95.76,
+          3
+        ],
+        [
+          165,
+          130.76,
+          3
+        ],
+        [
+          127,
+          130.76,
+          3
+        ]
+      ],
+      "area": 1330
+    },
+    {
+      "solid": "8167",
+      "side": "1454",
+      "line": 14801,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 33,
+      "vertices": [
+        [
+          167,
+          95.76,
+          33
+        ],
+        [
+          209,
+          95.76,
+          33
+        ],
+        [
+          209,
+          130.76,
+          33
+        ],
+        [
+          167,
+          130.76,
+          33
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "8157",
+      "side": "1424",
+      "line": 14875,
+      "material": "OBJECTS/OVENASD",
+      "entity": null,
+      "z": 32,
+      "vertices": [
+        [
+          168,
+          95.76,
+          32
+        ],
+        [
+          208,
+          95.76,
+          32
+        ],
+        [
+          208,
+          130.76,
+          32
+        ],
+        [
+          168,
+          130.76,
+          32
+        ]
+      ],
+      "area": 1400
+    },
+    {
+      "solid": "8027",
+      "side": "1093",
+      "line": 15119,
+      "material": "OBJECTS/OVENATRAY",
+      "entity": null,
+      "z": 10,
+      "vertices": [
+        [
+          169,
+          101.76,
+          10
+        ],
+        [
+          170,
+          100.76,
+          10
+        ],
+        [
+          206,
+          100.76,
+          10
+        ],
+        [
+          207,
+          101.76,
+          10
+        ],
+        [
+          207,
+          127.76,
+          10
+        ],
+        [
+          169,
+          127.76,
+          10
+        ]
+      ],
+      "area": 1025
+    },
+    {
+      "solid": "8155",
+      "side": "1418",
+      "line": 15267,
+      "material": "OBJECTS/OVENAINSD",
+      "entity": null,
+      "z": 3,
+      "vertices": [
+        [
+          169,
+          95.76,
+          3
+        ],
+        [
+          207,
+          95.76,
+          3
+        ],
+        [
+          207,
+          130.76,
+          3
+        ],
+        [
+          169,
+          130.76,
+          3
+        ]
+      ],
+      "area": 1330
+    },
+    {
+      "solid": "8161",
+      "side": "1438",
+      "line": 15437,
+      "material": "METAL/BRUSHED",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          167,
+          95.76,
+          2
+        ],
+        [
+          209,
+          95.76,
+          2
+        ],
+        [
+          209,
+          130.76,
+          2
+        ],
+        [
+          167,
+          130.76,
+          2
+        ]
+      ],
+      "area": 1470
+    },
+    {
+      "solid": "116",
+      "side": "687",
+      "line": 15669,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          84,
+          -477,
+          192
+        ],
+        [
+          378.88,
+          -477,
+          192
+        ],
+        [
+          378.88,
+          -475,
+          192
+        ],
+        [
+          84,
+          -475,
+          192
+        ]
+      ],
+      "area": 589
+    },
+    {
+      "solid": "101",
+      "side": "597",
+      "line": 15743,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          82,
+          -355,
+          192
+        ],
+        [
+          378.88,
+          -355,
+          192
+        ],
+        [
+          378.88,
+          -353,
+          192
+        ],
+        [
+          82,
+          -353,
+          192
+        ]
+      ],
+      "area": 593
+    },
+    {
+      "solid": "113",
+      "side": "669",
+      "line": 15817,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          -295,
+          192
+        ],
+        [
+          378.88,
+          -295,
+          192
+        ],
+        [
+          378.88,
+          -293.02,
+          192
+        ],
+        [
+          76.24,
+          -293.02,
+          192
+        ]
+      ],
+      "area": 599
+    },
+    {
+      "solid": "111",
+      "side": "657",
+      "line": 15891,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          -234,
+          192
+        ],
+        [
+          378.88,
+          -234,
+          192
+        ],
+        [
+          378.88,
+          -232,
+          192
+        ],
+        [
+          76.24,
+          -232,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "109",
+      "side": "645",
+      "line": 15965,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          -173,
+          192
+        ],
+        [
+          378.88,
+          -173,
+          192
+        ],
+        [
+          378.88,
+          -171,
+          192
+        ],
+        [
+          76.24,
+          -171,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "107",
+      "side": "633",
+      "line": 16039,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          -112,
+          192
+        ],
+        [
+          378.88,
+          -112,
+          192
+        ],
+        [
+          378.88,
+          -110,
+          192
+        ],
+        [
+          76.24,
+          -110,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "105",
+      "side": "621",
+      "line": 16113,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          -51,
+          192
+        ],
+        [
+          378.88,
+          -51,
+          192
+        ],
+        [
+          378.88,
+          -49,
+          192
+        ],
+        [
+          76.24,
+          -49,
+          192
+        ]
+      ],
+      "area": 604
+    },
+    {
+      "solid": "103",
+      "side": "609",
+      "line": 16187,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          76.24,
+          9,
+          192
+        ],
+        [
+          378.88,
+          9,
+          192
+        ],
+        [
+          378.88,
+          11,
+          192
+        ],
+        [
+          76.24,
+          11,
+          192
+        ]
+      ],
+      "area": 605
+    },
+    {
+      "solid": "164",
+      "side": "807",
+      "line": 16408,
+      "material": "PLASTER/CMDOORA",
+      "entity": null,
+      "z": 107,
+      "vertices": [
+        [
+          417.07,
+          -529,
+          107
+        ],
+        [
+          421,
+          -529,
+          107
+        ],
+        [
+          421,
+          -479,
+          107
+        ],
+        [
+          417.07,
+          -479,
+          107
+        ]
+      ],
+      "area": 197
+    },
+    {
+      "solid": "166",
+      "side": "813",
+      "line": 16513,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 107,
+      "vertices": [
+        [
+          417,
+          -401,
+          107
+        ],
+        [
+          421,
+          -401,
+          107
+        ],
+        [
+          421,
+          -351,
+          107
+        ],
+        [
+          417,
+          -351,
+          107
+        ]
+      ],
+      "area": 200
+    },
+    {
+      "solid": "198",
+      "side": "849",
+      "line": 17143,
+      "material": "TOOLS/TRIGGER_TRANSITION",
+      "entity": null,
+      "z": 108,
+      "vertices": [
+        [
+          320,
+          -569.57,
+          108
+        ],
+        [
+          391.98,
+          -570,
+          108
+        ],
+        [
+          392,
+          -512.58,
+          108
+        ],
+        [
+          320.02,
+          -512.15,
+          108
+        ]
+      ],
+      "area": 4133
+    },
+    {
+      "solid": "17075",
+      "side": "2079",
+      "line": 17641,
+      "material": "PLASTER/LIBWLLG",
+      "entity": null,
+      "z": 107,
+      "vertices": [
+        [
+          417,
+          -19,
+          107
+        ],
+        [
+          421,
+          -19,
+          107
+        ],
+        [
+          421,
+          31,
+          107
+        ],
+        [
+          417,
+          31,
+          107
+        ]
+      ],
+      "area": 200
+    },
+    {
+      "solid": "25402",
+      "side": "2180",
+      "line": 18663,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          82,
+          -568,
+          128
+        ],
+        [
+          532,
+          -568,
+          128
+        ],
+        [
+          529,
+          -565,
+          128
+        ],
+        [
+          85,
+          -565,
+          128
+        ]
+      ],
+      "area": 1341
+    },
+    {
+      "solid": "25897",
+      "side": "2198",
+      "line": 18737,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          529,
+          -565,
+          128
+        ],
+        [
+          532,
+          -568,
+          128
+        ],
+        [
+          532,
+          132,
+          128
+        ],
+        [
+          529,
+          129,
+          128
+        ]
+      ],
+      "area": 2091
+    },
+    {
+      "solid": "26598",
+      "side": "2216",
+      "line": 18811,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          82,
+          -568,
+          128
+        ],
+        [
+          85,
+          -565,
+          128
+        ],
+        [
+          85,
+          129,
+          128
+        ],
+        [
+          82,
+          132,
+          128
+        ]
+      ],
+      "area": 2091
+    },
+    {
+      "solid": "27117",
+      "side": "2234",
+      "line": 18885,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          411,
+          -565,
+          128
+        ],
+        [
+          414,
+          -568,
+          128
+        ],
+        [
+          414,
+          132,
+          128
+        ],
+        [
+          411,
+          129,
+          128
+        ]
+      ],
+      "area": 2091
+    },
+    {
+      "solid": "27124",
+      "side": "2235",
+      "line": 18959,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -568,
+          128
+        ],
+        [
+          427,
+          -565,
+          128
+        ],
+        [
+          427,
+          129,
+          128
+        ],
+        [
+          424,
+          132,
+          128
+        ]
+      ],
+      "area": 2091
+    },
+    {
+      "solid": "27858",
+      "side": "2258",
+      "line": 19033,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          427,
+          129,
+          128
+        ],
+        [
+          529,
+          129,
+          128
+        ],
+        [
+          532,
+          132,
+          128
+        ],
+        [
+          424,
+          132,
+          128
+        ]
+      ],
+      "area": 315
+    },
+    {
+      "solid": "28950",
+      "side": "2289",
+      "line": 19107,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -45,
+          128
+        ],
+        [
+          532,
+          -45,
+          128
+        ],
+        [
+          529,
+          -42,
+          128
+        ],
+        [
+          427,
+          -42,
+          128
+        ]
+      ],
+      "area": 315
+    },
+    {
+      "solid": "28671",
+      "side": "2277",
+      "line": 19181,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          424,
+          -436,
+          128
+        ],
+        [
+          532,
+          -436,
+          128
+        ],
+        [
+          529,
+          -433,
+          128
+        ],
+        [
+          427,
+          -433,
+          128
+        ]
+      ],
+      "area": 315
+    },
+    {
+      "solid": "28522",
+      "side": "2271",
+      "line": 19255,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          427,
+          -455,
+          128
+        ],
+        [
+          529,
+          -455,
+          128
+        ],
+        [
+          532,
+          -452,
+          128
+        ],
+        [
+          424,
+          -452,
+          128
+        ]
+      ],
+      "area": 315
+    },
+    {
+      "solid": "28054",
+      "side": "2265",
+      "line": 19329,
+      "material": "TOOLS/TOOLSNODRAW",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          427,
+          -324,
+          128
+        ],
+        [
+          529,
+          -324,
+          128
+        ],
+        [
+          532,
+          -321,
+          128
+        ],
+        [
+          424,
+          -321,
+          128
+        ]
+      ],
+      "area": 315
+    },
+    {
+      "solid": "37538",
+      "side": "2417",
+      "line": 19424,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          84,
+          -566,
+          192
+        ],
+        [
+          87,
+          -563,
+          192
+        ],
+        [
+          87,
+          127,
+          192
+        ],
+        [
+          84,
+          130,
+          192
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "37539",
+      "side": "2424",
+      "line": 19509,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 181,
+      "vertices": [
+        [
+          84,
+          -566,
+          181
+        ],
+        [
+          86,
+          -564,
+          181
+        ],
+        [
+          86,
+          128,
+          181
+        ],
+        [
+          84,
+          130,
+          181
+        ]
+      ],
+      "area": 1388
+    },
+    {
+      "solid": "44365",
+      "side": "2473",
+      "line": 19594,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 181,
+      "vertices": [
+        [
+          376,
+          -564,
+          181
+        ],
+        [
+          378,
+          -566,
+          181
+        ],
+        [
+          378,
+          130,
+          181
+        ],
+        [
+          376,
+          128,
+          181
+        ]
+      ],
+      "area": 1388
+    },
+    {
+      "solid": "44366",
+      "side": "2480",
+      "line": 19679,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          375,
+          -563,
+          192
+        ],
+        [
+          378,
+          -566,
+          192
+        ],
+        [
+          378,
+          130,
+          192
+        ],
+        [
+          375,
+          127,
+          192
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "126925",
+      "side": "4004",
+      "line": 19764,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 181,
+      "vertices": [
+        [
+          86,
+          128,
+          181
+        ],
+        [
+          376,
+          128,
+          181
+        ],
+        [
+          378,
+          130,
+          181
+        ],
+        [
+          84,
+          130,
+          181
+        ]
+      ],
+      "area": 584
+    },
+    {
+      "solid": "126926",
+      "side": "4011",
+      "line": 19849,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          87,
+          127,
+          192
+        ],
+        [
+          375,
+          127,
+          192
+        ],
+        [
+          378,
+          130,
+          192
+        ],
+        [
+          84,
+          130,
+          192
+        ]
+      ],
+      "area": 873
+    },
+    {
+      "solid": "127417",
+      "side": "4046",
+      "line": 19934,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 192,
+      "vertices": [
+        [
+          84,
+          -566,
+          192
+        ],
+        [
+          378,
+          -566,
+          192
+        ],
+        [
+          375,
+          -563,
+          192
+        ],
+        [
+          87,
+          -563,
+          192
+        ]
+      ],
+      "area": 873
+    },
+    {
+      "solid": "127418",
+      "side": "4053",
+      "line": 20019,
+      "material": "PLASTER/CMWLLC",
+      "entity": null,
+      "z": 181,
+      "vertices": [
+        [
+          84,
+          -566,
+          181
+        ],
+        [
+          378,
+          -566,
+          181
+        ],
+        [
+          376,
+          -564,
+          181
+        ],
+        [
+          86,
+          -564,
+          181
+        ]
+      ],
+      "area": 584
+    },
+    {
+      "solid": "15299",
+      "side": "2054",
+      "line": 21506,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 38,
+      "vertices": [
+        [
+          82,
+          -347,
+          38
+        ],
+        [
+          248,
+          -347,
+          38
+        ],
+        [
+          248,
+          -317,
+          38
+        ],
+        [
+          82,
+          -317,
+          38
+        ]
+      ],
+      "area": 4980
+    },
+    {
+      "solid": "47788",
+      "side": "2619",
+      "line": 21580,
+      "material": "TILE/COUNTERTOPB",
+      "entity": null,
+      "z": 41,
+      "vertices": [
+        [
+          82,
+          -348,
+          41
+        ],
+        [
+          249,
+          -348,
+          41
+        ],
+        [
+          249,
+          -316,
+          41
+        ],
+        [
+          82,
+          -316,
+          41
+        ]
+      ],
+      "area": 5344
+    },
+    {
+      "solid": "47963",
+      "side": "2622",
+      "line": 21696,
+      "material": "ART/BDIORAMA1",
+      "entity": null,
+      "z": 38,
+      "vertices": [
+        [
+          82,
+          -105,
+          38
+        ],
+        [
+          248,
+          -105,
+          38
+        ],
+        [
+          248,
+          -75,
+          38
+        ],
+        [
+          82,
+          -75,
+          38
+        ]
+      ],
+      "area": 4980
+    },
+    {
+      "solid": "47964",
+      "side": "2628",
+      "line": 21770,
+      "material": "TILE/COUNTERTOPB",
+      "entity": null,
+      "z": 41,
+      "vertices": [
+        [
+          82,
+          -106,
+          41
+        ],
+        [
+          249,
+          -106,
+          41
+        ],
+        [
+          249,
+          -74,
+          41
+        ],
+        [
+          82,
+          -74,
+          41
+        ]
+      ],
+      "area": 5344
+    },
+    {
+      "solid": "49336",
+      "side": "2648",
+      "line": 21930,
+      "material": "PLASTER/CEILINGE",
+      "entity": null,
+      "z": 101,
+      "vertices": [
+        [
+          412,
+          -264,
+          101
+        ],
+        [
+          414,
+          -264,
+          101
+        ],
+        [
+          414,
+          -152,
+          101
+        ],
+        [
+          412,
+          -152,
+          101
+        ]
+      ],
+      "area": 224
+    },
+    {
+      "solid": "8125",
+      "side": "1331",
+      "line": 31885,
+      "material": "METAL/BRUSHEDCOUNTER",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          84,
+          130,
+          128
+        ],
+        [
+          412,
+          130,
+          128
+        ],
+        [
+          412,
+          131,
+          128
+        ],
+        [
+          84,
+          131,
+          128
+        ]
+      ],
+      "area": 328
+    },
+    {
+      "solid": "8121",
+      "side": "1319",
+      "line": 31959,
+      "material": "METAL/BRUSHEDCOUNTER",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          84,
+          97,
+          128
+        ],
+        [
+          412,
+          97,
+          128
+        ],
+        [
+          412,
+          98,
+          128
+        ],
+        [
+          84,
+          98,
+          128
+        ]
+      ],
+      "area": 328
+    },
+    {
+      "solid": "8129",
+      "side": "1343",
+      "line": 32033,
+      "material": "METAL/BRUSHEDCOUNTER",
+      "entity": null,
+      "z": 128,
+      "vertices": [
+        [
+          84,
+          98,
+          128
+        ],
+        [
+          411,
+          98,
+          128
+        ],
+        [
+          411,
+          130,
+          128
+        ],
+        [
+          84,
+          130,
+          128
+        ]
+      ],
+      "area": 10464
+    },
+    {
+      "solid": "108204",
+      "side": "3752",
+      "line": 32230,
+      "material": "WOOD/CEILINGA",
+      "entity": null,
+      "z": 100,
+      "vertices": [
+        [
+          448,
+          -44,
+          100
+        ],
+        [
+          504,
+          -44,
+          100
+        ],
+        [
+          504,
+          -37,
+          100
+        ],
+        [
+          448,
+          -37,
+          100
+        ]
+      ],
+      "area": 392
+    },
+    {
+      "solid": "112844",
+      "side": "3827",
+      "line": 33241,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          82,
+          -568,
+          2
+        ],
+        [
+          83,
+          -567,
+          2
+        ],
+        [
+          83,
+          132,
+          2
+        ],
+        [
+          82,
+          132,
+          2
+        ]
+      ],
+      "area": 700
+    },
+    {
+      "solid": "113374",
+      "side": "3839",
+      "line": 33315,
+      "material": "PLASTER/CMWLLA",
+      "entity": null,
+      "z": 2,
+      "vertices": [
+        [
+          82,
+          -568,
+          2
+        ],
+        [
+          327,
+          -568,
+          2
+        ],
+        [
+          327,
+          -567,
+          2
+        ],
+        [
+          83,
+          -567,
+          2
+        ]
+      ],
+      "area": 245
+    },
+    {
+      "solid": "102481",
+      "side": "3548",
+      "line": 33829,
+      "material": "PLASTER/CMWLLB",
+      "entity": null,
+      "z": 48,
+      "vertices": [
+        [
+          531,
+          -44,
+          48
+        ],
+        [
+          532,
+          -45,
+          48
+        ],
+        [
+          532,
+          132,
+          48
+        ],
+        [
+          531,
+          131,
+          48
+        ]
+      ],
+      "area": 176
+    }
+  ],
+  "sections": [
+    {
+      "solid": "46",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          424,
+          -452,
+          40
+        ],
+        [
+          532,
+          -452,
+          40
+        ],
+        [
+          532,
+          -436,
+          40
+        ],
+        [
+          424,
+          -436,
+          40
+        ]
+      ],
+      "area": 1728
+    },
+    {
+      "solid": "47",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          424,
+          -321,
+          40
+        ],
+        [
+          532,
+          -321,
+          40
+        ],
+        [
+          532,
+          -45,
+          40
+        ],
+        [
+          424,
+          -45,
+          40
+        ]
+      ],
+      "area": 29808
+    },
+    {
+      "solid": "6297",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          327.43,
+          -604.38,
+          40
+        ],
+        [
+          384,
+          -604.38,
+          40
+        ],
+        [
+          384,
+          -600.14,
+          40
+        ],
+        [
+          327.43,
+          -600.14,
+          40
+        ]
+      ],
+      "area": 240
+    },
+    {
+      "solid": "125284",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          296,
+          107,
+          40
+        ],
+        [
+          321,
+          107.06,
+          40
+        ],
+        [
+          321,
+          127,
+          40
+        ],
+        [
+          296,
+          126.94,
+          40
+        ]
+      ],
+      "area": 498
+    },
+    {
+      "solid": "125294",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          86,
+          20,
+          40
+        ],
+        [
+          128,
+          20.07,
+          40
+        ],
+        [
+          128,
+          43,
+          40
+        ],
+        [
+          86,
+          42.93,
+          40
+        ]
+      ],
+      "area": 963
+    },
+    {
+      "solid": "6576",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          648,
+          -347,
+          40
+        ],
+        [
+          757,
+          -347,
+          40
+        ],
+        [
+          757,
+          -234,
+          40
+        ],
+        [
+          648,
+          -234,
+          40
+        ]
+      ],
+      "area": 12317
+    },
+    {
+      "solid": "14663",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          380,
+          -584,
+          40
+        ],
+        [
+          424,
+          -584,
+          40
+        ],
+        [
+          424,
+          -568,
+          40
+        ],
+        [
+          380,
+          -568,
+          40
+        ]
+      ],
+      "area": 704
+    },
+    {
+      "solid": "5",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          424,
+          -584,
+          40
+        ],
+        [
+          544,
+          -584,
+          40
+        ],
+        [
+          544,
+          -568,
+          40
+        ],
+        [
+          424,
+          -568,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "14664",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          316,
+          -584,
+          40
+        ],
+        [
+          331,
+          -584,
+          40
+        ],
+        [
+          331,
+          -568,
+          40
+        ],
+        [
+          316,
+          -568,
+          40
+        ]
+      ],
+      "area": 240
+    },
+    {
+      "solid": "9923",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          196,
+          -584,
+          40
+        ],
+        [
+          316,
+          -584,
+          40
+        ],
+        [
+          316,
+          -568,
+          40
+        ],
+        [
+          196,
+          -568,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9709",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -584,
+          40
+        ],
+        [
+          196,
+          -584,
+          40
+        ],
+        [
+          196,
+          -568,
+          40
+        ],
+        [
+          66,
+          -568,
+          40
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "64",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          -568,
+          40
+        ],
+        [
+          424,
+          -568,
+          40
+        ],
+        [
+          424,
+          -529,
+          40
+        ],
+        [
+          414,
+          -529,
+          40
+        ]
+      ],
+      "area": 390
+    },
+    {
+      "solid": "63",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          -479,
+          40
+        ],
+        [
+          424,
+          -479,
+          40
+        ],
+        [
+          424,
+          -401,
+          40
+        ],
+        [
+          414,
+          -401,
+          40
+        ]
+      ],
+      "area": 780
+    },
+    {
+      "solid": "62",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          -351,
+          40
+        ],
+        [
+          424,
+          -351,
+          40
+        ],
+        [
+          424,
+          -280,
+          40
+        ],
+        [
+          414,
+          -280,
+          40
+        ]
+      ],
+      "area": 710
+    },
+    {
+      "solid": "44",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          -280,
+          40
+        ],
+        [
+          424,
+          -280,
+          40
+        ],
+        [
+          424,
+          -136,
+          40
+        ],
+        [
+          414,
+          -136,
+          40
+        ]
+      ],
+      "area": 1440
+    },
+    {
+      "solid": "54",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          -136,
+          40
+        ],
+        [
+          424,
+          -136,
+          40
+        ],
+        [
+          424,
+          -23,
+          40
+        ],
+        [
+          414,
+          -23,
+          40
+        ]
+      ],
+      "area": 1130
+    },
+    {
+      "solid": "45",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          35,
+          40
+        ],
+        [
+          424,
+          35,
+          40
+        ],
+        [
+          424,
+          132,
+          40
+        ],
+        [
+          414,
+          132,
+          40
+        ]
+      ],
+      "area": 970
+    },
+    {
+      "solid": "52",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          532,
+          -568,
+          40
+        ],
+        [
+          544,
+          -568,
+          40
+        ],
+        [
+          544,
+          -53,
+          40
+        ],
+        [
+          532,
+          -53,
+          40
+        ]
+      ],
+      "area": 6180
+    },
+    {
+      "solid": "21083",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          532,
+          -53,
+          40
+        ],
+        [
+          544,
+          -53,
+          40
+        ],
+        [
+          544,
+          132,
+          40
+        ],
+        [
+          532,
+          132,
+          40
+        ]
+      ],
+      "area": 2220
+    },
+    {
+      "solid": "9998",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          30,
+          40
+        ],
+        [
+          82,
+          30,
+          40
+        ],
+        [
+          82,
+          132,
+          40
+        ],
+        [
+          66,
+          132,
+          40
+        ]
+      ],
+      "area": 1632
+    },
+    {
+      "solid": "9997",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -90,
+          40
+        ],
+        [
+          82,
+          -90,
+          40
+        ],
+        [
+          82,
+          30,
+          40
+        ],
+        [
+          66,
+          30,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9978",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -210,
+          40
+        ],
+        [
+          82,
+          -210,
+          40
+        ],
+        [
+          82,
+          -90,
+          40
+        ],
+        [
+          66,
+          -90,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9977",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -330,
+          40
+        ],
+        [
+          82,
+          -330,
+          40
+        ],
+        [
+          82,
+          -210,
+          40
+        ],
+        [
+          66,
+          -210,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9948",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -450,
+          40
+        ],
+        [
+          82,
+          -450,
+          40
+        ],
+        [
+          82,
+          -330,
+          40
+        ],
+        [
+          66,
+          -330,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "9947",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          -568,
+          40
+        ],
+        [
+          82,
+          -568,
+          40
+        ],
+        [
+          82,
+          -450,
+          40
+        ],
+        [
+          66,
+          -450,
+          40
+        ]
+      ],
+      "area": 1888
+    },
+    {
+      "solid": "13496",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          202,
+          132,
+          40
+        ],
+        [
+          322,
+          132.01,
+          40
+        ],
+        [
+          322,
+          148,
+          40
+        ],
+        [
+          202,
+          148,
+          40
+        ]
+      ],
+      "area": 1920
+    },
+    {
+      "solid": "13497",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          322,
+          132,
+          40
+        ],
+        [
+          414,
+          132.01,
+          40
+        ],
+        [
+          414,
+          148,
+          40
+        ],
+        [
+          322,
+          148,
+          40
+        ]
+      ],
+      "area": 1472
+    },
+    {
+      "solid": "13498",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          414,
+          132,
+          40
+        ],
+        [
+          544,
+          132.01,
+          40
+        ],
+        [
+          544,
+          148,
+          40
+        ],
+        [
+          414,
+          148,
+          40
+        ]
+      ],
+      "area": 2079
+    },
+    {
+      "solid": "13499",
+      "z": 40,
+      "parent": "worldspawn",
+      "targetname": "",
+      "vertices": [
+        [
+          66,
+          132,
+          40
+        ],
+        [
+          202,
+          132.01,
+          40
+        ],
+        [
+          202,
+          148,
+          40
+        ],
+        [
+          66,
+          148,
+          40
+        ]
+      ],
+      "area": 2175
+    },
+    {
+      "solid": "14292",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          82,
+          16,
+          40
+        ],
+        [
+          317,
+          16,
+          40
+        ],
+        [
+          317,
+          17.89,
+          40
+        ],
+        [
+          82,
+          17.89,
+          40
+        ]
+      ],
+      "area": 443
+    },
+    {
+      "solid": "17672",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          163,
+          -567,
+          40
+        ],
+        [
+          230,
+          -567,
+          40
+        ],
+        [
+          230,
+          -534,
+          40
+        ],
+        [
+          163,
+          -534,
+          40
+        ]
+      ],
+      "area": 2211
+    },
+    {
+      "solid": "8065",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          209,
+          129.09,
+          40
+        ],
+        [
+          382,
+          129.09,
+          40
+        ],
+        [
+          382,
+          130.76,
+          40
+        ],
+        [
+          209,
+          130.76,
+          40
+        ]
+      ],
+      "area": 288
+    },
+    {
+      "solid": "164",
+      "z": 40,
+      "parent": "func_door_rotating",
+      "targetname": "redspotbthrm1",
+      "vertices": [
+        [
+          417.07,
+          -529,
+          40
+        ],
+        [
+          421,
+          -529,
+          40
+        ],
+        [
+          421,
+          -479,
+          40
+        ],
+        [
+          417.07,
+          -479,
+          40
+        ]
+      ],
+      "area": 197
+    },
+    {
+      "solid": "166",
+      "z": 40,
+      "parent": "func_door_rotating",
+      "targetname": "redspotbthrm2",
+      "vertices": [
+        [
+          417,
+          -401,
+          40
+        ],
+        [
+          421,
+          -401,
+          40
+        ],
+        [
+          421,
+          -351,
+          40
+        ],
+        [
+          417,
+          -351,
+          40
+        ]
+      ],
+      "area": 200
+    },
+    {
+      "solid": "198",
+      "z": 40,
+      "parent": "trigger_changelevel",
+      "targetname": "coffee_transition",
+      "vertices": [
+        [
+          320,
+          -569.57,
+          40
+        ],
+        [
+          391.98,
+          -570,
+          40
+        ],
+        [
+          392,
+          -512.58,
+          40
+        ],
+        [
+          320.02,
+          -512.15,
+          40
+        ]
+      ],
+      "area": 4133
+    },
+    {
+      "solid": "17075",
+      "z": 40,
+      "parent": "func_door_rotating",
+      "targetname": "backdoor",
+      "vertices": [
+        [
+          417,
+          -19,
+          40
+        ],
+        [
+          421,
+          -19,
+          40
+        ],
+        [
+          421,
+          31,
+          40
+        ],
+        [
+          417,
+          31,
+          40
+        ]
+      ],
+      "area": 200
+    },
+    {
+      "solid": "45950",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          424,
+          -23,
+          40
+        ],
+        [
+          426,
+          -23,
+          40
+        ],
+        [
+          426,
+          35,
+          40
+        ],
+        [
+          424,
+          35,
+          40
+        ]
+      ],
+      "area": 116
+    },
+    {
+      "solid": "47788",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          82,
+          -349,
+          40
+        ],
+        [
+          250,
+          -349,
+          40
+        ],
+        [
+          250,
+          -315,
+          40
+        ],
+        [
+          82,
+          -315,
+          40
+        ]
+      ],
+      "area": 5712
+    },
+    {
+      "solid": "47964",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          82,
+          -107,
+          40
+        ],
+        [
+          250,
+          -107,
+          40
+        ],
+        [
+          250,
+          -73,
+          40
+        ],
+        [
+          82,
+          -73,
+          40
+        ]
+      ],
+      "area": 5712
+    },
+    {
+      "solid": "49336",
+      "z": 40,
+      "parent": "func_detail",
+      "targetname": "",
+      "vertices": [
+        [
+          412,
+          -264,
+          40
+        ],
+        [
+          414,
+          -264,
+          40
+        ],
+        [
+          414,
+          -152,
+          40
+        ],
+        [
+          412,
+          -152,
+          40
+        ]
+      ],
+      "area": 224
+    },
+    {
+      "solid": "102481",
+      "z": 40,
+      "parent": "func_brush",
+      "targetname": "",
+      "vertices": [
+        [
+          531,
+          -44,
+          40
+        ],
+        [
+          532,
+          -45,
+          40
+        ],
+        [
+          532,
+          132,
+          40
+        ],
+        [
+          531,
+          131,
+          40
+        ]
+      ],
+      "area": 176
+    },
+    {
+      "solid": "103609",
+      "z": 40,
+      "parent": "func_brush",
+      "targetname": "",
+      "vertices": [
+        [
+          425,
+          131,
+          40
+        ],
+        [
+          531,
+          131,
+          40
+        ],
+        [
+          532,
+          132,
+          40
+        ],
+        [
+          424,
+          132,
+          40
+        ]
+      ],
+      "area": 107
+    }
+  ]
+}

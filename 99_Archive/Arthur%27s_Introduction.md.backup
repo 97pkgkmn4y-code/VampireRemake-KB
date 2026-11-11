@@ -1,0 +1,161 @@
+# Arthur\'s Introduction Quest
+
+**Status**: IN PROGRESS  
+**Source**: `arthur.dlg` (Record 11-1010)  
+**NPC**: Arthur Kilpatrick (Bail Bonds)  
+**Location**: Santa Monica - Kilpatrick 24-Hour Bail Bonds
+
+## Quest Overview
+
+Arthur\'s Introduction is the initial quest that establishes the player\'s first interaction with Arthur Kilpatrick, the bail bondsman in Santa Monica. This quest introduces basic dialogue mechanics and sets up several related quests.
+
+## Evidence
+
+### VERIFIED: Record 11 - Initial Greeting
+
+**Source**: `arthur.dlg:11`  
+**Field Mapping**:
+- ID: "11"
+- Response_1: "[with the panache of a hubcap salesman]Welcome to Kilpatrick 24-Hour Bail Bonds. My name\'s Arthur Kilpatrick. How can I help you?"
+- Response_2: (Identical to Response_1)
+- Condition: "#"
+- Variable: "npc.SetDisposition(\"Joy\",1)"
+- Field7: "G.Arthur_Talked = 1"
+
+**Analysis**: 
+- Sets player\'s disposition to "Joy" when entering dialogue
+- Sets global variable `G.Arthur_Talked = 1` to track interaction
+- Identical response_1 and response_2 suggest this is the primary greeting
+
+### VERIFIED: Record 21 - Business Explanation
+
+**Source**: `arthur.dlg:21`  
+**Field Mapping**:
+- ID: "21"
+- Response_1: (Business explanation)
+- Condition: "0"
+- Variable: "npc.SetDisposition(\"Neutral\",1)"
+- Field7: "G.Arthur_Run = 1"
+
+**Analysis**:
+- Changes disposition to "Neutral"
+- Sets `G.Arthur_Run = 1` (Arthur running)
+- Reveals Arthur\'s business model
+
+### VERIFIED: Record 31 - Employees and Location
+
+**Source**: `arthur.dlg:31`  
+**Field Mapping**:
+- ID: "31"
+- Response_1: (Explains employees)
+- Condition: "0"
+- Variable: (Empty)
+- Field7: (Empty)
+
+**Analysis**:
+- Explains Arthur\'s staff and operations
+- Provides context about Santa Monica location
+
+## Dialogue Structure
+
+### Initial Branching (Records 11-35)
+
+**Malkavian-Specific Paths**:
+- Record 12: `not IsClan(pc,"Malkavian")`
+- Record 13: `not IsClan(pc,"Malkavian") and G.Extra_Lines == 1`
+- Record 14: `711 not IsClan(pc,"Malkavian")`
+- Record 15: `571 IsClan(pc,"Malkavian")`
+- Record 16: `0 IsClan(pc,"Malkavian")`
+- Record 20: `0 not IsClan(pc,"Malkavian")`
+
+**General Dialogue Paths**:
+- Records 22-24: Player questions about business
+- Records 33-34: General conversation
+- Record 35: `G.Arthur_BJ == 1 and G.Extra_Lines == 1`
+
+## Global Variables
+
+### VERIFIED: `G.Arthur_Talked`
+
+**Definition**: Tracks whether player has spoken to Arthur  
+**Initial Value**: 0  
+**Set To**: 1 (Record 11)  
+**Purpose**: Basic interaction tracking
+
+### VERIFIED: `G.Arthur_Run`
+
+**Definition**: Indicates Arthur is running his business  
+**Initial Value**: 0  
+**Set To**: 1 (Record 21)  
+**Purpose**: Business state tracking
+
+### VERIFIED: `npc.SetDisposition`
+
+**Definition**: Sets NPC disposition  
+**Values**: "Joy", "Neutral", "Anger", "Fear", "Flirt", "Confused"  
+**Usage**: Dynamic dialogue responses based on player actions
+
+## Quest Dependencies
+
+### Related Quests Identified
+
+1. **Bail Jumper Quest** (`G.Arthur_BJ`)
+2. **Bail Hustler Quest** (`G.Arthur_BH`)
+3. **Santa Monica Discovery** (`G.Arthur_SM`)
+4. **Knox Relationship** (`G.Arthur_Knox`)
+5. **Murder Mystery** (`G.Know_Murder`, `G.Arthur_Killer`)
+
+### Starting Conditions
+
+- **Record 1010**: `G.Arthur_Muddy == 2`
+- **Record 1011**: `G.Arthur_Talked > 0`
+
+**Analysis**: The actual quest starts when player has `G.Arthur_Talked > 0` (verified by Record 1011)
+
+## Inferred Structure
+
+Based on dialogue pattern analysis:
+
+1. **Entry Phase** (Records 11-20):
+   - Initial greeting (Record 11)
+   - Disposition change to Joy
+   - Set `G.Arthur_Talked = 1`
+
+2. **Explanation Phase** (Records 21-35):
+   - Business explanation (Record 21)
+   - Employee information (Record 31)
+   - Clan-specific dialogue paths
+   - General conversation options
+
+3. **Advanced Dialogue** (Records 40-101):
+   - Player questions about business
+   - Thematic dialogue
+   - Relationship development
+
+## Unknowns
+
+- **Exact quest completion criteria**: No clear "quest complete" flag identified
+- **Quest rewards**: Not specified in dialogue records
+- **Quest duration**: Timing and duration not defined
+- **Relationship progression**: Exact progression mechanics unclear
+
+## Next Steps
+
+1. Investigate `G.Arthur_BJ` (Bail Jumper quest) starting conditions
+2. Examine Python script references for quest logic
+3. Search for quest completion conditions
+4. Map dialogue connections to quest states
+
+## Notes
+
+- Record 1012 does not exist in arthur.dlg (verified)
+- DLG reader field mapping is accurate (verified)
+- Malkavian-specific dialogue paths suggest unique gameplay experiences
+- Multiple parallel quests can be accessed simultaneously
+
+---
+
+**Classification**: PARTIALLY VERIFIED  
+**Evidence**: Direct dialogue records  
+**Inference**: Quest structure based on dialogue patterns  
+**Next**: Investigate Bail Jumper quest
