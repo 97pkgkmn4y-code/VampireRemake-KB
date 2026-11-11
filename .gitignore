@@ -17,3 +17,6 @@ Thumbs.db
 # Временные данные
 __pycache__/
 *.pyc
+
+# Local Obsidian MCP Server configuration (contains credentials)
+/.obsidian/plugins/mcp-server/data.json

@@ -3,15 +3,23 @@ id: SM-13-THER-DLG
 map: sm_asylum_1
 reference: Vampire: The Masquerade — Bloodlines / supplied Unofficial Patch Plus files
 status: DLG inspected; VMF and Python cross-referenced; other character DLG and engine runtime unverified
-source_dialogue: therese.dlg
-source_dialogue_sha256: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
-source_script: santamonica(1).py
-source_script_sha256: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
+historical_source_dialogue: therese.dlg
+historical_source_dialogue_sha256: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
+historical_source_script: santamonica(1).py
+historical_source_script_sha256: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
 source_map: sm_asylum_1.vmf
 source_map_sha256: 6b637179bf6997e5441eaaf9d211e3ae3a52b3d9d3ebdd5d52f2a8b665c198e0
 tags: [vtmb, santa-monica, asylum, original, dialogue, research]
+current_script_reference: Unofficial_Patch/python/santamonica/santamonica.py
+current_script_reference_sha256: 634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff
+current_dialogue: Unofficial_Patch/dlg/santa monica/Therese.dlg
+current_dialogue_sha256: 5c19156f82bb64eaec03c569ad2b6fe25823f7a9baad9347c55955f06da98cdc
+current_reference: Unofficial Patch Plus 12.0
+runtime: UNVERIFIED
 ---
 # SM-13.07 — Therese Voerman: диалог, состояния и квестовая причинность
+
+> Актуальные SHA-256 в метаданных относятся к файлам UP+ 12.0. Исторические значения сохранены для сопоставления редакций. Строки Python, указанные ниже, сверены с установленным скриптом. Игровое выполнение UNVERIFIED.
 
 > [!abstract] Объект и границы
 > Разобран **предоставленный** `therese.dlg`, сопоставлен с `santamonica.py` и `sm_asylum_1.vmf`. Фокус: оригинальная логика Asylum и перекрёстные зависимости Santa Monica. Никаких проектных решений для ремейка.
@@ -43,7 +51,7 @@ tags: [vtmb, santa-monica, asylum, original, dialogue, research]
 
 **[F:DLG]** Узлы 713–720 содержат именно эти предикаты в таком порядке в файле. **[?]** Первая подходящая строка не обязательно выбирается «по порядку файла» — правила приоритета диалогового движка не доказаны. Возможны и другие точки входа из внешних событий.
 
-**[F:VMF]** В карте есть `npc_VVampire` `targetname="Therese"` с `dialogname="dlg/Santa Monica/Therese.dlg"` (**VMF L38923**); `Therese_mad_trigger` (**L41894**) на касание вызывает `Therese.StartPlayerDialogRemote`, а Python `populateOffice()` (**PY L268–362**) управляет видимостью Therese, Jeanette и Tourette. Поэтому одна DLG-таблица **не** определяет, кто именно физически присутствует в кабинете.
+**[F:VMF]** В карте есть `npc_VVampire` `targetname="Therese"` с `dialogname="dlg/Santa Monica/Therese.dlg"` (**VMF L38923**); `Therese_mad_trigger` (**L41894**) на касание вызывает `Therese.StartPlayerDialogRemote`, а Python `populateOffice()` (**PY L276–370**) управляет видимостью Therese, Jeanette и Tourette. Поэтому одна DLG-таблица **не** определяет, кто именно физически присутствует в кабинете.
 
 ## 3. Обнаруженная квестовая ось: Asylum → Ocean House → Asylum → Diner → Asylum
 
@@ -52,10 +60,10 @@ tags: [vtmb, santa-monica, asylum, original, dialogue, research]
 | Этап | Источник | Буквальное изменение | Комментарий |
 |---|---|---|---|
 | Первое поручение | **DLG 231** | `G.Therese_Quest = 1`, `pc.SetQuest("Hotel",1)` | Therese просит принести предмет призрака из Ocean House; это **выдача задания**, не разрешение конфликта с Tung |
-| Завершение Ocean House | **PY L1457–1460**, `oceanhouseQuestComplete()` | `pc.SetQuest("Hotel",2)`, `G.Therese_Quest = 2` | Источник находится в скрипте другой карты; точный VMF-триггер Ocean House в этом пакете не проверялся |
+| Завершение Ocean House | **PY L1465–1467**, `oceanhouseQuestComplete()` | `pc.SetQuest("Hotel",2)`, `G.Therese_Quest = 2` | Источник находится в скрипте другой карты; точный VMF-триггер Ocean House в этом пакете не проверялся |
 | Переход к Diner | **DLG 381** | `G.Therese_Quest = 3`, `pc.SetQuest("Diner",1)` | Therese посылает игрока в Surfside Diner к Jeanette |
-| После противников в Diner | **PY L1212–1232**, `thugsAllDead()` | `G.Therese_Quest = 4`, `pc.SetQuest("Diner",2)`; активируется звонок | Функция возвращает без изменений, если `Therese_Quest` уже равен 4; условия её **вызова** в VMF Diner ещё не изучены |
-| Возврат в Asylum | **PY L321–330**, `populateOffice()` | Возможная активация Tourette и её сцены | Требуются дополнительные `not Tourette_Wins`, `not Therese_Dead`, `not Jeanette_Dead`; более ранние ветки `if/elif` имеют приоритет |
+| После противников в Diner | **PY L1220–1239**, `thugsAllDead()` | `G.Therese_Quest = 4`, `pc.SetQuest("Diner",2)`; активируется звонок | Функция возвращает без изменений, если `Therese_Quest` уже равен 4; проверенный вызов `OnHitMin → thugsAllDead()` описан в [[../Locations/diner1/SM-15_Diner_02_Systems]] |
+| Возврат в Asylum | **PY L329–338**, `populateOffice()` | Возможная активация Tourette и её сцены | Требуются дополнительные `not Tourette_Wins`, `not Therese_Dead`, `not Jeanette_Dead`; более ранние ветки `if/elif` имеют приоритет |
 
 **[I]** Сценарий распределяет причинность между картами: Asylum назначает задания и визуализирует глобальное состояние, Ocean House и Diner изменяют его. **Не утверждать, что любая последовательность посещений гарантированно пройдёт всю эту ось:** квестовые/диалоговые исключения требуют других DLG и VMF.
 
@@ -96,7 +104,7 @@ tags: [vtmb, santa-monica, asylum, original, dialogue, research]
 
 **[F:DLG 521–523]** Если `Therese_Liar==0`, `Auto-Link` ведёт к **531**; если `==1`, — к **511** (после удаления предмета возможна новая ветка без его наличия). Это **автоматическая петля структуры**, а не подтверждённая «бесконечная петля» в игре.
 
-**[F:DLG 531]** Устанавливается `G.Therese_Respect=1`; Therese требует примирения с Jeanette. Узлы **371 → 381** оформляют поручение в Diner. **[I]** Оригинал фиксирует «прощение/уважение» отдельно от общего числового отношения; отсюда более богатая машина состояний, чем одна шкала симпатии.
+**[F:DLG 531]** Устанавливается `G.Therese_Respect=1`; Therese требует примирения с Jeanette. ID 372 `(Auto-Link)` содержит буквальный переход к 381. Связь с предшествующим ID 371 (`#`) по соседству INFERRED. **[I]** Оригинал фиксирует «прощение/уважение» отдельно от общего числового отношения; отсюда более богатая машина состояний, чем одна шкала симпатии.
 
 ## 7. Unofficial Patch Plus — проверяемые отличия в диалоге
 
@@ -106,9 +114,9 @@ tags: [vtmb, santa-monica, asylum, original, dialogue, research]
 
 ## 8. Влияние на сценарную сцену Asylum
 
-**[F:VMF L41894]** `Therese_mad_trigger` инициирует `StartPlayerDialogRemote` и `player_to_therese.BeginSequence`; в Python триггер включается только в некоторых ветках `populateOffice()` (**PY L294–320**). **[F:VMF L38923]** Therese имеет ссылку на этот DLG. Следовательно, сценический старт может происходить и не через обычное добровольное взаимодействие с NPC.
+**[F:VMF L41894]** `Therese_mad_trigger` инициирует `StartPlayerDialogRemote` и `player_to_therese.BeginSequence`; в Python триггер включается только в некоторых ветках `populateOffice()` (**PY L302–328**). **[F:VMF L38923]** Therese имеет ссылку на этот DLG. Следовательно, сценический старт может происходить и не через обычное добровольное взаимодействие с NPC.
 
-**[F:DLG 21]** Therese говорит, что Jeanette заперлась в ванной. **Это утверждение персонажа, не физический факт** о положении Jeanette в игровом пространстве. В VMF `argument_relay` блокирует `bathroom_door` (**L41347**), а во время первой загрузочной ветки `populateOffice` допускается одновременная `ScriptUnhide` Therese и Jeanette (**PY L278–286**). Нельзя по одной реплике заключать, что Jeanette физически находится за дверью ванной в момент разговора.
+**[F:DLG 21]** Therese говорит, что Jeanette заперлась в ванной. **Это утверждение персонажа, не физический факт** о положении Jeanette в игровом пространстве. В VMF `argument_relay` блокирует `bathroom_door` (**L41347**), а во время первой загрузочной ветки `populateOffice` допускается одновременная `ScriptUnhide` Therese и Jeanette (**PY L286–294**). Нельзя по одной реплике заключать, что Jeanette физически находится за дверью ванной в момент разговора.
 
 ## 9. Отдельные сюжетные строки и ограничения проверки
 
