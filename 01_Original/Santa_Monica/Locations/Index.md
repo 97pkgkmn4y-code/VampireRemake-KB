@@ -11,6 +11,7 @@
 | SM-17 — Coffee Shop | [[coffee1/SM-17_Coffee_00_Index]] |
 | SM-18 — Gimble basement | [[basement1/SM-18_Basement_00_Index]] |
 | SM-19 — Smoke Shop | [[smoke1/SM-19_Smoke_00_Index]] |
+| SM-20 — Ocean House (exterior and interior) | [[oceanhouse/SM-20_Ocean_House_00_Index]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].

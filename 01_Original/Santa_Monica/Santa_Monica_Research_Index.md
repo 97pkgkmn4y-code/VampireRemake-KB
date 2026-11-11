@@ -5,6 +5,7 @@
 ## Навигация
 
 - [[Locations/Index|Исследования конкретных локаций]]
+- [[Locations/oceanhouse/SM-20_Ocean_House_00_Index|Ocean House — статическое исследование обеих карт]]
 - [[Characters/Index|Персонажи и диалоги]]
 - [[Quests/Index|Квесты и состояния]]
 - [[Space/Index|Поверхность и канализация]]
