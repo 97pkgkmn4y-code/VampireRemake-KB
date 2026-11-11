@@ -13,6 +13,10 @@
 | SM-19 — Smoke Shop | [[smoke1/SM-19_Smoke_00_Index]] |
 | SM-20 — Ocean House (exterior and interior) | [[oceanhouse/SM-20_Ocean_House_00_Index]] |
 | SM-21 — Warehouse | [[warehouse/SM-21_Warehouse_00_Index]] |
+| SM-22 — ShreckNet hub | [[shreknet1/SM-22_Shreknet_Passport]] |
+| SM-23 — Tattoo Parlor | [[tattoo/SM-23_Tattoo_Passport]] |
+| SM-24 — Trip's Pawnshop | [[pawnshop2/SM-24_Pawnshop_2_Passport]] |
+| SM-25 — Santa Monica Hub 2 | [[hub2/SM-25_Hub_2_Passport]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].
