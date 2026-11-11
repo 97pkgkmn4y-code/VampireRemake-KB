@@ -10,12 +10,12 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 
 | Откуда → куда | VMF entity / действие | Установленный BSP | Доступность и тип |
 | --- | --- | --- | --- |
-| `sm_hub_1` sewer B7 → `sm_oceanhouse_1` | `ManholeB7.OnActivate → oceantrans.ChangeNow`; `oceantrans.map=sm_oceanhouse_1` в hub, см. [[../../Space/Sewers]] | Сверено ранее в Sewers | Загрузочный переход; Plus оставляет B7 видимым после `Therese_Quest>1`, Basic скрывает; иные ограничения UNVERIFIED |
+| `sm_hub_1` sewer B7 → `sm_oceanhouse_1` | `ManholeB7.OnActivate → oceantrans.ChangeNow`; `oceantrans.map=sm_oceanhouse_1` в hub, см. [[../../Space/Sewers]] | Сверено ранее в Sewers | Загрузочный переход; `oceanHouseQuest()` не скрывает B7 в Plus при `Therese_Quest>1`, а в Basic вызывает скрытие; иные ограничения UNVERIFIED |
 | `sm_oceanhouse_1` → `sm_oceanhouse_2` | `Leave_Teleport`, `trigger_changelevel`, `map=sm_oceanhouse_2`, `landmark=OH_Landmark` (VMF1:52335–52342) | `Leave_Teleport` с теми же map/landmark в entity lump | Загрузочный переход, фактическое срабатывание UNVERIFIED |
 | `sm_oceanhouse_2` → `sm_oceanhouse_1` | `Leave_Teleport`, `trigger_changelevel`, `map=sm_oceanhouse_1`, `landmark=OH_Landmark` (VMF2:162458–162464) | Совпадает по именам/map/landmark | Загрузочный переход; блокировка выхода до завершения требует runtime проверки |
 | `sm_oceanhouse_1` → `sm_hub_1` sewer | `ManholeB7.OnActivate → oceantrans.ChangeNow`; `oceantrans.map=sm_hub_1`, `landmark=oceanhouse` (VMF1:52701–52804) | Эти entities присутствуют | Загрузочный переход, runtime UNVERIFIED |
 
-`sm_oceanhouse_1` и `sm_oceanhouse_2` не следует трактовать как непрерывную геометрию. `Return_Teleport_Trigger` внутри `sm_oceanhouse_2` — `trigger_teleport` к `Sun_Room_Teleport_Point`, то есть внутрикартовый телепорт, а не загрузка другой BSP (VMF2:151436, 153726–153735; BSP entity lump).
+`sm_oceanhouse_1` и `sm_oceanhouse_2` не следует трактовать как непрерывную геометрию. `Return_Teleport_Trigger` внутри `sm_oceanhouse_2` — `trigger_teleport` с `landmark=Sun_Room_Teleport_Point`, но `target=Burnt_Room_Teleport_Point`: направление из sun room к burnt room. Это внутрикартовый телепорт, а не загрузка другой BSP (VMF2:153718–153735; BSP entity lump).
 
 ## Объекты, влияющие на путь
 
@@ -29,7 +29,7 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 flowchart LR
   H[sm_hub_1 / sewer B7] <--> E[sm_oceanhouse_1 / exterior]
   E <--> I[sm_oceanhouse_2 / interior]
-  I --> T[Sun_Room_Teleport_Point / within interior]
+  I --> T[Sun room to Burnt_Room_Teleport_Point / within interior]
 ```
 
 Стрелки показывают статически заданные связи, не подтверждённое игровое прохождение. Подробный районный реестр ещё не составлен.

@@ -6,6 +6,7 @@
 
 - [[Locations/Index|Исследования конкретных локаций]]
 - [[Locations/oceanhouse/SM-20_Ocean_House_00_Index|Ocean House — статическое исследование обеих карт]]
+- [[Locations/warehouse/SM-21_Warehouse_00_Index|Warehouse — проверенные статические системы]]
 - [[Characters/Index|Персонажи и диалоги]]
 - [[Quests/Index|Квесты и состояния]]
 - [[Space/Index|Поверхность и канализация]]
@@ -26,7 +27,9 @@
 | **Coffee Shop (SM-17)** — sm_coffee_1 | Локальный индекс, VMF, Scott laptop data, vamputil.py; установленный BSP найден | Есть лишь грубые bounds в индексе, законченного пространственного исследования нет | Частичный перечень сущностей и цепочка Library | Python/data описаны частично; отдельный DLG-анализ не найден | Нет | `PARTIAL` — не выполнена сверка BSP entity lump с VMF; неполны геометрия, интерактивность и системное покрытие |
 | **Gimble basement (SM-18)** — sm_basement_1 | Локальный индекс, VMF/BSP, Python, Stan/Carson DLG и план этажей | Есть пространственная заметка и схема | Есть системный разбор сущностей, событий и веток | Python и DLG описаны | Нет | `RUNTIME_PENDING` — не проверены переходы, сцены и последовательность Kill/OnDeath в игре |
 | **Smoke Shop (SM-19)** — sm_smoke_1 | Локальный индекс, VMF, найденный установленный BSP, smoke.dlg, vamputil.py, sign data и схема | Есть схема и отдельные ориентиры, пространственный разбор ограничен | Частичный анализ NPC, перехода и Library/sign logic | Python и DLG описаны частично; есть ссылка на Generic/Doll6.dlg | Нет | `PARTIAL` — сравнение BSP с VMF не выполнено; остаются условия взаимодействий, NPC и переходов |
-| **Карты, только упомянутые в сводных заметках** — sm_bailbonds_1, sm_gallery_1, sm_junkyard_1, sm_oceanhouse_1, sm_pawnshop_1, sm_pawnshop_2, sm_shreknet_1, sm_tattoo, sm_vamparena, sm_warehouse_1 | Отдельных пакетов исследований этих карт в текущем Vault не найдено; упоминания служат контекстом или целями переходов | Нет достаточных данных | Нет достаточных данных | Нет достаточных данных | Нет подтверждения | `UNKNOWN` — материалов недостаточно для оценки каждой из этих карт |
+| **Ocean House** — sm_oceanhouse_1, sm_oceanhouse_2 | [[Locations/oceanhouse/SM-20_Ocean_House_00_Index|SM-20]], SDK VMF и установленный UP BSP, Python, Therese DLG | Зоны и загрузочные переходы установлены; маршрут/коллизия не размечены | Pendant, diary, возврат и выборочные haunt/boiler I/O | Hotel, Release the Spirit, Therese_Quest и варианты сдачи | Нет | `PARTIAL / RUNTIME_PENDING` — обязательный маршрут, постановка и доступность исходов не проверены |
+| **Warehouse** — sm_warehouse_1 | [[Locations/warehouse/SM-21_Warehouse_00_Index|SM-21]], SDK VMF и установленный UP BSP, Python, Bertram DLG | Выход в Hub установлен; маршрут/коллизия не размечены | Бомба, таймер, explosion, bonus, Sabbat/Beckett I/O | Вход через Bertram; Warehouse=4/7, разные бонусы Basic/Plus | Нет | `PARTIAL / RUNTIME_PENDING` — доступность рычага, исходы и маршрут не проверены |
+| **Карты, только упомянутые в сводных заметках** — sm_bailbonds_1, sm_gallery_1, sm_junkyard_1, sm_pawnshop_1, sm_pawnshop_2, sm_shreknet_1, sm_tattoo, sm_vamparena | Отдельных пакетов исследований этих карт в текущем Vault не найдено; упоминания служат контекстом или целями переходов | Нет достаточных данных | Нет достаточных данных | Нет достаточных данных | Нет подтверждения | `UNKNOWN` — материалов недостаточно для оценки каждой из этих карт |
 
 ## Только оставшиеся значимые пробелы
 

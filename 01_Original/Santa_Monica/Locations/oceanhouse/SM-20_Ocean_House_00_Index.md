@@ -20,7 +20,7 @@ status: VERIFIED_STATIC / RUNTIME_PENDING
 
 | Источник | SHA-256 | Роль |
 | --- | --- | --- |
-| `SDKContent/MapSrc/up sources/sm_oceanhouse_1_d.vmf` | `aafde93abe49b1f3b20e911778992dae8a9aeb0cac615c79ef0afe2b24518d6f` | Авторские entities и геометрические данные наружной карты |
+| `SDKContent/MapSrc/up sources/sm_oceanhouse_1_d.vmf` | `aafde93abe49b1f3b20e911778992dae8a9aeb0cac615c79ef0afe2b24518d6f` | Декомпилированные entities и геометрические данные наружной карты |
 | `SDKContent/MapSrc/up sources/sm_oceanhouse_2_d.vmf` | `ea27603f7a070b397f2be905dcaa9d3f89c78b525b4422bce153c465ac598b5d` | Entities и геометрические данные интерьера |
 | `Unofficial_Patch/maps/sm_oceanhouse_1.bsp` | `56ba7367f354ed7497ac08cb4508a22d0f64fa51f8b3bcc169ce5ee7935e4c31` | Установленная наружная карта, VBSP v17 |
 | `Unofficial_Patch/maps/sm_oceanhouse_2.bsp` | `ed742545b3bc5508758fb9dd51644aaee4bfc4d93345ea16840d54d60fe4daa3` | Установленный интерьер, VBSP v17 |
