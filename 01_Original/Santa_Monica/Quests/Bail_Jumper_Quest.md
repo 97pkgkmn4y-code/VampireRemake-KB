@@ -39,6 +39,8 @@ ID 41 contains `G.Arthur_BJ = 1` in field 5 alongside a disposition expression. 
 
 `SDKContent/MapSrc/up sources/sm_pawnshop_1_d.vmf:80665–80666` and the installed `Unofficial_Patch/maps/sm_pawnshop_1.bsp` entity lump contain two `OnPressed` outputs for the message. One plays `muddy_message_sound`. The other calls `updateBailJumperQuest()` with delay 20 and fire count 1. The Python source is `Unofficial_Patch/python/santamonica/santamonica.py`, SHA-256 `634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff`.
 
+The installed BSP also has an immediate sibling output that kills `answering_machine_sparklies`. See [[../Locations/pawnshop1/SM-29_Pawnshop_1_Passport|SM-29]] for the key, the visibility gate `Arthur_Muddy == 2`, and the placement of Marian's apartment.
+
 ## Unknowns
 
 - **UNVERIFIED**: dialogue entry priority, reachability of particular responses, exact awarded XP and runtime ordering of terminal/button and dialogue events.

@@ -11,6 +11,7 @@
 - [[Quests/Index|Квесты и состояния]]
 - [[Space/Index|Поверхность и канализация]]
 - [[Space/Transitions|Реестр загрузочных переходов установленного UP BSP]]
+- [[Space/Runtime_Verification|Сценарии runtime-проверок]]
 - [[../../02_Analysis/SM-13_Asylum_04_Analysis|SM-13 — критический геймдизайнерский анализ]]
 
 ## Статус исследований
@@ -37,7 +38,8 @@
 | **Gallery** — sm_gallery_1 | [[Locations/gallery1/SM-26_Gallery_00_Index|SM-26]], BSP/VMF, Python, Jeanette DLG | Маршрут и коллизия не проверены | Картины, guardian, выходы и I/O выборочно | Slashterpiece и условия частично | Нет | `PARTIAL / RUNTIME_PENDING` — порядок и доступность в игре не проверены |
 | **Bail Bonds** — sm_bailbonds_1 | [[Locations/bailbonds1/SM-27_Bail_Bonds_Passport|SM-27]], BSP/VMF, Python, terminal data | План и коллизия не проверены | Arthur, терминалы, выход и I/O выборочно | Arthur/Knox и журнальные состояния частично | Нет | `PARTIAL / RUNTIME_PENDING` — последовательность и последствия в игре не проверены |
 | **Junkyard** — sm_junkyard_1 | [[Locations/junkyard1/SM-28_Junkyard_00_Index|SM-28]], установленный BSP, SDK VMF, Python, Killer DLG | Ориентиры и высоты entity, проходы и коллизия не проверены | Постановка Killer, пожар, выходы и выборочные I/O | Serial, исходы диалога и Python | Нет | `PARTIAL / RUNTIME_PENDING` — связность карты и достижимость исходов не проверены |
-| **Карты, только упомянутые в сводных заметках** — sm_pawnshop_1, sm_vamparena | Отдельных пакетов исследований этих карт в текущем Vault не найдено; упоминания служат контекстом или целями переходов | Нет достаточных данных | Нет достаточных данных | Нет достаточных данных | Нет подтверждения | `UNKNOWN` — материалов недостаточно для оценки каждой из этих карт |
+| **Santa Monica Haven** — sm_pawnshop_1 | [[Locations/pawnshop1/SM-29_Pawnshop_1_Passport|SM-29]], UP BSP, базовый BSP, SDK VMF, Python, DLG, terminal/quest data | Нижний и верхний подъёмы, убежище и дверь Мурьетты проверены по локальным граням BSP | Убежище, автоответчик, почта, двери Hub, NPC и постановка | Bail Jumper, старт, Bloodhunt, Jack, Heather/McFly, телевизор и Mitnick | Нет | `PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING` — коллизия, Hub 2, отдельные события и состояния требуют проверки |
+| **Foxy Boxes** — sm_vamparena | [[Locations/vamparena/SM-30_Foxy_Boxes_Passport|SM-30]], UP BSP, базовый BSP, SDK VMF, Python, Knox DLG, quest data | Пол входного коридора, пороги и зона боя проверены по локальным граням BSP | Ключ, вход/выход, сцена и два варианта NPC, закрытие/отпирание | Knox Asian, условие замены NPC и ветви об оружии | Нет | `PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING` — фактические события, оружие и прохождение открыты |
 
 ## Только оставшиеся значимые пробелы
 
@@ -45,4 +47,4 @@
 - **Канализация:** уточнить топологию и переходы по имеющимся материалам; поведение в игре пока не подтверждено.
 - **SM-13, SM-14, SM-15, SM-16, SM-18:** статические исследования уже представлены; runtime и отмеченные в самих материалах ограничения остаются открытыми.
 - **SM-17 и SM-19:** закрыть отмеченные в строках выше статические пробелы по уже найденным материалам.
-- **Карты со статусом UNKNOWN:** все они входят в набор 22 установленных BSP; требуется отдельное содержательное исследование, а не проверка их наличия.
+- **SM-29 и SM-30:** открытые проверки перечислены в паспортах и [[Space/Runtime_Verification|плане сценариев]].

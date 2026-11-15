@@ -20,6 +20,8 @@
 | SM-26 — Gallery Noir | [[gallery1/SM-26_Gallery_00_Index]] |
 | SM-27 — Kilpatrick's Bail Bonds | [[bailbonds1/SM-27_Bail_Bonds_Passport]] |
 | SM-28 — Junkyard | [[junkyard1/SM-28_Junkyard_00_Index]] |
+| SM-29 — Santa Monica Haven и квартира Мурьетты | [[pawnshop1/SM-29_Pawnshop_1_Passport]] |
+| SM-30 — Foxy Boxes | [[vamparena/SM-30_Foxy_Boxes_Passport]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].
