@@ -4,7 +4,7 @@
 
 | Карта | Материалы |
 |---|---|
-| SM-13 — The Asylum | [[asylum1/SM-13_Asylum_00_Index]]; геометрия, сущности, логика, Python и камеры — здесь; разборы диалогов персонажей в [[../Characters/Index|Characters]]. |
+| SM-13 — The Asylum | [[asylum1/SM-13_Asylum_00_Index]]; геометрия, сущности, логика, Python и камеры — здесь; разборы диалогов персонажей в [[../Characters/Index\|Characters]]. |
 | SM-14 — Medical Clinic | [[medical1/SM-14_Medical_00_Index]] |
 | SM-15 — Diner | [[diner1/SM-15_Diner_00_Index]] |
 | SM-16 — Apartment | [[apartment1/SM-16_Apartment_00_Index]] |

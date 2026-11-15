@@ -5,6 +5,19 @@
 
 # SM-01 — Asylum, Diner и Public Beach Access
 
+## Сверка поверхности с установленным UP 12.0
+
+Активные loose BSP для этой части района: `sm_hub_1`, `sm_hub_2`, `sm_pier_1`, `sm_beachhouse_1`. Суффикс `_d` у `sm_hub_1_d.vmf` относится к SDK-источнику. Для актуальных переходов использован entity lump BSP; полный набор и SHA в [[Santa_Monica_BSP_Changelevels.csv]]. По [[../Locations/hub2/SM-25_Hub_2_Passport|Hub 2]] есть отдельный паспорт.
+
+| Участок | Ориентиры установленной геометрии и события |
+|---|---|
+| Hub 1, город | Узлы дверей уличного хаба связаны с интерьерами по [[Transitions]]. У убежища и ShreckNet выборочные уличные грани на Z=-112. Шесть люков связывают с [[Sewers\|подземной сетью]]. |
+| Hub 1 → Pier | Переход `pierteleport1` с origin `(1780,-488,-245.5)`. Грани тоннеля на Z=-306 при X=1200, 1592, 1740 около Y=-488 (9579/9497). Со стороны Pier landmark `(1591,-483.945,-297)` и грань 4392 продолжают тот же уровень; у точки старта Pier `(2304,-1128,-560)` грань 3977 на Z=-568. Между замерами перепад 262 units. Свободное сечение и связность склона требуют проверки. |
+| Pier → Beach House | `beachhousegate` у `(2954,-1631,-538)`. `beachHouseOpen()` отпирает её при Mercurio_Quest=1 и запирает после этого в Basic. Отдельный `trigger_once` у `(3121.63,-1646.79,-179.73)` по touch показывает `to_beachhouse` через 0.2 с. Тот ведёт в `sm_beachhouse_1` с landmark `beachhouse1`; фактический маршрут через ворота и высотный участок не измерялся в игре. |
+| Beach House и обратный путь | Тот же pivot ворот и собственный landmark `beachhouse1=(3104,-1608,-212)`. `trigger_changelevel beachhouse1` возвращает на Pier. В другой зоне карты `astrolite=(3113.75,-2453.12,-74.3629)` над полом Z=-112 (грань 2234), вызывает `astrolitePickup()`. |
+
+Пирс меняется с сюжетом. `logic_auto` вызывает `murderCleanedUp()`, `lillyBack()`, `thinBloodsGone()`, `beachVisitors()` и `boatcheck()` в установленном BSP. Часть квестовых расположений Mercurio, Dennis, Brian, Carl, Mike имеет `StartHidden=1`. Для границ старой сцены, Library и маршрутов лодки см. разделы ниже и [[../Quests/Index#Night at the Library|цепь Library]].
+
 ## 1. Предмет исследования
 
 Пространственная организация участка Santa Monica между The Asylum, Surfside Diner и парковкой Public Beach Access.

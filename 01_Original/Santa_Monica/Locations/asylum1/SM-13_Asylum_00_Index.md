@@ -81,6 +81,8 @@ source_sha256: 6b637179bf6997e5441eaaf9d211e3ae3a52b3d9d3ebdd5d52f2a8b665c198e0
 
 ## Степень готовности
 
+**Контрольная сверка с UP 12.0.** В `sm_asylum_1.bsp` `Cal.OnDialogEnd` и `logic_auto.OnMapLoad` вызывают `calDialog()`. `elev_counter_downstairs.OnHitMax → checkElevatorPermission()` повторно проверяет `Cal_Permission` и меняет lock у `downstairsbttn`. Кнопка `OnSetState2` запирает себя и запускает `elevator_relay`. `Tourette.OnDialogEnd` содержит `Tourette_point_gun.Kill` и вызов `touretteDialogueResults()` в одной записи. При `Tourette_Wins=1` и отсутствии первой ветки функции вызов ведёт в Hub 1 через `AsylumTeleport1`. Движение кабины и исполнение финала остаются открытыми.
+
 **Геометрия:** ориентировочная карта зон и источники лестниц найдены; топология с проверенной проходимостью не доказана.  
 **Сущности:** полная сводка классов и ключевые `targetname` извлечены.  
 **I/O:** основные цепочки восстановлены.  

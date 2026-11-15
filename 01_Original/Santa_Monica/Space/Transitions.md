@@ -27,6 +27,18 @@ flowchart LR
 - Warehouse: [[../Locations/warehouse/SM-21_Warehouse_01_Systems|SM-21 systems]]; вход через Bertram зависит от DLG, Python и I/O, поэтому в CSV для `warehouseteleport` прямой entity activator не показан.
 - Apartment и поздний Hub: [[../Locations/apartment1/SM-16_Apartment_00_Index|SM-16]].
 
+## Способы активации и выбор маршрута
+
+После повторного извлечения entity lump подтвердились все 65 кортежей `source_map / target_map / transition_entity / landmark / bsp_sha256`. У каждого перехода с целью среди 22 Santa Monica BSP на целевой карте есть `info_landmark` с указанным именем при сравнении без учёта регистра. Для четырёх записей нет loose BSP назначения: две цели `taxi` (Hub 1/2), одна `sewer_map` (Hub 1), одна `sm_apartment_1b` (Hub 2). Только для последней проведена и ранее документирована проверка индексов VPK.
+
+| Узел и направление | Связь в установленных данных |
+|---|---|
+| Hub 1 ↔ Hub 2 через интерьеры | `apartmentLeave()` выбирает Hub 2 при `Story_State==90 && Credits_Running==0`, `pawnshopLeave()` при `Story_State==90`. [[../Locations/pawnshop1/SM-29_Pawnshop_1_Passport\|Haven]] при State=90 переключает выход в Hub 2. У обратной двери в [[../Locations/hub2/SM-25_Hub_2_Passport\|Hub 2]] обнаружено несовпадение `HavenTeleport1/2`. |
+| Hub 1 ↔ специализированные двери | Ключи на ручках: Foxy Boxes `item_k_gimble_key`, ShreckNet `item_k_shrekhub_one_key`, Tattoo `item_k_tatoo_parlor_key`. Для Coffee и Smoke дверь с I/O показывает `setPlus()`; Coffee дополнительно проверяет `Library_Coffee>0`. Состояния замков см. в [[../Locations/Index\|паспортах карт]]. |
+| Pier ↔ Beach House | На Pier скрытый переход показывается touch-триггером. Ворота имеют отдельное условие Mercurio, см. [[Surface]]. |
+| Канализация | A1–B3 используют парные внутрикартовые `point_teleport`; B7 вызывает загрузку Ocean House. Замок, вертикальная связь и карта мира описаны в [[Sewers]]. |
+| Специальные переходы | [[../Locations/pawnshop1/SM-29_Pawnshop_1_Passport\|Haven → sp_taxiride]] через `havenTaxiCheck()`. В [[../Locations/oceanhouse/SM-20_Ocean_House_01_Spatial\|Ocean House 2]] комнаты связываются `trigger_teleport` в обе стороны. Эти действия требуют иной активации, чем обычный touch `trigger_changelevel`. |
+
 ## Открытая часть реестра
 
 CSV охватывает `trigger_changelevel` только в 22 установленных BSP. Для полноценного графа ещё нужны входы из Python `ChangeMap`, внутрикартовые телепорты, двери/блокировки, условия DLG и runtime-проверка направлений. Поэтому этот реестр имеет статус `PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING` и не делает район готовым к реализации всей RPG.
