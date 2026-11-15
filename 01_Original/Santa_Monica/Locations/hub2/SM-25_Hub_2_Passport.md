@@ -17,6 +17,8 @@ depth_required: A
 
 ## Геометрические опоры
 
+Пробами `hub2-haven-to-trip` и `hub2-trip-to-mercurio` найдены уличные маршруты по world-brush между входными площадками. Обход добавляемого скриптом `AlleyWall*` в них не моделируется. [[../../Space/Santa_Monica_BSP_Brush_Routes.csv]]
+
 В установленном BSP `info_player_start=(-1676,-3140,-102)` около заднего переулка убежища, поверхность Z=-112 (face 8972). У порога Trip's Pawnshop Z=-112 (8600), у подъезда Mercurio Z=-76 (8565), а у ориентиров `bloodhunt_1_h=(-2464,-2112,-104)` и `bloodhunt_2_h=(-2336,1808,-104)` Z=-120 (8950 и 6890). Два поздних перехода в `sp_tutorial_1` имеют отдельные объёмы в южной и северной части района (`*43` и `*42`). Источник их активации в прохождении требует проверки.
 
 ## Состояние при загрузке
@@ -28,6 +30,8 @@ depth_required: A
 - Map-load настраивает patrol type для `potence_2`, `auspex_1`, `fortitude_2` и через 0.1 с адресует пути `b1 b2`, `a1 a2`, `c2 c1`. Три NPC на `OnFoundPlayer` задают соответственно Potence 3, Auspex 3 и Fortitude 3. `bloodHuntClanCheck()` подменяет модели по клану игрока. Для Nosferatu и Toreador также ставит `Bloodhunt_Obfuscate=1`. Отдельная `obfuscatorsCheck()` переключает двух obfuscators на Potence 3 при этом флаге 0.
 
 ## Источники и ограничения
+
+В охотничьей ветке `setPlus()` при наличии `bloodhunt_2_h_trigger` и `Hunter_Bloodhunt==1` этот объём показывается, `CaineTeleport1`, Caine, taxi и windows скрываются, двери Trip и обе двери Apartment получают `Lock`, а флаг принимает 2. `bloodhunt_2_h_trigger.OnStartTouch` вызывает собственный `ChangeNow`. У `bloodhunt_1_h_trigger` есть только управление видимостью из `hunterQuests()`, а в BSP отключён touch. Штатный Caine запускает `toCaineTaxi()` через `OnDialogEnd`, эта функция нацелена на `CaineTeleport1` в `sp_taxiride`. Порядок `openShops()` и охотничьих операций остаётся открытым. Сценарные источники перечислены в [[../../Space/Transitions]].
 
 - `SDKContent/MapSrc/up sources/sm_hub_2.vmf`, SHA-256 `e0c00b92879b6a0acac1106b56d4c6f7cf7242aa26ec2dc4e0cd44b176d9bbae`.
 - `Unofficial_Patch/maps/sm_hub_2.bsp`, SHA-256 `88df4bf1d10db9a31f0c01c7491580760a175b6c8ea7f330779262ded479c724`.

@@ -31,6 +31,8 @@ UP BSP v17 содержит 128 entities, базовый BSP v17 — 109. SDK VM
 
 ## Сцена и бой
 
+По [[../../Space/Santa_Monica_BSP_Brush_Routes.csv|пробам]] ходовой объём достигает зоны поклона из входного коридора по world model (`arena-approach`, 68 точек) и доходит до офисной стороны (`arena-office`). С неподвижным брашем `arenadoor` `*1` у `(-137,-400.5,54)` путь в зону поклона не найден при тех же параметрах (`arena-closed`, 333 посещённых состояния). Это проверяет геометрическую роль створки. Время начала закрытия и блокировка после контакта относятся к I/O и сцене ниже.
+
 | Шаг | Сохранённые связи UP BSP и Python |
 |---|---|
 | Загрузка | `logic_auto.OnMapLoad → unhidePlus()` запускает alias `patchtype`; текущий user.cfg выбирает `setPlus()`. Его блок Foxy Boxes при наличии `AsianVamp` и `Asian_Swap=0` скрывает исходного NPC и переименовывает его в `AsianVamp_basic`, показывает `AsianVamp_plus`, переименовывает его в `AsianVamp` и ставит `Asian_Swap=1`. При Basic перед заменой доступен NPC `AsianVamp` с `StartHidden=0`, `item_w_chang_blade`, `item_w_crossbow` и `cantdropweapons=1`. Plus-копия начинается скрытой и имеет `item_w_avamp_blade`, `item_w_crossbow`, `cantdropweapons=0`. |

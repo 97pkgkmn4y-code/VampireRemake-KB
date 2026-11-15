@@ -20,6 +20,10 @@
 
 ## 1. Предмет исследования
 
+**Сверка брашей и Pier.** `pier-tunnel` даёт непрерывную цепочку из 114 положений корпуса между `pier1` у Z=-306 и стартовой зоной у Z=-568, с промежуточным уклоном. Участок Barricade → ворота Beach House остаётся отдельно проверяемым, поскольку в Pier есть 15 displacement-записей. Внутри Beach House найден локальный участок пола рядом с Astrolite на Z=-112. [[Santa_Monica_BSP_Brush_Routes.csv]]
+
+**Доступ к лодке.** `boatcheck()` при Dane=1/2 или `Leopold_Pier=1` вызывает `Relay_Unhide_Boat`. Он показывает `boat_collision` и лодку, скрывает `boat_block` и запускает звук. При Dane=2 или `Leopold_Pier=1` тот же Python скрывает оба load volumes, планирует убрать `item_k_edane_key` через 1 с при наличии и ставит `Leopold_Pier=2`. В остальных состояниях `Relay_Hide_Boat` возвращает блок. `boat_changelevel` и `leopold_changelevel` используют один brush model `*13`; у второго `StartHidden=1`. Открытая часть — управляющая ветка перехода Leopold и физический выход на лодку.
+
 Пространственная организация участка Santa Monica между The Asylum, Surfside Diner и парковкой Public Beach Access.
 
 **Цель:** выяснить, как уличное пространство соединяется с парковкой и интерьерами, а также определить основные приёмы визуальной навигации.

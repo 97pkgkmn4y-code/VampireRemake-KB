@@ -25,6 +25,8 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 
 ## Направление и опасности
 
+**Внешний ключ и Plus-сцена.** В UP BSP `Key_Button.OnPressed` выдаёт `item_k_oh_front_key`, меняет стойки ключей, убирает подсветку и запускает `plus_check.Test`. Условие `Patch_Plus == 1` включает `door_trailer.Lock`, меняет `bobcat_before/after`, запускает звук через 1 с, удар через 5 с и shake через 5.1 с. `front_door_1_knob` содержит ключ и `difficulty=5`. `OnSkillSuccess` убирает `Key_Button` и `inspect_key`. `trigger_trigger_changelevel` имеет `StartDisabled=1` и один вызов `Leave_Teleport.ChangeNow` по touch, дверь содержит отдельный вызов по `OnOpen`. Порядок показа сцены при каждом способе доступа остаётся открытым.
+
 | Запуск → цепь | Статическое свидетельство | Неизвестно |
 | --- | --- | --- |
 | `trigger_ghost` (`trigger_look`) → `logic_ghost_lobby` → `ghost_stand-in.ScriptUnhide` | BSP entity lump; VMF2 именованные связи | Требуемый угол взгляда, частота и видимость в игре |

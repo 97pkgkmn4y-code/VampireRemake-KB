@@ -6,6 +6,8 @@
 
 ## Каркас района по статическим целям
 
+Для всех 65 строк сохранены исходные `spawnflags` и `StartHidden`. В локальном SDK `SDKBinaries/vampire-base.fgd:5610–5637` бит 2 у `trigger_changelevel` называется `Disable Touch`. Он установлен у 56 переходов. Поле `touch_disabled_by_fgd` следует этому определению. `static_activation` указывает найденный вызов, ключ, состояние или причину неопределённости. У 45 строк в `availability_condition` стоит `PARTIAL` с конкретным условием. SHA-256 FGD — `edadc8ee9dd3eb049c1d6d3e5acc3b945b16df6b95d16fb4cce895ee542003ba`.
+
 ```mermaid
 flowchart LR
   H[sm_hub_1] <--> A[Asylum / Medical / Diner / Bail Bonds / Gallery]
@@ -40,5 +42,7 @@ flowchart LR
 | Специальные переходы | [[../Locations/pawnshop1/SM-29_Pawnshop_1_Passport\|Haven → sp_taxiride]] через `havenTaxiCheck()`. В [[../Locations/oceanhouse/SM-20_Ocean_House_01_Spatial\|Ocean House 2]] комнаты связываются `trigger_teleport` в обе стороны. Эти действия требуют иной активации, чем обычный touch `trigger_changelevel`. |
 
 ## Открытая часть реестра
+
+У обратного `HavenTeleport2` в Hub 2 установлен `Disable Touch`. Сохранённый выход двери адресует `HavenTeleport1`, которого в этой карте нет. Для `ApartmentTeleport1_plus` одновременно записаны `StartHidden=1` и `Disable Touch`. В установленных Python и DLG прямые вызовы этих двух переходов Hub 2 не найдены. [[../Locations/hub2/SM-25_Hub_2_Passport]]
 
 CSV охватывает `trigger_changelevel` только в 22 установленных BSP. Для полноценного графа ещё нужны входы из Python `ChangeMap`, внутрикартовые телепорты, двери/блокировки, условия DLG и runtime-проверка направлений. Поэтому этот реестр имеет статус `PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING` и не делает район готовым к реализации всей RPG.

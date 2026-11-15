@@ -33,6 +33,10 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 
 ## Рабочая схема переходов
 
+В выборке брашей подтверждены короткий внешний подход к двери (`ocean-exterior-front`), сектор от нижнего старта до площадки рядом с лифтом (`ocean-lift-lower`) и путь по Z=920 от `Sun_Room_Teleport_Point` к точке рядом с pendant (`ocean-upper-pendant`). Длинный подход от exterior start достиг лимита сетки. Exterior содержит 328 displacement-записей, которые этим методом не обработаны. [[../../Space/Santa_Monica_BSP_Brush_Routes.csv]]
+
+В BSP interior world brush 1178 имеет лестничный флаг и границы X −730…−729, Y 593…617, Z −193…439. У `elevator` (`*280`) три заданных Z 320, −128 и 457, у `dumbwaiter` (`*109`) два значения 195 и −144. Это уровни позиционирования подвижных моделей. Дверные pivot и Z пола в точках подхода измерены отдельно. Доступность лестницы и кабины зависит от сцены с вентиляцией.
+
 ```mermaid
 flowchart LR
   H[sm_hub_1 / sewer B7] <--> E[sm_oceanhouse_1 / exterior]

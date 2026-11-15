@@ -39,6 +39,8 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 
 ## Переходы и их условия
 
+Для [[../../Space/Santa_Monica_BSP_Brush_Routes.csv|геометрических проб]] `haven-stairs` найдена последовательность из 75 точек от входа на Z≈−111 через оба подъёма до Z=144. Проба `haven-murietta` соединяет убежище с точкой у автоответчика 29 положениями корпуса. При добавлении дверной модели `nextdoor` `*20` в исходный pivot `(-2084.5,-2559,199)` та же проба исчерпала сетку без пути `haven-murietta-closed`. Условия раскрытия ключа и реакции на открывание остаются отдельными от геометрии.
+
 - `sm_hub_1`: `haven_door.OnFullyOpen → HavenTeleport1.ChangeNow`, landmark `haven1`. Обратно `back_door.OnFullyOpen → HavenTeleport1.ChangeNow`. При выходе вызывается `mailboxExitCheck()`.
 - `jackVisit()` при `Story_State == 90` вызывает `bloodhunt_on_relay`. Relay скрывает обычную дверь с ручкой и показывает `back_door_2` с её ручкой. Эта дверь ведёт через `HavenTeleport2` в `sm_hub_2`; при `Story_State > 90` `bloodhunt_off_relay` восстанавливает обычный выход. В Hub 2 переход обратно записан как `HavenTeleport2`, однако `haven_door.OnFullyOpen` адресует `HavenTeleport1`, отсутствующий в entity lump Hub 2. Достижимость обратного пути открыта.
 - `HavenTeleport2.OnChangeLevel` адресует `werewolfBloodHavenExit()`, включая базовый BSP и SDK VMF. Определение отсутствует в проверенных установленных `.py`. Фактическую обработку вызова движком следует проверить.
