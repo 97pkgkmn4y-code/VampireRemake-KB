@@ -6,6 +6,8 @@ map: sm_gallery_1
 
 ## Входы, состояние и предметы
 
+**Опорная планировка по UP BSP.** Центры переходов `(-8,-344,-104)` и `(277,271,-104)`, landmarks `(-9,-351,-151)` и `(284,270,-151)`. Пол у обоих переходов и под Guardian имеет Z=-160 (грани 407, 222, 332). Полотна стоят по четырём сторонам от центра `(16,-24)`: `painting_0=(-193.457,-241.544,-120.194)`, `painting_1=(184.094,-214.785,-127.746)`, `painting_2=(-218.342,229.144,-127.331)`, `painting_3=(160.008,222.327,-125.603)`. Координаты задают точки взаимодействия. Обход зала и удары требуют проверки в игре.
+
 Два `trigger_changelevel` возвращают в `sm_hub_1`: `GalleryTeleport1` через landmark `gallery1`, `GalleryTeleport2` через `gallery2` (установленный BSP). В Hub имеются соответствующие два входа ([[../../Space/Transitions|реестр]]). Статический набор не устанавливает доступность обеих дверей в каждом состоянии.
 
 `jeanette.dlg` ID 361 пишет `G.Jeanette_Refuse=0`, `G.Jeanette_Quest=1`, журнал `Slashterpiece=1`, выдаёт `item_w_knife`. Достижимость реплики и порядок диалога не симулировались. `gallery.py:65–94`: `paintingsInGallery()` показывает четыре картины при `Jeanette_Quest==1` либо `Jeanette_Refuse>0`; в Plus показывает `cash_box` и его маркер, в Basic использует другие entities; при `Jeanette_Refuse>0` либо `Jeanette_Quest==2` вызывает `gallery_done_relay`. `logic_auto.OnMapLoad` вызывает эту функцию и `disableGallerySecurity()`. Последняя выключает `camera_switch` только при `Jeanette_Quest==1` и достаточно благоприятном состоянии Chunk (`Chunk_Befriend>=2`, `Chunk_Dominated>=1` либо `Chunk_Demented==1`), `gallery.py:42–46`.
