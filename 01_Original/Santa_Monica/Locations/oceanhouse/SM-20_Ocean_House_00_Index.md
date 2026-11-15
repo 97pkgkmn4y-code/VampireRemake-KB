@@ -2,7 +2,7 @@
 id: SM-20
 maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 reference: Unofficial Patch Plus 12.0
-status: VERIFIED_STATIC / RUNTIME_PENDING
+status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 ---
 # SM-20 — Ocean House
 
@@ -16,7 +16,7 @@ status: VERIFIED_STATIC / RUNTIME_PENDING
 
 ## Паспорт источников
 
-Пути ниже отсчитываются от `C:/Users/Slava/Documents/Bloodlines-GLM/Reference/Vampire - The Masquerade Bloodlines/`.
+Пути ниже отсчитываются от `C:/Users/Slava/Documents/VampireRemake-Starter/Vampire - The Masquerade Bloodlines/`.
 
 | Источник | SHA-256 | Роль |
 | --- | --- | --- |

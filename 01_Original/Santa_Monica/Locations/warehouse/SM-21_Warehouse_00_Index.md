@@ -13,7 +13,7 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 
 ## Источники
 
-Пути от `C:/Users/Slava/Documents/Bloodlines-GLM/Reference/Vampire - The Masquerade Bloodlines/`.
+Пути от `C:/Users/Slava/Documents/VampireRemake-Starter/Vampire - The Masquerade Bloodlines/`.
 
 | Источник | SHA-256 |
 | --- | --- |

@@ -17,6 +17,8 @@
 | SM-23 — Tattoo Parlor | [[tattoo/SM-23_Tattoo_Passport]] |
 | SM-24 — Trip's Pawnshop | [[pawnshop2/SM-24_Pawnshop_2_Passport]] |
 | SM-25 — Santa Monica Hub 2 | [[hub2/SM-25_Hub_2_Passport]] |
+| SM-26 — Gallery Noir | [[gallery1/SM-26_Gallery_00_Index]] |
+| SM-27 — Kilpatrick's Bail Bonds | [[bailbonds1/SM-27_Bail_Bonds_Passport]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].
