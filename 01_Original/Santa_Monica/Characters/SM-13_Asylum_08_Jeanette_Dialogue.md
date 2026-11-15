@@ -3,13 +3,21 @@ id: SM-13-JEAN-DLG
 map: sm_asylum_1
 source: provided Unofficial Patch Plus reference files
 status: inspected DLG + VMF + santamonica.py + Therese.dlg, runtime untested
-sha256_jeanette_dlg: bcb49659dd700880fa6087317da755b5229c9c280f9abab043d4651e6ca22494
-sha256_therese_dlg: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
-sha256_script: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
+historical_sha256_jeanette_dlg: bcb49659dd700880fa6087317da755b5229c9c280f9abab043d4651e6ca22494
+historical_sha256_therese_dlg: d3effd81e2505f6ce3b8a04cb8395c32e582ed734c923856d4e1377d82d05ca1
+historical_sha256_script: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
 sha256_map: 6b637179bf6997e5441eaaf9d211e3ae3a52b3d9d3ebdd5d52f2a8b665c198e0
 tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
+current_script_reference: Unofficial_Patch/python/santamonica/santamonica.py
+current_script_reference_sha256: 634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff
+current_dialogue: Unofficial_Patch/dlg/santa monica/Jeanette.dlg
+current_dialogue_sha256: 0804e5148e914b0b7bf88ebb95f6f510897c1bf95107aa9a33cca77024ca1570
+current_reference: Unofficial Patch Plus 12.0
+runtime: UNVERIFIED
 ---
 # SM-13.08 — Jeanette Voerman: диалог, состояния и межкартовые последствия
+
+> Актуальные SHA-256 в метаданных относятся к файлам UP+ 12.0. Исторические значения сохранены для сопоставления редакций. Строки Python, указанные ниже, сверены с установленным скриптом. Игровое выполнение UNVERIFIED.
 
 
 > [!info] Доказательная база
@@ -20,7 +28,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 ## 1. Инвентаризация исходника и метод
 
-- **[F:J]** `jeanette.dlg` — **846 пронумерованных строковых слотов**, из них **284 непустых** (включая **15 `(Starting Condition)`**); **177 буквальных переходов по числовому ID >0**. Ни один такой явный переход не ссылается на отсутствующую/пустую строку.
+- **[F:J]** `jeanette.dlg` — **846 пронумерованных строковых слотов**, из них **285 непустых** (включая **15 `(Starting Condition)`**); **178 буквальных переходов по числовому ID >0**. Достижимость числовых ссылок остаётся UNVERIFIED.
 - **[F:J]** Каждая строка имеет 13 вложенных блоков в фигурных скобках: ID, мужской/женский текст, target, выражение условия/контекста, действие, вспомогательные поля, альтернативный текст Malkavian. Запись `#` маркирует NPC-реплику и не является числовой ссылкой; `0` завершает диалог; `(Auto-Link)` и `(Auto-End)` учитываются отдельно.
 - **[важное ограничение]** Не вся маршрутизация задаётся числовыми целями: ответы располагаются группами после NPC. В CSV `SM-13_Jeanette_DLG_Links.csv` различаются **`explicit_numeric`** и **`inferred_response_block`**. Последние — грубая структурная подсказка по соседним строкам, **не проверенный граф игровых переходов**. Статистику доступности нельзя строить на автоматическом графе без понимания движка.
 - **[важная деталь формата]** Поле, обычно используемое для условий, иногда содержит действие: **J-371** включает `G.Charity_Know = 1` в том же поле, что `npc.SetDisposition(...)`. Значит, нельзя искать всю причинность только в «action field».
@@ -51,13 +59,13 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 **[F:M L38858]** NPC `Jeanette` в VMF ссылается на `dlg/Santa Monica/Jeanette.dlg`. **[F:M L38821–38826]** при `OnMapLoad` карта вызывает `jeanetteDownstairs()` и `populateOffice()`.
 
-**[F:P L243–257]** `jeanetteDownstairs()` смотрит `npc.times_talked`, затем при `interactions == 0` и `G.Therese_Quest < 2` выполняет `bring_Jeanette_down.Teleport()`, включает `Jeanette_dialog` и `wait_for_elevator_relay` (а также меняет disposition). Иначе оживляет `jeanette_flirt_partner`.
+**[F:P L248–265]** `jeanetteDownstairs()` смотрит `npc.times_talked`, затем при `(interactions == 0 or G.Jeanette_Know == 0) and G.Therese_Quest == 0` выполняет `bring_Jeanette_down.Teleport()`, включает `Jeanette_dialog` и `wait_for_elevator_relay` (а также меняет disposition). В альтернативной ветке вызывает `jeanette_flirt_partner.UseInteresting(1)` и `wait_for_elevator_relay.Kill()` при наличии реле.
 
 **[F:M L39660]** `Jeanette_dialog` — изначально отключённый `trigger_once`. При касании запускает `Jeanette.StartPlayerDialog` с задержкой 1 секунду и операции с камерой. **[F:M L38858]** `Jeanette.OnDialogEnd` подаёт сигнал на `wait_for_elevator_relay.Trigger` и одновременно вызывает Python `jeanetteDialog()`. **[F:M L39343]** relay запускает `Jeanette_wait_for_elevator.BeginSequence`, `jeanette_to_elevator_camera.StartShot`, операции контроля NPC.
 
-**[F:J-1]** в начале знакомства выставляется `G.Jeanette_Know = 1`. **[F:P L278–286]** `populateOffice()` учитывает `Jeanette_Know` при `Therese_Quest < 2` для выбора видимости NPC. **[?]** Установить полный кадр-по-кадру сценарий и влияние повторного `OnMapLoad` без теста движка нельзя.
+**[F:J-1]** в начале знакомства выставляется `G.Jeanette_Know = 1`. **[F:P L286–294]** `populateOffice()` учитывает `Jeanette_Know` при `Therese_Quest < 2` для выбора видимости NPC. **[?]** Установить полный кадр-по-кадру сценарий и влияние повторного `OnMapLoad` без теста движка нельзя.
 
-**[F:M L38748, F:P L259–265]** отдельная сцена связана с **Cal**: `Cal.OnDialogBegin` вызывает `jeanetteGoesUp()`, которая при `G.Cal_Permission != 1` **или** `G.Therese_Quest == 0` переносит Jeanette наверх и скрывает NPC. Из этого нельзя заключить, что каждый визит к бармену всегда перемещает Jeanette.
+**[F:M L38748, F:P L268–273]** отдельная сцена связана с **Cal**: `Cal.OnDialogBegin` вызывает `jeanetteGoesUp()`, которая при `G.Cal_Permission != 1` **или** `G.Therese_Quest == 0` переносит Jeanette наверх и скрывает NPC. Из этого нельзя заключить, что каждый визит к бармену всегда перемещает Jeanette.
 
 ![[../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_VMF_Python_DLG.png]]
 
@@ -65,7 +73,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 ![[../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_Pendant_CrossDialogue.png]]
 
-**[F:P L1457–1460]** `oceanhouseQuestComplete()` ставит `Hotel=2`, `G.Therese_Quest=2`. **[F:J-840–841]** на основании этого флага и `Jeanette_Seduce <3 / >=3` выбирается старт 101/91.
+**[F:P L1465–1467]** `oceanhouseQuestComplete()` ставит `Hotel=2`, `G.Therese_Quest=2`. **[F:J-840–841]** на основании этого флага и `Jeanette_Seduce <3 / >=3` выбирается старт 101/91.
 
 **[F:J-142/152/162/172/173/182/183]** ряд реплик передачи предмета непосредственно вызывает `pc.RemoveItem("item_g_ghost_pendant")`; затем ведёт к **J-191**, где выставляется `pc.SetQuest("Hotel",4)`. **[F:J-184/185 → 581]** если игрок отказывает в передаче по соответствующей ветке, **J-581** устанавливает `G.Jeanette_Scorn=1`, даёт `AwardExperience("Haunted04")` и `Hotel=5`.
 
@@ -85,9 +93,9 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 **[F:J-356/357]** существует специальный вариант отказа для **Toreador**; это не отдельный квест, а альтернативный текст при том же присваивании `Refuse=2`. **[F:J-354/355]** есть условия по Humanity (в том числе `Humanity -5`); отрицательный знак — буквальное выражение DLG, его точная семантика в движке не исследована. **[F:J-371]** `G.Charity_Know=1` стоит в поле выражения условия/контекста, а не в поле действия.
 
-**[F:P L1964–2013]** функция `jeanetteRefused()` (по комментарию исходника предназначена для городской поверхности Santa Monica) проверяет сначала `Jeanette_Quest == 1`; при истинном значении управляет связанными с Chunk элементами. В альтернативной ветке `Jeanette_Refuse >= 1 OR Gallery_Slashed == 1` и дополнительных проверках `Jeanette_Fire`, `Story_State`, `Noir_Done` меняет триггеры Gallery, NPC, полицейскую обстановку и последовательности. Порядок `if/elif` критичен: **наличие Refuse не гарантирует выполнение второй ветки, если первой подходит Quest==1**.
+**[F:P L1975–2029]** функция `jeanetteRefused()` (по комментарию исходника предназначена для городской поверхности Santa Monica) проверяет сначала `Jeanette_Quest == 1`; при истинном значении управляет связанными с Chunk элементами. В альтернативной ветке `Jeanette_Refuse >= 1 OR Gallery_Slashed == 1` и дополнительных проверках `Jeanette_Fire`, `Story_State`, `Noir_Done` меняет триггеры Gallery, NPC, полицейскую обстановку и последовательности. Порядок `if/elif` критичен: **наличие Refuse не гарантирует выполнение второй ветки, если первой подходит Quest==1**.
 
-**[?]** Мы не получили VMF карты поверхности `sm_hub_1` с событием вызова этой функции и VMF Gallery. Поэтому **не объявляем** эти изменения видимыми сразу после разговора. Переменная `G.Jeanette_Quest=2` читается в `populateOffice()` (**P L294**), но не присваивается в загруженных Jeanette/Therese DLG, Asylum VMF и `santamonica.py`. Нужен другой файл/скрипт или код диалогов для установления источника.
+**[F:P/VMF/BSP]** `sm_hub_1_d.vmf:144348` и установленный `sm_hub_1.bsp` содержат `OnMapLoad → jeanetteRefused()`. `Unofficial_Patch/python/gallery/gallery.py:25–30,115–118` (SHA-256 `1f28782222955d3651ee404ec96ca265c6f4f1dc7ef63de123573251d482ffd2`) записывает `G.Jeanette_Quest=2` в `bloodGuardianDeath()` и `paintingsSlashed()`. `sm_gallery_1_d.vmf:9129` и установленный `sm_gallery_1.bsp` содержат `OnDeath → bloodGuardianDeath()`. Точка вызова `paintingsSlashed()` в проверенных VMF/BSP Gallery не найдена. Фактическая последовательность и видимость в игре UNVERIFIED.
 
 ## 6. Числовая шкала Jeanette и разные виды состояния
 
@@ -97,13 +105,13 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 **[F:J-701/711/721]** `Jeanette_Float` принимает последовательно `1→2→0` при трёх специальных репликах; **[F:J-842/843/844]** состояния участвуют в выборе следующего входа. **[I]** В контексте этих записей это система вариативного приветствия/анимационной подачи. Название `Float` не доказывает способность летать или физическое парение.
 
-**[F:J-541]** один из выборов ставит `Jeanette_Boink=1`, выполняет `pc.Bloodloss(1)`. **[F:P L235–240]** `jeanetteDialog()` после диалога проверяет флаг, запускает `jeanette_boink_relay` и меняет его на 2. **[F:M L42122]** relay содержит затемнение, звуки и операции `ScriptHide/ScriptUnhide` с задержками. **[F:J-365]** один из доступов к аналогичной сцене имеет дополнительную проверку `G.Patch_Plus==1` и несколько других условий, но **не является единственным входом** (есть J-513/514/523/524).
+**[F:J-541]** один из выборов ставит `Jeanette_Boink=1`, выполняет `pc.Bloodloss(1)`. **[F:P L241–245]** `jeanetteDialog()` после диалога проверяет флаг, запускает `jeanette_boink_relay` и меняет его на 2. **[F:M L42122]** relay содержит затемнение, звуки и операции `ScriptHide/ScriptUnhide` с задержками. **[F:J-365]** один из доступов к аналогичной сцене имеет дополнительную проверку `G.Patch_Plus==1` и несколько других условий, но **не является единственным входом** (есть J-513/514/523/524).
 
 **[F:J-471]** позднее отдельное состояние `Jeanette_Baron=1` устанавливается прямо NPC-репликой. Это флаг диалогового перехода; не доказательство официального признания политического статуса в мире игры.
 
 ## 7. Как эти состояния влияют на кабинет Asylum
 
-**[F:P L267–362]** `populateOffice()` использует не только `Therese_Quest`, но и `Jeanette_Know`, `Jeanette_Quest`, `Jeanette_Refuse`, `Jeanette_Fire` и другие признаки. Например, **P L287–293** учитывает `Jeanette_Quest < 2` и `Jeanette_Refuse < 1` для выбора видимости Jeanette, Therese и блокирующих объектов. **P L294–300** использует `Jeanette_Quest==2` и включает `Therese_mad_trigger`.
+**[F:P L276–370]** `populateOffice()` использует не только `Therese_Quest`, но и `Jeanette_Know`, `Jeanette_Quest`, `Jeanette_Refuse`, `Jeanette_Fire` и другие признаки. Например, **P L295–301** учитывает `Jeanette_Quest < 2` и `Jeanette_Refuse < 1` для выбора видимости Jeanette, Therese и блокирующих объектов. **P L302–308** использует `Jeanette_Quest==2` и включает `Therese_mad_trigger`.
 
 **[F:M L41894]** `Therese_mad_trigger` начинает постановочную сцену с удалённым диалогом Therese и перемещением/камерой. Однако **Jeanette.dlg не устанавливает `Jeanette_Quest==2`**. Следовательно, уверенно реконструировать полную цепочку «галерея завершена → сцена Therese» **пока нельзя**.
 
@@ -126,7 +134,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 
 | Вопрос | Сейчас известно | Что минимально требуется |
 |---|---|---|
-| Какая карта выставляет `Jeanette_Quest=2`? | В имеющихся четырёх исходниках найдено чтение, но не присваивание | VMF Gallery / городской хаб, возможно другой script/DLG |
+| Когда в игре фактически устанавливается `Jeanette_Quest=2`? | Статические записи и один Gallery I/O выше | Игровой маршрут с контролем флагов и событий |
 | Когда вызывается `jeanetteRefused()`? | Python определяет функцию; в Asylum VMF этот вызов отсутствует | `sm_hub_1.vmf` или скрипты вызывающей карты |
 | Чем заканчиваются ветки после `Therese_Quest=4`? | Флаги и входы в диалоги имеются, полного маршрута нет | `Tourette.dlg` |
 | Как движок разрешает пересекающиеся стартовые условия? | В DLG есть порядок слотов; алгоритм не предоставлен | минимальный игровой тест или техническая документация DLG-системы |
@@ -138,7 +146,7 @@ tags: [vtmb, original, santa-monica, asylum, dialogue, reverse-engineering]
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_Pendant_CrossDialogue.png/.svg` — общий квестовый узел Jeanette ↔ Therese.
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_Gallery_State.png/.svg` — поручение Gallery → состояние города.
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_VMF_Python_DLG.png/.svg` — постановочная последовательность Jeanette и связь с Cal.
-- `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_DLG_Nodes.csv` — 284 содержательные записи, ID, условия, эффекты, короткие фрагменты текста.
+- `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_DLG_Nodes.csv` — 285 содержательных записи, ID, условия, эффекты, короткие фрагменты текста.
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_DLG_Links.csv` — явные и эвристически восстановленные переходы, помечены отдельно.
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_State_Changes.csv` — действия и нетипичные изменения в полях условий.
 - `../Locations/asylum1/SM-13_Asylum_Assets/SM-13_Jeanette_Cross_Source_Matrix.csv` — конкретные связи J/T/P/M с границами доказательности.

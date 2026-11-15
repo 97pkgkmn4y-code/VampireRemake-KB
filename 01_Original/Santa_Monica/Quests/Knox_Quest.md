@@ -1,204 +1,41 @@
 # Knox Quest Research
 
-**Date**: 2026-11-09
-**Source**: knox.dlg (974 records)
-**Quest**: Knox Quest (Knox Asian Quest)
-**Status**: Partially documented
+**Date**: 2026-11-09  
+**Status**: VERIFIED_STATIC for the observations below. Runtime selection and event order are UNVERIFIED.  
+**Sources**: UP+ 12.0 `Unofficial_Patch/dlg/santa monica/knox.dlg` (974 numbered records, SHA-256 `94c9144670f74d72fe3a9402cc77be4d3f968b946c05806fe5646d733983a794`) and `Unofficial_Patch/python/santamonica/santamonica.py` (SHA-256 `634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff`). Map evidence uses SDK `SDKContent/MapSrc/up sources/` and the installed `Unofficial_Patch/maps/` BSP entity lumps.
 
----
+## Quest Variables
 
-## VERIFIED Findings
+`G.Knox_Quest` and `G.Knox_Done` are globals. `Knox Asian` (The Hunted Hunter) and `Arthur Knox` (A Bounty For The Hunter, about Carson) are separate journal entries in `Unofficial_Patch/vdata/system/quests_santamonica.txt` (lines 137–214 and 35–88 respectively, SHA-256 `d1f4cc18f44d4f231d0764a1d49da314fe4fb383ca70cddae8ef23db28b02f38`).
 
-### Quest Variables
-
-**Arthur Knox Quest Progression:**
-- `G.Knox_Quest` (1-7): Knox quest progression stages
-
-**Arthur Kilpatrick Quests:**
-- `pc.SetQuest("Arthur Knox", 1)`: Arthur's quest stage 1
-- `pc.SetQuest("Arthur Knox", 2)`: Arthur's quest stage 2
-- `pc.SetQuest("Arthur Knox", 3)`: Arthur's quest stage 3
-
-**Knox Asian Quest:**
-- `pc.SetQuest("Knox Asian", 1)`: Asian vampire quest start
-- `pc.SetQuest("Knox Asian", 4)`: Asian vampire quest complete
-
-**Character State:**
-- `G.Knox_TT` (0-1): Tungsten Teeth quest state
-- `G.Knox_Vamp` (0-3): Vampire revealed state
-- `G.Knox_Ghoul` (0-2): Ghoul interaction state
-- `G.Knox_Master` (0-1): Master vampire knowledge
-- `G.Knox_Likes` (0-1): Player likes Knox
-- `G.Knox_Bertram` (0-2): Bertram quest state
-- `G.Knox_Outbound` (0-3): Outbound quest state
-- `G.Knox_Powerful` (0-1): Master's power level
-- `G.Knox_Appear` (0-1): Mysterious appearance
-- `G.Knox_Questions` (0-1): Questions asked
-- `G.Knox_Arthur` (0-2): Arthur Kilpatrick interaction
-- `G.Knox_Artbound` (0-1): Artbound state
-- `G.Knox_Done` (0-1): Quest complete
-- `G.Trip_Know` (0-2): Trip pawn shop knowledge
-- `G.Knox_Knowledge` (0+): Knowledge gained
-
-### Arthur Knox Quest Start
-
-**Record 211:**
-- Response: [anxious sigh]Well, Bertram had me keeping an eye on this guy, this asian dude who's been poking around...
-- Next ID: "#"
-- Conditions: "npc.SetDisposition(\"Neutral\",1)"
-- Scripts: "G.Knox_Quest = 1"
-- Brujah Response: (Empty)
-- Meaning: Knox quest begins when player talks to Knox about Asian vampire
-
-### Arthur Knox Quest Completion
-
-**Record 381:**
-- Response: Oh thank god. Yes! That thing was hounding me every night. Look, I still haven't heard anything from Bertram, sorry. I'll still let him know but for now, I'm done with this.
-- Next ID: "#"
-- Conditions: "npc.SetDisposition(\"Joy\",2)"
-- Scripts: "G.Knox_Quest = 7; G.Knox_Done = 1; pc.SetQuest(\"Knox Asian\", 4)"
-- Brujah Response: (Empty)
-- Meaning: Knox quest complete, Asian vampire quest complete
+Other globals catalogued for follow-up are `Knox_TT`, `Knox_Vamp`, `Knox_Ghoul`, `Knox_Master`, `Knox_Likes`, `Knox_Bertram`, `Knox_Outbound`, `Knox_Powerful`, `Knox_Appear`, `Knox_Questions`, `Knox_Arthur`, `Knox_Artbound`, `Trip_Know` and `Knox_Knowledge`. Their complete ranges and runtime meanings are UNVERIFIED.
 
 ### Quest Progression
 
-**Record 231:**
-- Response: It's freaking me out. I know this thing is totally toying with me; I want to put an end to it.
-- Next ID: "#"
-- Conditions: "npc.SetDisposition(\"Neutral\",1)"
-- Scripts: "G.Knox_Quest = 2; G.Knox_Questions = 1"
-- Brujah Response: (Empty)
-- Meaning: Player asks questions, quest progresses to stage 2
+| `knox.dlg` ID | Literal next | VERIFIED_STATIC fields |
+|---|---|---|
+| 211 | `#` | Bertram surveillance account. `npc.SetDisposition("Neutral",1)` and `G.Knox_Quest = 1`. |
+| 231 | `#` | Knox describes the threat. `npc.SetDisposition("Neutral",1)`, `G.Knox_Quest = 2` and `G.Knox_Questions = 1`. |
+| 263 | Empty | Numbered row with empty payload. |
+| 266 | `#` | `npc.SetDisposition("Neutral",1)` and `pc.GiveItem("item_g_driver_license_gimble")`. No stage write on this row. |
+| 267 | 281 | `G.VirgilCrumbKnowledge == 0`. Writes `G.Knox_Quest = 5` and `pc.SetQuest("Knox Asian", 1)`. |
+| 268 | 281 | `G.VirgilCrumbKnowledge == 1`. Writes `G.Knox_Quest = 5` and `pc.SetQuest("Knox Asian", 10)`. |
+| 271 | `#` | Refusal response. `npc.SetDisposition("Sad",2)` and `G.Knox_Quest = 4`. |
+| 381 | `#` | Report of success. `npc.SetDisposition("Joy",2)`, `G.Knox_Quest = 7`, `G.Knox_Done = 1` and `pc.SetQuest("Knox Asian", 4)`. |
 
-**Record 263:**
-- Response: I'll look into it for you....
-- Condition: 281
-- Field 7: `G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)`
-- Meaning: Player agrees to investigate, Asian quest starts, quest stage jumps to 5
-
-**Record 266:**
-- Response: No. . .the picture on the license isn't him. I don't know why he had it, but it might help you find out where he is and what he's doing. Here, take it.
-- Next ID: "#"
-- Conditions: "npc.SetDisposition(\"Neutral\",1)"
-- Scripts: "pc.GiveItem(\"item_g_driver_license_gimble\")"
-- Brujah Response: (Empty)
-- Meaning: Player receives driver's license, Asian quest starts, quest stage 5
-
-**Record 271:**
-- Response: Damn dude. That's cold. I thought we were getting to be tight, man, since we're on the same side.
-- Next ID: "#"
-- Conditions: "npc.SetDisposition(\"Sad\",2)"
-- Scripts: "G.Knox_Quest = 4"
-- Brujah Response: (Empty)
-- Meaning: Player refused to investigate, quest stage set to 4
-- Meaning: Player refused, quest stage 4 (Knox angered)
-
-### Quest Completion
-
-**Record 381:**
-- Response: Oh thank god. Yes! That thing was hounding me every night. Look, I still haven't heard anything from Bertram, sorry. I'll still let him know but for now, I'm done with this.
-- Condition: #
-- Field 7: `G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)`
-- Meaning: Quest complete, Asian quest complete
+`vdata/hackterminals/krime_computer.txt:68` contains `runscript → virgilViewed()`. `santamonica.py:412–417` writes `G.VirgilCrumbKnowledge = 1` and sets `Knox Asian` to 9 when the prior journal state is 1, 2 or 5. Journal states 1 and 10 describe the accepted assignment with different prior knowledge of Virgil Crumb.
 
 ## VMF and BSP Source Analysis
 
-### asianVampDeath() Call Sites
-
-**VERIFIED**: Five distinct trigger locations in VMF file `sm_vamparena.vmf`:
-1. `sm_vamparena - default.txt` (line 313)
-2. `sm_vamparena - up.txt` (line 321)
-3. `sm_vamparena - up.txt` (line 372)
-4. `sm_vamparena.vmf` (line 13192)
-5. `sm_vamparena.vmf` (line 13253)
-
-**VERIFIED**: All five triggers use empty entity name (",,,0,-1,") in OnDeath field, meaning they trigger for the entity that dies.
-
-**VERIFIED**: asianVampDeath() is called in vampire arena for arena-related deaths, NOT for Stan Gimble.
-
-### knoxDead() Call Sites
-
-**VERIFIED**: Three distinct trigger locations for knoxDead():
-1. `sm_bailbonds_1 - default.txt` (line 302)
-2. `sm_bailbonds_1 - up.txt` (line 693)
-3. `sm_bailbonds_1_d.vmf` (line 5081)
-
-**VERIFIED**: All three triggers use empty entity name (",,,0,-1,") in OnDeath field.
-
-**VERIFIED**: knoxDead() is called when Arthur Kilpatrick dies (sm_bailbonds_1 location), NOT when Arthur Knox dies.
-
-### Entity ID 994 (Stan_Gimble)
-
-**VERIFIED**: Entity ID 994 is a **solid** (polygon), NOT a game entity.
-- VMF file `sm_basement_1.vmf`: ID 994 refers to a solid side in a wall/polygons
-- This confirms Stan Gimble is a character entity, not a solid
-
-**Stan_Gimble Location**:
-- Entity ID 994 in Knox_Quest.md is **INCORRECT** and refers to VMF solid ID
-- Stan Gimble is the basement pawn shop owner in SM-18 (Gimble basement)
-- VMF `sm_basement_1.vmf` contains Gimble's location and associated doors
-
-### VMF Level Files Summary
-
-**sm_bailbonds_1**: Bail bondsman location (Arthur Kilpatrick)
-- Three trigger locations for kilpatrickDeath()
-- **NOT** for knoxDead()
-
-**sm_hub_1**: Main hub area (Arthur Knox)
-- Three trigger locations for knoxDead()
-- **NOT** for kilpatrickDeath()
-
-**sm_vamparena**: Vampire arena (Asian vampire)
-- Five trigger locations for asianVampDeath()
-- **NOT** associated with Stan Gimble
-
-**sm_basement_1**: Gimble basement
-- **NO** asianVampDeath() calls
-- **NO** knoxDead() calls
-- Contains Gimble's location and doors
+| Map | VERIFIED_STATIC SDK VMF / installed BSP output | VERIFIED_STATIC Python effect |
+|---|---|---|
+| `sm_hub_1` | `sm_hub_1_d.vmf:153175` and BSP entity `Knox` have `OnDeath → knoxDead()`. `logic_auto.OnMapLoad → knoxState()` is present in VMF L151246 and BSP. | `santamonica.py:2038–2041` sets `Knox Asian` to 8 if the previous state is neither 0 nor 4. L2044–2057 contains the Nosferatu teleport/trigger changes and conditional `Knox.Kill()`. |
+| `sm_bailbonds_1` | `sm_bailbonds_1_d.vmf:5081` and BSP entity `Arthur` have `OnDeath → kilpatrickDeath()`. | L391–398 sets `Arthur Knox` to 7 if its state is neither 0 nor 5, and `Bail Jumper` to 5 if its state is outside 0/3/4. |
+| `sm_vamparena` | `sm_vamparena.vmf:13192,13253` and BSP entities `AsianVamp` / `AsianVamp_plus` have `OnDeath → asianVampDeath()`. These are two placed outputs per checked map representation. | L142–144 writes `G.Kjspy_Dead = 1` and `Knox Asian` stage 3. L145–160 adds an item-spawn branch conditional on `G.Patch_Plus == 2`. |
+| `sm_basement_1` | `sm_basement_1.vmf:16753–16756` identifies `Stan_Gimble` as entity ID 994. L50460–50462 independently uses ID 994 for a brush side. VMF L16816–16817 and the BSP entity `Stan_Gimble` contain both outputs below. | L429–431 sets `Arthur Knox` to 3 and `G.Gimble_Dead = 1`. |
 
 ### Gimble Death Flow
 
-**VERIFIED**: Gimble death sequence in Knox_Quest.md is **INCOMPLETE** and **INCORRECT**:
+`Stan_Gimble.OnDeath` has two sibling outputs, `gimble_dead_relay.Trigger` and `gimbleDeath()`. The relay configures doors, fade, player teleport and the Carson release sequence (`sm_basement_1.vmf:23158–23172`). The Python call is a separate output on `Stan_Gimble`. See [[../Locations/basement1/SM-18_Basement_02_Systems|SM-18 systems]] for the detailed I/O graph.
 
-Original Knox_Quest.md claimed:
-1. Player kills Stan_Gimble (entity death)
-2. OnDeath triggers gimble_dead_relay
-3. gimble_dead_relay triggers gimbleDeath() Python function
-4. Python function sets Arthur Knox=3 and G.Gimble_Dead=1
-5. Relay unlocks Gimble doors, teleports player, triggers Carson release
-
-**CORRECTION**: VMF analysis proves:
-- `sm_basement_1.vmf` **DOES NOT** contain asianVampDeath() calls
-- The actual Gimble death handler is in `sm_basement_1` Python script
-- asianVampDeath() is unrelated to Stan Gimble
-- Need to locate actual Gimble death triggers in Python scripts
-
-## Known Gaps
-
-- **Gimble death flow**: No clear evidence of asianVampDeath() call for Stan Gimble
-- **Arthur Knox death handler**: Not yet located in VMF files
-- **VirgilViewed() call site**: May be triggered by player dialogue or interaction
-- **knoxState() function**: Behavior not fully understood from VMF alone
-
-## Summary of Corrections
-
-### INCORRECT (VERIFIED FALSE):
-- ❌ asianVampDeath() called when Stan Gimble dies
-- ❌ knoxDead() called when Arthur Knox dies
-- ❌ Entity ID 994 is Stan_Gimble
-- ❌ Gimble death flow uses asianVampDeath()
-
-### CORRECT (VERIFIED TRUE):
-- ✅ asianVampDeath() called in sm_vamparena for arena-related deaths
-- ✅ knoxDead() called in sm_hub_1 when Arthur Knox dies
-- ✅ Five distinct asianVampDeath() call sites in vampire arena
-- ✅ Three distinct knoxDead() call sites in bail bonds location
-
-### NEEDS VERIFICATION:
-- ⚠️ Actual Gimble death handler (not asianVampDeath)
-- ⚠️ Arthur Knox death handler
-- ⚠️ VirgilViewed() call site
-- ⚠️ knoxState() function behavior
-
----
+**UNVERIFIED**: actual dispatch order of sibling outputs, whether scripted `Kill` dispatches the corresponding `OnDeath` in a given route, dialogue-entry priority, and which arena NPC appears in each runtime state. Historical default/UP entity dumps in the old audit are additional representations. Their provenance and correspondence to the installed BSP remain UNVERIFIED.

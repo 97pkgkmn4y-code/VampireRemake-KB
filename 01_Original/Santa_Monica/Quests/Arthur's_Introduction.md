@@ -1,22 +1,22 @@
-# Arthur\'s Introduction Quest
+# Arthur's Introduction Quest
 
-**Status**: IN PROGRESS  
-**Source**: `arthur.dlg` (Record 11-1010)  
+**Status**: VERIFIED_STATIC for cited DLG fields. Runtime selection is UNVERIFIED.  
+**Source**: UP+ 12.0 `Unofficial_Patch/dlg/santa monica/arthur.dlg` (SHA-256 `06d552f31c1f171dc46d1ab37061f7b0c8d33f3424603b11333a869e4ed62b2f`)  
 **NPC**: Arthur Kilpatrick (Bail Bonds)  
 **Location**: Santa Monica - Kilpatrick 24-Hour Bail Bonds
 
 ## Quest Overview
 
-Arthur\'s Introduction is the initial quest that establishes the player\'s first interaction with Arthur Kilpatrick, the bail bondsman in Santa Monica. This quest introduces basic dialogue mechanics and sets up several related quests.
+Arthur's Introduction documents the initial dialogue with Arthur Kilpatrick. The journal definitions in `Unofficial_Patch/vdata/system/quests_santamonica.txt:35–88,94–131` contain separate entries for `Arthur Knox` and `Bail Jumper`. An introduction entry is absent from that file.
 
 ## Evidence
 
-### VERIFIED: Record 11 - Initial Greeting
+### VERIFIED_STATIC: Record 11 - Initial Greeting
 
 **Source**: `arthur.dlg:11`
 **Field Mapping**:
 - ID: "11"
-- Response_1: "[with the panache of a hubcap salesman]Welcome to Kilpatrick 24-Hour Bail Bonds. My name\'s Arthur Kilpatrick. How can I help you?"
+- Response_1: "[with the panache of a hubcap salesman]Welcome to Kilpatrick 24-Hour Bail Bonds. My name's Arthur Kilpatrick. How can I help you?"
 - Response_2: (Identical to Response_1)
 - Next ID: "#"
 - Conditions: "npc.SetDisposition(\"Joy\",1)"
@@ -24,11 +24,11 @@ Arthur\'s Introduction is the initial quest that establishes the player\'s first
 - Brujah Response: (Empty)
 
 **Analysis**:
-- Sets player\'s disposition to "Joy" when entering dialogue (field 5)
+- Contains `npc.SetDisposition("Joy",1)` in field 5, targeting the NPC
 - Sets global variable `G.Arthur_Talked = 1` to track interaction (field 6)
-- Identical response_1 and response_2 suggest this is the primary greeting
+- Identical response fields. Starting condition 1011 has literal target 11.
 
-### VERIFIED: Record 21 - Business Explanation
+### VERIFIED_STATIC: Record 21 - Business Explanation
 
 **Source**: `arthur.dlg:21`
 **Field Mapping**:
@@ -42,9 +42,9 @@ Arthur\'s Introduction is the initial quest that establishes the player\'s first
 **Analysis**:
 - Changes disposition to "Neutral" (field 5)
 - Sets global variable `G.Arthur_Run = 1` (field 6)
-- Reveals Arthur\'s business model
+- Reveals Arthur's business model
 
-### VERIFIED: Record 31 - Employees and Location
+### VERIFIED_STATIC: Record 31 - Employees and Location
 
 **Source**: `arthur.dlg:31`
 **Field Mapping**:
@@ -57,7 +57,7 @@ Arthur\'s Introduction is the initial quest that establishes the player\'s first
 
 **Analysis**:
 - Changes disposition to "Neutral" (field 5)
-- Explains Arthur\'s staff and operations
+- Explains Arthur's staff and operations
 - Provides context about Santa Monica location
 
 ## Dialogue Structure
@@ -67,91 +67,34 @@ Arthur\'s Introduction is the initial quest that establishes the player\'s first
 **Malkavian-Specific Paths**:
 - Record 12: `not IsClan(pc,"Malkavian")`
 - Record 13: `not IsClan(pc,"Malkavian") and G.Extra_Lines == 1`
-- Record 14: `711 not IsClan(pc,"Malkavian")`
-- Record 15: `571 IsClan(pc,"Malkavian")`
-- Record 16: `0 IsClan(pc,"Malkavian")`
-- Record 20: `0 not IsClan(pc,"Malkavian")`
+- Record 14 → 711: `not IsClan(pc,"Malkavian")`
+- Record 15 → 571: `IsClan(pc,"Malkavian")`
+- Record 16: empty numbered row
+- Record 20: literal target `0`, empty condition
 
 **General Dialogue Paths**:
-- Records 22-24: Player questions about business
+- Records 22→31 and 23→41 cover employees and business. ID 24→741 asks about work when `G.Arthur_Knox < 2`.
 - Records 33-34: General conversation
 - Record 35: `G.Arthur_BJ == 1 and G.Extra_Lines == 1`
 
-## Global Variables
+## Global Variables and Entry Conditions
 
-### VERIFIED: `G.Arthur_Talked`
+| Status | Direct evidence |
+|---|---|
+| VERIFIED_STATIC | ID 11 writes `G.Arthur_Talked = 1`, ID 21 writes `G.Arthur_Run = 1`. |
+| VERIFIED_STATIC | `G.Arthur_BH` is checked at IDs 34, 43, 73 and 554. IDs 122, 602 and 702 are empty. See [[Bail_Hustler_Quest]]. |
+| VERIFIED_STATIC | `G.Arthur_BJ` is checked at IDs 35 and 66, and written in 41 and 741. See [[Bail_Jumper_Quest]]. |
+| VERIFIED_STATIC | `G.Arthur_Knox` is checked at IDs 34, 73 and 554. ID 691 writes `G.Arthur_Knox = 2` and separately calls `pc.SetQuest("Arthur Knox", 1)`. |
+| INFERRED | `G.Arthur_Talked` tracks prior conversation, and `G.Arthur_Run` tracks discussion of Arthur's business. Default values and full runtime semantics are UNVERIFIED here. |
 
-**Definition**: Tracks whether player has spoken to Arthur  
-**Initial Value**: 0  
-**Set To**: 1 (Record 11)  
-**Purpose**: Basic interaction tracking
+| Starting-condition ID | Literal target | Condition |
+|---|---|---|
+| 1009 | 361 | `G.Arthur_Muddy == 2` |
+| 1010 | 231 | `G.Arthur_Talked > 0` |
+| 1011 | 11 | `G.Arthur_Talked == 0 and G.Patch_Plus == 0` |
+| 1012 | 2 | `G.Arthur_Talked == 0 and G.Patch_Plus == 1` |
 
-### VERIFIED: `G.Arthur_Run`
-
-**Definition**: Indicates Arthur is running his business  
-**Initial Value**: 0  
-**Set To**: 1 (Record 21)  
-**Purpose**: Business state tracking
-
-### VERIFIED: `npc.SetDisposition`
-
-**Definition**: Sets NPC disposition  
-**Values**: "Joy", "Neutral", "Anger", "Fear", "Flirt", "Confused"  
-**Usage**: Dynamic dialogue responses based on player actions
-
-
-### Related Quests Identified
-
-1. **Bail Jumper Quest** (`G.Arthur_BJ`)
-2. **Bail Hustler Quest** (`G.Arthur_BH`)
-3. **Santa Monica Discovery** (`G.Arthur_SM`)
-4. **Knox Relationship** (`G.Arthur_Knox`)
-5. **Murder Mystery** (`G.Know_Murder`, `G.Arthur_Killer`)
-
-### Starting Conditions
-
-- **Record 1010**: `G.Arthur_Muddy == 2`
-- **Record 1011**: `G.Arthur_Talked > 0`
-
-**Analysis**: The actual quest starts when player has `G.Arthur_Talked > 0` (verified by Record 1011)
-
-
-## Dialogue State Variables (NOT Separate Quests)
-
-### VERIFIED: G.Arthur_BH
-
-**Definition**: Tracks Arthur's business/hustle dialogue state  
-**Initial Value**: 0  
-**Usage**: Appears in Record 34, 43, 122, 181 as condition checks  
-**Purpose**: Tracks player's interaction with Arthur's business discussions  
-**Status**: **STATIC VERIFIED** - Variable appears in DLG conditions
-
-### VERIFIED: G.Arthur_BJ
-
-**Definition**: Tracks player bounty hunter interactions with Arthur  
-**Initial Value**: 0  
-**Usage**: Appears in Record 66, 35 as condition checks  
-**Purpose**: Tracks player bounty hunter dialogue branches  
-**Status**: **STATIC VERIFIED** - Variable appears in DLG conditions
-
-### VERIFIED: G.Arthur_Knox
-
-**Definition**: Tracks player-Knox relationship state  
-**Initial Value**: 0  
-**Usage**: Appears in Record 34, 73, 122, 602, 702 as condition checks  
-**Purpose**: Tracks player interactions with Knox  
-**Status**: **STATIC VERIFIED** - Variable appears in DLG conditions
-
-**INFERRED**: These variables track dialogue states and player-NPC relationships, not separate quest objectives. Claims that G.Arthur_BH, G.Arthur_BJ, G.Arthur_SM, G.Arthur_Knox, G.Know_Murder, or G.Arthur_Killer represent separate quests lack VMF evidence and are **INFERRED** based on variable names only.
-
-## Starting Conditions
-
-**Record 1010**: G.Arthur_Muddy == 2
-**Record 1011**: G.Arthur_Talked > 0
-
-**Analysis**: The actual quest interaction starts when player has G.Arthur_Talked > 0 (verified by Record 1011)
-
-**STATIC VERIFIED**: Record 1011 exists in rthur.dlg and contains condition G.Arthur_Talked > 0.
+These rows are VERIFIED_STATIC. Entry selection among concurrently eligible rows and the scope of `G.Arthur_SM`, `G.Know_Murder` and `G.Arthur_Killer` remain UNVERIFIED here. See [[Santa_Monica_Discovery]] for the related local investigation.
 
 ## Inferred Structure
 
@@ -175,28 +118,7 @@ Based on dialogue pattern analysis:
 
 ## Unknowns
 
-- **Exact quest completion criteria**: No clear "quest complete" flag identified
-- **Quest rewards**: Not specified in dialogue records
-- **Quest duration**: Timing and duration not defined
-- **Relationship progression**: Exact progression mechanics unclear
+- **UNVERIFIED**: actual greeting selection, priority of overlapping start conditions, and runtime reachability of the inferred phases.
 
-## Next Steps
-
-1. Investigate `G.Arthur_BJ` (Bail Jumper quest) starting conditions
-2. Examine Python script references for quest logic
-3. Search for quest completion conditions
-4. Map dialogue connections to quest states
-
-## Notes
-
-- Record 1012 does not exist in arthur.dlg (verified)
-- DLG reader field mapping is accurate (verified)
-- Malkavian-specific dialogue paths suggest unique gameplay experiences
-- Multiple parallel quests can be accessed simultaneously
-
----
-
-**Classification**: PARTIALLY VERIFIED  
-**Evidence**: Direct dialogue records  
-**Inference**: Quest structure based on dialogue patterns  
-**Next**: Investigate Bail Jumper quest
+**Evidence**: direct dialogue fields and journal definitions.  
+**INFERRED**: phase grouping based on dialogue topics.

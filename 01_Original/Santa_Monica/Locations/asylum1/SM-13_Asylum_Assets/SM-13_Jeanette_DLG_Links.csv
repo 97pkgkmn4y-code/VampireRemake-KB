@@ -269,6 +269,7 @@ source_id,target_id,edge_type,condition,explanation
 491,493,inferred_response_block,G.Jeanette_Mail == 1,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
 491,494,inferred_response_block,G.Story_State > 40 and G.Credits_Running == 0,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
 491,495,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
+491,496,inferred_response_block,,"Inferred NPC→response association from adjacent slot layout, not an explicit link"
 492,511,explicit_numeric,G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0,Literal target in DLG
 493,511,explicit_numeric,G.Jeanette_Mail == 1,Literal target in DLG
 494,501,explicit_numeric,G.Story_State > 40 and G.Credits_Running == 0,Literal target in DLG

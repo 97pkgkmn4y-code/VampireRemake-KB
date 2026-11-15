@@ -1,13 +1,15 @@
 # Отчёт о верификации установки Vampire: The Masquerade — Bloodlines
 
+> Установленные маркеры патча, архивы и SDK перечислены в [[03_Versions-Verified]]. Приведённые ниже размеры и числа файлов относятся к первоначальному инвентарю.
+
 ## 1. Что было верифицировано
 
 ### Версии игры и патчей
 - **Исходная игра**: pack000-009.vpk (оригинальные файлы игры)
 - **Unofficial Patch**: отдельный каталог `Unofficial_Patch\`
-  - pack010.vpk (62.76 МБ
-  - pack012.vpk (257.47 МБ
-  - pack013.vpk (168.72 МБ
+  - pack010.vpk (62.76 МБ)
+  - pack012.vpk (257.47 МБ)
+  - pack013.vpk (168.72 МБ)
 - **Unofficial_Patch** содержит дополнительные данные:
   - `vdata\system\masquerade.txt` — новая система маскарада
   - `vdata\system\stats - hunter.txt` — характеристики охотников
@@ -17,12 +19,12 @@
 
 ### VPK архивы
 - **Тип**: Valve Pack (Source Engine), НЕ Valve Particle System
-- **Количество**: 15 архивов (pack000-013, pack100-103)
+- **Количество**: 18 архивов (pack000-013, pack100-103)
 - **Содержимое**:
-  - pack000-009: исходное содержимое (2004)
-  - pack010: Unofficial Patch (2025)
-  - pack012, pack013: другие патчи (2015, 2018)
-  - pack100-103: служебные файлы
+  - pack000-009: происхождение payload UNVERIFIED
+  - pack010: происхождение payload UNVERIFIED
+  - pack012, pack013: происхождение payload UNVERIFIED
+  - pack100-103: назначение payload UNVERIFIED
 
 ### SDKContent
 - **Путь**: `SDKContent\VpkContent\vdata\system\`
@@ -80,7 +82,7 @@
 - ❌ Содержимое VPK описано частично — **исправлено**: изучена структура pack000-013, Unofficial_Patch, SDKContent
 
 ### Что нужно было уточнить:
-- ✅ Версии pack010, pack012, pack013 определены по LastWriteTime
+- Атрибуция pack010, pack012, pack013 по LastWriteTime снята; происхождение payload требует сравнения байтов.
 - ✅ Unofficial_Patch содержит дополнительные файлы для охотников и маскарада
 - ✅ Инструменты исследования полностью перечислены
 
@@ -93,9 +95,9 @@
 
 2. **Структура VPK архивов**:
    - pack000-009: оригинальные файлы (2004)
-   - pack010: Unofficial Patch (2025)
-   - pack012, pack013: другие патчи (2015, 2018)
-   - pack100-103: служебные файлы
+   - pack010: происхождение payload UNVERIFIED
+   - pack012, pack013: происхождение payload UNVERIFIED
+   - pack100-103: назначение payload UNVERIFIED
 
 3. **SDKContent полностью извлечён**:
    - Все системные файлы доступны для чтения
@@ -173,10 +175,10 @@
 
 ### Верифицированные источники:
 - Файловая система игры:
-  - `C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\Vampire\`
-  - `C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\Unofficial_Patch\`
-  - `C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\SDKContent\`
-  - `C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\Extras\`
+  - `C:\Users\Slava\Documents\Bloodlines-GLM\Reference\Vampire - The Masquerade Bloodlines\Vampire\`
+  - `C:\Users\Slava\Documents\Bloodlines-GLM\Reference\Vampire - The Masquerade Bloodlines\Unofficial_Patch\`
+  - `C:\Users\Slava\Documents\Bloodlines-GLM\Reference\Vampire - The Masquerade Bloodlines\SDKContent\`
+  - `C:\Users\Slava\Documents\Bloodlines-GLM\Reference\Vampire - The Masquerade Bloodlines\Extras\`
 
 - SDKContent\VpkContent\vdata\system\:
   - rules.txt, stats.txt, items.txt, dialog.txt
@@ -196,7 +198,7 @@
 
 ### Неизвестное:
 - Точные изменения в pack010, pack012, pack013 (требуется распаковка)
-- Реальное содержимое Python скриптов (требуется чтение)
+- Полное покрытие Python скриптов за пределами исследованных локаций
 - Взаимосвязи между Python скриптами и VPK архивами (требуется анализ)
 
 ## Следующие шаги

@@ -28,7 +28,7 @@ esource — ресурсы (8 файлов, 0.10 МБ)
   - save — сохранения (11 файлов, 3.03 МБ)
   - scripts — скрипты (6 файлов, 0.04 МБ)
   - sound — звук (9835 файлов, 317.42 МБ)
-  - data — данные игры (549 файлов, 2.70 МБ)
+  - vdata — данные игры (549 файлов, 2.70 МБ)
 
 ### SDK (Source SDK)
 - **Путь**: C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\SDKContent\
@@ -38,7 +38,7 @@ esource — ресурсы (8 файлов, 0.10 МБ)
   - MaterialSrc — исходные материалы
   - ModelSrc — исходные модели
   - VpkContent — извлечённое содержимое VPK архивов
-    - data\system\ — системные файлы:
+    - vdata\system\ — системные файлы:
       - 
 ules.txt — правила игры
       - stats.txt — характеристики
@@ -48,12 +48,12 @@ ules.txt — правила игры
       - 
 pctemplate*.txt — шаблоны NPC
       - quests*.txt — квесты
-      - data\quotes.txt — цитаты
+      - vdata\quotes.txt — цитаты
   - SDKBinaries — инструменты Source Engine:
     - hammer.exe — редактор карт
-    - bsp.exe / rad.exe — компиляция карт
+    - vbsp.exe / vrad.exe — компиляция карт
     - studiomdl.exe — создание моделей
-    - tex.exe — обработка текстур
+    - vtex.exe — обработка текстур
 
 ### Инструменты в Extras/Developer Tools
 - **Level Entity Lists** — текстовые файлы с сущностями карт:

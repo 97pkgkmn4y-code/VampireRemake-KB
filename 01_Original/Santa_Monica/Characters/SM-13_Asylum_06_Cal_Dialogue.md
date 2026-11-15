@@ -4,13 +4,21 @@ map: sm_asylum_1
 location: Asylum
 source_dlg: dlg/Santa Monica/Cal.dlg
 source_dlg_sha256: 9bbe0bb9f804a2bac26994388ab56415d9ec584a1cf83b4d13093571f204033b
-source_script: santamonica.py (загружен как santamonica(1).py)
-source_script_sha256: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
+historical_source_script: santamonica.py (загружен как santamonica(1).py)
+historical_source_script_sha256: 5f62a97ba59c997fdc5df6befe9203f8d28e6261001b35d7b98f3aecc6c3daf4
 source_vmf: sm_asylum_1.vmf
 source_vmf_sha256: 6b637179bf6997e5441eaaf9d211e3ae3a52b3d9d3ebdd5d52f2a8b665c198e0
 status: DLG + Python + VMF cross-referenced; in-game execution unverified
+current_script_reference: Unofficial_Patch/python/santamonica/santamonica.py
+current_script_reference_sha256: 634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff
+current_dialogue: Unofficial_Patch/dlg/santa monica/Cal.dlg
+current_dialogue_sha256: 9bbe0bb9f804a2bac26994388ab56415d9ec584a1cf83b4d13093571f204033b
+current_reference: Unofficial Patch Plus 12.0
+runtime: UNVERIFIED
 ---
 # SM-13.06 — Cal: диалог, разрешение на лифт и побочные сюжетные состояния
+
+> Актуальные SHA-256 в метаданных относятся к файлам UP+ 12.0. Исторические значения сохранены для сопоставления редакций. Строки Python, указанные ниже, сверены с установленным скриптом. Игровое выполнение UNVERIFIED.
 
 > [!info] Область исследования и доказательность
 > **[F:DLG]** — строки `cal.dlg` (номер записи совпадает с физическим номером строки, `DLG L...`). **[F:PY]** — код `santamonica.py`. **[F:VMF]** — свойства и I/O `sm_asylum_1.vmf`. **[F:3]** — непрерывная цепочка ссылки DLG → Python → VMF. **[I]** — геймдизайнерская интерпретация. **[?]** — не установленное по трём файлам поведение движка/диалоговой системы. Исследуем **оригинал Unofficial Patch Plus**, НЕ проектируем ремейк.
@@ -68,9 +76,9 @@ status: DLG + Python + VMF cross-referenced; in-game execution unverified
 
 | Источник | Проверка / действие | Что подтверждено | Чего НЕ следует заключать |
 |---|---|---|---|
-| **VMF `Cal.OnDialogBegin`** | `jeanetteGoesUp()` (`PY L259–265`) | Если `G.Cal_Permission != 1` **или** `G.Therese_Quest == 0`, Jeanette переносится `bring_Jeanette_up.Teleport()` и скрывается через `ScriptHide()`. | Что Jeanette всегда физически едет в лифте; реализация использует телепорт. |
-| **DLG #231** | При `G.Jeanette_Refuse > 0` и `G.Jeanette_Fire == 1` выбор реплики #162/#172 ведёт к #231. | В ответе Cal присваивается `G.Jeanette_Fire=2`. `populateOffice()` использует диапазон `G.Jeanette_Fire < 3` и отдельное равенство 3 (`PY L308–320`). | Что это автоматически финальная стадия сюжетной ветки Jeanette. |
-| **DLG вопросы про Knox** | `G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0` | На выборе одного из повторяющихся вариантов устанавливается `G.Cal_Knox=1` (в т. ч. #6, #14, #26, #167, #183, #292). | Что `Cal_Knox` само управляет появлением Knox. Его присутствие определяет отдельная `knoxPresence()` (`PY L220–233`). |
+| **VMF `Cal.OnDialogBegin`** | `jeanetteGoesUp()` (`PY L268–273`) | Если `G.Cal_Permission != 1` **или** `G.Therese_Quest == 0`, Jeanette переносится `bring_Jeanette_up.Teleport()` и скрывается через `ScriptHide()`. | Что Jeanette всегда физически едет в лифте; реализация использует телепорт. |
+| **DLG #231** | При `G.Jeanette_Refuse > 0` и `G.Jeanette_Fire == 1` выбор реплики #162/#172 ведёт к #231. | В ответе Cal присваивается `G.Jeanette_Fire=2`. `populateOffice()` использует диапазон `G.Jeanette_Fire < 3` и отдельное равенство 3 (`PY L316–328`). | Что это автоматически финальная стадия сюжетной ветки Jeanette. |
+| **DLG вопросы про Knox** | `G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0` | На выборе одного из повторяющихся вариантов устанавливается `G.Cal_Knox=1` (в т. ч. #6, #14, #26, #167, #183, #292). | Что `Cal_Knox` само управляет появлением Knox. Его присутствие определяет отдельная `knoxPresence()` (`PY L215–238`). |
 | **DLG #211** | Реплики «пожаловаться на жизнь» из #168/#175/#182 | `G.Cal_Troubles=1`, из-за чего дальнейшие ответы с условием `==0` перестают соответствовать условию. | Что Cal действительно стал доверять игроку; это механика одноразового необязательного разговора. |
 | **DLG #111** | `M_Persuasion 3` | `G.Cal_Quits=1`; это влияет на начальное условие #344. | Что NPC исчезает, его должность меняется или он навсегда покидает клуб. |
 | **DLG #261/#151** | `Whisper("Deluded")`, `Whisper("Moaning")` | Действительно вызваны именованные скриптовые действия. | Точный звук/дисциплина/эффект без реализации `Whisper`. |

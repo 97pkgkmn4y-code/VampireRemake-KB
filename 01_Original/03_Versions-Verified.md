@@ -1,14 +1,26 @@
-# Версии игры и патчей — ВЕРИФИЦИРОВАНО
+# Версии игры и происхождение источников
+
+Проверка 11.11.2026 относится к установленному каталогу `C:/Users/Slava/Documents/Bloodlines-GLM/Reference/Vampire - The Masquerade Bloodlines`. Версия установленного патча зафиксирована в `Unofficial_Patch/gameinfo.txt:4` как 12.0. `cfg/user.cfg:2` выбирает `setPlus()`, который в `python/vamputil.py:305–308` задаёт `G.Patch_Plus=1`. Выполнение этой настройки в конкретном запуске не наблюдалось.
+
+| Файл | SHA-256 | Роль |
+|---|---|---|
+| `Version.inf` | `b9c74f44d4b69c3153740c9605e990c9d4c0d3027e92424cfb7f00ae19b2db48` | Базовая версия 1.2. |
+| `Unofficial_Patch/gameinfo.txt` | `f24c54baea8fc21d9c8b9e67280c3c4f2dddd70518b5a859a70851ad01e88a2f` | Каталог патча 12.0 и SearchPaths. |
+| `Unofficial_Patch/cfg/user.cfg` | `7fab03f930daaf560de3e41244cef1aef23042756d78c9949d7210e7435442b6` | Выбор Plus. |
+| `Unofficial_Patch/VTMBup-readme.txt` | `74f9a20a59577877b9a323e5403b86957e176ac88121e3c90f4ee00dbabeaaa5` | Запись v12.0 на строке 111. |
+| `Docs/Readme-UP [Eng].txt` | `0bb89b14e449dad88a71e3fff2f2f54f6d1b6757e6e84a42339b45506ffc2abd` | Отдельный документ с записью v11.5. |
+
+В `Vampire/` найдены 18 архивов `pack000`–`pack013` и `pack100`–`pack103`. Метки LastWriteTime и размеры не устанавливают редакцию каждого payload. `Unofficial_Patch/maps/*.bsp` являются установленными картами, а `SDKContent/MapSrc/up sources/*.vmf` являются исходниками SDK. Декомпиляция BSP требует отдельной идентификации входного файла и инструмента. Совпадение выбранных сущностей не подтверждает совпадение всей геометрии.
 
 ## Источники
-- **Исходный файл**: C:\Users\Slava\Documents\VampireRemake-Starter\Reference\Vampire - The Masquerade Bloodlines\Vampire\
+- **Исходный файл**: C:\Users\Slava\Documents\Bloodlines-GLM\Reference\Vampire - The Masquerade Bloodlines\Vampire\
 - **VPK архивы**: pack000.vpk по pack103.vpk
 
 ## Версии VPK архивов
 
 ### Исходная игра
 - **pack000-009.vpk**: ~200 МБ каждый — UNKNOWN
-- Это оригинальный релиз игры (2004)
+- Происхождение всех payload здесь не проверялось.
 
 ### Патчи
 - **pack011.vpk**: ~173 КБ (служебный?) — UNKNOWN
@@ -18,7 +30,7 @@
 - **ВЕРДИКТ**: Timestamps НЕ доказывают содержимое патча. Конкретные изменения неизвестны без извлечения.
 - **pack013.vpk**: 168.72 МБ — UNKNOWN
 - **ВЕРДИКТ**: Timestamps НЕ доказывают содержимое патча. Конкретные изменения неизвестны без извлечения.
-- **pack100-103.vpk**: ~300 КБ каждый — UNKNOWN
+- **pack100.vpk** и **pack102.vpk**: по 9 байт; **pack101.vpk**: 25 575 811 байт; **pack103.vpk**: 355 209 байт. Назначение payload UNKNOWN.
 
 ## Unofficial Patch
 - **Размер**: ~1.22 ГБ
@@ -34,12 +46,12 @@
   - save/ — сохранения
   - scripts/ — скрипты
   - sound/ — звук (9835 файлов)
-  - data/ — данные игры
+  - vdata/ — данные игры
 
-### Файлы, добавленные/изменённые в Unofficial Patch
+### Файлы, обнаруженные в Unofficial Patch
 
-#### data/system/
-- **masquerade.txt** — новая система маскарада (540 байт)
+#### vdata/system/
+- **masquerade.txt** — данные системы маскарада (540 байт)
 - **stats - hunter.txt** — характеристики охотников (102170 байт)
 - **stats - vampire.txt** — характеристики вампиров (101894 байт)
 - **stats.txt** — характеристики (101894 байт)
@@ -59,7 +71,7 @@
 ## SDK Content
 - **Путь**: SDKContent/VpkContent/vdata/system/
 - **Размер**: ~2.01 ГБ
-- **Полностью извлечён** — все системные файлы доступны для чтения
+- Выбранные системные файлы доступны для чтения. Полнота извлечения не установлена.
 
 ## Инструменты исследования (SDKBinaries)
 - **hammer.exe** — редактор карт
@@ -94,7 +106,7 @@
 
 ### НЕИЗВЕСТНОЕ
 1. Точные изменения в pack010, pack012, pack013 (какие файлы изменены/добавлены/удалены)
-2. Где хранятся реальные диалоги (только определения в dialog.txt)
+2. Полное распределение DLG между loose-файлами и архивами; проверенные диалоги Santa Monica находятся в `Unofficial_Patch/dlg/santa monica/`.
 3. Как работают системы дисциплин и их ограничения
 4. Механики квестов и NPC
 5. Связи между Python скриптами и VPK архивами
