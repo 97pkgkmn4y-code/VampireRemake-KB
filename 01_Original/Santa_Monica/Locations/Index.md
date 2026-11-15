@@ -19,6 +19,7 @@
 | SM-25 — Santa Monica Hub 2 | [[hub2/SM-25_Hub_2_Passport]] |
 | SM-26 — Gallery Noir | [[gallery1/SM-26_Gallery_00_Index]] |
 | SM-27 — Kilpatrick's Bail Bonds | [[bailbonds1/SM-27_Bail_Bonds_Passport]] |
+| SM-28 — Junkyard | [[junkyard1/SM-28_Junkyard_00_Index]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].
