@@ -33,6 +33,8 @@ flowchart LR
 
 После повторного извлечения entity lump подтвердились все 65 кортежей `source_map / target_map / transition_entity / landmark / bsp_sha256`. У каждого перехода с целью среди 22 Santa Monica BSP на целевой карте есть `info_landmark` с указанным именем при сравнении без учёта регистра. Для четырёх записей нет loose BSP назначения: две цели `taxi` (Hub 1/2), одна `sewer_map` (Hub 1), одна `sm_apartment_1b` (Hub 2). Только для последней проведена и ранее документирована проверка индексов VPK.
 
+Повторная проверка обоих каталогов и VPK индексов UP/Base не нашла `maps/taxi.bsp`, `maps/sewer_map.bsp` или `maps/sm_apartment_1b.bsp`. В Hub 1 `cabbie` использует `dlg/Generic/Cabbie.dlg`: ответы 2–4, 12–14, 22–24 и 32–34 вызывают `npc.WorldMap(G.WorldMap_State)`. Кнопка `sewer_map` отдельно вызывает `FindPlayer().SewerMap(G.WorldMap_State)`. Для `taxi_trigger` и `sewer_map_trigger` в этих Hub BSP сохранён Disable Touch. Связь нативных меню с обработкой имён целей остаётся открытой. В Hub 2 у конца Bloodhunt найден отдельный поздний путь `Caine.OnDialogEnd → toCaineTaxi() → CaineTeleport1` в существующий `sp_taxiride`. [[../Locations/hub2/SM-25_Hub_2_Passport]]
+
 | Узел и направление | Связь в установленных данных |
 |---|---|
 | Hub 1 ↔ Hub 2 через интерьеры | `apartmentLeave()` выбирает Hub 2 при `Story_State==90 && Credits_Running==0`, `pawnshopLeave()` при `Story_State==90`. [[../Locations/pawnshop1/SM-29_Pawnshop_1_Passport\|Haven]] при State=90 переключает выход в Hub 2. У обратной двери в [[../Locations/hub2/SM-25_Hub_2_Passport\|Hub 2]] обнаружено несовпадение `HavenTeleport1/2`. |
