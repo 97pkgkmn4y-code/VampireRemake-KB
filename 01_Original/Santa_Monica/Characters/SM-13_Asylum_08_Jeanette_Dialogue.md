@@ -24,7 +24,7 @@ runtime: UNVERIFIED
 > **[F:J]** — буквальная запись из `jeanette.dlg`, идентификатор `J-NNN` равен номеру строки/узла; **[F:T]** — `therese.dlg` (`T-NNN`); **[F:P]** — `santamonica.py` (`P Lxxx`); **[F:M]** — `sm_asylum_1.vmf` (`M Lxxx`, ID/имя entity); **[I]** — критическая интерпретация; **[?]** — недоказанная часть (движок, другая карта, диалоги, рантайм). Проверялся **конкретный загруженный набор**, не все версии игры.
 > Бинарный DLG в файле сохранён как 8-битный текст; для анализа использована кодировка `cp1252` (первичное автоматическое извлечение текста может приводить к «кракозябрам»).
 
-**Связи:** [[SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_05_Script_Logic]] · [[SM-13_Asylum_06_Cal_Dialogue]] · [[SM-13_Asylum_07_Therese_Dialogue]].
+**Связи:** [[../Locations/asylum1/SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_05_Script_Logic]] · [[SM-13_Asylum_06_Cal_Dialogue]] · [[./SM-13_Asylum_07_Therese_Dialogue]].
 
 ## 1. Инвентаризация исходника и метод
 

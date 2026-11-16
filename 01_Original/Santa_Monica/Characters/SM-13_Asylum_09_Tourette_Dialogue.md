@@ -25,7 +25,7 @@ runtime: UNVERIFIED
 >
 > **[F:D]** — запись `Tourette.dlg` (ID равен физическому номеру строки); **[F:P]** — `santamonica.py` с номерами строк; **[F:M]** — `sm_asylum_1.vmf` с именами и номерами начала entity; **[F:T] / [F:J]** — прежние `Therese.dlg` / `Jeanette.dlg`; **[I]** — вывод из устройства систем; **[?]** — не доказано без движка или других файлов. Изложенное персонажами о прошлом обозначается как *реплика персонажа*, а не исторически установленный факт мира.
 
-**Связи:** [[SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_05_Script_Logic]] · [[SM-13_Asylum_07_Therese_Dialogue]] · [[SM-13_Asylum_08_Jeanette_Dialogue]].
+**Связи:** [[../Locations/asylum1/SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_05_Script_Logic]] · [[./SM-13_Asylum_07_Therese_Dialogue]] · [[./SM-13_Asylum_08_Jeanette_Dialogue]].
 
 ## 1. Объём, валидность и формат
 

@@ -5,9 +5,9 @@
 | Персонаж | Раннее Introduction-исследование | Подробный разбор |
 |---|---|---|
 | Cal | — | [[SM-13_Asylum_06_Cal_Dialogue]] |
-| Jeanette Voerman | [[SM-13_Jeanette_Introduction]] | [[SM-13_Asylum_08_Jeanette_Dialogue]] |
-| Therese Voerman | [[SM-13_Therese_Introduction]] | [[SM-13_Asylum_07_Therese_Dialogue]] |
-| Tourette | [[SM-13_Tourette_Introduction]] | [[SM-13_Asylum_09_Tourette_Dialogue]] |
+| Jeanette Voerman | [[SM-13_Jeanette_Introduction]] | [[./SM-13_Asylum_08_Jeanette_Dialogue]] |
+| Therese Voerman | [[SM-13_Therese_Introduction]] | [[./SM-13_Asylum_07_Therese_Dialogue]] |
+| Tourette | [[SM-13_Tourette_Introduction]] | [[./SM-13_Asylum_09_Tourette_Dialogue]] |
 | Danielle | [[SM-13_Danielle_Introduction]] | Отдельное подробное исследование в текущей структуре не найдено. |
 
 ## Размещение и зависимости диалогов

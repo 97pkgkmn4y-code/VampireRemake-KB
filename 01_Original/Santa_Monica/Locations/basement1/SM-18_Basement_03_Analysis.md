@@ -17,7 +17,7 @@
 ## Внешние зависимости и возможные расхождения
 
 - [PY] `santamonica.py:1938–1945` `gimbleQuestDone()` запирает `intercom_button`, если `G.Gimble_Dead=1` **или** `G.Gimble_Vandal=1`; при `G.Patch_Plus=0` дополнительно закрывает `basementdr`. Вызывающая карта подтверждена ниже.
-- [PY] `santamonica.py:44–49` при Plus и `G.Carson_Rescued=1` удаляет в квартире `Carson_Computer`, `Carson_Poster`, `tape_player`; это межкартовый эффект, зависящий от запуска соответствующей функции квартиры. См. [[SM-16_Apartment_00_Index]].
+- [PY] `santamonica.py:44–49` при Plus и `G.Carson_Rescued=1` удаляет в квартире `Carson_Computer`, `Carson_Poster`, `tape_player`; это межкартовый эффект, зависящий от запуска соответствующей функции квартиры. См. [[../apartment1/SM-16_Apartment_00_Index]].
 - [PY] `vamputil.py:595–597` при `G.Gimble_Dead=1` скрывает `stumpy`, если объект существует. Это не доказывает немедленное обновление в подвале.
 - [VMF] `Carson_free_relay` запускает последовательность, конец которой посылает `Carson.Kill` (L23319). [PY] `carsonDeath()` установил бы `Arthur Knox=8` и открыл switch, **если** вызван OnDeath; автоматическую связь `Kill`→OnDeath в доступных исходниках не подтверждаем. Нельзя писать, что спасённый Carson неизбежно «умирает» по квестовой логике.
 

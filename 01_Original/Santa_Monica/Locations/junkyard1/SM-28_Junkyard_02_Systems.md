@@ -39,7 +39,7 @@ UP BSP entity lump: `worldspawn.levelscript=santamonica`; 530 entities, вклю
 |---|---|---|
 | 214 / 215 | `Killer_Lucky==0 && npc.times_talked>1 → 193`; `Killer_Lucky==1 && Killer_Freed==0 → 11` | Стартовые условия; приоритет между допустимыми строками неизвестен |
 | 35,46,56,119,127,133–136,149–150,154–155 | Разные условия Humanity, клана, `Bertram_Caitiff` и Plus | `G.Killer_Hostile=1`; в Plus строки 135/136 дополнительно `HumanityAdd(-1)` |
-| 137 / 138 | `Humanity 5` / `Humanity -5` | `G.Killer_Freed=1; SetQuest("Serial",10)` |
+| 137 / 138 | `Humanity 5` / `Humanity -5` | `G.Killer_Freed=1; SetQuest("Serial",10)`. State 10 is failure in installed `quests_santamonica.txt:548–552`. |
 | 152 / 153 | `Humanity 5` / `Humanity -5` | `G.Killer_Freed=1; SetQuest("Serial",9)` |
 | 156 | `Humanity 5 & G.Patch_Plus==1` | `Killer_Nines=1; Killer_Freed=1; Serial=9` |
 

@@ -104,7 +104,6 @@ This document collects dialogue records from arthur.dlg where Arthur discusses S
 3. Arthur gives player key card for apartment
 4. Quest "Arthur Knox" is triggered
 
-## UNKNOWN Findings
-- What is the "Santa Monica Key Master"?
-- Who is the "he" in Record 441 (chop shop case)?
-- What are the other quest branches not yet documented?
+## Non-blocking dialogue context
+
+The identity behind “Santa Monica Key Master” and the referent in Arthur DLG 441 are not established by the cited lines. Neither is used as a state or access predicate in the linked quest model. The current quest coverage is in [[./Index]].

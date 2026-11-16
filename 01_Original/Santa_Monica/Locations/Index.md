@@ -1,9 +1,12 @@
 # Santa Monica — локации
 
-Индексы и материалы конкретных интерьерных карт. Сводный статус и ограничения источников — в [[../Santa_Monica_Research_Index|главном индексе Santa Monica]].
+Пакеты наружных и интерьерных карт. Сводный статус и ограничения источников — в [[../Santa_Monica_Research_Index|главном индексе Santa Monica]].
 
 | Карта | Материалы |
 |---|---|
+| Hub 1 — улицы и канализация | [[../Space/Surface]] и [[../Space/Sewers]] |
+| Pier | [[../Space/Surface#Коллизия подъёма к Beach House]] |
+| Beach House | [[../Space/Surface#SM-08 — Beach House: архитектура выбора игрока]] |
 | SM-13 — The Asylum | [[asylum1/SM-13_Asylum_00_Index]]; геометрия, сущности, логика, Python и камеры — здесь; разборы диалогов персонажей в [[../Characters/Index\|Characters]]. |
 | SM-14 — Medical Clinic | [[medical1/SM-14_Medical_00_Index]] |
 | SM-15 — Diner | [[diner1/SM-15_Diner_00_Index]] |

@@ -6,7 +6,7 @@
 **Status**: Partial documentation
 
 
-> Расширенный разбор диалогов: [[SM-13_Asylum_08_Jeanette_Dialogue]].
+> Расширенный разбор диалогов: [[./SM-13_Asylum_08_Jeanette_Dialogue]].
 ---
 
 ## Overview

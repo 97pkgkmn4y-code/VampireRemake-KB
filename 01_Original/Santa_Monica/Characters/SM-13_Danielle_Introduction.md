@@ -69,13 +69,3 @@ Danielle is a visitor in The Asylum, likely a customer or potential client. She 
 **Evidence**:
 - First dialogue record suggests initial encounter
 - Sets tracking flag for subsequent interactions
-
----
-
-## Related Files
-
-- `jeanette.dlg` — Jeanette personality dialogue
-- `therese.dlg` — Therese personality dialogue
-- `tourette.dlg` — Tourette NPC in Asylum
-- `santamonica.py` — Global script logic
-- `sm_asylum_1.vmf` — Level geometry and triggers

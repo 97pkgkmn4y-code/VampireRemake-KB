@@ -17,7 +17,7 @@ tags: [vtmb, original, santa-monica, asylum, cameras, cinematography, evidence, 
 # SM-13.12 — Tourette: зеркальные камеры сестёр и техническая инструкция SDK
 
 > [!abstract] Предмет и уровень доказательности
-> **Только оригинальный Asylum (Unofficial Patch Plus)**. Это дополнение к [[SM-13_Asylum_09_Tourette_Dialogue]], [[SM-13_Asylum_10_Camera_Direction]] и [[SM-13_Asylum_11_Camera_Shot_Bindings]]. Не проектируем ремейк.
+> **Только оригинальный Asylum (Unofficial Patch Plus)**. Это дополнение к [[../../Characters/SM-13_Asylum_09_Tourette_Dialogue]], [[SM-13_Asylum_10_Camera_Direction]] и [[SM-13_Asylum_11_Camera_Shot_Bindings]]. Не проектируем ремейк.
 >
 > **[F:T]** — `ttherese.txt`; **[F:J]** — `tjeanette.txt`; **[F:H]** — `camera shots how-to.txt` (SDK); **[F:D]** — `tourette.dlg`, номера *узлов/физических строк*; **[F:M]** — `sm_asylum_1.vmf`, номера физических строк; **[F:P]** — `santamonica.py`; **[F:O]** — ранее изученные `tourette.txt` и `lookattarget_snap.txt`. **[I]** — интерпретация конфигурации и геймдизайна; **[?]** — неизвестно без наблюдения/движка. **Ни одна картосхема ниже не является снятым в игре кадром.**
 

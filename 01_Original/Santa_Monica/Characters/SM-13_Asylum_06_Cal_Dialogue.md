@@ -23,7 +23,7 @@ runtime: UNVERIFIED
 > [!info] Область исследования и доказательность
 > **[F:DLG]** — строки `cal.dlg` (номер записи совпадает с физическим номером строки, `DLG L...`). **[F:PY]** — код `santamonica.py`. **[F:VMF]** — свойства и I/O `sm_asylum_1.vmf`. **[F:3]** — непрерывная цепочка ссылки DLG → Python → VMF. **[I]** — геймдизайнерская интерпретация. **[?]** — не установленное по трём файлам поведение движка/диалоговой системы. Исследуем **оригинал Unofficial Patch Plus**, НЕ проектируем ремейк.
 >
-> Связанные заметки: [[SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_02_Entities]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_04_Analysis]] · [[SM-13_Asylum_05_Script_Logic]].
+> Связанные заметки: [[../Locations/asylum1/SM-13_Asylum_00_Index]] · [[SM-13_Asylum_01_Spatial]] · [[SM-13_Asylum_02_Entities]] · [[SM-13_Asylum_03_Logic]] · [[SM-13_Asylum_04_Analysis]] · [[SM-13_Asylum_05_Script_Logic]].
 
 ## 1. Проверка корпуса
 
