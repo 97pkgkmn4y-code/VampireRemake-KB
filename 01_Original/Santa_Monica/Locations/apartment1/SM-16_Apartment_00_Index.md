@@ -6,11 +6,11 @@ status: SOURCE COMPLETE / RUNTIME PENDING
 ---
 # SM-16 — Santa Monica Apartment (Mercurio)
 
-**Статус: SOURCE COMPLETE / RUNTIME PENDING.** Статическое исследование основных локально доступных источников завершено. Движковые вопросы отделены в [[SM-16_Apartment_03_Analysis]].
+**Статус: SOURCE COMPLETE / RUNTIME PENDING.** Статическое исследование основных локально доступных источников завершено. Движковые вопросы отделены в [[./SM-16_Apartment_03_Analysis]].
 
-- [[SM-16_Apartment_01_Spatial|01 — Пространство и карта]]
-- [[SM-16_Apartment_02_Mercurio|02 — Mercurio, DLG, квесты и предметы]]
-- [[SM-16_Apartment_03_Analysis|03 — Причинная схема, анализ и вопросы]]
+- [[./SM-16_Apartment_01_Spatial|01 — Пространство и карта]]
+- [[./SM-16_Apartment_02_Mercurio|02 — Mercurio, DLG, квесты и предметы]]
+- [[./SM-16_Apartment_03_Analysis|03 — Причинная схема, анализ и вопросы]]
 
 ![[SM-16_Apartment_Assets/SM-16_Apartment_Plan.png]]
 
@@ -21,7 +21,7 @@ status: SOURCE COMPLETE / RUNTIME PENDING
 - [VMF] `SDKContent/MapSrc/up sources/sm_apartment_1.vmf`: 229 блоков `entity`, 43 класса, `worldspawn.levelscript=santamonica`, `safearea=2`. Структурная выгрузка верхних граней и сущностей в `SM-16_Apartment_Assets/vmf-extract.json`.
 - [BSP] Установленная `Unofficial_Patch/maps/sm_apartment_1.bsp`: VBSP v17, 189 сущностей в entity lump. Восемь выбранных имён/классов/origin (Mercurio, оба выхода, landmark, Carson_Computer, journal, angry trigger и trunk lock) совпали с VMF. Это выборочная сверка, не доказательство полной идентичности геометрии.
 - [PY] `Unofficial_Patch/python/santamonica/santamonica.py` L24–137 содержит `apartmentLeave`, `carsonComputerHacked`, `finishElysiumTip`, `journalPickup`, `updateMercurioModel`, `mercurioCamera`, `mercurioDeath`, `mercurioDialog`, `mercurioFight`.
-- [DLG] `Unofficial_Patch/dlg/santa monica/mercurio.dlg`: 1026 нумерованных строк сохранены как исходные поля в `SM-16_Apartment_Assets/SM-16_Dialogue_Rows.csv`. Начальные условия, важные записи и явные переходы разобраны в [[SM-16_Apartment_02_Mercurio]]; динамическая достижимость не симулировалась.
+- [DLG] `Unofficial_Patch/dlg/santa monica/mercurio.dlg`: 1026 нумерованных строк сохранены как исходные поля в `SM-16_Apartment_Assets/SM-16_Dialogue_Rows.csv`. Начальные условия, важные записи и явные переходы разобраны в [[./SM-16_Apartment_02_Mercurio]]; динамическая достижимость не симулировалась.
 - [DATA] `Unofficial_Patch/vdata/hackterminals/Carson_Computer.txt`: меню McGee, пароль `Imalia`, функция Location вызывает `carsonComputerHacked()` и сообщает о tattoo parlor; `santamonica.py` L31–36 повышает `Arthur Knox` до стадии 2 только при исходной стадии 1.
 
 ## Уже установленная логика [VMF/PY]
@@ -35,4 +35,4 @@ status: SOURCE COMPLETE / RUNTIME PENDING
 
 ## Остаточные вопросы
 
-Планы, диалоги, предметы, дверные узлы и оба выхода документированы. Открыты коллизии, электронные замки, динамический приоритет DLG и постановка `mercurioCamera()`. Для `sm_apartment_1b` результат проверки — `TARGET_NOT_FOUND_IN_CHECKED_SOURCES`; детали в [[SM-16_Apartment_03_Analysis]].
+Планы, диалоги, предметы, дверные узлы и оба выхода документированы. Открыты коллизии, электронные замки, динамический приоритет DLG и постановка `mercurioCamera()`. Для `sm_apartment_1b` результат проверки — `TARGET_NOT_FOUND_IN_CHECKED_SOURCES`; детали в [[./SM-16_Apartment_03_Analysis]].

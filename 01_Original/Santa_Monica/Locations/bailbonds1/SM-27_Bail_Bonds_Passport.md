@@ -15,8 +15,15 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 ## Терминалы и квестовые последствия
 
 - BSP содержит два `prop_hacking`: обычный с `vdata/HackTerminals/Krime_computer.txt` и скрытый `plus_computer` с `vdata/HackTerminals/kilpatricks_computer.txt`. В Plus-терминале есть `email_username=Arthur`, `email_password=freedom`, меню Bonds с `password=money`. Это данные исходного файла, а не подтверждение доступности меню в игре.
-- Krimeputer содержит две версии записи Virgil Crumb с `dependency=G.Knox_Quest>=5` и `<5`; одна вызывает `virgilViewed()`. Это пример условного терминального содержимого, связанного с Knox, но выполнение функции при выборе строки ещё не проверено.
+- Krimeputer содержит две версии записи Virgil Crumb (`krime_computer.txt:59–79`). Только вариант при `Knox_Quest>=5` вызывает `virgilViewed()`. Скрипт ставит `VirgilCrumbKnowledge=1` и меняет журнал Knox Asian на 9 при предыдущих 1, 2 или 5. Эта запись подготавливает содержимое морга при загрузке Clinic. В `gimbleDead()` есть отдельный граничный случай Plus: при `Knox_Quest>5` и `VirgilCrumbKnowledge=0` код вызывает `gimble.ScriptHide()` без присваивания локальной переменной `gimble` (`santamonica.py:806–814`). Достижимость сочетания флагов в обычном прохождении остаётся открытой.
+- `Rolf` в том же Krimeputer вызывает `rolfViewed()` (`krime_computer.txt:275`). При журнале Lily=7 функция ставит 9. При другом состоянии она выставляет `RolfTotenKnowledge=1`, не меняя журнал. `santamonica.py:401–409`.
 - `Arthur.OnDeath → kilpatrickDeath()` (BSP). `santamonica.py:391–399`: если журнал `Arthur Knox` не 0 и не 5, ставит 7; если `Bail Jumper` не 0/3/4, ставит 5. Это **состояния журнала**, а не прямые записи в `G.Knox_Quest`/`G.Arthur_BJ`. Достижимость убийства Arthur и других последствий не установлена.
+
+**Пространство и поведение после постановки.** По UP BSP от дверного порога `(2912,949)` до позиции Arthur `(3080,900)` и обоих терминалов выборочные грани 297, 293 и 298 подтверждают уровень Z=−320. Пробы брашей от входа нашли 10 положений к зоне Arthur и 31 к Krimeputer. К `plus_computer` отдельно найдена цепочка из 24 положений от `(2952,972,-296)` до `(3068,913,-279)` (сетка 8, шаг 18, отступ 90, лимит 8000). [[../../Space/Santa_Monica_BSP_Brush_Routes.csv]]
+
+По окончании `plus_Arthur_sit` через 7 c удаляются копия и её стул, раскрываются Arthur и `chair`; через 7.5 c включается `Arthur.UseInteresting(1)`. `plus_Arthur.OnDamaged` вызывает `arthurPhones()` и планирует замену через 1 с и отмену последовательности через 10 с. У постановочного `plus_Arthur` в BSP нет `OnDeath → kilpatrickDeath()`. Этот выход имеет обычный Arthur. Игровые последствия атаки во время телефонной сцены остаются открытыми.
+
+В UP BSP обычный Krimeputer начинается включённым, отдельный `plus_computer` скрыт и имеет `start_enabled=0`. Единственная цель с точным именем `computer` — `intersting_place`. `table.OnNPCArrived` включает `plus_computer` и точку `computer`, отключает `table`. `computer.OnNPCArrived` делает обратное. `plus_computer.OnUseBegin/End` отключает и включает именно точку `computer`. Наблюдение в игре требуется для фактической доступности терминала при перемещении Arthur.
 
 ## Источники и ограничения
 
@@ -29,4 +36,4 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 | `Unofficial_Patch/python/santamonica/santamonica.py` | `634c5a2e97566d709157f4cd43424509689199302a6433708f3d2ced53f13fff` |
 | `Unofficial_Patch/python/vamputil.py` | `a2873d3a2a230c0ac9f38398e093910810f7ab3c51fa06bae71a7b004168e491` |
 
-Выборочно сверены важные entities и I/O установленного BSP. План геометрии, коллизия, оба варианта терминала, последовательность Arthur и последствия в runtime не проверены. Для переноса нужна проверка исходного save до/после разговора и сравнение журнала при смерти Arthur; статические источники не разрешают эти вопросы.
+Выборочно сверены важные entities, I/O и опорные грани установленного BSP. Открыты полная планировка, коллизия, два варианта терминала, последовательность Arthur и последствия его смерти в runtime.

@@ -1,10 +1,13 @@
 # Santa Monica — локации
 
-Индексы и материалы конкретных интерьерных карт. Сводный статус и ограничения источников — в [[../Santa_Monica_Research_Index|главном индексе Santa Monica]].
+Пакеты наружных и интерьерных карт. Сводный статус и ограничения источников — в [[../Santa_Monica_Research_Index|главном индексе Santa Monica]].
 
 | Карта | Материалы |
 |---|---|
-| SM-13 — The Asylum | [[asylum1/SM-13_Asylum_00_Index]]; геометрия, сущности, логика, Python и камеры — здесь; разборы диалогов персонажей в [[../Characters/Index|Characters]]. |
+| Hub 1 — улицы и канализация | [[../Space/Surface]] и [[../Space/Sewers]] |
+| Pier | [[../Space/Surface#Коллизия подъёма к Beach House]] |
+| Beach House | [[../Space/Surface#SM-08 — Beach House: архитектура выбора игрока]] |
+| SM-13 — The Asylum | [[asylum1/SM-13_Asylum_00_Index]]; геометрия, сущности, логика, Python и камеры — здесь; разборы диалогов персонажей в [[../Characters/Index\|Characters]]. |
 | SM-14 — Medical Clinic | [[medical1/SM-14_Medical_00_Index]] |
 | SM-15 — Diner | [[diner1/SM-15_Diner_00_Index]] |
 | SM-16 — Apartment | [[apartment1/SM-16_Apartment_00_Index]] |
@@ -20,6 +23,8 @@
 | SM-26 — Gallery Noir | [[gallery1/SM-26_Gallery_00_Index]] |
 | SM-27 — Kilpatrick's Bail Bonds | [[bailbonds1/SM-27_Bail_Bonds_Passport]] |
 | SM-28 — Junkyard | [[junkyard1/SM-28_Junkyard_00_Index]] |
+| SM-29 — Santa Monica Haven и квартира Мурьетты | [[pawnshop1/SM-29_Pawnshop_1_Passport]] |
+| SM-30 — Foxy Boxes | [[vamparena/SM-30_Foxy_Boxes_Passport]] |
 
 
 - Отдельный критический анализ оригинального Asylum: [[../../../02_Analysis/SM-13_Asylum_04_Analysis]].

@@ -25,4 +25,4 @@ status: SOURCE COMPLETE / RUNTIME PENDING
 
 Планы: [[SM-14_Medical_Assets/SM-14_Medical_Basement.svg|подвал]], [[SM-14_Medical_Assets/SM-14_Medical_Ground.svg|первый этаж]], [[SM-14_Medical_Assets/SM-14_Medical_Upper.svg|верхний этаж]]. Для каждого есть PNG. **SOURCE COMPLETE:** основные локально доступные VMF, установленная BSP entity lump, Python, шесть DLG и шесть связанных терминалов исследованы для основных пространственных и игровых систем. **RUNTIME PENDING:** проходимость, приоритет диалоговых условий и выполнение отдельных I/O не наблюдались в игре; перечень в [[SM-14_Medical_04_Analysis]].
 
-Связанный контекст: [[SM-13_Asylum_00_Index|The Asylum]] и [[Surface|Santa Monica surface]].
+Связанный контекст: [[../asylum1/SM-13_Asylum_00_Index|The Asylum]] и [[Surface|Santa Monica surface]].

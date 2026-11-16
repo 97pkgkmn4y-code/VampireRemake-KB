@@ -39,3 +39,5 @@ Other globals catalogued for follow-up are `Knox_TT`, `Knox_Vamp`, `Knox_Ghoul`,
 `Stan_Gimble.OnDeath` has two sibling outputs, `gimble_dead_relay.Trigger` and `gimbleDeath()`. The relay configures doors, fade, player teleport and the Carson release sequence (`sm_basement_1.vmf:23158–23172`). The Python call is a separate output on `Stan_Gimble`. See [[../Locations/basement1/SM-18_Basement_02_Systems|SM-18 systems]] for the detailed I/O graph.
 
 **UNVERIFIED**: actual dispatch order of sibling outputs, whether scripted `Kill` dispatches the corresponding `OnDeath` in a given route, dialogue-entry priority, and which arena NPC appears in each runtime state. Historical default/UP entity dumps in the old audit are additional representations. Their provenance and correspondence to the installed BSP remain UNVERIFIED.
+
+[[../Locations/vamparena/SM-30_Foxy_Boxes_Passport|SM-30]] follows the Plus actor swap, the Foxy Boxes key gate, the fight sequence and the malformed condition in Knox ID 494.

@@ -16,11 +16,15 @@
 
 ## Внешние зависимости и возможные расхождения
 
-- [PY] `santamonica.py:1938–1945` `gimbleQuestDone()` запирает `intercom_button`, если `G.Gimble_Dead=1` **или** `G.Gimble_Vandal=1`; при `G.Patch_Plus=0` дополнительно закрывает `basementdr`. Вызов этой функции на другой карте нужно доказать отдельно; здесь известна лишь её логика.
-- [PY] `santamonica.py:44–49` при Plus и `G.Carson_Rescued=1` удаляет в квартире `Carson_Computer`, `Carson_Poster`, `tape_player`; это межкартовый эффект, зависящий от запуска соответствующей функции квартиры. См. [[SM-16_Apartment_00_Index]].
+- [PY] `santamonica.py:1938–1945` `gimbleQuestDone()` запирает `intercom_button`, если `G.Gimble_Dead=1` **или** `G.Gimble_Vandal=1`; при `G.Patch_Plus=0` дополнительно закрывает `basementdr`. Вызывающая карта подтверждена ниже.
+- [PY] `santamonica.py:44–49` при Plus и `G.Carson_Rescued=1` удаляет в квартире `Carson_Computer`, `Carson_Poster`, `tape_player`; это межкартовый эффект, зависящий от запуска соответствующей функции квартиры. См. [[../apartment1/SM-16_Apartment_00_Index]].
 - [PY] `vamputil.py:595–597` при `G.Gimble_Dead=1` скрывает `stumpy`, если объект существует. Это не доказывает немедленное обновление в подвале.
 - [VMF] `Carson_free_relay` запускает последовательность, конец которой посылает `Carson.Kill` (L23319). [PY] `carsonDeath()` установил бы `Arthur Knox=8` и открыл switch, **если** вызван OnDeath; автоматическую связь `Kill`→OnDeath в доступных исходниках не подтверждаем. Нельзя писать, что спасённый Carson неизбежно «умирает» по квестовой логике.
 
 ## Открытая проверка
 
-[HYP] Проверить в установленной UP Plus: от двери `stairdoor` до нижнего пола и клетки, поведение обеих веток `G.Gimble_Vandal`, порядок OnDeath/`Kill`, наличие диалога после переносов, фактическое сохранение `Carson_Rescued`. До этого геометрическая связность лестницы и итоговые runtime-события остаются открытыми.
+**Дополнительная сверка UP 12.0.** `sm_hub_1` содержит `logic_auto` у `(-2586.48,-2091.1,-111)` с `OnMapLoad → gimbleQuestDone()`. В `sm_apartment_1` `logic_auto` у `(23.7628,151.524,45)` вызывает `finishElysiumTip()` через 0.1 с, что связывает `Carson_Rescued` с удалением предметов квартиры в Plus. В установленном подвале `Carson.OnDeath → carsonDeath()`, функция запрашивает `SetQuest("Arthur Knox",8)`, тогда как в установленном `quests_santamonica.txt` для Arthur Knox определены 1–7. Обработка состояния 8 и отправка OnDeath при scripted Kill неизвестны.
+
+В установленном BSP от подхода `(-35,-725,-64)` у `stairdoor` до `(-556,-367,-355)` в зоне Carson найдено 274 положения с опорами от Z=−88.95 до −388.95 (`--terrain --goal-directed --grid 8 --step 18 --margin 430 --limit 24000`). Добавление закрытого `stairdoor *4` сохраняет тот же путь. Добавление закрытой `celldoor4 *13` (`-651.5 -346 -335.5`) исчерпывает сетку после 12 637 положений. В модели брашей найден подход к самой лестнице (`gimble-door-approach`) и отдельно проверен спуск к открытой клетке. [[../../Space/Santa_Monica_BSP_Brush_Routes.csv]]
+
+В установленном `sm_basement_1` `gimble_leave_check` проверяет `Gimble_Vandal==0`. Внешний `intercom.dlg:12–13,24` проверяет также `Gimble_Leave`; ответ 13 ставит `Gimble_Open=1` и `Phone_Call=1`. Это отдельная реакция интеркома на состояние разговора. В игре остаётся проверить очередность Vandal, OnDeath/`Kill`, диалог после переносов и сохранение `Carson_Rescued`.

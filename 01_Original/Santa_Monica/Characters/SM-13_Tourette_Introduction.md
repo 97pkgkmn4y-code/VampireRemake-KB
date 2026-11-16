@@ -6,7 +6,7 @@
 **Status**: Partial documentation
 
 
-> Расширенный разбор диалогов и камер: [[SM-13_Asylum_09_Tourette_Dialogue]].
+> Расширенный разбор диалогов и камер: [[./SM-13_Asylum_09_Tourette_Dialogue]].
 ---
 
 ## Overview

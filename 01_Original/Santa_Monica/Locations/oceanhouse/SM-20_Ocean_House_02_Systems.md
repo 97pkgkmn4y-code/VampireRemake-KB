@@ -25,6 +25,8 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 
 ## Направление и опасности
 
+**Внешний ключ и Plus-сцена.** В UP BSP `Key_Button.OnPressed` выдаёт `item_k_oh_front_key`, меняет стойки ключей, убирает подсветку и запускает `plus_check.Test`. Условие `Patch_Plus == 1` включает `door_trailer.Lock`, меняет `bobcat_before/after`, запускает звук через 1 с, удар через 5 с и shake через 5.1 с. `Unlock` той же двери запланирован через 10 с. `front_door_1_knob` содержит ключ и `difficulty=5`. `OnSkillSuccess` убирает `Key_Button` и `inspect_key`; эту ветку следует сравнить с получением ключа при проверке сцены. `trigger_trigger_changelevel` имеет `StartDisabled=1` и один вызов `Leave_Teleport.ChangeNow` по touch, дверь содержит отдельный вызов по `OnOpen`. Положение створки при `Lock` и порядок показа сцены остаются открытыми. [[SM-20_Ocean_House_01_Spatial]]
+
 | Запуск → цепь | Статическое свидетельство | Неизвестно |
 | --- | --- | --- |
 | `trigger_ghost` (`trigger_look`) → `logic_ghost_lobby` → `ghost_stand-in.ScriptUnhide` | BSP entity lump; VMF2 именованные связи | Требуемый угол взгляда, частота и видимость в игре |
@@ -32,6 +34,12 @@ maps: [sm_oceanhouse_1, sm_oceanhouse_2]
 | `NightStandKey.OnItemRemove` → `logic_ghost_walkway` → `ghost_stand-in_3.ScriptUnhide` | BSP entity lump | Достижимость и визуальная последовательность |
 | `Boiler_Event_C.OnTrigger` → `RivetC.ShakeAndFling` → `Boiler_Steam1_Trigger.ScriptUnhide` | BSP entity lump; последний объект `trigger_hurt` | Длительность, урон и обход в игре |
 | `OH_diary.OnPlayerPickup` → `sound_whisper_helpme.PlaySound`, delayed `sound_whisper_hescoming2.PlaySound`, `logic_rattlers.Trigger` | VMF2:162029–162042 | Реальное воспроизведение и контроль игрока |
+
+**После рубильника.** В UP BSP `BreakerBox.OnUse` показывает группу `Boiler_Events_Trigger` и вызывает `Boiler_Poltergiest_Relay_ON`. Тот активирует `trigger_elev_to_basement *89`, который начинается с `StartDisabled=1`. При первом входе в объём вызванный relay отправляет `elevator.GotoFloor 2` (позиция Z=−128). У самого триггера есть отдельный выход для удаления через 0,9 с. У лифта `OnReachFloor2` открывает `basementelevb`. Это включение доступно по цепи рубильника, даже если игрок у самого рубильника ещё не сел в кабину.
+
+**Паровые объёмы.** `Boiler_Event_C/F` вызывают `RivetC/F.ShakeAndFling`; только `RivetC/F.OnFling` показывает `Boiler_Steam1/2_Trigger` и включает соответствующие звук и струю. У обоих обычных `trigger_hurt` зафиксированы `StartHidden=1`, `StartDisabled=0`, `damage=1`. Парного выключающего выхода к этим двум целям в entity lump не найдено. У отдельной цепи `trigger_steamevent → plus_logic_steamy` есть `plus_steamgout_hurt.Enable` через 0,2 с и `Disable` через 10 с. Эти задержки взяты от запуска соответствующего relay. Фактическая длительность и урон обычных потоков остаются для игры.
+
+**Вентиляция.** Разрушение `ventdoorb *44` скрывает обычную кабину через `elevator_hide_relay`, показывает два объекта `elev_fall_event_trigger` разных классов (`trigger_look *289` и `trigger_once *292`) и закрывает `elev2`. Оба объекта вызывают `ElevFall_Relay` и через 0,05 с адресуют `Kill` общему имени. Relay двигает отдельную модель `elev_falling`, включает тряску и звук. Кто из двух триггеров сработает первым, зависит от фактического подхода.
 
 VMF2 содержит `SunRoom_Music` с `Music/Stems/Mid_Short cutscene27.wav` (L151535–151548) и `Sound_Of_The_Clifs` с seagull/storm cue (L151565–151600). Наличие файловых ссылок и I/O не устанавливает слышимый микс или точную режиссуру кадра. Источник camera shot и изменение контроля игрока для этих сцен пока не установлен.
 
