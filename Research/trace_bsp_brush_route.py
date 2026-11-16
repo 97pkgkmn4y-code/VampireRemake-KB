@@ -248,11 +248,13 @@ def axis_bounds(planes):
 
 
 class BrushWorld:
-    def __init__(self, data, inline_models, terrain=False, minimum_ground_normal=0.7):
+    def __init__(self, data, inline_models, terrain=False, minimum_ground_normal=0.7,
+                 hull_height=None):
         self.brushes = []
         self.bins = defaultdict(list)
         self.unbinned = []
         self.minimum_ground_normal = minimum_ground_normal
+        self.hull_maxs = HULL_MAXS if hull_height is None else (*HULL_MAXS[:2], hull_height)
         model_brushes = read_models(data)
         for model, position in [(0, (0.0, 0.0, 0.0)), *inline_models]:
             for brush, _, planes in model_brushes(model, WORLD_SOLID_MASK):
@@ -271,7 +273,7 @@ class BrushWorld:
             normal = x, y, z
             nearest = sum(
                 n * (lo if n >= 0 else hi)
-                for n, lo, hi in zip(normal, HULL_MINS, HULL_MAXS)
+                for n, lo, hi in zip(normal, HULL_MINS, self.hull_maxs)
             )
             distance += dot(normal, position) - nearest
             expanded.append((normal, distance))
@@ -333,50 +335,71 @@ def clip_segment(start, end, planes):
     return enter, hit
 
 
-def try_step(world, point, x, y, step):
-    for rise in (0.0, step):
+def try_step(world, point, x, y, step, *, rises=None, max_drop=None):
+    if rises is None:
+        rises = (0.0, step)
+    if max_drop is None:
+        max_drop = step
+    for rise in rises:
         upper = lift(point, rise)
         target = x, y, upper[2]
         if rise and world.trace(point, upper)[0] < 1:
             continue
         if world.trace(upper, target)[0] < 1:
             continue
-        landing = world.ground(target, step + rise + CLEARANCE)
+        landing = world.ground(target, max_drop + rise + CLEARANCE)
         if landing is not None:
             return landing
     return None
 
 
-def find_route(world, start, finish, grid, step, margin, limit, goal_directed=False):
+def find_route(world, start, finish, grid, step, margin, limit, goal_directed=False,
+               *, diagonal=False, rise_increment=None, max_drop=None, bounds=None):
     start = world.ground(start, 128)
     finish = world.ground(finish, 128)
     if start is None or finish is None:
         return {"status": "ungrounded", "start": start, "finish": finish}
     queue = [(0.0, 0, start)]
     order = itertools.count(1)
-    key = lambda p: (p[0], p[1], round(p[2], 2))
+    def key(point):
+        if diagonal:
+            return tuple(round(value, 3) for value in point)
+        return point[0], point[1], round(point[2], 2)
+
+    if bounds is None:
+        bounds = (min(start[0], finish[0]) - margin, max(start[0], finish[0]) + margin,
+                  min(start[1], finish[1]) - margin, max(start[1], finish[1]) + margin)
+    min_x, max_x, min_y, max_y = bounds
+    directions = ((grid, 0), (-grid, 0), (0, grid), (0, -grid))
+    if diagonal:
+        directions += ((grid, grid), (grid, -grid), (-grid, grid), (-grid, -grid))
+    rises = None
+    if rise_increment is not None:
+        rises = (*range(0, math.ceil(step), rise_increment), step)
+
     parents = {key(start): None}
     terminal = None
     while queue and len(parents) < limit:
         _, _, point = heapq.heappop(queue)
         x, y, z = point
         if abs(x - finish[0]) <= grid and abs(y - finish[1]) <= grid:
-            ending = try_step(world, point, finish[0], finish[1], step)
+            ending = try_step(world, point, finish[0], finish[1], step,
+                              rises=rises, max_drop=max_drop)
             if ending and abs(ending[2] - finish[2]) < 0.15:
                 terminal = key(ending)
                 parents.setdefault(terminal, key(point))
                 break
-        for dx, dy in ((grid, 0), (-grid, 0), (0, grid), (0, -grid)):
+        for dx, dy in directions:
             nx, ny = x + dx, y + dy
-            if any(
-                value < min(a, b) - margin or value > max(a, b) + margin
-                for value, a, b in zip((nx, ny), start, finish)
-            ):
+            if not (min_x <= nx <= max_x and min_y <= ny <= max_y):
                 continue
-            landing = try_step(world, point, nx, ny, step)
+            landing = try_step(world, point, nx, ny, step, rises=rises, max_drop=max_drop)
             if landing is not None and key(landing) not in parents:
                 parents[key(landing)] = key(point)
-                priority = sum(abs(a - b) for a, b in zip(landing, finish)) if goal_directed else 0
+                priority = 0.0
+                if goal_directed:
+                    priority = math.dist(landing, finish) if diagonal else sum(
+                        abs(a - b) for a, b in zip(landing, finish))
                 heapq.heappush(queue, (priority, next(order), landing))
     path = []
     while terminal is not None:
@@ -409,6 +432,13 @@ def main():
                         help="Include submodel N translated to XYZ, without rotation")
     parser.add_argument("--grid", type=int, default=12)
     parser.add_argument("--step", type=float, default=18)
+    parser.add_argument("--hull-height", type=float, help="Height of the 32-unit-wide hull")
+    parser.add_argument("--rise-increment", type=int, help="Test intermediate rises up to --step")
+    parser.add_argument("--max-drop", type=float, help="Use a separate drop limit in Source units")
+    parser.add_argument("--diagonal", action="store_true",
+                        help="Trace diagonal neighbors and use Euclidean goal distance")
+    parser.add_argument("--bounds", nargs=4, type=float, metavar=("X_MIN", "X_MAX", "Y_MIN", "Y_MAX"),
+                        help="Search limits in XY; overrides --margin")
     parser.add_argument("--margin", type=int, default=96)
     parser.add_argument("--limit", type=int, default=40000)
     args = parser.parse_args()
@@ -430,6 +460,19 @@ def main():
         parser.error("Provide both --start and --finish for a route probe")
     if args.grid <= 0 or args.step <= 0 or args.margin < 0 or args.limit <= 0:
         parser.error("Grid, step and limit must be positive, and margin nonnegative")
+    if args.hull_height is not None and not (math.isfinite(args.hull_height) and args.hull_height > 0):
+        parser.error("Hull height must be positive and finite")
+    if args.rise_increment is not None and args.rise_increment <= 0:
+        parser.error("Rise increment must be positive")
+    if args.max_drop is not None and not (math.isfinite(args.max_drop) and args.max_drop >= 0):
+        parser.error("Drop limit must be nonnegative and finite")
+    if args.bounds is not None:
+        min_x, max_x, min_y, max_y = args.bounds
+        if not all(map(math.isfinite, args.bounds)) or min_x > max_x or min_y > max_y:
+            parser.error("Search bounds must be finite and ordered")
+        for x, y, _ in (args.start, args.finish):
+            if not (min_x <= x <= max_x and min_y <= y <= max_y):
+                parser.error("Start and finish must lie inside the search bounds")
     if not 0 < args.minimum_ground_normal <= 1:
         parser.error("Minimum ground normal must be in (0, 1]")
     models = [(int(index), tuple(map(float, xyz))) for index, *xyz in args.brush_model]
@@ -440,24 +483,31 @@ def main():
                                                    *(v for _, xyz in models for v in xyz),
                                                    *(v for _, xyz, yaw in props for v in (*xyz, yaw)))):
         parser.error("Coordinates and step must be finite")
-    world = BrushWorld(data, models, terrain=args.terrain, minimum_ground_normal=args.minimum_ground_normal)
+    world = BrushWorld(data, models, terrain=args.terrain, minimum_ground_normal=args.minimum_ground_normal,
+                       hull_height=args.hull_height)
     if props:
         add_physics_props(world, json.loads(args.decoded_physics.read_text(encoding="utf-8-sig")), props)
     result = find_route(world, tuple(args.start), tuple(args.finish),
-                        args.grid, args.step, args.margin, args.limit, args.goal_directed)
+                        args.grid, args.step, args.margin, args.limit, args.goal_directed,
+                        diagonal=args.diagonal, rise_increment=args.rise_increment,
+                        max_drop=args.max_drop, bounds=args.bounds)
     print(json.dumps(result | source | {
         "selected_brushes": world.brush_count,
         "displacement_triangles": world.terrain_count,
         "physics_props": props,
         "physics_pieces": len(world.brushes) - world.brush_count - world.terrain_count,
         "inline_models": models,
-        "hull": [HULL_MINS, HULL_MAXS],
+        "hull": [HULL_MINS, world.hull_maxs],
         "grid": args.grid,
         "step": args.step,
         "margin": args.margin,
         "limit": args.limit,
         "goal_directed": args.goal_directed,
         "minimum_ground_normal": args.minimum_ground_normal,
+        "diagonal": args.diagonal,
+        "rise_increment": args.rise_increment,
+        "max_drop": args.max_drop,
+        "bounds": args.bounds,
     }, indent=2))
 
 
