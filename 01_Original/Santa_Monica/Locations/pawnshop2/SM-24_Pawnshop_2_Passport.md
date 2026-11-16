@@ -15,6 +15,8 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 
 В UP BSP `exitdoor` стоит на Z=-112 (world face 809), внутри у `(-2054,-2380)` и `(-2054,-2440)` пол на той же высоте (face 852). Прилавок выше, его поверхность под кнопкой `talk_to_trip` на Z=-71 (face 601), кнопка имеет центр `(-2058,-2584,-50.5)`; Trip размещён за ней у `(-2060,-2624,-110.807)`. Это выборочные точки поверхности. От этой карты отличается [[../pawnshop1/SM-29_Pawnshop_1_Passport|sm_pawnshop_1]], где расположено убежище.
 
+От входа до точки перед кнопкой проба `trip-counter` нашла 17 положений на Z=−111.95. При добавлении внутренней решётки в её закрытом положении (`--brush-model 7 -2031.5 -2416.5 -61.5`) сетка исчерпана после 39 положений. У решётки Use Opens и `wait=10` в UP BSP, `wait=4` в базовом BSP. В базовом BSP Trip стоит у `(-2056,-2712,-110.807)`, а удалённая кнопка диалога остаётся в той же точке. [[../../Space/Santa_Monica_BSP_Brush_Routes.csv]]
+
 ## Торговля и доступ к оружию
 
 | DLG ID | Условие и эффект |
@@ -24,6 +26,10 @@ status: PARTIAL / VERIFIED_STATIC / RUNTIME_PENDING
 | 72–77 | 72/73/76/77 ведут к 81 и повышают `Trip_Trust`, 74 ведёт к 81 с флагом `Dialog_Presence=1`. ID 75 ведёт в 321 и ставит `Trip_Guns=3`. ID 81 ставит Guns=3 и Know=4. Оба вызывают `TripStoryState()` (Story_State 0→1). |
 | 82/83 | `npc.StartBarter(G.Story_State,0,G.Trip_Drugs)`, затем `preBarter("Trip")`. 83 требует `Trip_Name=1` и `Extra_Lines=1`, увеличивает доверие. `vamputil.py:2250` запускает таймер обработки дубликатов книг только в Plus. |
 | 491 / 616 | Поздний переход к лицензии: начало 616 при Guns 1/2 и Story_State >1. ID 491 устанавливает Guns=3. |
+
+**Ассортимент по vendor data.** В установленном UP `vdata/system/vendors.txt` содержит 29 записей Trip, включая боеприпасы. Базовый файл из `Vampire/pack101.vpk` содержит 24. Патч добавляет биту, кольцо, часы и болты арбалета с `MinStage=0`. Две книги для Computers и Firearms поднимаются с `MinStage=0` до 150. В UP запись для самого `item_w_glock_17c` имеет `AmmoOnly=0`, `MinVendorState=1` и без `MinStage`. Его боеприпасы отдельно имеют `AmmoOnly=1`, `MinStage=5`. Базовый Trip продаёт только боеприпасы Glock с `MinStage=10`. В установленном Trip DLG третий аргумент `StartBarter` равен `G.Trip_Drugs`, который становится 1 после сдачи коробки. Это сопоставление условия ассортимента с веткой задания. Фактическое применение `MinVendorState` и отображаемый список остаются для проверки в игре.
+
+SHA-256 `vendors.txt`: UP `22a97bf2463702d9b5ac6398776ae7ddf3d5923d488cb6b4cd9f9f28a8765270`, база `8e3e9b5c8954235e5b519c61c6defad1c7654c34dec7deeb0c5504c558eab28d`.
 
 ## Drug Trip
 
